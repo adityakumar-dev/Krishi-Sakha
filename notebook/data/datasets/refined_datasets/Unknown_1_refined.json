@@ -1,0 +1,987 @@
+[
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the problem of yellowing in Paddy crop?",
+    "input": "",
+    "output": "धान की फसल में NPK 19: 19: 19 @ 10 ग्राम तथा सागरिका जैविक पोषक तत्व 2 मिलीलीटर प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about control of stem borer in Paddy crop?",
+    "input": "",
+    "output": "धान की फसल में तना बेधक कीट के प्रबंधन के लिए कार्टाप हाइड्रोक्लोराइड 50% एसपी (Cartap Hydrochloride 50% SP) की 500 ग्रामात्रा प्रति एकड़ 200 लीटर पानी के साथ छिड़काव करें ।."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about beneficiary status under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत बिना पंजीकरण के स्टैटस की जानकारी देने में असमर्थ हैं कृपया दोबारा संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about 20th installment under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं किस्त की अभी कोई आधिकारिक घोषणा नहीं हुई है कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about the control of Root Knot Nematode in paddy crop?",
+    "input": "",
+    "output": "धान की फसल में सूत्र कृषि की रोकथाम हेतु Carbofuron 3G @ 8 kg प्रति एकड़ की दर से प्रयोग करे। क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 500 मिली लीटर प्रति एकड़ की दर से 200 लीटर पानी मे घोल बनाकर छिड़काव करें।."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "Measures to control broadleaf & Narrow leaf weeds in Rice?",
+    "input": "",
+    "output": "मूंगफली की फसल 45 दिन की हो गयी है, इसलिए अब किसी भी खरपतवारनाशी का प्रयोग करना उचित नहीं है, बेहतर है की निराई-गुड़ाई करे।."
+  },
+  {
+    "instruction": "What is the information about control of the flower dropping in Chilli the crop?",
+    "input": "",
+    "output": "मिर्च की फसल में फल फूल को बढ़ाने के लिए, अल्फा नेफ़थाइल एसिटिक एसिड 4. 5% एसएल (Alpha naphthyl acetic acid 4. 5% SL) @ 1 ml प्रति 4. 5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।."
+  },
+  {
+    "instruction": "What is the information about control of Aphids in Chilli crop?",
+    "input": "",
+    "output": "मिर्च की फसल में कीट नियंत्रण के लिए, इमिडाक्लोप्रिड 17. 8% एस. एल (Imidacloprid 17. 8% SL), @ 100 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "I am not getting the benefit of installment under PM Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत आपका मोबाइल नंबर डुप्लिकेट या अमान्य है। कृपया अपना मोबाइल नंबर अपडेट करें । अपडेट करवाने के लिए अपने नजदीकी जन सेवा केंद्र पर संपर्क करे।."
+  },
+  {
+    "instruction": "What is the information about fertilizer management in Black gram?",
+    "input": "",
+    "output": "उर्द की फसल में 40 किलोग्राम डाई अमोनियम फास्फेट तथा 80 किलोग्राम ज़िप्सम प्रति एकर की दर से मिट्टी में मिलाकर प्रयोग करें। अथवा एनपीके 50-60 किलोग्राम तथा 80 किलोग्राम ज़िप्सम प्रति एकड़ की दर से प्रयोग करे ।."
+  },
+  {
+    "instruction": "What is the information about 20th installment under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं किस्त की अभी कोई आधिकारिक घोषणा नहीं हुई है कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "Due to excess moisture, there is yellowing of leaves in sugarcane crop; control measures",
+    "input": "",
+    "output": "यदि आपके गन्ने में अधिक नमी के कारण पीलापन है तो कृपया यूरिया का प्रयोग करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "Information on narrow leaf weed control in peanut crop",
+    "input": "",
+    "output": "मूंगफली की फसल में सकरी पत्ती के खरपतवार के नियंत्रण के लिए इमेजाथापर 10 % SLकी 400 एम एल मात्रा प्रति एकड़ के हिसाब से 200 लीटर पानी में घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about Beneficiary status under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अंतर्गत आपका पंजीकरण पूर्ण रूप से सही है, किस्त प्राप्ति के लिए कृपया प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about braod leaf weed management in sugarcane crop?",
+    "input": "",
+    "output": "गन्ने की फसल मे चौड़ी पत्ती के खरपतवार नियंत्रण के लिए 2 4 डी 80 % डब्ल्यूपी सोडियम साल्ट 400 ग्राम दवा 150 लीटर पानी मे घोलकर एक एकड़ मे छिड़काव करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "When will the 20th installment of Prime Minister Kisan Samman Nidhi be released?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि की 20वीं किस्त कब जारी होने की घोषणा अभी नहीं हुई है किस्त प्राप्ति के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about update mobile number under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत मोबाईल नंबर अपडेट करवाने के लिए नजदीकी जनसेवा केंद्र पर संपर्क करे."
+  },
+  {
+    "instruction": "What is the information about narrow leaf weed control in Capcicum?",
+    "input": "",
+    "output": "शिमला मिर्च क फसल मे खरपतवार की रोकथाम हेतु प्रोपेक्विज़ाफ़ॉप 10% ईसी (Propaquizafop 10% EC) @ 250 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about the 20th installment under the Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं क़िस्त के बारे में अभी जो कोई जानकारी उपलब्ध नहीं कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN REGISTRATION STATUS INFORMATION?",
+    "input": "",
+    "output": "पीएम किसानिधि योजना की अधिक जानकारी के लिए अपने ब्लॉक में नोडल ऑफिसर से संपर्क करें."
+  },
+  {
+    "instruction": "IRRELEVANT CALL",
+    "input": "",
+    "output": "IRRELEVANT CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about self updation unde rPradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत अगर तकनीकी समस्या के कारण अपडेट नहीं हो रहा है तो कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about control of leaf folder/stem borer in Paddy crop?",
+    "input": "",
+    "output": "धान की फसल में पत्ती लपेटक कीट नियंत्रण के लिए, क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 500 मिली लीटर प्रति एकड़ की दर से 200 लीटर पानी मे घोल बनाकर छिड़काव करेंधान की फसल में पत्ती लपेटक कीट नियंत्रण के लिए, साइपरमैथरिन 25 प्रतिशत (Cypermethrin 25 % EC) @ 2. 4 मि. प्रति 10 लीटर पानी की स्प्रे करें।."
+  },
+  {
+    "instruction": "Information regarding Krishi Rakshak Portal's helpline number 14447 being declared invalid",
+    "input": "",
+    "output": "कृषि रक्षक पोर्टल के हेल्पलाइन नंबर 14447 के ड़ायल करने पर अगर अमान्य बता रहा है तो कृपया किसी दूसरे फोन से संपर्क करे या कुछ देर बाद ड़ायल करे."
+  },
+  {
+    "instruction": "Information on Ripening Bombay Green Mangoes?",
+    "input": "",
+    "output": ", एक एयरटाइट डिब्बे में कच्चे आमों को नीचे की तरफ करके रखें, डिब्बे को अच्छी तरह से बंद कर दें। 4-5 दिनों के बाद, आम पक जाएंगे. कच्चे आमों को कमरे के तापमान पर एक-दूसरे से अलग करके रखें. आमों को पकने में 5-7 दिन लग सकते हैं. पकने पर, आमों का रंग हल्का हरा या पीला हो जाएगा, और वे थोड़ा नरम हो जाएंगे."
+  },
+  {
+    "instruction": "HOW TO FILED EKYC IN PM KISAN SCHEME?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना में eKYC के लिए स्वयं भी eKYC कर सकते हैं लैपटॉप या मोबाइल से इसके अलावा अपने नजदीकी सीएससी (CSC ) सेंटर पर जाकर बायोमेट्रिक eKYC भी करवा सकते हैं https: //pmkisan. in/aadharekyc. aspx."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "Plant protection measures for Rootrot in Rice?",
+    "input": "",
+    "output": "धान की फसल में कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2. 5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about the sowing time of Black Gram?",
+    "input": "",
+    "output": "खरीफ में उर्द की बुवाई का उपयुक्त समय 15 जून से 15 जुलाई है।."
+  },
+  {
+    "instruction": "Information on control of hairy caterpillar in sesame crop",
+    "input": "",
+    "output": "तिल की फसल में बाल वाली सुंडी के नियंत्रण के लिए कार टॉप हाइड्रोक्लोराइड 50% एस पी की 400 ग्रामात्रा प्रति एकड़ के हिसाब से 200 लीटर पानी में घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about 20th installment under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं किस्त की अभी कोई आधिकारिक घोषणा नहीं हुई है कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  },
+  {
+    "instruction": "What is the information about installment issue under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत किस्त की प्राप्ति के लिए कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "Plant protection measures for Root rot in Capsicum?",
+    "input": "",
+    "output": "शिमला मिर्च की फसल में कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2. 5 ग्राम/ लीटर पानी की दर से घोल बनाकर ड्रेनचिंग कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about the control of Downy Mildew in Capcicum crop?",
+    "input": "",
+    "output": "मेटालैक्सिल 8%+ मैन्कोज़ेब 64% डब्ल्यू पी (Metalaxyl 8%+ Mancozeb 64% WP)@ 400 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें अथवा एज़ोक्सीस्ट्रोबिन 18. 2 % + डाइफेनोकोनाज़ोल 11. 4 % एससी (Azoxystrobin 18. 2 % + Difenoconazole 11. 4 % SC) @ 200 ml प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about application status in Pm Kisan?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना मे आपका आवेदन निरस्त कर दिया गया है नजदीकी जनसुविधा केंद्र पर जाकर आवेदन खतौनी आधार कार्ड और बैंक डीटेल उपलोड कराएं."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the 20th installment under the Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं क़िस्त के बारे में अभी जो कोई जानकारी उपलब्ध नहीं कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about tillering in paddy crop?",
+    "input": "",
+    "output": "धान की फसल में कल्ले फुटाव के लिए हुमिक ऐसिड 5 किलोग्राम+मेगनिसियम सल्फेट 5 किलोग्राम/एकड़ का बिखराव करे."
+  },
+  {
+    "instruction": "What is the information about how to control vegetative growth control in soyabean?",
+    "input": "",
+    "output": "सोयाबीन की फसल मे वानस्पतिक वढ़वार नियंत्रण के लिए क्लोरमेक्वाट क्लोराइड 50% SL ( लिहोसिन ) 50-60 एममल दवा 150 लीटर पानी मे घोलकर एक एकड़ मे छिड़काव करें."
+  },
+  {
+    "instruction": "Information regarding control of Bakanae Disease or Foot Rot/ jhanda rog of Basmati rice?",
+    "input": "",
+    "output": "बासमती चावल में बकानी रोग (foot rot)/झंडा रोग को नियंत्रित करने के लिए रोपाई से पहले पौधों की जड़ों को ट्राइकोडर्मा हार्ज़ियानम @15 ग्राम प्रति लीटर पानी की दर से घोल बनाकर 6 घंटे तक पानी में डुबो कर रखें या साफ़ (मैंकोजेब और कार्बेन्डाजिम) @ 2. 5 ग्राम प्रति लीटर पानी की दर घोल बनाकर 6 घंटे तक पानी में डुबो कर रखें."
+  },
+  {
+    "instruction": "What is the information about release date of 20 installment under -Pm kisan scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना मे 20 बी किस्त के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about the first top dressing fertilizer application in Paddy?",
+    "input": "",
+    "output": "धान की फसल में 35 किलोग्राम यूरिया, 5 किलोग्राम जिंक सल्फेट 33% तथा 10 किलोग्राम सागरिका प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "Information regarding complaint of Nano Urea along with Urea",
+    "input": "",
+    "output": "यूरिया के साथ में समिति वाले नैनो यूरिया बेच रहेहैं शिकायतनोट कर ली गई है कृपया कार्रवाई के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about 20th installment under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं किस्त की अभी कोई आधिकारिक घोषणा नहीं हुई है कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about broad and narrow leaf weed control in paddy crop?",
+    "input": "",
+    "output": "धान की फसल में चौड़ी और सकरी पत्ती वाले खरपतवार के नियंत्रण के लिए बिस्पायरिबैक सोडियम 10% एससी 80-100 एमएल/एकड़ 150-200 लीटर पानी की दर से घोल बनाकर छिड़काव करे."
+  },
+  {
+    "instruction": "What is the information about fruit rot disease control in bottle gourd crop?",
+    "input": "",
+    "output": "लौकी की फसल में फल गलन रोग के नियंत्रण के लिए कापर ऑक्सीक्लोराइड 50% डब्लू पी 2. 5 ग्राम/लीटर पानी की दर से घोल बनाकर छिड़काव करे."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the status of PM Kisan Samman Nidhi?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि के अंतर्गत आपके खाते का विवरण ठीक है आगामी किस्त प्राप्ति के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN REGISTRATION STATUS INFORMATION?",
+    "input": "",
+    "output": "पीएम किसानिधि योजना की अधिक जानकारी के लिए अपने ब्लॉक में नोडल ऑफिसर से संपर्क करें."
+  },
+  {
+    "instruction": "Farmer asked about to Krishi vigyan Kendra jhajjar?",
+    "input": "",
+    "output": "कृषि विज्ञान केंद्र (KVK) झज्जर का पता बीड सुनारवाला, 5-कि. है। स्टोन, बादली रोड, झज्जर- 124103, हरियाणा। उनसे 01662-273552 पर फोन या sckvkjhajjar@gmail. com पर ईमेल द्वारा भी संपर्क कर सकते हैं।."
+  },
+  {
+    "instruction": "IRRELEVANT CALL",
+    "input": "",
+    "output": "IRRELEVANT CALL."
+  },
+  {
+    "instruction": "What is the information about interest on Kisan Credit Card?",
+    "input": "",
+    "output": "किसान क्रेडिट कार्ड लोन समय पर जमा करने पर कुल 4% ब्याज देय होता है। यदि बैंक द्वारा अधिक ब्याज लिया जाता है तो इसके लिए अपने जिले के कृषि जिला अधिकारी या कृषि उप-निदेशक को लिखित में शिकायत दर्ज कर सकते है।."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  },
+  {
+    "instruction": "What is the information about spray of Nano Urea in Paddy crop?",
+    "input": "",
+    "output": "धान की फसल में नैनो यूरिया 2- 2. 5 मिलीलीटर प्रति लीटर पानी के साथ घोल बनाकर छिड़काव कर सकते हैं."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT PM KISAN STATUS INFORMATION?",
+    "input": "",
+    "output": "पीएम किसान सम्मन निधि में रजिस्ट्रेशन नंबर निकालने के लिए इस लिंक पर क्लिकीजिए https: //pmkisan. in/BeneficiaryStatus_New. aspx."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about whether ration card is required for new registration in PM Kisan Samman Nidhi?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत नए पंजीकरण को करने के लिए राशन कार्ड की आवश्यकता नहीं होती है."
+  },
+  {
+    "instruction": "What is the information about which fertilizer use in sugarcane crop?",
+    "input": "",
+    "output": "गन्ने की फसल मे 30-35 किग्रा यूरिया + 10 किलोग्राम सागरिका दानेदार प्रति एकड़ डालें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about how many year fruit and flower comes on citrus plant?",
+    "input": "",
+    "output": "नींबू का पेड़ आमतौर पर 3 से 5 साल में फल देना शुरू कर देता है, लेकिन यह इस बात पर निर्भर करता है कि पेड़ को कैसे उगाया गया है. अगर पेड़ ग्राफ्टेड (grafted) है, तो यह 3 साल में फल दे सकता है, लेकिन अगर बीज से उगाया गया है, तो 5 से 10 साल लग सकते हैं,."
+  },
+  {
+    "instruction": "Sound Issue",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "Plant protection measures for Root rot in Rice?",
+    "input": "",
+    "output": "धान की फसल में कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2. 5 ग्राम/ लीटर पानी की दर से घोल बनाकर ड्रेनचिंग कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about the sowing time of Black Gram?",
+    "input": "",
+    "output": "खरीफ में उर्द की बुवाई का उपयुक्त समय 15 जून से 15 जुलाई है।."
+  },
+  {
+    "instruction": "What is the information about fertilizer management in Black gram?",
+    "input": "",
+    "output": "उर्द की फसल में 40 किलोग्राम डाई अमोनियम फास्फेट तथा 80 किलोग्राम ज़िप्सम प्रति एकर की दर से मिट्टी में मिलाकर प्रयोग करें। अथवा 50-60 किलोग्राम एनपीके तथा तथा 80 किलोग्राम ज़िप्सम प्रति एकर की दर से मिट्टी में मिलाकर प्रयोग करें।."
+  },
+  {
+    "instruction": "Flower dropping problem in Cucumber crop?",
+    "input": "",
+    "output": "फसल में फूल झड़ने के नियंत्रण के लिए- प्लानोफिक्स 1ml प्रति 4 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "Brown spot problem in paddy?",
+    "input": "",
+    "output": "धान की फसल में हेक्साकोनाज़ोल 4% + ज़िनेब 68% डब्ल्यूपीआई 400 से 500 ग्राम/एकड़ 200 लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the information about 20th installment under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं किस्त की अभी कोई आधिकारिक घोषणा नहीं हुई है कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about on the use of urea in poplar plants?",
+    "input": "",
+    "output": "पोपलर के पौधे में यूरिया @ 300-500 ग्राम/ पौधा प्रयोग कर सकते है। पौधे में नाइट्रोजन की कमी के लक्षण- पुरानी पत्तियाँ पीली पड़ती हैं, पौधा कमजोर और पतला रहता है।."
+  },
+  {
+    "instruction": "Plant protection measures for leaf spot in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे में कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 500 ग्राम/ एकड़ की दर से प्रयोग कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about the Mobile No. Updation of PM Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत आपके पंजीकरण रिकॉर्ड मे मोबाइल नंबर अपडेट नहीं हैकृपया सीएससी केंद्र से अपना मोबाइल नंबर अपडेट करें। अधिक जानकारी के लिए कृषि उपनिदेशक कार्यालय या ब्लॉक पर राजकीय बीज गोदाम प्रभारी कार्यालय में संपर्क करें धन्यवाद I."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the beneficiary status of PM Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "श्रीमान प्रधानमंत्री किसान सम्मानिधि के रजिस्ट्रेशन में कोई कमी नहीं है, किस्त के भुगतान के लिए कृपया अभी प्रतीक्षा करें।."
+  },
+  {
+    "instruction": "What is the information about Beneficiary status under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अंतर्गत बिना ओटीपी प्राप्त किए हम स्टेटस चेक करने में असमर्थ हैं, आपकी पंजीकरण संख्या है- UT154370344."
+  },
+  {
+    "instruction": "Call transferred?",
+    "input": "",
+    "output": "Call transferred to uttarakhand KCC."
+  },
+  {
+    "instruction": "What is the information about 20th Installment under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अन्तर्गत 20वीं किस्त जारी होने की अभी कोई तिथि निर्धारित नहीं की गई है, कृपया प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about payment date of PM kisan samman nidhi 20th installment.",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना की 20वीं किस्त का भुगतान करने की अभी कोई आधिकारिक तिथि की घोषणा नहीं की गई हैभुगतान के लिए अभी प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about TULSI VARIETY?",
+    "input": "",
+    "output": "तुलसी की प्रजातियाँ निम्न प्रकार से है: -कृष्ण तुलसी, बाबी, तुलसी, अमृता तुलसी इत्यादि इसकी बुवाई फरवरी मार्च और जुलाई से अगस्त तक की जाती है."
+  },
+  {
+    "instruction": "Wilt problem in capsicum crop?",
+    "input": "",
+    "output": "श्रीमान शिमला मिर्च की फसल मे थियोफेनेट मिथाइल 70% WP@ 1 ग्रामात्रा प्रति लीटर की दर से छिड़काव करे."
+  },
+  {
+    "instruction": "What is the information about 20th Installment under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अन्तर्गत 20वीं किस्त जारी होने की अभी कोई तिथि निर्धारित नहीं की गई है, कृपया प्रतीक्षा करें."
+  },
+  {
+    "instruction": "When will the 20th installment of Prime Minister Kisan Samman Nidhi be released?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि की 20वीं किस्त कब जारी होने की घोषणा अभी नहीं हुई है किस्त प्राप्ति के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about Pruning TIME IN PLUM?",
+    "input": "",
+    "output": "आलूबुखारा फल एक वर्षीय छोटे स्तर पर होते हैं. हर साल प्रशिक्षण में फलों की पैदावार बढ़ाने के लिए और छंटाई जनवरी में की जानी चाहिए. सीधी बढ़ने वाली शाखाओं को हटा देना चाहिए, ताकि हवा और प्रकाश आसानी से पौधों को उपलब्ध हो पाए. इससे फलों का रंग और गुणवत्ता बढ़ती है. इसके अलावा तने से निकलने वाले पानी के शूट और मुख्य तने को समय-समय पर हटा देना चाहिए."
+  },
+  {
+    "instruction": "What is the information about 20th Installment under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अन्तर्गत 20वीं किस्त जारी होने की अभी कोई तिथि निर्धारित नहीं की गई है, कृपया प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about the problem of not getting benefits of PM Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "किसी तकनीकी समस्या के कारण प्रधानमंत्री किसान सम्मानिधि योजना का स्टेटस सर्च नही हो रहा है कृपया कुछ समय बादोबारा संपर्क करेंअथवा स्टेटस की जानकारी के लिए हेल्पलाइन नंबर 1800180 155261 / 011-24300606 पर संपर्क करेंहेल्पलाइन नंबर सभी कार्य दिवसों पर सुबह 9: 30 बजे से शाम 6: 00 बजे तक उपलब्ध है।."
+  },
+  {
+    "instruction": "Farmer Asked Information related to the 20th installment of PM Kisan Samman Nidhi Yojana",
+    "input": "",
+    "output": "श्रीमान पीएम किसान सम्मन निधि योजना की20वीं किस्त से संबंधित अभी कोई भी अपडेट नहीं आया हैजानकारी मिलने परआपको बताया जाएगा."
+  },
+  {
+    "instruction": "Farmer asked for information about the next installment in the PM Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना की अगली किस्त की तारीख की घोषणा नहीं हुई है कृपया किस्त आने का इंतजार करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN STATUS INFORMATION?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना में आपके बैंक अकाउंट से आधार नंबर सेडिंग नहीं होने की वजह से आपकी किस्त रोक दी गई है पीएम किसानिधि योजना की अधिक जानकारी के लिए अपने ब्लॉक में नोडल ऑफिसर से संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about the first top dressing fertilizer application in Paddy?",
+    "input": "",
+    "output": "धान की फसल में 35 किलोग्राम यूरिया, 5 किलोग्राम जिंक सल्फेट 33% तथा 10 किलोग्राम सागरिका प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about control of the flower dropping in Citrus plant?",
+    "input": "",
+    "output": "मुसम्मी के फलों को गिरने से रोकने के लिए, अल्फा नेफ़थाइल एसिटिक एसिड 4. 5% एसएल (Alpha naphthyl acetic acid 4. 5% SL) @ 1 ml प्रति 4. 5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "Information regarding planting of orange trees?",
+    "input": "",
+    "output": ", संतरे के पौधों को लगाने के लिए गोबर की सड़ी हुई खाद में NPK, 12: 32: 16, की 50 से 100 ग्रामात्रा प्रति पौधा मिट्टी में मिले."
+  },
+  {
+    "instruction": "What is the information about post emergence weeds control in Paddy?",
+    "input": "",
+    "output": "धान की फसल में खरपतवार नियंत्रण के लिए- Bispyribac-sodium 10% SC @ 80 मिली प्रति एकड़ 200 लीटर पानी के साथ छिड़काव करें."
+  },
+  {
+    "instruction": "May coragen insecticide and m-45(mencozeb 75% wp ) fungicide mix together for spray in paddy crop?",
+    "input": "",
+    "output": "कोरेजेन कीटनाशक और M-45 (मेनकोजेब 75% WP फफूंद नाशी ) धान की फसल में एक साथ मिलकर छिड़काव कर सकते हैं."
+  },
+  {
+    "instruction": "What is the information about getting drones on subsidy?",
+    "input": "",
+    "output": "ड्रोन अनुदान पर लेने के लिए अपने ब्लॉक में संपर्क करे या दिए गए लिंक से भी ऑनलाइन आवेदन कर सकते है- https: //agrimachinery. in/Index/Index."
+  },
+  {
+    "instruction": "What is the information about Beneficiary status under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अंतर्गत आपकी स्थिति अज्ञात लाभार्थी के रूप में बनी हुई है, अधिक जानकारी के लिए जिले के नोडल अधिकारी से संपर्क करें."
+  },
+  {
+    "instruction": "Farmer asked about to Miyazaki mango VARIETY cultivation?",
+    "input": "",
+    "output": "मियाजाकी आम, जिसे \"सूरज का अंडा\" भी कहा जाता है, दुनिया के सबसे महंगे आमों में से एक है। इसकी खेती के लिए गर्म और आर्द्र जलवायु की आवश्यकता होती है."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN SAMMAN NIDHI YOJANA NEXT INSTALLMENT?",
+    "input": "",
+    "output": "सरकार ने पीएम किसान सम्मानिधि योजना की 20वीं किस्त की तारीख को लेकर कोई आधिकारिक ऐलान नहीं किया है."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about Beneficiary status of Pradhan Mantri Kisan Samman Nidhi Yojana.",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना से संबंधित अधिक जानकारी के लिए अपने यहां के राजकीय बीज गोदाम प्रभारी या जिला कृषि उपनिदेशक कार्यालय पर संपर्क करें या कृषि निदेशालय में अधिक जानकारी के लिए विभाग के नंबर–1800 180 1488, 155261, 011-24300606 पर संपर्क करके जानकारी प्राप्त करें."
+  },
+  {
+    "instruction": "When will the 20th installment of Prime Minister Kisan Samman Nidhi be released?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि की 20वीं किस्त कब जारी होने की घोषणा अभी नहीं हुई है किस्त प्राप्ति के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about how to apply for Kisan credit card?",
+    "input": "",
+    "output": "किसान क्रेडिट कार्ड बनवाने के लिए PM किसान पोर्टल से फार्म डाउनलोड करें तथा उसको भरकर अपने नजदीकी ग्रामीण या सहकारी बैंक शाखा में जमा करें या बैंक में कृषि अधिकारी से संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "Brown Spot problem in paddy?",
+    "input": "",
+    "output": "धान की फसल में हेक्साकोनाज़ोल 4% + ज़िनेब 68% डब्ल्यूपीआई 400 से 500 ग्राम/एकड़ 200 लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "Fertilizer management in Paddy Crop?",
+    "input": "",
+    "output": "धान की 20-25 दिनों की फसल में यूरिया@ 35-40 किलोग्राम, सागरिक जैड ++@ 8-10 किलोग्राम और सूक्ष्म पोषक तत्व @ 8-10 किलोग्राम / एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about drone subsidy?",
+    "input": "",
+    "output": "ड्रोन से सम्बन्धित अनुदान के लिए अपने कृषि विभाग पर संपर्क करे."
+  },
+  {
+    "instruction": "What is the information about braod leaf weed management in sugarcane crop?",
+    "input": "",
+    "output": "गन्ने की फसल मे चौड़ी पत्ती के खरपतवार नियंत्रण के लिए 2 4 डी 80 % सोडियम साल्ट 400 ग्राम दवा 150 लीटर पानी मे घोलकर एक एकड़ मे छिड़काव करें."
+  },
+  {
+    "instruction": "Information regarding control of narrow leaf weed in sugarcane crop?",
+    "input": "",
+    "output": "गन्ने की फसल में खरपतवार नियंत्रण के लिए निराई-गुड़ाई करें."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "What is the information about payment date of PM kisan samman nidhi 20th installment.",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना की 20वीं किस्त का भुगतान करने की अभी कोई आधिकारिक तिथि की घोषणा नहीं की गई हैभुगतान के लिए अभी प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about foliar spray of NPK in Rice crop?",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "When will the 20th installment of Prime Minister Kisan Samman Nidhi be released?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि की 20वीं किस्त कब जारी होने की घोषणा अभी नहीं हुई है किस्त प्राप्ति के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "What is the information about the use of insecticides and fungicides in brinjal crop?",
+    "input": "",
+    "output": "बैंगन और करेले की फसल में रोग एवं कीट के लक्षण दिखाई देने पर ही कीटनाशक और फफूंदनाशक का प्रयोग करना उचित रहेगा।."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN SAMMAN NIDHI YOJANA NEXT INSTALLMENT?",
+    "input": "",
+    "output": "सरकार ने पीएम किसान सम्मानिधि योजना की 20वीं किस्त की तारीख को लेकर कोई आधिकारिक ऐलान नहीं किया है।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the first top dressing fertilizer application in Paddy?",
+    "input": "",
+    "output": "धान की फसल में 35 किलोग्राम यूरिया, 5 किलोग्राम जिंक सल्फेट 33% तथा 10 किलोग्राम सागरिका प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about Mycorrhiza bio-fertilizer?",
+    "input": "",
+    "output": "माइकोराइजा एक प्रकार का कवक (फंगस) है जो पौधों की जड़ों के साथ एक सहजीवी संबंध बनाता है। यह कवक पौधे को मिट्टी से पानी और पोषक तत्व, विशेष रूप से फास्फोरस, प्राप्त करने में मदद करता है, जबकि पौधा कवक को प्रकाश संश्लेषण से बने शर्करा प्रदान करता है."
+  },
+  {
+    "instruction": "What is the information about how to reduce vegetative growth of Soyabean?",
+    "input": "",
+    "output": "सोयाबीन की फसल मे वानस्पतिक वृद्धि रोकने के लिए Chlormequat Chloride 50%Sl @ 50 ml मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ छिड़काव करें।."
+  },
+  {
+    "instruction": "What is the information about increse female flower on cucumber?",
+    "input": "",
+    "output": "खीरे के पौधे में नर और मादा फूल अलग-अलग समय पर आते हैं। मादा फूल, जो फल देते हैं, नर फूलों की तुलना में कम संख्या में आते हैं। नर फूल आमतौर पर पहले दिखाई देते हैं, और फिर मादा फूल आते हैं। मादा फूल के लिए जिबरेलिक ऐसिड 1 एमएल दवा 2 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about update mobile number under Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत मोबाईल नंबर अपडेट कराने के लिए www. pmkisan. in पर लॉगिन करे या नजदीकी जनसेवा केंद्र पर संपर्क करे."
+  },
+  {
+    "instruction": "Sound Issue",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the subsidy on Kisan credit card scheme?",
+    "input": "",
+    "output": "किसान क्रेडिट कार्ड के अंतर्गत लोन 7% का ब्याज दर पर मिलता है, समय पर लोन जमा कर देने पर 3% की छूट मिलती है, इस प्रकार ब्याज दर 4% पड़ता है अधिक जानकारी के लिए बैंक में कृषि क्षेत्र अधिकारी से संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about the problem of Aadhaar bank account seeding status is No in PM kisan registration?",
+    "input": "",
+    "output": "बैंक द्वारा आधार की NPCI सीडिंग तथा DBT सुबिधा सक्रीय कराएँ अथवा इंडिया पोस्ट पेमेंट बैंक में खाता खुलवाएं। यदि आपने हाल ही में अपना आधार नंबर अपने बैंक खाते से लिंकिया है, तो कृपया पोर्टल पर इसके प्रदर्शित होने के लिए 15 दिनों तक प्रतीक्षा करें।."
+  },
+  {
+    "instruction": "What is the information about the showing time of Blackgram?",
+    "input": "",
+    "output": "खरीफ में उर्द की बुवाई का उपयुक्त समय 15 जून से 15 जुलाई है।."
+  },
+  {
+    "instruction": "What is the information about beneficiary status of PM Kisan Samman Nidhi.",
+    "input": "",
+    "output": "सर प्रधानमंत्री किसान सम्मानिधि की 20वीं किस्त के भुगतान के लिए कुछ समय तक प्रतीक्षा करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "Aphid problem in cucumber crop?",
+    "input": "",
+    "output": "इमिडाक्लोप्रिड 17. 8% SL @ 0. 5 एमएल/ लीटर पानी में घोल बनाकर छिड़काव करे."
+  },
+  {
+    "instruction": "What is the information about the 20th installment under the Pradhan Mantri Kisan Samman Nidhi Yojana?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के तहत 20वीं क़िस्त के बारे में अभी जो कोई जानकारी उपलब्ध नहीं कृपया प्रतीक्षा करे."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "Plant Growth & Regulators in paddy",
+    "input": "",
+    "output": "धान की फसल में ह्यूमिक एसिड 400 मिली. /एकड़ 200 लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the information about Beneficiary status under Prime Minister Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना के अन्तर्गत आपके द्वारा बताई गई दो पंजीकरण संख्याओं का मोबाइल नंबर अपडेट नहीं है, मोबाइल नंबर अपडेट के लिए नजदीकी जन सेवा केंद्र पर संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about the Mobile No. Updation of PM Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत आपके पंजीकरण रिकॉर्ड मे मोबाइल नंबर अपडेट नहीं हैकृपया सीएससी केंद्र से अपना मोबाइल नंबर अपडेट करें। अधिक जानकारी के लिए कृषि उपनिदेशक कार्यालय या ब्लॉक पर राजकीय बीज गोदाम प्रभारी कार्यालय में संपर्क करें धन्यवाद I."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about sagrika liquid and npk dose in bottle gourd crop?",
+    "input": "",
+    "output": "लौकी की फसल में सागरिका तरल 30-40 एमएल और एनपीके 19: 19: 19 75-80 ग्राम/टंकी की दर से घोल बनाकर छिड़काव करे."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  },
+  {
+    "instruction": "What is the information about the first top dressing fertilizer application in Paddy?",
+    "input": "",
+    "output": "धान की फसल में 35 किलोग्राम यूरिया, 5 किलोग्राम जिंक सल्फेट 33% तथा 10 किलोग्राम सागरिका प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "Sound Issue",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about the Mobile No. Updation of PM Kisan Samman Nidhi scheme?",
+    "input": "",
+    "output": "श्रीमान आपके पीएम किसान पंजीकरण में पंजीकृत मोबाईल नंबर में बदलाव के लिए कृपया जनसेवा केंद्र पर संपर्क करें अथवा लिंक https: //pmkisan. in/MobileUpdation_Pub. aspx पर आनलाइन चेक करें।."
+  },
+  {
+    "instruction": "Information regarding control of broad leaves weed in paddy crop?",
+    "input": "",
+    "output": "श्रीमान फसल में चौड़ी पत्ती वाले खरपतवार प्रबंधन के लिए 2, 4-D Amine Salt 58% SL की 400 मिलीलीटर मात्रा प्रति एकर की दर से 200 लीटर पानी के साथ घोल बनाकर छिडकाव करें।."
+  },
+  {
+    "instruction": "What is the information about dose of Nano Urea in the Colocasia crop?",
+    "input": "",
+    "output": "अरबी की फसल मे नैनो यूरिया 2-4 मिलीलीटर प्रति लीटर पानी के साथ घोल बनाकर छिड़काव कर सकते हैं."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT PM KISAN SAMAN NIDHI NEXT INSTALLMENT INFORMATION?",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about wilt disease control in capsicum crop?",
+    "input": "",
+    "output": "शिमला मिर्च की फसल में उकठा रोग के नियंत्रण के लिए थायोफेनेट मिथाइल 70% डब्लू पी 2 ग्राम/लीटर पानी की दर से घोल बनाकर ड्रेनचिंग करे."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "What is the information about PM Kisan Samman Nidhi 20th installment?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के अंतर्गत 20वीं किस्त की अभी कोई आधिकारिक सूचना उपलब्ध नहीं है, कृपया आगामी किस्त के लिए अभी प्रतीक्षा करें ।."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "ASKED ABOUT TO PM KISAN SAMMAN NIDHI YOJANA?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि योजना में ओटीपी नहीं जाने की वजह से हम आपको जानकारी देने में असमर्थ हैं."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN REGISTRATION STATUS INFORMATION?",
+    "input": "",
+    "output": "पीएम किसानिधि योजना की अधिक जानकारी के लिए अपने ब्लॉक में नोडल ऑफिसर से संपर्क करें."
+  },
+  {
+    "instruction": "When will the 20th installment of Prime Minister Kisan Samman Nidhi be released?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मानिधि की 20वीं किस्त कब जारी होने की घोषणा अभी नहीं हुई है किस्त प्राप्ति के लिए प्रतीक्षा करें."
+  },
+  {
+    "instruction": "INCOMPLETE CALL",
+    "input": "",
+    "output": "INCOMPLETE CALL."
+  },
+  {
+    "instruction": "When will the 20th installment be released under PM Kisan Samman Nidhi Scheme?",
+    "input": "",
+    "output": "पीएम किसान सम्मानिधि योजना के तहत अभी तक 20वीं किस्त जारी करने की तिथि निर्धारित नहीं की गयी है, आधिकारिक सूचना मिलने तक इंतजार करे।."
+  }
+]

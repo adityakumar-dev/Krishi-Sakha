@@ -1,0 +1,987 @@
+[
+  {
+    "instruction": "How much amount of NPK should be used in poplar crop?",
+    "input": "",
+    "output": "पॉपुलर के पेड़ में एन पी के की 200 ग्रामात्रा प्रति पौधा थाला बनाकर प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about irrigation management in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पेड़ मे 7 दिन के अंतराल पर सिचाई करें."
+  },
+  {
+    "instruction": "What is the time for planting poplar nursery?",
+    "input": "",
+    "output": "पोपलर की नर्सरी जनवरी से फरवरी माह (अंकुरण से पूर्व) में कर सकते है।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 21 जनवरी से 22 जनवरी के बीच में मौसम साफ रहेगा बारिश होने की कोई संभावना नहीं है 23 जनवरी को हल्की बूंदाबांदी होने की संभावना है 24 जनवरी से 27 जनवरी के बीच में मौसम साफ रहेगा बारिश होने की कोई संभावना नहीं है हवाओं की गति 4 से 14 किलोमीटर प्रति घंटे की गति से चलेगी पश्चिमी हवाएं चलेगी आज का न्यूनतम तापमान 13 डिग्री सेल्सियस तथा अधिकतम तापमान 15 डिग्री सेल्सियस है तो मौसम को देखकर ही यूकेलिप्टस के पौधों में कवकनाशी का छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about blight Disease Control in Eculeptous plants?",
+    "input": "",
+    "output": "श्रीमान कासुगामाइसिन 5% + कॉपर ऑक्सीक्लोराइड 45% WP @ @ 2 ग्राम प्रति लीटर पानी में घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about poplar planting time?",
+    "input": "",
+    "output": "पोपलर की रोपाई का उपयुक्त समय मध्य जनवरी से मध्य फरवरी तक होता है तथा इसकी प्रजातियाँ निम्न प्रकार से हैं: -जी-48, उदय, एस-7, सी-15 इत्यादि."
+  },
+  {
+    "instruction": "Treatment of poplar plant before sowing?",
+    "input": "",
+    "output": "पोपलर के पौधों को बुवाई से पहले कार्बेन्डाजिम 50% डब्लूपी @ 1 ग्राम/ लीटर पानी की दर से घोल बनाकर पौधों की जड़ों को 10-15 मिनट तक घोल में रखे."
+  },
+  {
+    "instruction": "What is the information about fertilizer in poplar nursery?",
+    "input": "",
+    "output": "पॉपुलर की नर्सरी में गुड़ाई के समय एनपीके 12: 32: 16 40 किलोग्राम प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "Brown leaf spot problem in date palm?",
+    "input": "",
+    "output": "प्लम के पौधे पर कॉपर ऑक्सिक्लोराइड 50%wp 3 ग्राम प्रति लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the information about the problem of Gummosis in poplar tree?",
+    "input": "",
+    "output": "जिंक सल्फेट 50 gm, कॉपर सल्फेट 50 gm, बोरेक्स (borax) 25 gm, बुझा चुना 50 gm प्रति पौधे की दर से मिट्टी में मिलाये."
+  },
+  {
+    "instruction": "The poplar plant has been uprooted in the storm, can it be replanted by digging up the soil",
+    "input": "",
+    "output": "पॉपुलर का पौधा आंधी में उखड़ गया है तो उसको दोबारा मिट्टी की खुदाई करके रोपाई कर सकते हैं."
+  },
+  {
+    "instruction": "Information on Eucalyptus Varieties?",
+    "input": "",
+    "output": "दी गई किस्मों से यूकेलिप्टस का चयन कर सकते हैं- यूकेलिप्टस कैमलडुलेंसिस, एफआरआई 4 और एफआरआई 6, यूकेलिप्टस ग्लोब्यूल्स, यूकेलिप्टस सिट्रियोडोरा।."
+  },
+  {
+    "instruction": "Variety information in Eucalyptus?",
+    "input": "",
+    "output": "यूकेलिप्टस की किस्म- केलिप्टस क्यामाल्डुलेन्सिस, एफआरआई 4, एफआरआई 6, युकेलिप्टस ग्लोब्युल्स, युकेलिप्टस सिट्रिओडोरा।."
+  },
+  {
+    "instruction": "Information on control of insects in poplar crop",
+    "input": "",
+    "output": "Chlorpyrifos 50 + Cypermethrin 5 EC @ 2 मिली प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में 27 अप्रैल तक के मौसम में 21 अप्रैल को हल्की बूँदा बाँदी की संभावना है, आज का अपेक्षित अधिकतम तापमान 36 डिग्री सेल्सियस न्यूनतम तापमान 25 डिग्री सेल्सियस तक रहने और हवा की गति 4 से 22 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैंमौसम के अनुसार पोपलर की फसल की सिचाई करे."
+  },
+  {
+    "instruction": "What should be the proper distance for planting poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधे एक एकड़ में 182 पौधे लगाने के लिए 5x5 मीटर के फासले का प्रयोग करें या 396 पौधे प्रति एकड़ में लगाने के लिए 5मीटर x 4 मीटर या 6 मीटर x 2 मीटर और 476 पौधे प्रति एकड़ में लगाने के लिए 5 मीटरx 2 मीटर फासले का प्रयोग करें।."
+  },
+  {
+    "instruction": "Fertilizer management in Eculeptous plant?",
+    "input": "",
+    "output": "सफेदा के 3 वर्ष से अधिक पौधे मे 10-15 किलोग्राम सड़ी गली गोबर की खाद 100 ग्राम यूरिया + 100 ग्राम सिंगल सुपर फास्फेट तथा प्रति पौधा तने को 1 फीट छोड़कर मिट्टी मे अच्छी तरह मिला देना चाहिए."
+  },
+  {
+    "instruction": "What is the information about on the use of fertilizers and manure in poplar plants?",
+    "input": "",
+    "output": "पोलपर के पौधों में खाद एवं उर्वरक का प्रयोग मिट्टी की जांच के आधार पर करे। मिट्टी की जांच करवाने के लिए अपने ब्लॉक, कृषि विज्ञान केंद्र में संपर्क कर सकते है। मिट्टी की जांच के आधार पर प्रयोग करने से आपको बहुत अच्छे लाभ प्राप्त होंगे।."
+  },
+  {
+    "instruction": "What is the information about the control of dryinf of whole poplar tree in crop.",
+    "input": "",
+    "output": "--Copper Oxychloride 50% WP @ 2. 5ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "The poplar plant has to be harvested after 2 months. Can we give it any fertilizer at this time?",
+    "input": "",
+    "output": "श्रीमान पॉपुलर के पौधों में इस समय खादेने का कोई फायदा नहीं है."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग की जानकारी के अनुसार आपके क्षेत्र में22 में तक के मौसम में आंशिक घने बादल रहेंगे बारिश होने की संभावना नहीं है प्रतिदिन 25 से 30 किलोमीटर प्रति घंटे तक की हवा चलेगी मौसम के अनुसार पॉपुलर के पौधों में सिंचाई करें."
+  },
+  {
+    "instruction": "Information regarding white grub pest control in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में व्हाइट ग्रब कीट नियंत्रण के Chlorpyrifos 20% EC @ 1 लीटर प्रति एकड़ की दर से सिंचाई जल के साथ प्रयोग करें."
+  },
+  {
+    "instruction": "Information regarding white grub pest control in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में व्हाइट ग्रब कीट नियंत्रण के लिए कार्टाप हाइड्रोक्लोराइड 4G @ 10 किलोग्राम प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "Information regarding root larva pest control in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधे में जड़ सूँडी के नियंत्रण के लिए Cartap Hydrochloride 4G @ 80 से 100 ग्रामात्रा प्रति पौधा की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "How much quantity of Carbendazim 12% + Mancozeb 63% WP should be used in poplar plant?",
+    "input": "",
+    "output": "पॉपलर के पौधे मे कार्बेन्डाजिम 12%+ मैन्कोजेब 63% WP@ 10 ग्रामात्रा /पौधे मे प्रयोग कर सकते है."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में आज से 25 मई के मध्य बारिश की संभावना नहीं है, आज का अपेक्षित अधिकतम तापमान 37 डिग्री सेल्सियस न्यूनतम तापमान 25 डिग्री सेल्सियस तक रहने और हवा की गति 14 से 22 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैंमौसम के अनुसार पोपलर की फसल की सिचाई करे."
+  },
+  {
+    "instruction": "What is the information about the control of Stem Borer in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर मे तना छेदक की रोकथाम हेतु लैम्ब्डा-साइहैलोथ्रिन 5% ईसी (Lambda Cyhalothrin 5% EC) @ 120 ml प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करेअथवा फ्लुबेंडियामाइड 20% WG (Flubendiamide 20% WG) @ 100 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "Information regarding control of white grub in Poplar plants?",
+    "input": "",
+    "output": "पॉपलर के पौधों मे कीट के रोकथाम के लिए क्लोरपाइरीफॉस 20% ईसी की (Chlorpyrifos 20% EC) 03 एमएल मात्रा प्रति लीटर पानी मे घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about the control of Shoot Webber in poplar.",
+    "input": "",
+    "output": "पोपलर मे Dimethoate 3O% EC @ 2ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे."
+  },
+  {
+    "instruction": "What is the information about control of Termites in Poplar plants?",
+    "input": "",
+    "output": "दीमक की रोकथाम के लिए फिप्रोनिल 0. 3% (Fipronil 0. 3% GR) की 25 ग्रामात्रा प्रति पौधे की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "Information regarding Eculeptous varieties?",
+    "input": "",
+    "output": "यूकेलिप्टस की किस्म हैं यूकेलिप्टस कैमलडुलेंसिस, एफआरआई 4 और एफआरआई 6, यूकेलिप्टस ग्लोब्यूल्स, यूकेलिप्टस सिट्रियोडोरा, P23, का चयन कर सकतें हैं उच्च घनत्वाले रोपण के लिए 1. 5 मीटर फासले पर बिजाई करने के साथ लगभग 1690 पौधे प्रति एकड़ में प्राप्त किये जा सकते है, जबकि 2x2 मीटर के फासले के साथ लगभग 1200 पौधे प्रति एकड़ में प्राप्त किये जा सकते हैबिजाई का समय इसकी बिजाई का समय जून से अक्तूबर तक का होता है."
+  },
+  {
+    "instruction": "What is the information about sucking insect control in poplar plant?",
+    "input": "",
+    "output": "पॉपलर के पौधों मे रस चूसक कीट की रोकथाम के लिए इमिडाक्लोरपरिड 17. 8 % एससल 100 एममल दवा 200 लीटर पानी मे घोलकर एक एकड़ मे छिड़काव करें."
+  },
+  {
+    "instruction": "Imidacloprid 30.5% SC How much quantity will be used per acer?",
+    "input": "",
+    "output": "Imidacloprid 17. 8%एस एल की 100 एम एल मात्रा प्रति एकड़ का प्रयोग की जाएगी."
+  },
+  {
+    "instruction": "Plant protection measures for Stem burst in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे सूक्ष्म पोषक तत्व @ 50 ग्राम/ पौधा और 2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about the better growth of in Poplar Nursery?",
+    "input": "",
+    "output": "पोपुलर की नर्सरी में ग्रोथ के लिए NPK 19: 19: 19 @ 10 ग्राम तथा सागरिका (Sagarika) जैविक पोषक तत्व 2 मिलीलीटर प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about control of Termites/white Grub in Poplar crop?",
+    "input": "",
+    "output": "पॉपलर के पौधों की जड़ मे लगे कीड़ों की रोकथाम हेतु क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 1 लीटर प्रति एकड़ की दर से सिंचाई जल के साथ प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about training and pruning of poplar.",
+    "input": "",
+    "output": "श्रीमान पॉपुलर में हवा की वजह से आपका पेड़ टूटे ना इसके लिए आपको किनारो के सारे शाखों को काटना है जिस पेड़ हल्का महसूस करें और हवा की वजह से टूटे ना."
+  },
+  {
+    "instruction": "Measures to control broadleaf & Narrow leaf weeds in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे में खरपतवारनाशी की रोकथाम हेतु निराई-गुड़ाई करे।."
+  },
+  {
+    "instruction": "Plant protection measures for Termites in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे में क्लोरपाईरीफॉस 20% ईसी @ 1-1. 250 लीटर/ एकड़ की दर से सिंचाई के साथ प्रयोग करे।."
+  },
+  {
+    "instruction": "Information regarding blackening of leaves of poplar tree due to spraying of weedicide?",
+    "input": "",
+    "output": "पॉपुलर के पेड़ में खरपतवारनाशी के छिड़काव की वजह से पत्ते काले हो गए है तो सिचाई करे तथा प्रोपिनेब 70%डब्लू पी की 2. 5 ग्रामात्रा प्रति एकड़ के हिसाब से छिड़काव करे."
+  },
+  {
+    "instruction": "What is the information about control of White Grub in Poplar crop?",
+    "input": "",
+    "output": "क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 1 लीटर प्रति एकड़ की दर से सिंचाई जल के साथ प्रयोग करें । अथवा फिप्रोनिल 0. 3% (Fipronil 0. 3% GR) @ 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं।."
+  },
+  {
+    "instruction": "Information regarding the use of fertilizer in Eucalyptus plant?",
+    "input": "",
+    "output": ", यूकेलिप्टस के 1 वर्ष के पौधों में गोबर की सड़ी हुई खाद 05 किलो ग्रामात्रा तथा npk, 12: 32: 16, की 100 से 150 ग्रामात्रा प्रति पौधा मिट्टी में मिलकर प्रयोग करें."
+  },
+  {
+    "instruction": "Information on fertilizer management in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पेड़ मे गाय के गले हुए गोबर 8 किलो के साथ यूरिया + एस पी 50 ग्राम प्रति पौधे में डालें। दूसरे और तीसरे साल के दौरान गाय का गला हुआ गोबर 10 किलो और 15 किलो यूरिया + एस पी 80 ग्राम और 150 ग्राम प्रति पौधे में डालें। चौथे और अगले सालों में गाय का गला हुआ गोबर 15 किलो और यूरिया + एस पी 200 ग्राम प्रति पौधे में डालें।."
+  },
+  {
+    "instruction": "Fertilizer management in polar plant?",
+    "input": "",
+    "output": "पहले साल में गले हुए गोबर 8 किलो के साथ यूरिया + एस पी 50 ग्राम प्रति पौधे में डालें।."
+  },
+  {
+    "instruction": "Eucalyptus trees are dying",
+    "input": "",
+    "output": "यूकेलिप्टस के पेड़ यदि सूख रहे हैं तो कृपया जड़ों का निरीक्षण कर संपर्क करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र हरिद्वार जिले के लक्सर ब्लॉक में आगामी 9 फरवरी तक के मौसम की जानकारी उपलब्ध है जिसमें 5 फरवरी को हल्की बूंदाबांदी होने की संभावना है आज का न्यूनतम तापमान 18 डिग्री सेल्सियस अधिकतम तापमान 26 डिग्री सेल्सियस रहेगा हवाओं की गति 11 किलोमीटर प्रति घंटे की हो सकती है मौसम के अनुसार सरसों की फसल में सिंचाई करें."
+  },
+  {
+    "instruction": "What is the information about the better growth of tea plant?",
+    "input": "",
+    "output": "सागौन के 1 वर्ष पुराने पौधों में 5 से 10 किलोग्राम सड़ी हुई गोबर की खाद तथा 50 से 100 गा डीएपी प्रति पौधाअच्छे से जड़ों के पास अच्छे से मिलाए।."
+  },
+  {
+    "instruction": "What is the information about where to get Fertilizer and Pesticides?",
+    "input": "",
+    "output": "उर्वरक तथा कीटनाशी एप अपने क्षेत्र के एग्री जंक्शन या आसपास टनाशी दुकान से प्राप्त कर सकते है ।."
+  },
+  {
+    "instruction": "Information on control of root rot disease in poplar trees",
+    "input": "",
+    "output": "पॉपुलर के पेड़ में जड़ सड़न के नियंत्रण के लिए कॉपर ऑक्सिक्लोराइड 50% डब्लू पी की 2 ग्रामात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर ड्रिंचिग करे."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 30 जनवरी से 04 फरवरी तक का मौसम ज्ञात हो रहा है जिसमें प्रत्येक दिन आंशिक रूप से बादल बने है, 04 फरवरी को बूँदाबांदी होने की संभावना है आज का अधिकतम तापमान 25 डिग्री सेंटीग्रेड तथा न्यूनतम तापमान 10 डिग्री सेंटीग्रेड, हवा की गति 04 -07 किलोमीटर प्रति घंटा की गति से चलेगी, कृषि कार्य अपने क्षेत्र के मौसम के अनुसार करें."
+  },
+  {
+    "instruction": "What is the information about the helpline number of Krishi Vigyan Kendra?",
+    "input": "",
+    "output": "श्रीमान के जिला चमोली में कृषि विज्ञान केंद्र का हेल्पलाइन नंबर है- डॉ अरुण कुमार, प्रमुख केवीके, संपर्क नंबर: +91-9568694583."
+  },
+  {
+    "instruction": "What is the information about the planting time of Tea?",
+    "input": "",
+    "output": "चाय पत्ती के पौधों की रोपाई का उचित समय मई -जून तथा सितंबर-अक्टूबर माना जाता है।."
+  },
+  {
+    "instruction": "What is the information about the Root treatment of poplar plant?",
+    "input": "",
+    "output": "पॉपुलर के पौधे की जड़ों को उपचार हेतु कार्बेन्डाजिम 50% डब्ल्यू पी (Carbendazim 50% WP)@ 2 ग्राम/लीटर पानी की दर से घोल बना कर उसमें 10 से 15 मिनट तक जड़ों को डूबाकर पौधों को रखें।."
+  },
+  {
+    "instruction": "Information fertilizer management in Eculeptous?",
+    "input": "",
+    "output": "यूकेलिपटिस के पेड़ों मे प्रति वर्ष सड़ा गोबर और एनपीके फर्टलाइज़र दिया करें."
+  },
+  {
+    "instruction": "Information regarding treatment of planting material of poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों का उपचार करने के लिए कार्बेन्डाजिम 50% के 2 ग्राम प्रति लीटर पानी के घोल मे पौधो को 15 से 20 मिनट तक डुबोकर रखे."
+  },
+  {
+    "instruction": "What is the information about the sowing of fodder in the gap of Poplar rows?",
+    "input": "",
+    "output": "पॉपुलर के पौधों के बीच की खाली जगह में चारे के रूप में किसी भी चारे वाली फसल को उगा सकते हैंइससे आपके पॉपुलर के पौधों को कोई नुकसान नहीं होगा।."
+  },
+  {
+    "instruction": "Where can I find poplar plant for planting?",
+    "input": "",
+    "output": "रोपाई हेतु पोपलर के पौधे लेने के लिए नजदीकी वन विभाग में संपर्क कर सकते है। अधिक सहायता के लिए ब्लॉक में भी संपर्क करे सकते है।."
+  },
+  {
+    "instruction": "What is the information about white grub insect control in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे में व्हाइट ग्रब कीट के नियंत्रण के लिए फिपरौनील 40+इमिडाकलोपरिड 40% डब्लू 1 ग्राम/लीटर पानी की दर से घोल बनाकर ड्रेन- चिंग करे."
+  },
+  {
+    "instruction": "How much fertilizer should be given to a 1 year old eucalyptus plant?",
+    "input": "",
+    "output": "यूकेलिप्टस के 1 साल के पौधे मे NPK की 50 ग्रामात्रा/पौधा दे तथा साथ मे कीटनाशक के रूप मे फ़िप्रोनिल @ 50 ग्रामात्रा/पौधा दे."
+  },
+  {
+    "instruction": "Termites problem in poplar?",
+    "input": "",
+    "output": "पापलर की फसल में बिफेन्थ्रिन 10 ईसी 2 मिली. /लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the information about the control of in Poplar?",
+    "input": "",
+    "output": "पॉपुलर के पौधों से तना छेदक की रोकथाम हेतु क्लोरपाइरीफॉस 20% ईसी @ 1 लीटर मात्रा को सिंचाई जल के साथ प्रयोग करें। तथा 500 एमअल मात्रा को 150-200 लीटर पानी मे घोल बना कर अच्छे से तनों पर छिड़काव करे तथा सिरिन्ज के मध्यम से तनों के छेंद मे दवाई को भरे।."
+  },
+  {
+    "instruction": "Fertilizer management in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे गोबर की सड़ी खाद @ 10-15 किग्रा, एनपीके- 12: 32: 16 @ 300-400 ग्राम और सूक्ष्म पोषक तत्व @ 50-60 ग्राम/ पौधा देना है।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 30 मई से 5 जून तक का मौसम ज्ञात हो रहा हैआंशिक और घने बादल देखे जा सकते हैं, 30 मई से 5 जून को बूंदाबांदी या हल्की बारिश होने की संभावना बनी है, आज का अधिकतम तापमान 33 डिग्री सेंटीग्रेड तथा न्यूनतम तापमान 26 डिग्री सेंटीग्रेड, इस सप्ताह हवा की गति 07-11 किलोमीटर प्रति घंटा की गति से चलेगी कृषि कार्य पॉपुलर के पौधों में सिंचाई अपने क्षेत्र के मौसम के अनुसार करें."
+  },
+  {
+    "instruction": "Plant protection measures for Stem rot & Stem borer in poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे क्लोरपाईरीफॉस 20% ईसी @ 2 एमएल और कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।."
+  },
+  {
+    "instruction": "Fertilizer management in Poplar?",
+    "input": "",
+    "output": "महोय, पोपलर के पौधे गोबर की सड़ी खाद @ 10-15 किग्रा और एनपीके- 12: 32: 16 @ 300-500 ग्राम/ पौधा देना है।."
+  },
+  {
+    "instruction": "ASKED ABOUT DISEASE CONTROL IN ZUCCHINI?",
+    "input": "",
+    "output": "जुकिनी एसीफेट 75% एस. दवा का 2 ग्राम प्रति लिटर पानी में + मेंकोजेब 2 ग्राम प्रति लिटर पानी में घोल कर छिड़काव करें।."
+  },
+  {
+    "instruction": "Where can I get eucalyptus plants?",
+    "input": "",
+    "output": "श्रीमान यूकेलिप्टस के पौधे प्राप्त करने के लिए कृषि विज्ञान केंद्र काशीपुर फोनंबर 7500241505, 9412655395 तथा सह निदेशक उद्यान अनुसंधान केंद्र पंतनगर फोनंबर 05944-230269/7055016142 पर संपर्क कर सकते है."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "श्रीमान मौसम विभाग के पूर्वानुमान के अनुसार 10 से 16 मई के बीच में प्रतिदिन हल्की बूदाबादी होने की संभावना है आज के दिन अधिकतम तापमान 35 डिग्री सेल्सियस न्यूनतम तापमान 27 डिग्री सेल्सियस होने की संभावना है हवा की गति 04 से 11 किलोमीटर प्रति घंटे की संभावना बनी है पोपलर मे सिचाई अपने क्षेत्र के मौसम के अनुसार करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 19 जुलाई से 25 जुलाई तक का मौसम ज्ञात हो रहा है। 19 जुलाई से 25 जुलाई तक हल्की बारिश से मध्यम बारिश होने की संभावना है, आज का अधिकतम तापमान 34 डिग्री सेल्सियस तथा न्यूनतम तापमान 27 डिग्री सेल्सियस, हवा की गति 04-07 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पॉपुलर की नर्सरी में सिंचाई करे । धन्यवाद."
+  },
+  {
+    "instruction": "Can we use chelated zinc and magnesium sulphate mixed with urea in poplar plants",
+    "input": "",
+    "output": "पॉपुलर के पौधे में चेलेटेड जिंक और मैग्नीशियम सल्फेट को यूरिया में मिलाकर प्रयोग कर सकते हैं."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार 7 जून तक प्रत्येक दिन बूंदा बांदी होने की संभावना है आज का न्यूनतम तापमान 23°C और अधिकतम तापमान 32°C एवं हवा की गति 4 से 14 किलोमीटर प्रति घंटा रहेगा मौसम के अनुसार पौधों की सिंचाई करें."
+  },
+  {
+    "instruction": "ASKED ABOUT TO FERTILIZER DOSE IN POPLAR?",
+    "input": "",
+    "output": "तीसरे साल के दौरान गाय का गला हुआ गोबर 10 किलो और 15 किलो यूरिया + एस पी 80 ग्राम और 150 ग्राम प्रति पौधे में डालें। चौथे और अगले सालों में गाय का गला हुआ गोबर 15 किलो और यूरिया + एस पी 200 ग्राम प्रति पौधे में डालें।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 2 जून से 4 जून के बीच आंशिक रूप से बादल छाए रहेंगे जिसके साथ हल्की- बूंदाबांदी होने की संभावना है, कल का अधिकतम तापमान 33°C तथा न्यूनतम तापमान 25 °C एवं हवा की गति 7 से 11 किमी. / घंटा रहने कृप्या मौसम के अनुसार ही पॉपलर की फसल की सिचाई करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला हरिद्वार ब्लॉक भगवानपुर में 12 जून से 18 जून तक आंशिक रूप से हल्के बादल छाए रहने के साथ बूँदा-बाँदी होने की सम्भावना है। आज का अपेक्षित अधिकतम तापमान 41 न्यूनतम तापमान 32 डिग्री सेल्सियस एवं हवा की गति 14 किलोमीटर प्रति घंटा रहने की सम्भावना हैं। मौसम के अनुसार पोपलर के पौधों में सिंचाई करें।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमानआपके क्षेत्र में 19 से 25 जून तक प्रत्येक दिन बूंदाबांदी और 21 से 25 जून तक बारिश होने की संभावना है, अधिकतम तापमान 32 व न्यूनतम 27 डिग्री सेल्सियस तक रहने और हवा की गति 7 से 14 किलोमीटर प्रति घंटे की दर से चलेगी, कृषि कार्य मौसम के अनुसार करें."
+  },
+  {
+    "instruction": "Information regarding the use of weedicide on eucalyptus plants?",
+    "input": "",
+    "output": "यूकेलिप्टस के पौधों में किसी भी खरपतवार्नशी का प्रयोग ना करें."
+  },
+  {
+    "instruction": "Information regarding control eating caterpillars pest in poplar plants?",
+    "input": "",
+    "output": "महोदाय पॉपुलर के पौधों में कीट नियंत्रण के लिए, कार्बोफ्यूरान 3% जीआर का प्रयोग कर सकते हैं."
+  },
+  {
+    "instruction": "What is the information about fertilizer management in eucalyptus plants?",
+    "input": "",
+    "output": "श्रीमान सफ़ेदा के पौधों को लगाने के लिए गोबर की खाद और मिट्टी को बराबर मात्रा में मिलाकर उसमें 15 से 20 ग्राम एनपीके उर्वरक और फ़िप्रोनिल 0. 3% जीआर की 5 ग्रामात्रा प्रति गड्डे की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the information about planting distance of poplar tree?",
+    "input": "",
+    "output": ", पॉप्लर की रोपाई 2 x 2 से 3 x 3 मीटर की दूरी पर करें तथा रोपाई से पहले जड़ों को कार्बेन्डाजिम 50 % wp, 2 ग्राम / लीटर पानी की दर से घोलकर जड़ों को डुवाकर उपचारित कर सकते हैं."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 12 जनवरी को आंशिक रूप से बादल छाए रहने के साथ -साथ छिटपुट बूंदाबांदी होने की संभावना है बाकी के दिनों मे 16 जनवरी तक बारिश की संभावना नहीं है कल का अधिकतम तापमान 17 डिग्री सेल्सियस तथा न्यूनतम 8 डिग्री सेल्सियस रहेगा तथा हवा की गति 7-14 किलोमीटर प्रति घंटा रहेगा कृपया मौसम के अनुसार ही पॉपलर के पौधे लगाये."
+  },
+  {
+    "instruction": "What is the information about control of Termites in Poplar crop?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में दीमक की रोकथाम के लिए, Fipronil 0. 3% GR 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "What is the information about control of Termites in Poplar crop?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में दीमक की रोकथाम के लिए Fipronil 0. 3% GR @ 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 18 फरवरी से 24 फ़रवरी तक का मौसम ज्ञात हो रहा है, 20 फरवरी को हल्की बारिश व बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, आज का अधिकतम तापमान 28 डिग्री सेल्सियस तथा न्यूनतम तापमान 09 डिग्री सेल्सियस, हवा की गति 04-11 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार गेंहू की फसल मे सिचाई करें।."
+  },
+  {
+    "instruction": "Plant protection measure for dry plant in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे में आपके अनुसार कीट या फफूँद की कोई समस्या नहीं है, उर्वरक भी उचित मात्रा में दिया गया है, फिर भी पौधा सूख रहा है, बेहतर परिणाम के लिए अपने ब्लॉक में या केवीके से पौधे की जांच करवा ले।."
+  },
+  {
+    "instruction": "Fertilizer management in poplar second year?",
+    "input": "",
+    "output": "पोपलर के पौधे 200-300 ग्राम एनपीके/ पौधा का प्रयोग कर सकते है।."
+  },
+  {
+    "instruction": "Brown Root-rot of Poplars?",
+    "input": "",
+    "output": "पोपलर की फसल में कॉपर ऑक्सीक्लोराइड 50 wp 3 ग्राम/लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "Information regarding drying of poplar plants?",
+    "input": "",
+    "output": "पोपलर के पौधों को सुखाने से बचाने के लिए दीमक की रोकथाम के लिए Fipronil 0. 3% GR @ 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "Plant protection measure for Stem Rot Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधों में तना गलन नियंत्रण के लिए कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2. 5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करे."
+  },
+  {
+    "instruction": "Information regarding control of rotting disease in poplar plants?",
+    "input": "",
+    "output": "पॉपलर के पौधों मे रोग के रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP की 2. 5 ग्रामात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "How much quantity of calcium nitrate, boron and sagarika is used in poplar crop?",
+    "input": "",
+    "output": "खड़ी फसल में कैल्शियम नाइट्रेट का प्रयोग आवश्यकतानुसार 25-50 किग्रा /एकड़ 2 किग्रा बोरान तथा सागरिका की 10 किग्रा मात्रा प्रति एकड़ कर सकते है."
+  },
+  {
+    "instruction": "Sowing time information in Eucalyptus?",
+    "input": "",
+    "output": "यूकेलिप्टस के पौधे की रोपाई का उचित समय जून से अक्टूबर तक होता है।."
+  },
+  {
+    "instruction": "What is the information about the use of fertilizer in poplar plant?",
+    "input": "",
+    "output": "यदि आपने कुछ समय पहले कीटनाशी का प्रयोग किया है तो अभी डीएपी का प्रयोग कर सकते हैं इससे कोई समस्या नहीं आएगी ।."
+  },
+  {
+    "instruction": "Fertilizer management in poplar plant?",
+    "input": "",
+    "output": "पॉपलर की फसल मे पहले वर्ष में, प्रति पौधे 8 किलोग्राम गोबर की खाद और 50 ग्राम यूरिया+एस. डालें।."
+  },
+  {
+    "instruction": "Which fertilizer should be used for good growth of Chinar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे में अच्छी वृद्धि के लिए एनपीके- 12: 32: 16 @ 50-100 ग्राम/ पौधा थाला बनाकर दे सकते है।."
+  },
+  {
+    "instruction": "What is the information about how to get nursery of eucalyptus?",
+    "input": "",
+    "output": "नर्सरी से यूकेलिप्टस के पौधे प्राप्त करने के लिए अपने नजदीकी कृषि विज्ञान केंद्र पर संपर्क करें जिसका संपर्क सूत्र है- 09412039443."
+  },
+  {
+    "instruction": "Information regarding control of wilting in eucalyptus plants?",
+    "input": "",
+    "output": "कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) की 2. 5 ग्रामात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about fertilizer management in poplar?",
+    "input": "",
+    "output": "पोपलर के एक वर्ष के पौधे में 100 ग्राम यूरिया, 150 ग्राम सिंगल सुपर फास्फेट, 80 ग्राम्युरेट ऑफ पोटाश प्रति पौधे की दर से वर्ष में दो बार प्रयोग करें."
+  },
+  {
+    "instruction": "Plant protection measures for Termites & White grub in Poplar?",
+    "input": "",
+    "output": "पोपलर की फसल में क्लोरपाइरीफोस 50% + साइपरमेथ्रिन 5% ईसी @ 1 लीटर / एकड़ की दर से प्रयोग कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about control of Termites in Poplar plant?",
+    "input": "",
+    "output": "श्रीमान दीमक के नियंत्रण के लिए क्लोरपाइरीफॉस 50% ईसी (Chlorpyrifos 50% EC) की 2. 5 एमएल मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about fertilizer dose in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे में एनपीके 12: 32: 16 100 ग्राम, सागरिका जेड++ 80 ग्राम, कैल्शियम नाइट्रेट 50 ग्राम तथा फिपरॉनिल 0. 3% आर 80 ग्राम/पौधे की दर से गुड़ाई कराएँ."
+  },
+  {
+    "instruction": "What is the information about nutrient management in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पेड़ पर एनपीके 19 3 ग्राम + कार्बनडाजिम 12 + मेनकोजेब 63 % डब्ल्यूपी 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें."
+  },
+  {
+    "instruction": "Information on weed control in poplar fields?",
+    "input": "",
+    "output": "पॉपुलर के खेत में खरपतवार नियंत्रण के लिए पैराक्वाट डाइक्लोराइड 24% एसएल की 1 लीटर मात्रा प्रति एकड़ के हिसाब से 200 लीटर पानी में घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the information about control of Termites in Poplar plants?",
+    "input": "",
+    "output": "क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 500 मिली लीटर प्रति एकड़ की दर से 200 लीटर पानी मे घोल बनाकर छिड़काव करें । अथवा दीमक की रोकथाम के लिए कार्बोफ्यूरान 3जी (Carbofuran 3G) @ 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं ।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 20 मई से 26 मई तक का मौसम ज्ञात हो रहा है। 21, 24, 25 मई तथा 26 मई को हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 40 डिग्री सेल्सियस तथा न्यूनतम तापमान 30 डिग्री सेल्सियस, हवा की गति 07-18 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पापुलर के पौधों मे सिंचाई करे ।."
+  },
+  {
+    "instruction": "What to use for termites and white Grab in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में दीमक तथा सफेद गिंडार के लिए फिप्रोनिल 0. 3 प्रतिशत@ 100 gram ग्राम /पौधा मिट्टी मे मिलाकर सिंचाई कर दे."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला हरिद्वार ब्लॉक रुड़की में 26 मई से 1 जून तक आंशिक रूप से हल्के बादल छाए रहने के साथ बूँदा-बाँदी होने की सम्भावना है। आज का अपेक्षित अधिकतम तापमान 32 न्यूनतम तापमान 27 डिग्री सेल्सियस एवं हवा की गति 7 किलोमीटर प्रति घंटा रहने की सम्भावना हैंमौसम के अनुसार पोपलर की फसल में सिंचाई करें।."
+  },
+  {
+    "instruction": "Fertilizer management in poplar plant?",
+    "input": "",
+    "output": "पोपलर के 2 वर्ष के पौधों में गोबर की सड़ी खाद 10 किलो, यूरिया + एसएसपी@ 70-80 ग्राम और सूक्ष्म पोषक तत्व @ 30-50 ग्राम/ पौधे की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "आपके क्षेत्र में आज हवाओं की गति 7 से 14 किलोमीटर प्रति घंटे की दर से चलेगी, कृषि कार्य मौसम के अनुसार करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "श्रीमान मौसम विभाग के पूर्वानुमान के अनुसार 8 मई से 14 मई के बीच में 8 मई से 11 मई तक लगातार हल्की बूंदाबादी के साथ-साथ आंशिक रूप से बादल छाए हुए प्रतीत होने की संभावना है बाकी दिन मौसम साफ रहने आज के दिन अधिकतम तापमान 34 डिग्री सेल्सियस न्यूनतम तापमान 27 डिग्री सेल्सियस होने की संभावना है हवा की गति 04 से 08 किलोमीटर प्रति घंटे की होने की संभावना है पॉपुलर में सिंचाई अपने क्षेत्र के मौसम के अनुसार कीजिए."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में कल से 4 जून तक प्रतिदिन आंशिक रूप से बादल छाए रहेंगे जिसके साथ हल्की- बूंदाबांदी हो सकती है कल का अधिकतम तापमान 37°C तथा न्यूनतम तापमान 27°C एवं हवा की गति 7 किमी. / घंटा रहने कृप्या मौसम के अनुसार ही पॉपलर की फसल मे सिचाई करें."
+  },
+  {
+    "instruction": "Which crops can be sown in Kharif in poplar crop?",
+    "input": "",
+    "output": "पॉपुलर की फसल में खरीफ में सोयाबीन, उड़द, मूँग, हल्दी, अदरक इत्यादि फसलों की बुवाई कर सकते हैं."
+  },
+  {
+    "instruction": "Information regarding whether glyphosate can be used in eucalyptus?",
+    "input": "",
+    "output": "ग्लाइफोसेट का प्रयोग करते समय ध्यान रखे की केमिकल युकेलिप्टस के पौधों पर नहीं पड़ना चाहिए."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 6 से 12 जून तक का मौसम ज्ञात हो रहा हैआंशिक और घने बादल देखे जा सकते हैं 07 जून को बूंदाबांदी होने की संभावना हैं और आज का अधिकतम तापमान 35 डिग्री सेंटीग्रेड तथा न्यूनतम तापमान 26 डिग्री सेंटीग्रेड, इस सप्ताह हवा की गति 04-07 किलोमीटर प्रति घंटा की गति से चलेगी कृषि कार्य पॉपुलर के पौधों में सिंचाई अपने क्षेत्र के मौसम के अनुसार करें."
+  },
+  {
+    "instruction": "Information regarding the use of fertilizer in poplar plant?",
+    "input": "",
+    "output": "पॉपुलर के पौधों की अच्छी ग्रोथ के लिए गोबर की सड़ी हुई खाद 4 से 5 किलोग्राम तथा डीएपी और सागरिका 50 से 100 ग्राम प्रति पौधा मिट्टी में मिला कर प्रयोग करें."
+  },
+  {
+    "instruction": "Information regarding fertilizer management in Poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में एनपीके 12: 32: 16 की 25 से 30 ग्रामात्रा व सागरिका की 50 ग्रामात्रा प्रति पौधे के दर से थाला बनाकर मिट्टी में मिलाए."
+  },
+  {
+    "instruction": "STEM ROT DISEASE CONTROL IN POPLAR PLANT?",
+    "input": "",
+    "output": "पोपलर के पौधे मे तना गलन रोग के नियंत्रण के लिए कापर ऑक्सीकलोराइड 50% डब्लू पी 2. 5 ग्राम/लीटर पानी की दर से घोल बनाकर ड्रेनचिंग करे."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार 20 फरवरी को बूंदा बांदी की संभावना है इस सप्ताह बादल आते जाते रहेंगे आज का न्यूनतम तापमान 12°C अधिकतम तापमान 20°C एवं हवा की गति 4 से 7 किलोमीटर प्रति घंटा रहेगा मौसम के अनुसार फसल की सिंचाई करें."
+  },
+  {
+    "instruction": "Fertilizer management in poplar plant?",
+    "input": "",
+    "output": "पहले साल में गाय के गले हुए गोबर 8 किलो के साथ यूरिया + एस पी 50 ग्राम प्रति पौधे में डालें। दूसरे और तीसरे साल के दौरान गाय का गला हुआ गोबर 10 किलो और यूरिया + एस पी 80 ग्राम प्रति पौधे में डालें। चौथे और अगले सालों में गाय का गला हुआ गोबर 15 किलो और यूरिया + एस पी 200 ग्राम प्रति पौधे में डालें। प्रत्येक वर्ष के जून, जुलाई और अगस्त के महीने में खादें डालें।."
+  },
+  {
+    "instruction": "Information regarding sandalwood cultivation?",
+    "input": "",
+    "output": "चंदन की खेती के लिए आपको 50% की छूट मिलेगी तथा चंदन की खेती के लिए अपने जिला उद्यान विभाग में संपर्क करें एक एकड़ में 600 पौधे लगाते हैं."
+  },
+  {
+    "instruction": "Where to get eucalyptus plants?",
+    "input": "",
+    "output": "युकलिप्टुस के पौधे खरीदने के लिए अपने उद्यान विभाग में संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about the control of weed in Poplar Field?",
+    "input": "",
+    "output": "पॉपुलर के खेत मे सभी प्रकार के खरपतवार नियंत्रण के लिए अमोनियम साल्ट ग्लाइफोसेट 41% SL (Glyphosate 41 % SL ) @ 1 लीटर प्रति एकड़ 200 लीटर पानी में घोल बनाकर स्प्रेअथवा 100 एमएल 20 लीटर वाली पानी की टंकी मे घोल बनाकर स्प्रे करे ।."
+  },
+  {
+    "instruction": "Information regarding weed control in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में किसी भी खरपतवार नाशी का प्रयोग ना करें तथा नराई गुड़ाई करें."
+  },
+  {
+    "instruction": "Fertilizer management in Eucalyptus transplanting time?",
+    "input": "",
+    "output": "यूकेलिप्टस के पौधे रोपने से पूर्व गड्डे तैयार करते समय गड्डे में एनपीके- 100-200 ग्राम/ पौधा दे सकते है।."
+  },
+  {
+    "instruction": "What is the information about Ganga Vardhan Coconut variety?",
+    "input": "",
+    "output": "गंगावर्धन नारियल पौधा एक विशेष प्रकार की नारियल की किस्म है, यह एक बौनी (dwarf) प्रजाति है, जो जल्दी फल देती है और देखभाल करना आसान होता है।यह 3 से 4 वर्षों में फल देना शुरू कर देता है, जो इसे अन्य किस्मों की तुलना में तेज़ उपज देने वाला बनाता है।इसके फल बड़े होते हैं और हर एक नारियल के पौधे में लगभग 1000 ml (1 लीटर) नारियल पानी होता है."
+  },
+  {
+    "instruction": "What is the information about control of Termites in crop?",
+    "input": "",
+    "output": "दीमक की रोकथाम के लिए Fipronil 0. 3% GR @ 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "Information on nutrient management in poplar crop?",
+    "input": "",
+    "output": "पोपलर के पेड़ मे गाय के गले हुए गोबर 8 किलो के साथ यूरिया + एस पी 50 ग्राम प्रति पौधे में डालें। दूसरे और तीसरे साल के दौरान गाय का गला हुआ गोबर 10 किलो और 15 किलो यूरिया + एस पी 80 ग्राम और 150 ग्राम प्रति पौधे में डालें। चौथे और अगले सालों में गाय का गला हुआ गोबर 15 किलो और यूरिया + एस पी 200 ग्राम प्रति पौधे में डालें।."
+  },
+  {
+    "instruction": "Fertilizer management in Poplar plant?",
+    "input": "",
+    "output": "पॉपलर के पौधे मे पहले साल में सड़ी गले हुए गोबर की खाद 5 किलो के साथ यूरिया + एस पी 50 ग्राम + 50 ग्राम फिप्रोनिल 0. 3 जीआर प्रति पौधे में डालें।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में 1 मई से 7 मई के मध्य हल्की बूँदा बाँदी के साथ हल्की बारिश की संभावना है, आज का अपेक्षित अधिकतम तापमान 30 डिग्री सेल्सियस न्यूनतम तापमान 24 डिग्री सेल्सियस तक रहने और हवा की गति 7 से 18 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैंमौसम के अनुसार पोपलर की फसल में सिचाई करे."
+  },
+  {
+    "instruction": "What is the information about Stem Borer insect control in poplar?",
+    "input": "",
+    "output": "पोपलर के एक एकड़ खेत मे तना छेदक कीट की रोकथाम के लिए कार्बोफ्यूरान 3 6-8 किग्रा प्रति एकड़ डालें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 16 मई और 17 मई को आंशिक रूप से बादल छाए रहेंगे जिसके साथ हल्की- बूंदाबांदी होने की संभावना है, बाकी के दिनों मे 21 मई तक बारिश की संभावना नहीं है, आज का अधिकतम तापमान 40°C तथा न्यूनतम तापमान 23°C एवं हवा की गति 7 से 14 किमी. / घंटा रहने कृप्या मौसम के अनुसार ही पॉपलर के पौधों मे सिचाई करें."
+  },
+  {
+    "instruction": "Fertilizer dose in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे मे एनपीके 12: 32: 16 1 किलोग्राम, सागरिका जेड++ 100-150 ग्राम तथा कैल्शियम नाइट्रैट 500 ग्राम/पौधे की दर से गुड़ाई करे."
+  },
+  {
+    "instruction": "Can mix different micronutrients and apply them in poplar fields?",
+    "input": "",
+    "output": "अलग-अलग सूक्ष्म पोषक तत्वों को मिलाकर पॉपुलर के खेत में बिखराव करवा सकते हैं."
+  },
+  {
+    "instruction": "What is the information about termite control in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पेड़ मे दीमक कीट की रोकथाम के लिए फिरोनिल कीटनशा दवा का प्रयोग करें."
+  },
+  {
+    "instruction": "Information regarding control of white grub in Poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में कीट नियंत्रण के लिए क्लोरपाइरीफॉस 20% ईसी की 03 एमएल मात्रा प्रति लीटर पानी में मिलाकर पौधों के आसपास छिड़काव करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग की जानकारी के अनुसार 2 जून तक के मौसम मे आंशिक और घनें बादल रहँगे 28 मई से 30 मई के बीच हल्की बूँदा बाँदी होने की संभावना है हवा की गति 6-12 किलोमीटर प्रति घंटा की चलेगी."
+  },
+  {
+    "instruction": "What is the information about the use of urea, phosphorus, potash and boron in the Poplar plant?",
+    "input": "",
+    "output": "पोपलर की फसल में फॉसफोरस और पोटाश को देने के बाद मिट्टी में मिलाना जरूरी होता है। यूरिया का प्रयोग सिंचाई के बाद करना बेहतर होता है, भूमि में बोरॉन की कमी होने पर ही बोरॉन का प्रयोग करना उचित रहेगा।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 29 मई से 04 जून तक का मौसम ज्ञात हो रहा है। 29 मई से 04 जून तक हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, ।आज का अधिकतम तापमान 35 डिग्री सेल्सियस तथा न्यूनतम तापमान 29 डिग्री सेल्सियस, हवा की गति 07-14 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पॉपुलर के पौधों की सिंचाई करे ।."
+  },
+  {
+    "instruction": "Information regarding root rot in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में कॉपर ऑक्सीक्लोराइड 50% WP की 10 ग्रामात्रा प्रति पौधा मिलाकर प्रयोग कर सकते हैं."
+  },
+  {
+    "instruction": "Asked about stem bleeding disease management in coconut",
+    "input": "",
+    "output": "கேள்வி: தென்னையில் சாறு வடிதல் நோய் மேலாண்மை: பதில்: பாதிக்கப்பட்ட மரப்பகுதியினை சுத்தப்படுத்தி விட்டு, போர்டாக்ஸ் பசையை அல்லது காப்பர் ஆக்சி குளோரைடு பூச வேண்டும்."
+  },
+  {
+    "instruction": "What is the information about the control of root rot in Eucalyptus?",
+    "input": "",
+    "output": "यूकेलिप्टस की जड़ सड़न की रोकथाम हेतु कार्बेन्डाजिम 50% डब्ल्यू पी (Carbendazim 50% WP)@ 2 ग्राम/लीटर पानी की दर से घोल बना कर स्प्रे करें । अथवा कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 500 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें।."
+  },
+  {
+    "instruction": "What is the information about on the use of fertilizer in poplar?",
+    "input": "",
+    "output": "पोपलर के पेड़ में यूरिया @ 200-250 ग्राम/ पौधा का प्रयोग कर सकते है।."
+  },
+  {
+    "instruction": "What is the information about copper oxychloride 50 wp use and dose in poplar plant?",
+    "input": "",
+    "output": "यदि पॉपलर के पेड़ पर मिट्टी मे कापर ऑक्सीक्लोराइड 50 % डब्ल्यूपी 1 किलोग्राम प्रति एकड़ के हिसाब से डाल दें."
+  },
+  {
+    "instruction": "White grubs problem in poplar?",
+    "input": "",
+    "output": "पॉपलर की फसल में बिफेन्थ्रिन 10% ईसी 2 मिली. / लीटर पानी की दर से घोल बनाकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the information about Black Leaf Spot disease in Popular Plants?",
+    "input": "",
+    "output": "पोपुलर के पौधों में काले धब्बे के नियंत्रण के लिए, Carbendazim 12% + Mancozeb 63% WP @ 400 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें ।."
+  },
+  {
+    "instruction": "What is the information about on increasing poplar crop?",
+    "input": "",
+    "output": "पोपलर की फसल में यूरिया @ 200-250 ग्राम/ पौधा देना है।."
+  },
+  {
+    "instruction": "If the paddy crop has grown too tall, then information about the measures to prevent it from falling?",
+    "input": "",
+    "output": "यदि आपकी धान की फसल काफी लंबी हो गई है गिरने का खतरा है तो कृपया उसमें नाइट्रोजन का प्रयोग ना करें."
+  },
+  {
+    "instruction": "What is the information about NARROW AND BROAD LEAF WEED CONTROL IN POPLAR PLANT?",
+    "input": "",
+    "output": "पॉपलर के पौधों मे चौड़ी और सकरी पत्ती के खरपतवार नियंत्रण के लिए निराई-गुड़ाई करें."
+  },
+  {
+    "instruction": "What is the information about wilt disease control inpoplar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे में उकठा रोग के नियंत्रण के लिए कापर ऑक्सीक्लोराइड 50% डब्लू पी 2. 5 ग्राम/लीटर पानी की दर से घोल बनाकर ड्रेनचिंग करे."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 07 जून से 13 जून तक का मौसम ज्ञात हो रहा है। 08 जून तथा 11 जून को हल्की बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 38 डिग्री सेल्सियस तथा न्यूनतम तापमान 27 डिग्री सेल्सियस, हवा की गति 04-11 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पॉपलर के पौधों मे सिंचाई करे। धन्यवाद."
+  },
+  {
+    "instruction": "Information on control of white grub in poplar trees?",
+    "input": "",
+    "output": "पॉपुलर के पेड़ में व्हाइट ग्रब के नियंत्रण के लिए क्लोरपायरीफोस 50%+साइपरमेथ्रिन 5% ईसी की 2 एमएल मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर जड़ों में ड्रिंचिग करें."
+  },
+  {
+    "instruction": "What is the information about for better growth of Poplar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे में एनपीके-12: 32: 16 @ 200-300 ग्राम/ पौधा मिट्टी में मिलाना है।."
+  },
+  {
+    "instruction": "What is the information about Micronutrients use poplar plant?",
+    "input": "",
+    "output": "मार्केट मे कंपनी द्वारा तैयार किए गए माइक्रोनूट्रीअन्ट का पौधे मे प्रयोग करे माइक्रोनूट्रीअन्ट तत्वों को अलग बाजार से लगाकर तैयार करके प्रयोग न करें."
+  },
+  {
+    "instruction": "Plant protection measures for Black leaf in Poplar?",
+    "input": "",
+    "output": "पोपलर के पौधे में कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2. 5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव और ड्रेनचिंग दोनों कर सकते है।."
+  },
+  {
+    "instruction": "Information regarding control of root borer in Poplar plant?",
+    "input": "",
+    "output": "पॉपलर के पौधों मे कीट नियंत्रण के लिए फिप्रोनिल 0. 3% (Fipronil 0. 3% GR) की 50 ग्रामात्रा प्रति पौधे की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "Which fertilizer should be used while planting nursery of poplar?",
+    "input": "",
+    "output": "पॉपुलर के पौधे लगाते समय गाय के गले हुए गोबर 10 किलो के साथ में एन: पी: के 12: 32: 16 100 से 150 ग्राम प्रति पौधा दें और साथ मे कार्बोफुरान 3 50 ग्राम को साथ मे मिलकर रोपाई करें।."
+  },
+  {
+    "instruction": "varieties of poplar plant?",
+    "input": "",
+    "output": "प्रसिद्ध किस्में और पैदावार G 48: इस किस्म को ज्यादातर पंजाब, हरियाणा औरउत्तराखंड, उत्तर प्रदेश के मैदानी इलाकों में उगाया जाता है। पोपलर की और किस्में: UDAI, W 32, W 39, A 26, S 7, C 15, S 7, C 8."
+  },
+  {
+    "instruction": "Information regarding function of Liquid consortia?",
+    "input": "",
+    "output": "तरल कंसोर्टिया में बहुत सारे बैक्टीरिया पाए जाते हैं जो पौधे को नाइट्रोजन और फास्फोरस पोषक तत्व को उपलबध कराते हैं इसका प्रयोग सड़ी हुई गोबर की खाद में 01 लीटर तरल कंसोर्टिया मिला कर 7 से 8 दिन तक छायादार स्थान पर सुखाकर या सिंचाई जल के साथ भी किया जा सकता है."
+  },
+  {
+    "instruction": "Regarding fertilizer dose for the growth of poplar plant?",
+    "input": "",
+    "output": "पोपलर के पौधे की वृद्धि के लिए 10 किलोग्राम गोबर की सड़ी खाद, 200 ग्राम डाई अमोनियम फॉस्फेट तथा 80-100 ग्राम सागरिका जेड++ प्रति पौधे की दर से मिट्टी मे मिलवाएँ."
+  },
+  {
+    "instruction": "What is the information about the better growth of Poplar plant?",
+    "input": "",
+    "output": "2 साल के पॉपुलर के पौधों की अच्छी बढ़वार के लिए एनपीके तथा 5 किलोग्राम सागरिका अच्छी तरह मिलाकर 100 ग्राम प्रति पौधा प्रयोग करे। तथा पौधों मे उचित नमी बनाए रखे ।."
+  },
+  {
+    "instruction": "What is the information about the use and dose of liquid consortia?",
+    "input": "",
+    "output": "लिक्विड कंसोर्टिया से मिट्टी उपचारित करने के लिए 300-400 एमएल प्रति एकड़ के हिसाब से पर्याप्त होता हैइसको 40 से 50100 किलोग्राम अच्छी साड़ी हुई गोबर की खाद में या कंपोस्ट अथवा मिट्टी में मिलाकर 7 से 8 दिन अच्छे से मिलाने के बाद समान से खेत मे बिखेर दे।."
+  },
+  {
+    "instruction": "What is the information about the control of leaf and stem rotting in Poplar?",
+    "input": "",
+    "output": "पॉपुलर के पौधे में पत्ती तथा तना गलन रोग की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 2. 0 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें।."
+  },
+  {
+    "instruction": "Information on treating poplar tree roots",
+    "input": "",
+    "output": "पॉपुलर के पेड़ की जड़ को उपचारित करने के लिए CARBENDAZIM 12% + MANCOZEB 63% WP की 2 ग्रामात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर जड़ों को डुबोए."
+  },
+  {
+    "instruction": "What is the information about poplar Nursery management?",
+    "input": "",
+    "output": "कलमें बढ़ाने के लिए एक साल पुरानी टहनी ही लेनी चाहिए तथा इसमें कलमें टहनी के मध्य मात्रा से ही बनाएं। कलमों की लंबाई 20 से 25 सेंटिमीटर तथा मोटाई तीन से चार सेंटिमीटर होनी चाहिए। कलम का ऊपरी भाग तिरछा तथा निचले भाग को गोल काटें। कटी हुई कलमों को लगाने के समय तक गीली बोरी में लपेट कर रखें, ताकि वह सूख न जाए।."
+  },
+  {
+    "instruction": "Weed management problem in poplar?",
+    "input": "",
+    "output": "पोपलर की फसल में ग्लाइफोसेट 41% एसएल 1. 25 लीटर प्रति एकड़ 200 लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "How much quantity of chelated zinc can be used in poplar crop?",
+    "input": "",
+    "output": "पोपलर की फसल मे चेलेटेड जिंक15 ग्राम प्रति (15 लीटर) या 500 ग्राम प्रति एकड़ मिट्टी या ड्रिप के माध्यम से प्रयोग कर सकते है."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला हरिद्वार ब्लॉक भगवानपुर में 10 अप्रैल को मौसम साफ रहने, 11, 12 अप्रैल को बूँदा-बाँदी होने और 13, 14, 15, 16 अप्रैल को आंशिक रूप से बादल छाए रहने आज का अपेक्षित अधिकतम तापमान 34, न्यूनतम तापमान 26 डिग्री सेल्सियस तक रहने और हवा की गति 25 किलोमीटर प्रति घंटा की दर से चलेगी, मौसम के अनुसार पोपलर में सिंचाई करें।."
+  },
+  {
+    "instruction": "Information on fertilizer management for poplar plants?",
+    "input": "",
+    "output": "पोपुलर के पौधों में वृद्धि और विकास के लिए NPK 19: 19: 19 @ 10 ग्राम तथा सागरिका जैविक पोषक तत्व 2 मिलीलीटर प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "Information regarding weed control in poplar plants?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में खरपतवार नियंत्रण के लिए कृषि यंत्रों द्वारा निराई गुड़ाई कराए."
+  },
+  {
+    "instruction": "At what distance should the Eucalyptus planting?",
+    "input": "",
+    "output": "यूकेलिप्टस का पौधा 1. 5 या 2x2 मीटर की दूरी पर कर सकते है। शुरुआत में अंतर-फसलें लगाने पर दूरी अपनी सुविधानुसार 4x2 मीटर या 6x1. 5 या 8x1 मीटर रख सकते है।."
+  },
+  {
+    "instruction": "Information on fertilizer management in 3 year old poplar crop",
+    "input": "",
+    "output": "पोपलर के पेड़ मे पहले साल में गाय के गले हुए गोबर 8 किलो के साथ यूरिया + एस पी 50 ग्राम प्रति पौधे में डालें। दूसरे और तीसरे साल के दौरान गाय का गला हुआ गोबर 10 किलो और 15 किलो यूरिया + एस पी 80 ग्राम और 150 ग्राम प्रति पौधे में डालें। चौथे और अगले सालों में गाय का गला हुआ गोबर 15 किलो और यूरिया + एस पी 200 ग्राम प्रति पौधे में डालें।."
+  },
+  {
+    "instruction": "Termite problem in poplar plant?",
+    "input": "",
+    "output": "पॉपलर की फसल में दीमक से बचाव के लिए फिप्रोनिल @ 8-10 किलोग्राम/एकड़ बिखराव करे या क्लोरोपायरीफॉस 50 ई. को सिचाई के साथ प्रयोग करे."
+  },
+  {
+    "instruction": "Information regarding control of root rot disease in eucalyptus plants?",
+    "input": "",
+    "output": "श्रीमान पौधे पर कॉपर ऑक्सीक्लोराइड 50% WP की 2. 5 ग्रामात्रा प्रति लीटर पानी की दर से घोल बना कर स्प्रे करें."
+  },
+  {
+    "instruction": "Information regarding control of Caterpillar in eucalyptus plants?",
+    "input": "",
+    "output": "यूकेलिप्टस के पौधों में कीट के नियंत्रण के लिए फ़िप्रोनिल 5% एससी किटनाशक की 2. 5 मिली मात्रा प्रति लीटर पानी में मिलाकार प्रयोग करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र 3 से 9 मई तक प्रतिदिन बादल छाए रहेंगे इसके साथ छिटपुट बूंदाबांदी होने की संभावना है कल का अधिकतम तापमान 33 डिग्री सेल्सियस तथा न्यूनतम 23 डिग्री सेल्सियस रहेगा तथा हवा की गति 7-14 किलोमीटर प्रति घंटा रहेगा कृपया मौसम के अनुसार ही पॉपलर की फसल की सिचाई करे."
+  },
+  {
+    "instruction": "What is the information about DAP fertilizer use in poplar plant?",
+    "input": "",
+    "output": "पॉपलर के पेड़ मे यदि डीयेपी उर्वरक का प्रयोग करना चाहते तो डीएपी डालके मिट्टी मे मिला देना."
+  },
+  {
+    "instruction": "What is the information about sandal wood cultivation?",
+    "input": "",
+    "output": "चंदन के पौधों को ट्रांसप्लांट करने का सबसे समय मई और अक्टूबर के बीच होता है। चंदन के पेड़ प्राप्त करने के लिए अपने जिले के वनविभाग मे संपर्क करें."
+  },
+  {
+    "instruction": "What is the information about fertilizer management 3-5 month old Eculeptous plant?",
+    "input": "",
+    "output": "यूकेलिपटस के 3-5 महीने पेड़ों मे 50 ग्राम डीएपी डालने प्रति पौधे के हिसाब."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 12 मई से 18 मई तक का मौसम ज्ञात हो रहा है। 17 मई को हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, आज का अधिकतम तापमान 40 डिग्री सेल्सियस तथा न्यूनतम तापमान 21 डिग्री सेल्सियस, हवा की गति 07-22 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पोपलर के पौधों में सिंचाई करे ।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 15 मई से 21 मई तक का मौसम ज्ञात हो रहा है। 16, 17, 20 मई तथा 21 मई को हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 38 डिग्री सेल्सियस तथा न्यूनतम तापमान 24 डिग्री सेल्सियस, हवा की गति 04-14 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पॉपुलर की फसल में सिंचाई करे ।."
+  },
+  {
+    "instruction": "What is the information about root rot disease control in poplar plant?",
+    "input": "",
+    "output": "पोपलर के पेड़ मे जड़ गलन रोग की रोकथाम के लिए कापर ऑक्सीक्लोराइड 50 % डब्ल्यूपी 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में आगामी 25 मई तक हल्के बादल छाए रहेगा बारिश या बूंदाबांदी की कोई संभावना नहीं है आज का न्यूनतम तापमान 24 डिग्री सेल्सियस अधिकतम तापमान 37 डिग्री सेल्सियस रहेगा हवाओं की गति 11 किलोमीटर प्रति घंटे से 25 किलोमीटर प्रति घंटे की हो सकती है तथा 22 किलोमीटर प्रति घंटे से 54 किलोमीटर प्रति घंटे के झोंके आने की संभावना है मौसम के अनुसार पॉपुलर की फसल में सिंचाई करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में 22 मई से 27 मई के मध्य हल्की बूँदा बाँदी की संभावना है, आज का अपेक्षित अधिकतम तापमान 40 डिग्री सेल्सियस न्यूनतम तापमान 29 डिग्री सेल्सियस तक रहने और हवा की गति 22 से 25 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैंमौसम के अनुसार पोपलर के पौधों में सिचाई करे."
+  },
+  {
+    "instruction": "What is the information about termite control in poplar plant?",
+    "input": "",
+    "output": "यदि पोपलर के पेड़ मे दीमक रोकथाम के लिए क्लोरोपाइरीफास 50 % ईसी दवा का प्रयोग करते है तो 2 एमएल प्रति लीटर पानी के हिसाब से घोल बनाकर थाला बनाकर डालें."
+  },
+  {
+    "instruction": "What is the information about wilt disease control in poplar plant?",
+    "input": "",
+    "output": "पॉपलर के पेड़ों पर कापर ऑक्सीक्लोराइड 50 % डब्ल्यूपी 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें."
+  },
+  {
+    "instruction": "Information regarding use of Boron 20% in poplar plant?",
+    "input": "",
+    "output": "पॉपुलर के पौधों में एक एकड़ में बोरोन 20% का उपयोग लगभग 2 किलो के साथ किया जा सकता है."
+  },
+  {
+    "instruction": "Information on spacing of eucalyptus plants?",
+    "input": "",
+    "output": "यूकेलिप्टस के पौधों को लगाने के लिए दूरी 1. 5 मीटर तथा 2×2 मीटर लगा सकते हैं और यदि इसके साथ किसी अन्य इंटर क्रॉप फसल को लेना चाहते हैं तो 5×5 मी या 6×1. 5 मीटर पर लगा दे।."
+  },
+  {
+    "instruction": "Information regarding peeling bark of poplar plants?",
+    "input": "",
+    "output": "अपने पॉपुलर के पौधों का अच्छे से निरीक्षण करें फिर दोबारा किसान कॉल सेंटर में संपर्क करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग की जानकारी के अनुसार 9 से 14 जुलाई के बीच प्रतिदिन हल्की हल्की बारिश होने की संभावना है मौसम के अनुसार पॉपलर के पौधों मे सिचाई करें."
+  },
+  {
+    "instruction": "What is the information about can we done Pruning in poplar plant in Rainy Seaosn?",
+    "input": "",
+    "output": "बरसात के मौसम में पॉपलर के पौधों में हल्की छटाई कर सकते हैं। छटाई करते समय ध्यान रहे कि पौधों से लगभग 5 से 10 सेंटीमीटर दूर से ही टहनियो की कटाई करें।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 02 जून से 08 जून तक का मौसम ज्ञात हो रहा है। 02 जून से 08 जून तक हल्की से मध्यम बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 34 डिग्री सेल्सियस तथा न्यूनतम तापमान 25 डिग्री सेल्सियस, हवा की गति 04-18 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पॉपुलर के पौधों में सिंचाई करे।."
+  },
+  {
+    "instruction": "What is the information about the time of planting poplar?",
+    "input": "",
+    "output": "पोपलर के नए पौधे की रोपाई के लिए जनवरी से फरवरी का समय होता है।."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 03 जून से 09 जून तक का मौसम ज्ञात हो रहा है। 03 जून से 06 जून तक हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, आज का अधिकतम तापमान 33 डिग्री सेल्सियस तथा न्यूनतम तापमान 22 डिग्री सेल्सियस, हवा की गति 04-07 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पोपुलर के पौधों की सिंचाई करे ।."
+  },
+  {
+    "instruction": "What is the information about use of ferrous sulphate in poplar tree.",
+    "input": "",
+    "output": "श्रीमान पॉपलर में जल भराव केअभाव मेंफेरस सल्फेट की 8 से 10 किलोग्रामात्रा प्रति एकड़ की दर से प्रयोग करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "श्रीमान मौसम विभाग के पूर्वानुमान के अनुसार 10 जून से 15 जून के बीच में11 जून से 14 जून तक लगातार हल्की बूंदाबांदी के साथ-साथ आंशिक रूप से बादल छाए हुए प्रतीत नजर आ रहे हैं आज के दिन अधिकतम तापमान 42 डिग्री सेल्सियस न्यूनतम तापमान 30 डिग्री सेल्सियस होने की संभावना है हवा की गति 04 से 14 किलोमीटर प्रति घंटे की होने की संभावना है पॉपलर के पेड़ में सिंचाई अपने क्षेत्र के मौसम के अनुसार कीजिए."
+  },
+  {
+    "instruction": "What is the information about control of Termites in Poplar crop?",
+    "input": "",
+    "output": "पोपुलर के पौधों में कीट के रोकथाम के लिए Fipronil 0. 3% GR @ 8 kg प्रति एकड़ की दर से मिट्टी में मिलाएं."
+  },
+  {
+    "instruction": "Plant Growth & Regulators in poplar?",
+    "input": "",
+    "output": "पॉपलर की फसल में सागरिका 2 मिली. / लीटर पानी की दर से घोलकर स्प्रे करें."
+  },
+  {
+    "instruction": "What is the weather information?",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 12 जून से 18 जून तक का मौसम ज्ञात हो रहा है। आपके क्षेत्र में पूरे सप्ताह आंशिक रूप से बादलों के साथ बूंदाबांदी से लेकर हल्की बारिश की संभावना है। आज का अधिकतम तापमान 38 डिग्री सेल्सियस तथा न्यूनतम तापमान 30 डिग्री सेल्सियस, हवा की गति 07-18 किलोमीटर प्रति घंटे की गति से चलेगी, मौसम के अनुसार पॉपलर के पौधों में सिंचाई करें धन्यवाद."
+  }
+]

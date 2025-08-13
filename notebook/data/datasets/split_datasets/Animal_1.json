@@ -1,0 +1,322 @@
+[
+  {
+    "instruction": "information about Where can I get Barbari breed of goat?",
+    "input": "",
+    "output": "बारबरी बकरी लेने के लिए आप केन्द्रीय बकरी अनुसंधान संस्थान मथुरा उत्तर प्रदेश के संपर्क नंबर 0565-2970999 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Information about the helpline number of Veterinary officer ?",
+    "input": "",
+    "output": "श्रीमान जी, आपके साथ क्षेत्र नैनीताल के रामगढ़ में पशु चिकित्सा अधिकारी का संपर्क सूत्र है- डॉ. तरुना वेल्ला 7351027722, 05947-247025"
+  },
+  {
+    "instruction": "Need information related to animal diseases",
+    "input": "",
+    "output": "पशु रोग संबंधी जानकारी के लिए पशु चिकित्सालय के डॉ.जी.एस. खरायत मो.-9927514235 फोन-05949-281198 पर संपर्क करें"
+  },
+  {
+    "instruction": "information about Goat Rearing Training in Gb Pant university and IVRI IIzzatnagar  Bareilly contact number ?",
+    "input": "",
+    "output": "बकरी पालन की  प्रशिक्षण के लिए आप आईवीआरआई इज्जत नगर बरेली के संपर्क नंबर 0581-2303248 या पशु चिकित्सा एवं पशु विज्ञान महाविद्यालय जी बी पंत कृषि एवं प्रौद्योगिकी विश्वविद्यालय संपर्क नंबर 5944-233347, 233416 पर संपर्क करें |"
+  },
+  {
+    "instruction": "information about planning management of poultry farm ?",
+    "input": "",
+    "output": "मुर्गी पालन के लिए आप अपने जिले के पशुपालन विभाग मे संपर्क करें |"
+  },
+  {
+    "instruction": "Information about the contact details of the veterinarian",
+    "input": "",
+    "output": "पशु चिकित्सक के संपर्क सूत्र के लिए हेल्पलाइन नंबर 05964-266055 पर संपर्क करे |"
+  },
+  {
+    "instruction": "Information about the subsidy on cow farming ?",
+    "input": "",
+    "output": "श्रीमान, जी गाय पालन योजना के अंतर्गत एक दुधारू गाय के लिए कुल लागत से 90% धनराशि की छूट प्रदान की जाती है जिसमें 10% लाभार्थी को तथा 90% राज्य सरकार के द्वारा छूट दी जाती है ।"
+  },
+  {
+    "instruction": "Information regarding contact number of veterinary officer ?",
+    "input": "",
+    "output": "महोदय आप अपने पशु चिकित्सा अधिकारी के नंबर 9412026854 पर संपर्क करें धन्यवाद |"
+  },
+  {
+    "instruction": "Information recording contact number of veterinary officer ?",
+    "input": "",
+    "output": "श्रीमान जी आप अपने ब्लॉक के पशु चिकित्सा अधिकारी के नंबर 9411289683 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Information about the treatment of Mastitis in Cow ?",
+    "input": "",
+    "output": "श्रीमान जी, थनैला रूप से रोकथाम के लिए आप पशु के थनों तथा उसके आसपास के स्थान को अच्छे से साफ रखें तथा साफ कपड़े से उसको पूछे। \nबेहतर सहायता के लिए आप अपने नजदीकी पशु चिकित्सक से संपर्क करें। आपके क्षेत्र के पशु चिकित्सा का संपर्क सूत्र है- 7500834012  डॉ. शिबा हुसैन"
+  },
+  {
+    "instruction": "Information about how many hours a Buffalo should be Grazed every day ?",
+    "input": "",
+    "output": "श्रीमान जी,  एक स्वस्थ भैंस को प्रतिदिन लगभग 4 से 6 घंटे चराई के लिए भेजना चाहिए।"
+  },
+  {
+    "instruction": "Information regarding subsidy on broiler poultry farm  ?",
+    "input": "",
+    "output": "महोदय बॉयलर फॉर्म के लिए सरकार द्वारा 15 रुपये प्रति पक्षी अनुदान 06 बैच हेतु कुल 45000 रुपये की सब्सिडी, बाड़ा बनाने हेतु 15000 रुपये का अनुदान दिया जाता है धन्यवाद |"
+  },
+  {
+    "instruction": "Information related to opening a poultry farm",
+    "input": "",
+    "output": "पोल्ट्री फार्म खोलने से संबंधित जानकारी के लिए अपने ब्लॉक के पशु चिकित्सा अधिकारी या उत्तराखंड पशुपालन विभाग के हेल्पलाइन नंबर 18001208862 पर संपर्क करें"
+  },
+  {
+    "instruction": "The cow has reduced milk production and the udders are drying up",
+    "input": "",
+    "output": "पशु रोग संबंधी जानकारी के लिए पशु चिकित्सालय के डॉ.सुनील गिरी  मोबाइल नंबर 9634879969 फोन -05964-259050 पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about how to get loan for goat farming ?",
+    "input": "",
+    "output": "महोदया,  बकरी पालन के लिए यदि आप को ऋृण (Loan) की आवश्यकता है तो आप नजदीकी संबंधित बैंक के कृषि अधिकारी से संपर्क करें।"
+  },
+  {
+    "instruction": "Need information related to animal diseases",
+    "input": "",
+    "output": "पशु रोग संबंधी जानकारी के लिए पशु चिकित्सालय के डॉ. विक्रांत गिल मोबाइल नंबर 9456454670 फोन- 05947-220028 पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about Poultry farm?",
+    "input": "",
+    "output": "महोदय, मुर्गी पालन हेतु अनुमति लेने के लिए अपने जिले के कृषि विभाग से ले सकते है।"
+  },
+  {
+    "instruction": "Give helpline number of poultry department",
+    "input": "",
+    "output": "कुकुट पालनसे संबंधितअधिक जानकारी के लिए सहायक निदेशक  पंतनगर फोन नंबर 05944 -233349 या 7500241462 पर संपर्क कर सकते हैं|"
+  },
+  {
+    "instruction": "Disease Management in Cow?",
+    "input": "",
+    "output": "महोदय पशु(गाय) से संबंधित रोग निवारण हेतु दिए गए नंबर पर संपर्क करें- 9412038291"
+  },
+  {
+    "instruction": "Information about helpline number of IVRI ?",
+    "input": "",
+    "output": "श्रीमान जी, भारतीय पशु चिकित्सा अनुसंधान संस्थान IVRI का हेल्पलाइन नंबर है I- 0581 -2310058"
+  },
+  {
+    "instruction": "Information regarding subsidy on Bakri Palan Yojana ?",
+    "input": "",
+    "output": "महोदय बकरी पालन योजना के अंतर्गत सरकार द्वारा 10 मादा एवं 01 नर जो 10 से 14 माह के होते है, कुल लागत का 90% अनुदान पर उपलब्ध कराया जाता है |"
+  },
+  {
+    "instruction": "Farmer asked about to NLM ?",
+    "input": "",
+    "output": "राष्ट्रीय पशुधन मिशन का उद्देश्य छोटे जुगाली करने वाले पशुओं, मुर्गीपालन और सूअरपालन क्षेत्र तथा चारा क्षेत्र में उद्यमिता विकास के माध्यम से रोजगार सृजन के उद्देश्यों को प्राप्त करना, नस्ल सुधार के माध्यम से प्रति पशु उत्पादकता में वृद्धि, मांस, अंडा, बकरी का दूध, ऊन और चारे के उत्पादन में वृद्धि करना है। https://nlm.udyamimitra.in/"
+  },
+  {
+    "instruction": "Information regarding contact number of veterinary officer  ?",
+    "input": "",
+    "output": "महोदय  जिला- उधम सिंह नगर ,ब्लॉक-खटीमा ,पशु चिकित्सा के टोल फ्री 9411289683 नंबर पर संपर्क करें  या  बरेली के IVRI  टोल फ्री 05812302093 नंबर पर संपर्क करें  धन्यवाद  |"
+  },
+  {
+    "instruction": "Information regarding contact number of veterinary officer ?",
+    "input": "",
+    "output": "महोदय आप अपने ब्लॉक के पशु चिकित्सा अधिकारी के नंबर 8192840562 व  01374-234270 पर संपर्क करें धन्यवाद |"
+  },
+  {
+    "instruction": "information about poultry training and general information ?",
+    "input": "",
+    "output": "मुर्गीपालन की जानकारी के लिए आपने जीबी पंत कृषि विश्वविद्यालय के पोल्ट्री विभाग के संपर्क नंबर 7500241451\n पर संपर्क करें"
+  },
+  {
+    "instruction": "What is the number of the veterinary officer of our block",
+    "input": "",
+    "output": "अधिक जानकारी के लिए अपने ब्लॉक के पशु चिकित्सा अधिकारी मोबाइल नंबर 9568528730 पर संपर्क कर सकते हैं|"
+  },
+  {
+    "instruction": "information  about animal identification by tag ?",
+    "input": "",
+    "output": "पशुपालन की जानकारी के लिए आप टोल फ्री नंबर 18001208862 पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about the location of cow shelters ?",
+    "input": "",
+    "output": "श्रीमान जी, आपके क्षेत्र में गौशाला कहाँ कहाँ स्थित है इस संबंध में जानकारी उपलब्ध नहीं है अधिक जानकारी के लिए आप अपने ग्राम प्रधान से संपर्क करें"
+  },
+  {
+    "instruction": "Information about feed for four month pregnant cow?",
+    "input": "",
+    "output": "गाभिन गाय के लिए संतुलित आहार- हरा चारा- 30-35 किलोग्राम, सूखा चारा- 3-4 किलोग्राम, दाना मिश्रण- 2-3 किलोग्राम, खनिज मिश्रण- 60-70 ग्राम, नमक- 40-50 ग्राम। शुरुआती तीन महीने खनिज लवण और प्रोटीन की मात्रा बढ़ाई जानी चाहिए, 3 से 6 महीनेअधिक प्रोटीन और विटामिन तथा खनिज लवण दिए जाने चाहिए, 6 महीने के बाद पाचक प्रोटीन, कैल्शियम और फास्फोरस का विशेष ध्यान रखा जाना चाहिए।"
+  },
+  {
+    "instruction": "Information regarding contact number of veterinary officer  ?",
+    "input": "",
+    "output": "महोदय पशु चिकित्सालय के टोल फ्री ,9412369347 नंबर पर संपर्क करें धन्यवाद  |"
+  },
+  {
+    "instruction": "Information regarding breeds of Goat ?",
+    "input": "",
+    "output": "महोदय आप अपने क्षेत्र मे जमुनापारी, बीतल,भकरवाल बकरी की प्रजातियों का पालन कर सकते है |"
+  },
+  {
+    "instruction": "My cow is not eating anything since last night, even after giving medicine there is no relief, what should I do?",
+    "input": "",
+    "output": "अधिक जानकारी के लिए उत्तराखंड पशुपालन विभाग के टोल फ्री नम्बर 1800-120-8862 /9412829604 पर संपर्क कर सकते है |"
+  },
+  {
+    "instruction": "Disease management in Cow?",
+    "input": "",
+    "output": "महोदय, गाय से सम्बन्धित किसी भी समस्या हेतु दिए गए नंबर पर संपर्क करे- 9675795259, 01371-225404"
+  },
+  {
+    "instruction": "Need information related to animal diseases",
+    "input": "",
+    "output": "पशु रोग संबंधी जानकारी के लिए पशु चिकित्सालय के डॉ. प्रलयंकर नाथ मोबाइल नंबर 9412159139 फोन-01374244343 पर संपर्क करें"
+  },
+  {
+    "instruction": "INFORMATION ABOUT DAIRY MANAGEMENT ?",
+    "input": "",
+    "output": "पशुपालन विभाग की जानकारी के लिए पशुपालन हेल्पलाइन नंबर 18001208862 पर  संपर्क करें |"
+  },
+  {
+    "instruction": "Need information related to animal diseases",
+    "input": "",
+    "output": "पशु रोग संबंधी जानकारी के लिए पशु चिकित्सालय के डॉ. डी. के. चंद  मोबाइल नंबर \t9536307779 फोन-01334-239978 पर संपर्क करें"
+  },
+  {
+    "instruction": "information about Mastitis disease control in cow ?",
+    "input": "",
+    "output": "पशुपालन की अधिक जानकारी के लिए 18001808862 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Poultry farm related information?",
+    "input": "",
+    "output": "महोदय, मुर्गी पालन हेतु बच्चे लेने के लिए शैक्षणिक कुक्कुट प्रक्षेत्र, पंतनगर के दिए गए नंबर पर संपर्क करे- 05944-233283, 7500241503"
+  },
+  {
+    "instruction": "Information about dairy farm management..?",
+    "input": "",
+    "output": "श्रीमान जी डेयरी फार्म खोलने के लिएआपकोअपने जिले परपशुपालन विभाग मेंट्रेनिंग करनी पड़ेगीअधिक जानकारी के लिए\nश्रीमान जी, कृपया अपने नजदीकी पशु चिकित्सक से संपर्क करें अथवा पशुपालन विभाग के हेल्पलाइन नंबर (1800-180-5141,1800 200 2016) पर संपर्क करें"
+  },
+  {
+    "instruction": "Information on control of cow mastitis disease",
+    "input": "",
+    "output": "गाय में थनैला रोग के नियंत्रण लिए पूर्ण हस्त दोहन का  प्रयोग करें तथा पशु पालन विभाग के हेल्पलाइन नंबर 1800180 1962 पर संपर्क करे |"
+  },
+  {
+    "instruction": "Information about disease management in Cow/Buffalo..?",
+    "input": "",
+    "output": "श्रीमान जी, कृपया अपने नजदीकी पशु चिकित्सक से संपर्क करें अथवा पशुपालन विभाग के हेल्पलाइन नंबर (1800-180-5141,1800 200 2016) पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about the subsidy on poultry farming ?",
+    "input": "",
+    "output": "श्रीमान जी, कुक्कुट पालन से संबंध अधिक जानकारी के लिए आप अपने नजदीकी पशुपालन विभाग में पशु चिकित्सा अधिकारी से संपर्क करें।"
+  },
+  {
+    "instruction": "Information about lumpy  virus disease management in cow ?",
+    "input": "",
+    "output": "यदि आपके पशुओं में लंबी वायरस के लक्षण है तो आप तुरंत अपने ब्लॉक के डॉक्टर साहब से या उत्तराखंड पशुपालन हेल्पलाइन नंबर 180120 88 62 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Information about goat farming subsidy.?",
+    "input": "",
+    "output": "श्रीमान जी बकरी पालन योजना के अंतर्गत सरकार द्वारा 10 मादा  एवं एक नर  जो 10 से 14 माह के होते हैं कुल लागत का 90% अनुदान पर उपलब्ध कराए जाते हैं"
+  },
+  {
+    "instruction": "Information about animal husbandry and dairy scheme",
+    "input": "",
+    "output": "पशुपालन डेरी  की योजना के बारे में जानकारी के लिए अपने जिला मुख्य पशु चिकितशा अधिकारी तथा टोल फ्री नंबर 18001208862 पर संपर्क करे"
+  },
+  {
+    "instruction": "Information about dairy related training in Pantnagar Agricultural University ?",
+    "input": "",
+    "output": "पंतनगर कृषि विश्वविद्यालय में डेरी  से संबंधित प्रशिक्षण के बारे में जानकारी के लिए कृषि सूचना केंद्र पंतनगर(05944-234810)पर संपर्क करे"
+  },
+  {
+    "instruction": "Information regarding contact number of veterinary officer ?",
+    "input": "",
+    "output": "महोदय आप अपने जिले के पशु चिकित्सा अधिकारी के नंबर 9756722444 व 05966-242144 पर संपर्क करें धन्यवाद |"
+  },
+  {
+    "instruction": "The cow's health has deteriorated after calving?",
+    "input": "",
+    "output": "गाय से सम्बन्धित समस्या हेतु दिए गए ब्लॉक के पशु चिकित्सक के हेल्पलाइन नंबर पर संपर्क करे- 01334-248825, 9456483544"
+  },
+  {
+    "instruction": "Information regarding characteristics of black Bengal goat ?",
+    "input": "",
+    "output": "महोदय ब्लैक बंगाल नस्ल को पश्चिम बंगाल, असम और झारखंड सहित विभिन्न क्षेत्रों पालन किया जाता है, इन बकरियों में आमतौर पर काली त्वचा और फर होते हैं, हालांकि वे भूरे, सफेद या ग्रे भी हो सकते हैं यह बकरी आकार में छोटी होती है लेकिन इसका शरीर का ढांचा चुस्त होता है इसके सींग छोटे और पैर छोटे होते हैं। एक वयस्क नर बकरी का वजन लगभग 25 से 30 किलोग्राम और मादा का वजन 20 से 25 किलोग्राम होता है यह दूध उत्पादन में खराब है।  ब्लैक बंगाल बकरियां अन्य नस्लों की तुलना में कम उम्र में यौन परिपक्वता प्राप्त करती हैं, मादा बकरी साल में दो बार गर्भवती होती है और एक से तीन बच्चों को जन्म देती है |"
+  },
+  {
+    "instruction": "Information about disease management in Cow/Buffalo?",
+    "input": "",
+    "output": "--श्रीमान जी, कृपया अपने नजदीकी पशु चिकित्सक से संपर्क करें अथवा पशुपालन विभाग के हेल्पलाइन नंबर (1800-180-5141,1800 200 2016) पर संपर्क करें|"
+  },
+  {
+    "instruction": "Information about where to contact to get Kadaknath chicken",
+    "input": "",
+    "output": "कड़कनाथ मुर्गी प्राप्त करने के लिएकृषि विज्ञान केंद्र झाबुआ  के 9896938118 संपर्क नंबर पर संपर्क करें"
+  },
+  {
+    "instruction": "ANIMAL HUSBANDRY",
+    "input": "",
+    "output": "गाय की अधिक दूध देने वाली नस्ल होलिस्टीन फ्रीजियन है।"
+  },
+  {
+    "instruction": "information about disease management in cow ?",
+    "input": "",
+    "output": "महोदय पशुपालन की जानकारी के लिए आप 18001208862 पर संपर्क करें |"
+  },
+  {
+    "instruction": "information about Where to contact for inspection of chicken and goat ?",
+    "input": "",
+    "output": "बकरी और मुर्गी की जांच के लिए पशु चिकित्सा अनुसंधान संस्थान इज्जतनगर बरेली के संपर्क नंबर 0581-2302093 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Information about disease management in Cow/Buffalo..?",
+    "input": "",
+    "output": "श्रीमान जी, कृपया अपने नजदीकी पशु चिकित्सक से संपर्क करें अथवा पशुपालन विभाग के हेल्पलाइन नंबर (1800-180-5141,1800 200 2016) पर संपर्क करें"
+  },
+  {
+    "instruction": "Information regarding poultry and goat farming  ?",
+    "input": "",
+    "output": "महोदय बकरी और मुर्गी तथा सूअर पालन के लिए आप गांव से बाहर तथा अधिक जानकारी के लिए आप अपने पशु विभाग के टोल फ्री  नंबर पर  18001208862 संपर्क करें धन्यवाद |"
+  },
+  {
+    "instruction": "Please give me the phone number of the veterinarian in my block?",
+    "input": "",
+    "output": "पशु से संबंधित समस्या के समाधान के लिए अपने ब्लॉक के पशु चिकित्सक फोन नंबर 8859011400  पर संपर्क कर सकते हैं|"
+  },
+  {
+    "instruction": "Give helpline number of Uttarakhand Animal Husbandry Department?",
+    "input": "",
+    "output": "पशुपालन से संबंधित अधिक जानकारी के लिए उत्तराखंड पशुपालन हेल्पलाइन नंबर  1800-120-8862 पर भी संपर्क कर सकते हैं|"
+  },
+  {
+    "instruction": "information about goat farming subsidy ?",
+    "input": "",
+    "output": "10 मादा बकरियों और 1 नर बकरे वाली बकरी पालन इकाई स्थापित करने के लिए 90% राज्य सरकार द्वारा वहन किया जाता है, और 10% लाभार्थी द्वारा योगदान किया जाता है अधिक जानकारी के लिए पशुपालन विभाग के हेल्पलाइन नंबर 18001208862 पर संपर्क करे"
+  },
+  {
+    "instruction": "Disease Management in Cow?",
+    "input": "",
+    "output": "महोदया पशु (गाय) से संबंधित बीमारी की जानकारी हेतु दिए गए नंबर पर संपर्क करें- 9411188555,  01360-250341"
+  },
+  {
+    "instruction": "Information about where to get chicken chicks from..?",
+    "input": "",
+    "output": "श्रीमान जी मुर्गी के चूजे लेने के लिए आपको अपने नजदीकी पंतनगर विश्वविद्यालय के संपर्क नंबर . 05944-233349/50. 05944-233473. पोल्ट्री फार्म में संपर्क करना पड़ेगा |"
+  },
+  {
+    "instruction": "Informatio about Hemorrhagic Septicemia disease in goat..?",
+    "input": "",
+    "output": "श्रीमान जी,बकरियों में नेक मूरना रोग (Goat Neck Murna Disease) को आमतौर पर गलाघोंटू या गलाघोंटू रोग कहा जाता है, जो एक संक्रामक बैक्टीरियल बीमारी है। इसका कारण पाश्चुरेला मल्टोसिडा (Pasteurella multocida) नामक जीवाणु है. \nबचाव:\nनियमित टीकाकरण करवाएं, बीमार पशु को स्वस्थ पशुओं से अलग रखें, पशुशाला को साफ-सुथरा रखें, पशुओं को संतुलित आहार दें, पर्याप्त मात्रा में चारे और पानी की व्यवस्था करें. \nरोग के लक्षण दिखने पर तुरंत पशु चिकित्सक से संपर्क करें."
+  },
+  {
+    "instruction": "Information regarding contact number of veterinary officer ?",
+    "input": "",
+    "output": "महोदय आप अपने ब्लॉक के पशु चिकित्सा अधिकारी के नंबर 9837363566 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Information about not barking in dog?",
+    "input": "",
+    "output": "महोदय, कुत्ते से सम्बन्धित समस्या हेतु दिए गए नंबर पर संपर्क कर सकते है- 9927188156 01363-271203"
+  }
+]

@@ -1,0 +1,2502 @@
+[
+  {
+    "instruction": "information about planting time of grape ?",
+    "input": "",
+    "output": "अंगूर की लता लगाने का उपयुक्त समय जुलाई से अगस्त होता है"
+  },
+  {
+    "instruction": "Information about control of aphid in litchi plants.. ?",
+    "input": "",
+    "output": "श्रीमान जी, इमिडाक्लोप्रिड 17.8% एसएल की 100 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in sapota crop..?",
+    "input": "",
+    "output": "--श्रीमान जी, Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about control of hopper in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information about toll free number of ATIC centre pantnagar University ?",
+    "input": "",
+    "output": "महोदय कटहल की प्रजातियों की उपलब्धता की जानकारी के लिए आप पंतनगर विश्वविद्यालय के टोल फ्री नंबर 05944-234810 व 7500241566 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Rhizopus rot problem in jack fruit?",
+    "input": "",
+    "output": "कटहल के पौधे पर राइजोपस रूट के नियंत्रण के लिए कॉपर ऑक्सीक्लोराइड  50% डबल्यूपी @ 2.5  ग्राम / लीटर पानी मे 15-15  दिनों के अंतराल पर 2 छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measure for citrus psylla in Orange(kinnow)?",
+    "input": "",
+    "output": "किन्नू के पौधों में सिटरस सिल्ला कीट नियंत्रण के लिए क्विनालफॉस 25% ईसी @ 2 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about increasing the number of female flower in Jackfruit ?",
+    "input": "",
+    "output": "श्रीमान जी, कटहल की फसल में मादा पुष्पों की संख्या बढ़ाने के लिए  Alpha naphthyl acetic acid (NAA) 4.5% SL @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |\nअथवा\nश्रीमान जी कटहल की फसल में मादा पुष्पों की संख्या बढ़ाने के लिए Ethephon 39% @ 125 ppm प्रति एकड़ 200 लीटर पानी मे घोल बनाकर स्प्रे करे |"
+  },
+  {
+    "instruction": "Information about the problem of Gummosis in  Mango tree ...?",
+    "input": "",
+    "output": "श्रीमान जी, आम के पेड़ में गमोसिस की समस्या की रोकथाम के लिए  : जिंक सल्फेट 250 gm, कॉपर सल्फेट 250 gm,बोरेक्स 125gm, बुझा चुना 100 gm प्रति पौधे की दर से मिट्टी में मिलाये |"
+  },
+  {
+    "instruction": "How should fertilizer be given to apple crop and in what quantity should it be given",
+    "input": "",
+    "output": "सेब की फसल में उर्वरकों के लिए गोबर की सड़ी खाद 10 किलोग्राम तथा 300 ग्राम यूरिया 250 ग्राम डीएपी तथा 300 ग्राम म्यूरेट ऑफ पोटाश का प्रयोग करें खाद का प्रयोग करने के लिए पौधे के चारों तरफ थाला बना कर खाद का प्रयोग"
+  },
+  {
+    "instruction": "Mite problem in jack fruit?",
+    "input": "",
+    "output": "कटहल  के पौधे में मकड़ी के नियन्त्रण के लिए प्रोपरगाइट 57 % ई.सी.@0.5 एमएल /लीटर पानी के साथ छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about fertilizer management in three year old citrus plants  ?",
+    "input": "",
+    "output": "महोदय नींबू के पौधों के आस-पास एक मीटर का थाला बनाकर उसमें 20 किलोग्राम सड़ी  हुई गोबर की खाद और 350 ग्राम एनपीके 12:32:16 को पौधे के एक मीटर दूर बनाए गए थाले मे अच्छे से मिलाएं |"
+  },
+  {
+    "instruction": "Information regarding not getting of insurance compensation for mango plants",
+    "input": "",
+    "output": "आम के पौधों का बीमा के पश्चात मुआवजा अगर नहीं मिला है तो उसकी जानकारी के लिए हेल्पलाइन नंबर 14447 पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about control of apple canker..?",
+    "input": "",
+    "output": "श्रीमान जी,apple canker इसकी रोकथाम के लिए एम 45 50 ग्राम को 15 लीटर पानी में मिलाकर स्प्रे करें।  \nछाल लकड़ी के पौधों (पेड़, झाड़ियाँ और लकड़ी के चढ़ने वाले पौधे) की सबसे बाहरी परत होती है। यह कई कोशिकाओं की मोटाई वाली होती है और शारीरिक क्षति, बीमारी और पर्यावरणीय तनावों से सुरक्षा प्रदान करती है। छाल कई तरह के रंगों और पैटर्न में आती है, और ये पौधों की पहचान करते समय बागवानों की मदद कर सकती है। पुराने पौधों पर छाल की दरारें और दरारें कई बगीचे के जीवों के साथ-साथ लाइकेन और छोटे पौधों के लिए भी मूल्यवान आवास बनाती हैं।\n\nछाल और लकड़ी को काटकर ताज़े हरे ऊतकों में बदल दें। घावों को फिर से संक्रमित होने से बचाने के लिए तुरंत मेडो, ग्रोइंग सक्सेस प्रून एंड सील या प्रोवैंटो आर्ब्रेक्स सील एंड हील जैसे सुरक्षात्मक घाव पेंट से पेंट करें।"
+  },
+  {
+    "instruction": "Information about control of the flower drope in Mango  ?",
+    "input": "",
+    "output": "श्रीमान जी,फूलों को गिरने से रोकने के लिए अल्फा नेफ़थाइल एसिटिक एसिड 4.5% SL की 1 ml मात्रा प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the pruning time in Lemon ?",
+    "input": "",
+    "output": "श्रीमान जी, नींबू की कटाई-छटाई का उचित समय गर्मी के शुरुआती दिनों मे मार्च से मई के मध्य उचित माना जाता है। सर्दियों मे पौधों की कटाई-छटाई नहीं करनी चाहिए।"
+  },
+  {
+    "instruction": "Flower dropping problem in mango plant",
+    "input": "",
+    "output": "फूल तथा फल को गिरने से बचाने के लिए नेफ़थलीन एसिटिक एसिड (एन ए ए) @ 1एमएल मात्रा 4 लीटर पानी मे मिलाकर फूल लगने की अवस्था में तथा जब फल मटर के दाने के आकार का हो तब स्प्रे करें|"
+  },
+  {
+    "instruction": "Information regarding pest control on jackfruit plants  ?",
+    "input": "",
+    "output": "श्रीमान जी कटहल के पौधों में कीट नियंत्रण के लिए Thiamethoxam 25% WG,  आधा  [.5] ग्राम मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिडकाव करें |"
+  },
+  {
+    "instruction": "Farmer want to know about how to control flower dropping in Acid Lime?",
+    "input": "",
+    "output": "किसान भाई फूल आने की शुरुआती अवस्था मे आप Alpha Napthyl Acetic Acid 4.5% SL @ 1 मिली. प्रति 4.5 लीटर पानी की दर से घोल बनाकर पर्णीय छिड़काव कराएं |"
+  },
+  {
+    "instruction": "Plant protection measures for Mango hopper in Mango?",
+    "input": "",
+    "output": "आम के पौधे में डाइमेथोएट 30% ईसी @ 2 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Information about Fruit Rot in Jackfruit ?",
+    "input": "",
+    "output": "श्रीमान जी, कटहल की फसल मे फल सड़न रोग की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP (Copper Oxychloride 50 % WP) @ 2.5 ग्राम प्रति 1 लीटर पानी के साथ घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "--ASKED ABOUT TO MANGO MALFORMATION CONTROL IN MANGO ?",
+    "input": "",
+    "output": "कार्बेन्डाजिम 50% डब्लू.पी. (बाविष्टिन) 2 ग्राम प्रति लिटर पानी में घोल कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information regarding control of fruit rot disease in jackfruit plant ?",
+    "input": "",
+    "output": "श्रीमान जी, कटहल के पौधों में सड़न रोग के नियंत्रण के लिए कॉपर ऑक्सीक्लोराइड 50% WP की 2.5 ग्राम मात्रा प्रति लीटर पानी की दर से घोल बनाकर छिडकाव करें |"
+  },
+  {
+    "instruction": "information about Papaya Leaf Curl Virus vector control ?",
+    "input": "",
+    "output": "पपीते के पेड़ मे मौजेक (पत्तियों का मुड़ना) सफेद मक्खी  के कारण होता उसकी रोकथाम के लिए इमिडाक्लोरपरिड 17.8 % एससल 10 एमएल दवा  प्रति 15 लीटर वाली टंकी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "information about fruit dropping control in mango ?",
+    "input": "",
+    "output": "आम मे फल गिरने की रोकथाम के लिए नेपथाइल असीटिक ऐसिड 1 एमएल दवा 4 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about the control of sucking pest and fungal infection in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए, इमिडाक्लोप्रिड 17.8% SL @ 0.5 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in Mango tree.. ?",
+    "input": "",
+    "output": "श्रीमान जी, आम के 7-15 साल के पेड़ में पौधों की ऊंचाई, फूल और फलन को बढ़ाने,  Paclobutrazol 25% SC कि 15ml मात्रा पेड़ के तने से 4 फीट की दूरी पर 5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें"
+  },
+  {
+    "instruction": "Information about the water management in Sweet Lime (Mosambi) ?",
+    "input": "",
+    "output": "श्रीमान जी, मुसम्मी  के पौधों मे फूल की अवस्था में सिंचाई न करें, जब छोटे छोटे फल बन जाए तब हल्की-हल्की सिंचाई 10 से 15 दिन के अंतराल पर करते रहें।"
+  },
+  {
+    "instruction": "Information regarding prevention of blossom fall in mango crop",
+    "input": "",
+    "output": "आम की फसल में बौर को झड़ने से रोकने के लिए  अल्फ़ा नेप्थाइल एसेटिक एसिड 4.5 एस.एल की 1 एम एल मात्रा प्रति 4 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measure for flower dropping in Lemon?",
+    "input": "",
+    "output": "नींबू के पौधे में फूल गिरने की रोकथाम के लिए (प्लानोफिक्स)अल्फा नेफ़थिल एसिटिक एसिड 4.5 एसएल @ 1 एमएल/ 4.5 लीटर पानी का घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information on control of hopper insects and fungal disease in mango crop",
+    "input": "",
+    "output": "आम के फसल में हॉपर कीड़े तथा फफूंद रोग के नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एसएल की आधा एमएल मात्रा तथा रोग के लिए  कार्बेन्डाजिम 12% + मैनकोजेब 63% डब्ल्यू पी की 2 ग्राम मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measures for Mango gummosis in Mango?",
+    "input": "",
+    "output": "पौधे में गोंद निकलने की रोकथाम के लिए 250 कॉपर सल्फ़ेट, 250 ग्राम ज़िंक सल्फ़ेट, 125 ग्राम बोरेक्स, और 100 ग्राम बुझा हुआ चूना का मिश्रण बनाकर पौधे में समान रूप से देना है |"
+  },
+  {
+    "instruction": "Information regarding control of sucking pests in mango plants  ?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधों में रस चूसक कीट नियंत्रण के लिए Thiamethoxam 25% WG @ आधा [ .1 ] ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिडकाव करें |"
+  },
+  {
+    "instruction": "Plant protection measures for Mango gummosis in Mango?",
+    "input": "",
+    "output": "पौधे में गोंद निकलने की रोकथाम के लिए 250 कॉपर सल्फ़ेट, 250 ग्राम ज़िंक सल्फ़ेट, 125 ग्राम बोरेक्स, और 100 ग्राम बुझा हुआ चूना का मिश्रण बनाकर पौधे में समान रूप से देना है |"
+  },
+  {
+    "instruction": "Information about control of hopper in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "information about strawberry runner planting ?",
+    "input": "",
+    "output": "तैयार क्यारी में 30 25 से.मी. की दूरी पर एक समान व स्वस्थ रनर की रोपाई करें। रोपाई के बाद स्प्रिंकलर के द्वारा पानी से मिट्टी की अच्छी तरह संतृप्त कर देते हैं। रोपाई से पूर्व रनर की जड़ों को वाबिस्टीन के 0.1 प्रतिशत घोल में 5-10 मिनट तक डुबा लेते हैं।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 20 अप्रैल से 26 अप्रैल तक का मौसम ज्ञात हो रहा है। सभी दिनों में मौसम साफ देखा जा रहा है, बारिश अथवा बूंदाबादी की संभावना नही है| आज का अधिकतम तापमान 33 डिग्री सेल्सियस तथा न्यूनतम तापमान 25 डिग्री सेल्सियस, हवा की गति 04-07 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार   आम की फसल में  कृषि कार्य  करे।"
+  },
+  {
+    "instruction": "Information about fertilizer management in guava ..?",
+    "input": "",
+    "output": "श्रीमान जी,अमरूद की बाग में 7 से 10 वर्ष की आयु के बूटों में 40 से 50 किलोग्राम रूड़ी (देसी खाद), 750 से 1000 ग्राम यूरिया, 2000 से 2500 ग्राम सिंगल सुपर फासफेट और 1100 से 1500 ग्राम म्यूरेट ऑफ पोटाश प्रति  पौधे के हिसाब से डालनी चाहिए।"
+  },
+  {
+    "instruction": "Information about the control of Shooty Mould like honey drops in Mango",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 1 ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information regarding micronutrients in Apple plants  ?",
+    "input": "",
+    "output": "महोदय सेब के पौधों पर  वृद्धि और विकास के लिए  सागरिका जैविक पोषक तत्व 500 मिलीलीटर प्रति एकड़ 200 लीटर पानी की दर से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Flower dropping problem in apricot plant?",
+    "input": "",
+    "output": "फूल तथा फल को गिरने से बचाने के लिए नेफ़थलीन एसिटिक एसिड (एन ए ए) @ 1एमएल मात्रा 4 लीटर पानी मे मिलाकर फूल लगने की अवस्था में तथा जब फल मटर के दाने के आकार का हो तब स्प्रे करें|"
+  },
+  {
+    "instruction": "Information about the control of Phoma disease in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आप आम के पौधे पर Carbendazim 50% WP 2 ग्राम/लीटर पानी की दर से घोल बना कर स्प्रे करें ।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the Lemon crop ?",
+    "input": "",
+    "output": "श्रीमान जी, चकोतरा मे फूल झड़ने की समस्या की रोकथाम हेतु अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल (Alpha naphthyl acetic acid 4.5% SL) NAA (Planofix trade name) @ 45 ml प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करे।"
+  },
+  {
+    "instruction": "Information related to subsidy on fencing ?",
+    "input": "",
+    "output": "तारबंदी पर अधिकतम 50% तक अनुदान मिल जाता है अधिक जानकारी के लिए जिला उद्यान अधिकारी कार्यालय में संपर्क करें"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र पौड़ी गढ़वाल के पौड़ी  ब्लॉक में आगामी 1 मई  से 4 मई  तक प्रतिदिन हल्की बूंदाबांदी होने की संभावना है आज का न्यूनतम तापमान13  डिग्री सेल्सियस अधिकतम तापमान 26 डिग्री सेल्सियस रहने की संभावना है हवाओं की गति 4  किलोमीटर प्रति घंटे से 7  किलोमीटर प्रति घंटे की हो सकती है मौसम के अनुसारअनार की फसल की सिचाई करें"
+  },
+  {
+    "instruction": "Information regarding spider control on mango plants  ?",
+    "input": "",
+    "output": "महोदय आम के पौधों पर मकड़ी नियंत्रण के, प्रोपार्जाइट 57% ईसी (Propargite 57 % EC) 2 ml मात्रा प्रति लीटर पानी के साथ घोल बनाकर स्प्रे करें"
+  },
+  {
+    "instruction": "Rhizopus rot problem in jackfruit?",
+    "input": "",
+    "output": "कटहल के राइजोपस रोग के नियंत्रण के लिए कॉपर ऑक्सीक्लोराइड 50% डबल्यूपी @ 2.5 ग्राम / लीटर पानी मे 15 दिनों के अंतराल पर 2-3 छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें। \nश्रीमान जी, Dimethoate 3O% EC @ 2ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे।"
+  },
+  {
+    "instruction": "Information about Apple Crop Insurance  ?",
+    "input": "",
+    "output": "महोदय सेब  की फसल का बीमा कराने के लिए  प्रधानमंत्री फसल बीमा के टोल फ्री 14447 नंबर पर संपर्क करें धन्यवाद |"
+  },
+  {
+    "instruction": "Information about not getting full claim for peach crop under PM Crop Insurance Scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री फसल बीमा योजना के तहत आड़ू की फसल का पूरा क्लेम न मिलने की स्तिथि में अपने जिले के कृषि जिला अधिकारी, कृषि उप-निदेशक या तहलीस दिवस में लिखित में शिकायत दर्ज कर सकते है।"
+  },
+  {
+    "instruction": "Information about the control of Malformation disease in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी,आम के पौधों पर बौर के  रोग नियंत्रण के लिए  कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 2  ग्राम मात्रा  प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about the control of Malformation disease in Mango  ?",
+    "input": "",
+    "output": "श्रीमान जी, Alpha naphthyl acetic acid 4.5% SL (Planofix) की 1 ml मात्रा प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Can we irrigate mango crop at this time?",
+    "input": "",
+    "output": "श्रीमान जी आप इस समय आम के पौधों में आवश्यकतानुसार सिंचाई करते रहें बगीचे में नमी बनाए रखें|"
+  },
+  {
+    "instruction": "information about regular bearing in mango ?",
+    "input": "",
+    "output": "आम मे प्रति वर्ष फल फूल लगने के लिए आप 20 वर्ष के पेड़ मे पैक्लोबुट्राज़ोल 23% एससी 20 एमएल दवा 10 लीटर पानी मे घोल कर थाला बनाकर डालें |"
+  },
+  {
+    "instruction": "give information about preventing flower fall in lemon  crops.",
+    "input": "",
+    "output": "श्रीमान जी नीबू के पौधे मे फूल गिरने से रोकने के लिए खेत में नमी को कम रखें और नेफ़थलीन एसिटिक एसिड 1 ml प्रति 3 लीटर पानी में घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information about the control of Leaf drops in orange ?",
+    "input": "",
+    "output": "श्रीमान जी, क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 1 लीटर प्रति एकड़ की दर से सिंचाई जल के साथ प्रयोग करें |"
+  },
+  {
+    "instruction": "When should I prune a lemon plant?",
+    "input": "",
+    "output": "नींबू के पौधे में काट छांट फलों की तुड़ाई के बाद करे।"
+  },
+  {
+    "instruction": "Information about the status after insurance of apple plants ?",
+    "input": "",
+    "output": "सेब के पौधों का अगर आपने बीमा करवाया है तो उसके लिए पॉलिसी आईडी  का होना आवश्यक है कृपया दोबारा संपर्क करें"
+  },
+  {
+    "instruction": "information about Kiwi fruit and soil ?",
+    "input": "",
+    "output": "यदि कोई भूमि 15 वर्ष से खाली है और उसपर आप कीवी के पेड़ लगाना चाहते है तो आप सबसे पहले उस खेत की मिट्टी की जांच करवाए |"
+  },
+  {
+    "instruction": "Information regarding insurance claim not received for apple crop under PMFBY scheme  ?",
+    "input": "",
+    "output": "महोदय सेव की क्षति  होने पर प्रधानमंत्री फसल बीमा योजना के टोल फ्री 14447 नंबर पर  संपर्क करें |"
+  },
+  {
+    "instruction": "Information about the control of Fruit Borer in Guava ?",
+    "input": "",
+    "output": "श्रीमान जी, अमरूद की फसल में तना छेदक की रोकथाम हेतु डाइमेथोएट 30 EC @ 2ml प्रति 1 लीटर पानी के साथ घोल बनाकर छिड़काव करें |\nअथवा \nश्रीमान जी, इमामेक्टिन बेंजोएट 5% एसजी (Emamectin benzoate 5 SG) @ 1 ग्राम प्रति 2 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Need information about Prime Minister's Crop Insurance",
+    "input": "",
+    "output": "प्रधानमंत्री फसल बीमा योजना इंश्योरेंस कंपनी टोल फ्री नंबर 14447 पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about the control of Whitefly in Peach ?",
+    "input": "",
+    "output": "श्रीमान जी,आड़ू मे फलमक्खी कीट नियंत्रण के लिए थियामेथोक्सम 25% डब्लूजी (Thiamethoxam 25% WG) @ 40 ग्राम प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिडकाव करें |\nअथवा \nश्रीमान जी, डाइमेथोएट 3O% ईसी (Dimethoate 3O% EC) @ 2 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the control of fruit Rot in Bael crop ?",
+    "input": "",
+    "output": "श्रीमान जी, बेल की फल सड़न  की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 500 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें।\nअथवा \nश्रीमान जी, थायोफैनेट मिथाइल 70% WP (Thiophanate Methyl 70% WP)  @ 200 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें ।"
+  },
+  {
+    "instruction": "Information about spraying during flowering of mango plant",
+    "input": "",
+    "output": "आम के पौधे में बौर आने के समय कोई भी छिड़काव नहीं करे"
+  },
+  {
+    "instruction": "information about mango hoper insect control in mango plant ?",
+    "input": "",
+    "output": "आम के पौधे मे हॉपर कीट के नियंत्रण के लिए इमिडाकलोपरिड 17.8% एस एल 0.5 एमएल/लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information regarding dose of Copper oxychloride 50 % WP fungicide on Ber plant ?",
+    "input": "",
+    "output": "महोदय आप अपनी फसल मे कॉपर ऑक्सीक्लोराइड 50 % WP कवकनाशी की 02 से 2.5 ग्राम मात्रा प्रति लिटर पानी मे मिलाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of hopper in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information about problem of fruit fall in guava plant?",
+    "input": "",
+    "output": "महोदय, अमरूद के पौधे में प्लानोफिक्स @ 1 एमएल/ 4.5 लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "ASKED ABOUT TO MICRO NUTRIENT MANAGEMENT IN MANGO?",
+    "input": "",
+    "output": "सूक्ष्म पोषक तत्व 4 ML प्रति लिटर पानी में घोल कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about the problem of Gummosis in lemon tree..?",
+    "input": "",
+    "output": "श्रीमान जी, नींबू  के पेड़ से गोंद निकालने के नियंत्रण के लिए जिंक सल्फेट 250 gm, कॉपर सल्फेट 250 gm,बोरेक्स 125gm, बुझा चुना 100 gm प्रति पौधे की दर से मिट्टी में मिलाये"
+  },
+  {
+    "instruction": "Information regarding caterpillar control in grape plant  ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर के पौधों  में सुंडी  नियंत्रण के Emamectin benzoate 5% SG @ आधा [0.1]  ग्राम मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Brown spots are appearing on litchi fruits, information about control",
+    "input": "",
+    "output": "लीची के फल पर भूरे धब्बे के नियंत्रण के लिए थियोफैनेट मिथाइल 50%डब्लू पी 2 ग्राम मात्रा प्रति लीटर पानी के हिसाब से गोल बना करके छिड़काव करें"
+  },
+  {
+    "instruction": "Information on nutrient management in litchi  crop",
+    "input": "",
+    "output": "लीची  की फसल में पोषक तत्वों के लिए एनपीके  19:19: 19 की 1 किलोग्राम मात्रा तथा सागरिका तरल की 250 एम एल मात्रा प्रति एकड़ के हिसाब से 200 लीटर पानी में घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the crop ?",
+    "input": "",
+    "output": "श्रीमान जी,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Information regarding control of Stem borer in Apple plant ?",
+    "input": "",
+    "output": "श्रीमान जी कीट नियंत्रण के लिए Quinalphos 25% EC की 2.5 एमएल मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about good growth of litchi fruit?",
+    "input": "",
+    "output": "लीची के पौधे में 15-20 किग्रा गोबर की सड़ी खाद, 500-600 यूरिया, 300-400 ग्राम फास्फोरस, 400-500 ग्राम पोटाश और 200 ग्राम सूक्ष्म पोषक तत्व प्रति पौधा देना है।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान महोदय आपके क्षेत्र में 10 व 11 मई को से हल्की बूँदाबाँदी होने की संभावना के साथ 16 मई तक प्रत्येक दिन आंशिक रूप से हल्के बादल आते-जाते रहेंगे, अधिकतम तापमान 35 व न्यूनतम 26 डिग्री सेल्सियस तक रहने और हवा की गति 7 से 14 किलोमीटर प्रति घंटे की दर से चलने की संभावना है, कृषि कार्य मौसम के अनुसार करें|"
+  },
+  {
+    "instruction": "information about fruit tempering in litchi fruit ?",
+    "input": "",
+    "output": "लीची के फल में फटने के नियंत्रण के लिए बौरान 1 ग्राम/लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "nformation about control of the flower dropping in the crop ?",
+    "input": "",
+    "output": "श्रीमान जी,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "information about fruit fly insect control in mango fruit ?",
+    "input": "",
+    "output": "आम के फल में फल मक्खी कीट के नियंत्रण के लिए कुनालफास 25% ईसी 2 एमएल/लीटर पानी की दर से मिलाकर छिड़काव करे"
+  },
+  {
+    "instruction": "Information regarding  pradhan mantri  Crop Insurance Scheme coverage?",
+    "input": "",
+    "output": "प्रधानमंत्री फसल बीमा योजना किसानों को अचानक प्राकृतिक आपदा से होने वाले नुकसान से बचता है जैसे - बाढ़,सूखा,अकाल , जलभराव , कीटों और बिमारियों ,प्राकृतिक आग,आशमानी बिजली , आंधी , ओलावृष्टि,चक्रवात,तूफान और बबंडर से होने वाले नुकसान से बचता है।"
+  },
+  {
+    "instruction": "Information regarding insurance claim not received for apple crop under PMFBY scheme  ?",
+    "input": "",
+    "output": "श्रीमान जी, प्रधानमंत्री फसल बीमा योजना के अंतर्गत अधिक सहायता के लिए टोल फ्री नंबर 1800-180-14447 पर संपर्क करे या पीएमएफबीवाई व्हाट्सएप चैटबॉट -7065514447 पर संपर्क करे।"
+  },
+  {
+    "instruction": "Information about how to get a soil sample for soil testing..?",
+    "input": "",
+    "output": "--श्रीमान जी, एक एकड़ क्षेत्र में लगभग 10 स्थानों से ‘V’ आकार के 6 इंच गहरे गहरे गढ्ढे बनायें। सभी स्थानों से प्राप्त मिट्टी को एक साथ मिलाकर 500 ग्राम का एक सन्युक्त नमूना बनायें।सूखे हुए नमूने को थैली में भरकर कृषक का नाम, पता, खसरा संख्या, मोबाइल नम्बर, आधार संख्या, उगाई जाने वाली फसलों आदि का ब्यौरा दें तथा नमूना प्रयोगशाला को प्रेषित करें|"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the crop ?",
+    "input": "",
+    "output": "श्रीमान जी,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "information about fruit fly control in sugarcane crop ?",
+    "input": "",
+    "output": "अमरूद की फसल मे फल मक्खी के नियंत्रण के लिए  थायोडीकार्ब 75% WP 2 ग्राम प्रति लीटर पानी के हिसाब से  घोल कर छिड़काव करें"
+  },
+  {
+    "instruction": "Information about at what temperature kiwi fruit can be cultivated and where to get the seeds?",
+    "input": "",
+    "output": "कीवी फ्रूट की खेती न्यूनतम तापमान 14 डिग्रीतथा अधिकतम तापमान 24 डिग्री सेल्सियस पर की जा सकती है तथा पौधे प्राप्त करने के लिए जिले के उद्यान विभाग से संपर्क करें"
+  },
+  {
+    "instruction": "Shoot and fruit borer problem in jack fruit?",
+    "input": "",
+    "output": "कटहल की फसल में क्विनालफोस 25 ई.सी. 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग की जानकारी के अनुसार आपके क्षेत्र मे आगामी 16 जून तक के मौसम मे कल से 16 जून तक प्रतिदिन हल्की बूँदा बाँदी हल्की बारिश होने की संभवना है मौसम के अनुसार आम के फलों को तोड़े और उसको मार्केट के लिए पैकजिंग करें  |"
+  },
+  {
+    "instruction": "Information on nutrient management in apple crop",
+    "input": "",
+    "output": "सेब  की फसल में पोषक तत्व प्रबंधन के लिए एनपी के 00:00: 50 की 5 ग्राम मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information regarding control of Mealy bug in guava plant ?",
+    "input": "",
+    "output": "श्रीमान जी, कीट नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL), की 01 एमएल मात्रा प्रति 02 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Plant protection measures for Root rot & Fruit rot in Orange & Kinnu?",
+    "input": "",
+    "output": "महोदय, संतरा और किन्नू में प्रोपिनेब 70% डब्लूपी @ 2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 06 जुलाई से 12 जुलाई तक का मौसम ज्ञात हो रहा है। 06 जुलाई से 12 जुलाई तक हल्की बारिश तथा बूंदाबांदी की संभावना है, आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 34 डिग्री सेल्सियस तथा न्यूनतम तापमान 30 डिग्री सेल्सियस, हवा की गति 07-14 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम की फसल की तोड़ाई करे । धन्यवाद !"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी मौसम विभाग के पूर्वानुमान के अनुसार 12 जून से 18 जून के बीच में प्रतिदिन हल्की बूंदाबांदी होने की संभावना बनी है आज के दिन अधिकतम  आज के दिन अधिकतम तापमान 40 डिग्री सेल्सियस न्यूनतम तापमान 30 डिग्री सेल्सियस होने की संभावना है हवा की गति की 11 से 14 किलोमीटर प्रति घंटे की होने की संभावना बनी हुई है आम की तुड़ाई अपने क्षेत्र के मौसम के अनुसार कीजिए"
+  },
+  {
+    "instruction": "Information about control of White flies in Papaya  plant",
+    "input": "",
+    "output": "श्रीमान जी,पपीते में रस चूसक कीट के नियंत्रण के लिए  Imidacloprid 17.8% SL @ 100 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information About control of Black Spot disease in Banana Plant ?",
+    "input": "",
+    "output": "श्रीमान जी,केले के पत्तों  पर काले धब्बे के रोग के नियंत्रण के लिए  Carbendazim 12% + Mancozeb 63% WP @ 2 ग्राम मात्रा प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about the control of Blight in apple crop..?",
+    "input": "",
+    "output": "श्रीमान जी,सेब मे  Copper Oxychloride 50% WP @ 2 ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Plant protection measure for Fruit Borer in pomegranate?",
+    "input": "",
+    "output": "महोदय अनार के पौधे में कीट नियंत्रण के लिए क्विनालफॉस 25% ईसी @ 2 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information regarding spray 20-25 days before harvesting in apple ?",
+    "input": "",
+    "output": "बागवान भाई   सेब मे फल तोड़ने से पूर्व (फल तोड़ने से 20 से 25 दिन पूर्व) पर असामयिक पतझड़, स्कैब रोगों के नियंत्रण हेतु 600 ग्राम जीरम या 600 ग्राम कैप्टान /Cabrio Top ( Metiram 55 % + Pyraclostrobin 5 % ) @ 200 gram को 200 लीटर पानी में मिलाकर छिड़काव करे| 1 -2 दिन बाद 200 मि.ली. मैलाथियान या 200 मि.ली. मैटासिसटास्क को 200 लीटर पानी मे मिलाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measures for Sucking pest in Apple?",
+    "input": "",
+    "output": "महोदय, सेब की फसल में डाइमेथोएट 30% ईसी @ 2 एमएल/लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Information about the control of  Yellowing of Leaves in Apple ?",
+    "input": "",
+    "output": "श्रीमान जी, सेब की फसल मे पत्तियो के पीलेपन की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 500 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about can we mix nano DAP with boron in kivi fruit ?",
+    "input": "",
+    "output": "श्रीमान जी,  कीवी की फसल में छिड़काव के लिए नैनो डीएपी के साथ बोरोन को ना मिक्स करे ।"
+  },
+  {
+    "instruction": "information about regular bearing in mango plant ?",
+    "input": "",
+    "output": "आम के पेड़ मे बारिश का सीजन खत्म होने के बाद 30 किग्रा सड़ा गोबर + 1 किलोग्राम नाइट्रोजन + 500 ग्राम फासफोरस + 1 किलोग्राम पोटाश प्रति पेड़ के हिसाब से डालें |"
+  },
+  {
+    "instruction": "information about flower and fruit problem in mango plant  ?",
+    "input": "",
+    "output": "आम के पौधे मे बोर आने से 15 दिन पहले अल्फा नेपथाइल एसीटिक ऐसिड 1 एममल दवा 4 लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "information about which fruit plant planting in Chamoli district ?",
+    "input": "",
+    "output": "महोदय आप चमोली जिले मे सेब और कीवी के पौधे लगाए |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला हरिद्वार ब्लॉक लक्सर में 10 जून से 16 जून तक आंशिक रूप से हल्के बादल छाए रहने के साथ बूँदा-बाँदी होने की सम्भावना है। आज का अपेक्षित अधिकतम तापमान 40 न्यूनतम तापमान 30 डिग्री सेल्सियस एवं हवा की गति 14 किलोमीटर प्रति घंटा रहने की सम्भावना हैं। मौसम के अनुसार आम में सिंचाई करें।"
+  },
+  {
+    "instruction": "leaf spot disease control in jackfruit plant ?",
+    "input": "",
+    "output": "कटहल के पौधे में पत्ती धब्बा रोग के नियंत्रण के लिए कापर ऑक्सीकलोराइड 50% डब्लू पी 2.5 ग्राम/लीटर पानी की दर से घोल बनाकर छिड़काव करे"
+  },
+  {
+    "instruction": "INFORMATION ABOUT STEM BORER INSECT CONTROL IN MANGO TREE?",
+    "input": "",
+    "output": "आम के पेड़ में तना छेदक कीट के नियंत्रण के लिए फ़िप्रोनिल 0.3% जीआर 100-150 ग्राम/पेड़ की दर से मिट्टी मे मिलवाएँ |"
+  },
+  {
+    "instruction": "Information about control of Mango mealy bug insect in mango plants  ?",
+    "input": "",
+    "output": "श्रीमान जी, आम के पौधों में कीट नियंत्रण के लिए थाईमेथोक्साम 25% डब्ल्यू जी की 01 ग्राम मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिडकाव करें |"
+  },
+  {
+    "instruction": "mealy bug problem in mango?",
+    "input": "",
+    "output": "आम की फसल में प्रोफेनोफोस 40% + साइपरमेथ्रिन 4% ईसी 1 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information about the last date of crop insurance for apple plants and not getting of compensation of last year ?",
+    "input": "",
+    "output": "सेब  के पौधे के लिए फसल बीमा की अंतिम तारीख 2 जनवरी 2025 है तथा पिछली साल का मुआवजा अगर नहीं मिला है तो इसकी जानकारी के लिए हेल्पलाइन नंबर 14447 पर संपर्क करे |"
+  },
+  {
+    "instruction": "Information about the status of PMFBY ?",
+    "input": "",
+    "output": "श्रीमान जी, प्रधानमंत्री फसल बीमा योजना के अंतर्गत अपना स्टेटस जानने के लिए टोल फ्री नंबर14447 पर कॉल करें या व्हाट्सएप चैटबॉट -7065514447 पर संपर्क करें ।"
+  },
+  {
+    "instruction": "information about planting time of jackfruit plant ?",
+    "input": "",
+    "output": "महोदय कटहल के पौधों का रोपाई करने का उचित समय जून से जुलाई और फरवरी-मार्च है इन पौधों को सामान्यतः 8 x 8 मीटर की दूरी पर लगाते है |"
+  },
+  {
+    "instruction": "Information about the amount of super phosphate in peach plant?",
+    "input": "",
+    "output": "आड़ू के पौधे में प्रथम वर्ष में गोबर की खाद @ 10 किग्रा, नाइट्रोजन @ 70 ग्राम, फॉसफोरस @ 35 ग्राम और पोटाश @ 100 ग्राम/ पौधा दे सकते है |"
+  },
+  {
+    "instruction": "How to breeding an apricot plant?",
+    "input": "",
+    "output": "खुमानी का प्रजनन मुख्य तौर पर कलम लगाकर, बडिंग, टी बडिंग, कलम बांधकर और चिप बडिंग द्वारा किया जाता है। मूल पौधे से नए पौधे तैयार करने के लिए, पकी हुई खुमानियों से बीज को इकट्ठा कर लिया जाता है। अच्छे अंकुरण के लिए 4 डिग्री सेल्सियस पर 45 दिनों के लिए स्तरीकरण दिया जाता है। स्तरीकरण के बाद, बीज उपचार किया जाना चाहिए। बीज उपचार के बाद इन्हें नर्सरी बैड पर बोया जाता है। बिजाई के बाद मलचिंग की जाती है और हल्की सिंचाई दी जाती है। एक वर्ष बाद पौधे ग्राफ्टिंग के लिए तैयार हो जाते हैं।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in Plum crop  ?",
+    "input": "",
+    "output": "श्रीमान जी,आलूबुखारा  (प्लम)  की खेती के फल -फूल को गिरने से रोकने के लिए  Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Fruit dropping in citrus?",
+    "input": "",
+    "output": "नीबू की फसल में अल्फा नेप्थिल एसिटिक एसिड 4.5 SL 1 ml/4 लीटर पानी की दर से घोलकर स्प्रे करे"
+  },
+  {
+    "instruction": "In which month does the mango plant flowering ?",
+    "input": "",
+    "output": "आम के पौधे में बौर(पुष्पन अवस्था)फरवरी के महीने में आना शुरू हो जाता है"
+  },
+  {
+    "instruction": "Information about the Pruning time in aonla ?",
+    "input": "",
+    "output": "श्रीमान जी अंवला की फसल में काट-छांट का उचित समय मार्च -अप्रैल होता है, यदि आपकी फसल की तुड़ाई फरवरी महीने में होती है तो आप काट-छांट अप्रैल के महीने में करें। केवल पतली और मुड़ी हुई शाखाओ की कटाई-छंटाई  करे ।"
+  },
+  {
+    "instruction": "Water management in mango crop?",
+    "input": "",
+    "output": "आम के छोटे पौधों को गर्मियों में 4-7 दिन के अन्तर से तथा ठंड में 10-12 दिन के अन्तर से सिंचाई करनी चाहिए लेकिन फल वाले पेड़ों की अक्टूबर से जनवरी तक सिंचाई नही करनी चाहिए क्योंकि कि अक्टूबर के बाद यदि भूमि में नमी अधिक रहती है तो फल कम आते हैं, तथा नई शाखाएं ज्यादा आ जाती है।"
+  },
+  {
+    "instruction": "Information on control of maggots in mango crop",
+    "input": "",
+    "output": "आम की फसल में भुनगा कीड़े के नियंत्रण के लिए इमिडाक्लोप्रिड 17.8 %  एस एल की आधा  एम एल मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information about irrigation management in mango..?",
+    "input": "",
+    "output": "श्रीमान जी आम में सिंचाई की मात्रा और फासला मिट्टी, जलवायु और सिंचाई के स्त्रोत पर निर्भर करते हैं। नए पौधों को हल्की और बार-बार सिंचाई करें। हल्की सिंचाई हमेशा दूसरी सिंचाई से अच्छी सिद्ध होती है। गर्मियों में 5-6 दिनों के फासले पर सिंचाई करें और सर्दियों में धीरे-धीरे फासला बढ़ा कर 25-30 दिनों के फासले पर सिंचाई करें। वर्षा वाले मौसम में सिंचाई वर्षा मुताबिक करें। फल बनने के समय, पौधे के विकास के लिए 10-12 दिनों के फासले पर सिंचाई की जरूरत होती है। फरवरी के महीने में खादें डालने के बाद हल्की सिंचाई करें।"
+  },
+  {
+    "instruction": "Sowing time information in Muskmelon?",
+    "input": "",
+    "output": "खरबूज की बुवाई का उचित समय जनवरी से फरवरी माह है।"
+  },
+  {
+    "instruction": "Leaf gall midge litchi?",
+    "input": "",
+    "output": "लीची के पौधों पर क्विनालफोस 25% ई.सी. 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information about no flowering or Increasing number of flower in fruit crop ?",
+    "input": "",
+    "output": "श्रीमान जी, आम, अमरूद तथा लीची  के 7-15 साल के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 15 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे  5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें।\nतथा \nAlpha Naphthyl Acetic acid (NAA) 4.5% SL @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about spraying when mango plant is in full bloom ?",
+    "input": "",
+    "output": "आम के पौधे में अगर पूरा बौर आ रहा है तो इस समय कोई छिड़काव ना करें"
+  },
+  {
+    "instruction": "Information on control of juice sucking insect  in mango crop ?",
+    "input": "",
+    "output": "आम की फसल में रस चूसक कीड़े  के नियंत्रण के लिए\nIMIDACLOPRID 17.8% SL की आधा एम एल मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 16 जनवरी से 22 जनवरी  तक का मौसम ज्ञात हो रहा है | आंशिक बादल देखे जा सकते हैं परन्तु बारिश अथवा बूंदाबांदी की संभावना नही है, आज का अधिकतम तापमान 09 डिग्री सेल्सियस तथा न्यूनतम तापमान 04 डिग्री सेल्सियस, हवा की गति 01-02 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, कृषि कार्य आड़ू की फसल में कवक नाशी का स्प्रे अपने क्षेत्र के मौसम के अनुसार करें |"
+  },
+  {
+    "instruction": "Information regarding fencing scheme in mango orchard ?",
+    "input": "",
+    "output": "महोदय आम के बागान में बाड़ लगाने के लिए घेरबाड़ योजना के तहत 50% अथवा अधिकतम एक लाख प्रति हेक्टेयर तक सब्सिडी का भुगतान किया जाता है अधिक जानकारी के लिए जिला उद्यान विभाग में संपर्क करें |"
+  },
+  {
+    "instruction": "Information regarding subsidy for wire fencing in litchi crop",
+    "input": "",
+    "output": "लीची की फसल में तार बाड़ करने के लिए कृपया जिला कृषिविभाग से संपर्क करें"
+  },
+  {
+    "instruction": "Plant protection measure for Panama disease in banana?",
+    "input": "",
+    "output": "केले की फसल में पनामा रोग नियंत्रण के लिए कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2.5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "GUMOSIS CONTROL IN JACK FRUIT PLANT ?",
+    "input": "",
+    "output": "कटहल के पौधे मे गयुमोसिस रोग के नियंत्रण के लिए 200 ग्राम जिंक सल्फेट,200 ग्राम कापर सल्फेट,100 बोरेक्स ,100 ग्राम बुझा चूना/पौधे की दर से गुड़ाई करे"
+  },
+  {
+    "instruction": "information about aphid control on litchi plant ?",
+    "input": "",
+    "output": "लीची मे चेपा कीट की रोकथाम के लिए इमिडाक्लोरपिरिड 17.8 % एससल 10 एमएल प्रति टंकी ( 15 लीटर वाली ) पानी के हिसाब से घोलकर छिड़काव करें | और यदि फूल लगा है तो आप उसमे मैलाथियोन पाउडर का बुरकाव कर दें |"
+  },
+  {
+    "instruction": "Information about control of gummosis in Jackfruit  ?",
+    "input": "",
+    "output": "महोदय कटहल के पौधों में कॉपर सल्फेट 250 ग्राम और बुझे हुए चूने की 250 ग्राम मात्रा को 2.5 लीटर पानी में मिलाकर लेप तैयार करके पौधों पर लगाएं |"
+  },
+  {
+    "instruction": "Information regarding the use of fertilizers in kiwi plants ?",
+    "input": "",
+    "output": "महोदय 2 वर्ष  के  कीवी  के पौधों में 8 से 10 किलो ग्राम गोबर की सड़ी हुई खाद और npk 12: 32 :16 ,की 100 से 150  ग्राम मात्रा मिलाकर प्रति पौधा में प्रयोग करें धन्यवाद  |"
+  },
+  {
+    "instruction": "Information about flower dropping in leman plant?",
+    "input": "",
+    "output": "नींबू के पौधे में फूल बनते समय सिंचाई न किया करे इससे फूल झड़ने की समस्या हो बढ़ जाती है। फूल झड़ने की रोकथाम हेतु प्लानोफिक्स @ 1 एमएल/ 4.5 लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 12 मार्च से 18 मार्च तक का मौसम ज्ञात हो रहा है | 13, 14,15,16 मार्च को हल्की बूँदाबाँदी की संभावना है, तथा अन्य सभी दिनों में आंशिक बादल देखे जा रहे है तथा बीच -बीच मे मौसम साफ रहेगा | आज का अधिकतम तापमान 32 डिग्री सेल्सियस तथा न्यूनतम तापमान 21 डिग्री सेल्सियस, हवा की गति 07-25 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम के पौधों की सिंचाई करें।"
+  },
+  {
+    "instruction": "information about fruit dropping control in mango ?",
+    "input": "",
+    "output": "आम के पेड़ मे फल गिरने की रोकथाम के लिए नेपथाइल एसीटिक ऐसिड 1 एमएल दवा 4 लीटर पानी के हिसाब से घोलकर बनाकर  छिड़काव करें |"
+  },
+  {
+    "instruction": "Information regarding the use of fungicides on mango plants  ?",
+    "input": "",
+    "output": "महोदय आम के पौधों पर अभी कोई समस्या न होने पर आप किसी भी फंगीसाइड और इंसेंटिसाइड का प्रयोग ना करें तथा कोई समस्या आने पर आप कॉल करके जानकारी प्राप्त कर सकते हैं धन्यवाद  |"
+  },
+  {
+    "instruction": "Plant protection measures for Mango Malformation in Mango?",
+    "input": "",
+    "output": "आम के पौधे में आम गुच्छा रोग की रोकथाम हेतु अल्फा अल्फा नेफ़थाइल एसिटिक एसिड @ 0.1-0.2 एमएल/ लीटर पानी या कार्बेन्डाजिम 12%+ मैनकोज़ेब 63% डब्लूपी @ 2 ग्राम/ लीटर पानी के साथ घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Information about the control of fungal disease in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी,आम फगस नियंत्रद के लिए  कार्बेन्डाजिम 50% WP, 1 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information about the control of fruit cracking in Mango",
+    "input": "",
+    "output": "श्रीमान जी, BORON 20% @ 1 ग्राम प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about not getting claim for apple gardening under PM Crop Insurance Scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री फसल बीमा योजना के तहत मुआवजा न मिलने की स्तिथि में अपने जिले के कृषि जिला अधिकारी को लिखित में शिकायत दर्ज कर सकते है।"
+  },
+  {
+    "instruction": "Information on control of sucking insects in mango crop",
+    "input": "",
+    "output": "आम की फसल में रस चूसक कीड़ों के नियंत्रण के लिए इमिडाक्लोरप्रिड 17.8% एस एल  की आधा एमएल मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 14 मार्च से 20 मार्च  तक का मौसम ज्ञात हो रहा है। 14,15 मार्च से 16 मार्च तक हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 31 डिग्री सेल्सियस तथा न्यूनतम तापमान 23 डिग्री सेल्सियस, हवा की गति 04-11 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम  की फसल में कवक नाशी का प्रयोग करे।"
+  },
+  {
+    "instruction": "Plant protection measures for Powdery mildew in Mango?",
+    "input": "",
+    "output": "आम के पौधे में प्रोपिनेब 70% डब्लूपी @ 2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करे।"
+  },
+  {
+    "instruction": "information about how to prevent flower dropping control in mango ?",
+    "input": "",
+    "output": "आम के बौर जब ज्यादा मात्रा मे गिरने लगे तो आप उसमे नेपथाइल एसीटिक ऐसिड ( NAA) 1 एमएल दवा 4 लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "When should NPK be sprayed on Papaya plants?",
+    "input": "",
+    "output": "पपीते के पौधे में फरवरी-मार्च और जून-जुलाई माह में करना चाहिये।"
+  },
+  {
+    "instruction": "Lemon leaves have fallen due to excessive use of NPK",
+    "input": "",
+    "output": "नींबू के पत्ते अधिक एन पी के के  प्रयोग करने  के कारण झड़ गए हैं तो नमी बनाए रखे |"
+  },
+  {
+    "instruction": "information about floral malformation disease control in mango plant ?",
+    "input": "",
+    "output": "आम के पौधे मे आम विकृति रोग के नियंत्रण के लिए कापर ऑक्सीक्लोराइड 50% डब्लू पी 2.5 ग्राम/लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the problem of Gummosis in Mango tree..?",
+    "input": "",
+    "output": "श्रीमान जी, जिंक सल्फेट 250 gm, कॉपर सल्फेट 250 gm,बोरेक्स 125gm, बुझा चुना 100 gm प्रति पौधे की दर से मिट्टी में मिलाये"
+  },
+  {
+    "instruction": "Plant protection measures for Mango hoppers in Mango?",
+    "input": "",
+    "output": "आम के पौधे में इमिडाक्लोप्रिड 17.8% एसएल @ 0.5 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "TELL ME DISEASE CONTROL IN MANGO ?",
+    "input": "",
+    "output": "SPRAY OF COPPER OXICHLORIDE 3 GM PER LITER WATER"
+  },
+  {
+    "instruction": "Plant protection measure for Aphids or Spot disease in Mango?",
+    "input": "",
+    "output": "आम के पौधे में कीट में रोग नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एसएल@ 0.5 एमएल/ लीटर पानी और कार्बेन्डाजिम 50% डब्लूपी @ 1-1.5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measure for White grub & termites in Plum?",
+    "input": "",
+    "output": "महोदय, पौधे में तना भेदक की रोकथाम हेतु क्लोरपाईरीफॉस 20% ईसी @ 2 एमएल/ लीटर पानी का घोल बनाकर प्रयोग करे।"
+  },
+  {
+    "instruction": "information about flower dropping control pomegranate ?",
+    "input": "",
+    "output": "अनार के पेड़ मे फूल गिरने की रोकथाम के लिए नेपथाइल एसीटिक ऐसिड 1 एमएल दवा 4 लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of White flies / Aphids  in  Grapes  ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर मे इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL), @ 0.5  मिली प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of hopper in Mango..?",
+    "input": "",
+    "output": "--श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information about the control of Downey Milde in grapes ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर मे डाउनी मिल्ड्यू की रोकथाम हेतु Carbendazim 12% + Mancozeb 63% WP @ 2 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें ।\nतथा इसके साथ इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL), @ 0.5  मिली प्रति 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about the better growth of  litchi plant ?",
+    "input": "",
+    "output": "महोदय लीची के पौधों पर एनपीके 18:18:18 की 05 ग्राम मात्रा व सागरिका जैविक पोषक तत्व की 02 एमएल मात्रा प्रति लीटर पानी में मिलाकर छिड़काव करे धन्यवाद |"
+  },
+  {
+    "instruction": "Mango hoppers problem in mango?",
+    "input": "",
+    "output": "आम की फसल में मोनोक्रोटोफॉस 36% एसएल 1 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "White spot problem in papaya plant?",
+    "input": "",
+    "output": "पत्तों पर सफेद धब्बे : शुरूआती समय में इसका हमला दिखने पर सल्फर 30 ग्राम को 10 लीटर पानी में मिलाकर छिड़काव करें। यदि जरूरत पड़े तो 15 दिनों के अंतराल पर दोबारा स्प्रे करें।"
+  },
+  {
+    "instruction": "information about  which fertilizer use for size increase of citrus  ?",
+    "input": "",
+    "output": "नींबू की पेड़ पर फलों के साइज़ को बढ़ाने के लिए माइक्रोन्यूट्रेंट 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "What should be used to control flowerf all in Sapota crop?",
+    "input": "",
+    "output": "चीकू की फसल में फूल  झड़ने के नियंत्रण के लिए  अल्फा नेप्थिल एसिटिक एसिड 4.5% SL की 1 एमएल मात्रा प्रति कर लीटर पानी में घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Mango hoppers problem in mango?",
+    "input": "",
+    "output": "आम की फसल में मोनोक्रोटोफॉस 36% एसएल 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information about canopy timing in guava crop ?",
+    "input": "",
+    "output": "उत्तर भारत में वर्षा ऋतु की फसल की कटाई(केनोपी) अगस्त में , शीत ऋतु की फसल की कटाई नवम्बर-दिसम्बर में तथा बसंत ऋतु की फसल की कटाई मार्च-अप्रैल में होती है ।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 26 अप्रैल से 02 मई तक का मौसम ज्ञात हो रहा है। 02 मई को हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 41 डिग्री सेल्सियस तथा न्यूनतम तापमान 25 डिग्री सेल्सियस, हवा की गति 07-18 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम के बगीचे मे सिंचाई करे।"
+  },
+  {
+    "instruction": "Irrigation information in Mango?",
+    "input": "",
+    "output": "आम के पौधे में सिंचाई अप्रैल-जून महीने में7-10 दिनों के अंतराल पर या आवश्यकतानुसार कर सकते है।"
+  },
+  {
+    "instruction": "Plant protection measure for Aphid in Peach?",
+    "input": "",
+    "output": "आडू के पौधे में कीट नियंत्रण के लिए इमीडाक्लोप्रिड 17.8% एसएल @ 0.5 मिली प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "How to identify male female flower in kiwi vine ?",
+    "input": "",
+    "output": "नर और मादा कीवी बेलों के बीच के अंतर को समझना यह निर्धारित करेगा कि पौधा फल देगा या नहीं। मादा कीवी पौधे की पहचान फूल के केंद्र से निकलने वाले लंबे चिपचिपे कलंक के रूप में दिखाई देगी। इसके अतिरिक्त, मादा फूल पराग का उत्पादन नहीं करते हैं।"
+  },
+  {
+    "instruction": "Plant protection measure for mealy bug in Guava, Mango etc?",
+    "input": "",
+    "output": "महोदय फलों के वृक्ष में (mealy bug)  के नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Where can I get apple saplings?",
+    "input": "",
+    "output": "महोदय, सेब के पौधे लेने के लिए अपने उद्यान विभाग में संपर्क करे वहाँ से पौधे मिल जाते है।"
+  },
+  {
+    "instruction": "Tell me the solution to the problem of falling of jamun fruit",
+    "input": "",
+    "output": "जामुन की फल गिरने की समस्या  में अल्फा नेप्थिल एसिटिक एसिड 4.5 SL 1 ml/5 लीटर पानी मे घोलकर स्प्रे करे"
+  },
+  {
+    "instruction": "information about In how many days does a kiwi plant start bearing fruits ?",
+    "input": "",
+    "output": "कीवी के पौधे रोपाई के 3-4 साल बाद फल देना प्रारंभ कर देते है |"
+  },
+  {
+    "instruction": "Sowing time information in Papaya?",
+    "input": "",
+    "output": "महोदय, कम बारिश वाले क्षेत्रों में जून - जुलाई के महीने में, तराई और अधिक बारिश वाले क्षेत्रों में सितंबर महीने में और सिंचाई की सुविधाएं उपलब्ध हो उन क्षेत्रों में फरवरी - मार्च के महीने में बिजाई की जानी चाहिए।"
+  },
+  {
+    "instruction": "Information on control of spots appearing on litchi fruit",
+    "input": "",
+    "output": "लीची के फल पर धब्बे के नियंत्रण के लिए CARBENDAZIM 12% + MANCOZEB 63% WP की 2 ग्राम मात्रा प्रति लीटर पानी के हिसाब से घोल  बना करके छिड़काव करें"
+  },
+  {
+    "instruction": "How deep should the pits be dug while planting litchi bags and how much fertilizer should be used",
+    "input": "",
+    "output": "लीची की रोपाई के कुछ दिन पहले 1 मीटर x 1 मीटर x 1 मीटर के गड्ढे धूप में खोदें। इसके बाद इन गड्ढों को 20-25 किलोग्राम गली सड़ी रूड़ी की खाद के साथ भर दें। 300 ग्राम म्यूरेट ऑफ पोटाश और 2 किलोग्राम बॉन मील डालें। इन गड्ढों को भरने के बाद ऊपर से पानी का छिड़काव कर दें। पौधे गड्ढों के बीच में लगाएं।"
+  },
+  {
+    "instruction": "In which month mango grafting should be done?",
+    "input": "",
+    "output": "जुलाई से सितंबर महीने में हमारी ग्राफ्टिंग 80-90 प्रतिशत तक सफल होती है। सबसे पहले सायन को काट लेते हैं और रूट स्टॉक के पास जाते हैं और देखते हैं कि वो मोटाई कहाँ फिट बैठ रही है। बहुत नीचे भी नहीं लगानी और बहुत ऊपर भी नहीं लगानी है।"
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO MICRO NUTRIENT MANAGEMENT",
+    "input": "",
+    "output": "मल्टीप्लेक्स (सूक्ष्म पोषक तत्व) 4 ML प्रति लिटर पानी में घोल कर छिड़काव करें।\nकार्बेन्डाजिम 12% + मेंकोजेब 63% डब्लू.पी. दवा का 2  ग्राम प्रति लीटर पानी में घोल बना कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about control of sucking pest and  fungal infection in KIWI nursery  ?",
+    "input": "",
+    "output": "श्रीमान जी,कीवी नर्सरी  मे Copper oxychloride 50% WP @ 2 ग्राम प्रति लीटर और Imidacloprid 17.8% SL @ 1 मिली प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 15 मई से 21 मई  तक का मौसम ज्ञात हो रहा है। आंशिक बादल देखे जा सकते हैं परन्तु बारिश अथवा बूंदाबांदी की संभावना नही है, आज का अधिकतम तापमान 42 डिग्री सेल्सियस तथा न्यूनतम तापमान 26 डिग्री सेल्सियस, हवा की गति 04-22 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार बगीचे  में सिंचाई करे।"
+  },
+  {
+    "instruction": "Information about control of fruit borer in guava plants..?",
+    "input": "",
+    "output": "श्रीमान जी अमरुद के पौधे पर CHLORPYRIPHOS 50 % + CYPERMETHRIN 5% EC @ 2 ml प्रति लीटर पानी में घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in Custard Apple  plant ?",
+    "input": "",
+    "output": "श्रीमान जी, शरीफा के पौधे में फल फूल के नियंत्रण के लिए ,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "fertilizer management in  15 year old mango plant",
+    "input": "",
+    "output": "आम के 15 बर्ष पुराने मे पेड़ मे 30 किग्रा सड़ा गोबर + 1 किलोग्राम नाइट्रोजन + 500 ग्राम फासफोरस + 1 किलोग्राम पोटाश एक पेड़ जाड़ों के थोड़ी दूरी पर मिट्टी मे मिलाए |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the crop ?",
+    "input": "",
+    "output": "श्रीमान जी, अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल (Alpha naphthyl acetic acid 4.5% SL) NAA (Planofix trade name) @ 45 ml प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, की मौसम विभाग के पूर्वानुमान के अनुसार12 जून से 18 जून के बीच में प्रतिदिन हल्की बूंदाबांदी होने की संभावना बनी हुई है आज के दिन अधिकतम तापमान 40 डिग्री सेल्सियस न्यूनतम तापमान 30 डिग्री सेल्सियस होने की संभावना है हवा की गति 11 से 14 किलोमीटर प्रति घंटे की होने की संभावना बनी हुई हैआम की तुड़ाई अपने क्षेत्र के मौसम के अनुसार कीजिए"
+  },
+  {
+    "instruction": "information about control of scab disease of Apple?",
+    "input": "",
+    "output": "श्री मान जी सेब मे पपड़ी रोग नियंत्रड के लिए difenacozole 25% ec  की 15 ml मात्रा प्रति 100 लिटर पानी के साथ घोल बना के स्प्रे करे"
+  },
+  {
+    "instruction": "Fruit fly problem in guava?",
+    "input": "",
+    "output": "अमरूद के पौधे पर कीट नियंत्रण के लिए क्विनलफॉस 25 ईसी 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Fruit rot problem in guava?",
+    "input": "",
+    "output": "अमरूद की फसल में थियोफैनेट मिथाइल 70 wp 2 ग्राम/लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information regarding the variety of jamun ?",
+    "input": "",
+    "output": "महोदय ,जामुन की वैरायटी   ,री जामुन ,गोमा प्रियंका ,कुंदन , इन  वैरायटी का चयन कर सकतें हैं |"
+  },
+  {
+    "instruction": "Information about fertilizer management in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी, आम के 10 से 20  साल के पौधे में 1 किलोग्राम यूरिया, 1.5 किलोग्राम सिंगल सुपर फास्फेट, 800 ग्राम म्युरेट ऑफ पोटाश प्रति पेड़ की दर से वर्ष में दो बार प्रयोग करें |"
+  },
+  {
+    "instruction": "Information regarding mango varieties ?",
+    "input": "",
+    "output": "महोदय आम की वैरायटी  ,दशहरी, आम्रपाली, मलिका, रत्ना, सिंधु, पंत सिंदुरी, इन वैरायटी का चयन कर सकते हैं"
+  },
+  {
+    "instruction": "Information regarding plantation of mango orchard ?",
+    "input": "",
+    "output": "महोदय आम के पौधों की रोपाई सामान्यतः जुलाई-अगस्त के महीने में की जाती है, रोपाई के लिए लाइन से लाइन वह पौध से पौध की दूरी 10 मी रखते हैं आम की अल्फांसो, आम्रपाली, मल्लिका, सिंधु प्रजातियों की रोपाई कर सकते हैं |"
+  },
+  {
+    "instruction": "Information regarding air layering in Litchi plant ?",
+    "input": "",
+    "output": "महोदय लीची के पौधे मे एक ऐसी शाखा चुनें जो लगभग एक वर्ष पुरानी हो और जिसका व्यास 2.5 से 4 सेमी हो कली के ठीक नीचे शाखा के चारों ओर लगभग 2 सेमी चौड़ा एक गोलाकार कट बनाएं फिर जड़ों के विकास को प्रोत्साहित करने के लिए रूटिंग हार्मोन लगाएं, कटे हुए क्षेत्र को नम स्फाग्नम मॉस या इसी तरह के रूटिंग माध्यम  नारियल फाइबर से लपेटें नमी बनाए रखने और इसे सूखने से बचाने के लिए मॉस को पॉलीइथिलीन (प्लास्टिक) शीट के टुकड़े से ढक दे , पर्यावरणीय परिस्थितियों के आधार पर, 4-8 सप्ताह के भीतर जड़ें बननी शुरू हो जानी चाहिए। जब ​​जड़ें कुछ इंच लंबी हो जाएं, तो जड़ वाले क्षेत्र के नीचे शाखा को सावधानी से काट लें नए पौधे को अच्छी तरह से जल निकासी वाले पॉटिंग मिक्स में लगाएं और इसे शुरू में छायादार जगह पर रखें।"
+  },
+  {
+    "instruction": "Information about control of the fruit  dropping in the jamun  crop ?",
+    "input": "",
+    "output": "श्रीमान जी,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Information about pruning mango plants?",
+    "input": "",
+    "output": "महोदय, आम के पौधे की काट-छाँट आम की तुड़ाई के बाद यानि बरसात के मौसम मे कर सकते है है। काट-छाँट के बाद 10 लीटर पानी में 1 किलो कॉपर सल्फेट और 1 किलो चूना मिलाकर बोर्डो मिश्रण तैयार करने के बाद कटे हुए भाग पर लेप करे।"
+  },
+  {
+    "instruction": "The Colour of litchi fruit is not completely pink, Is there anything I can spray on the plants?",
+    "input": "",
+    "output": "श्रीमान जी इस समय लीची के पौधों पर कोई भी छिड़काव करने का कोई फायदा नहीं है अब लीची की तुड़ाई  करें तथा बाजार पहुंचाएं| अगले वर्ष  किसान कॉल सेंटर में समय-समय पर कॉल करते रहें|"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में आज से 27 जून के मध्य हल्की से मध्यम बारिश की संभावना बनी हुई है,आज का अपेक्षित अधिकतम तापमान 27 डिग्री सेल्सियस न्यूनतम तापमान 24 डिग्री सेल्सियस  तक रहने और हवा की गति 4 से 7 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैं | मौसम के अनुसार आम के फलों की तुड़ाई करे"
+  },
+  {
+    "instruction": "Information about fertilizer management in litchi..?",
+    "input": "",
+    "output": "श्रीमान जी, लीची  के 10 साल से ऊपर के  पौधे में 1 किलोग्राम यूरिया, 1.5 किलोग्राम सिंगल सुपर फास्फेट, 800 ग्राम म्युरेट ऑफ पोटाश प्रति पेड़ की दर से वर्ष में दो बार प्रयोग करें |"
+  },
+  {
+    "instruction": "Flower dropping problem in pomegranate?",
+    "input": "",
+    "output": "फूल और फल को गिरने से बचाने के लिए एन. ए. ए. (प्लानोफिक्स) 1 एमएल को 4 लीटर पानी मे मिलाकर छिड़काव करे पहला छिड़काव फूल आने से पहले तथा दूसरा छिड़काव  जब फल  का दाना मटर के आकार का हो जाता है छिड़काव किया जाता है |"
+  },
+  {
+    "instruction": "Plant protection measures for White grub in Papaya?",
+    "input": "",
+    "output": "महोदय, पपीते की फसल में क्लोरपाईरीफॉस 20% ईसी @ 2 एमएल/ लीटर पानी का घोल बनाकर प्रयोग कर सकते है।"
+  },
+  {
+    "instruction": "Plant protection measure for Rhizopus rot in Jackfruit?",
+    "input": "",
+    "output": "कटहल में राइजोपस रोग नियंत्रण के लिए कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2.5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग की जानकारी के अनुसार आपके क्षेत्र मे आगामी 8 जनवरी तक के मौसम मे आंशिक और घनें बादल रहँगे बारिश होने की संभावना नहीं है आज का अधिकतम तापमान 17  डिग्री न्यूनतम तापमान 8 डिग्री हवा की गति 6-8 किलोमीटर प्रति घंटा चलाने की संभावना है मौसम के अनुसार  आड़ू की फसल मे फफूंदनाशी का छिड़काव करें |"
+  },
+  {
+    "instruction": "What is the last date for insuring mango plants under the Prime Minister Crop Insurance Scheme?",
+    "input": "",
+    "output": "आपके क्षेत्र में आम के पौधों का बीमा कराने की कट ऑफ डेट 2 जनवरी 2025 है अधिक जानकारी के लिए फसल बीमा टोल फ्री नंबर 14447 पर संपर्क कर सकते हैं या नजदीकी बैंक से भी संपर्क कर सकते हैं|"
+  },
+  {
+    "instruction": "Information about Apple Insurance Claim ?",
+    "input": "",
+    "output": "सेब के बीमा के मुआवजे से संबंधित जानकारी के लिए  बीमा कंपनी के टोल फ्री नंबर 14447 पर संपर्क करें |"
+  },
+  {
+    "instruction": "Information about control of flower drop in Jack fruit  ?",
+    "input": "",
+    "output": "श्रीमान जी, अल्फा नेफ़थाइल एसिटिक एसिड 4.5% SL की 1 ml मात्रा प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Red Rust & Aphid problem in Mango Plant?",
+    "input": "",
+    "output": "आम के पौधे पर  कॉपर ऑक्सीक्लोराइड  50% डबल्यूपी @ 2.5 ग्राम / लीटर और क्विनलफॉस 25 ईसी @ 2 एमएल /लीटर पानी मे मिलाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Leaf gall midges problem in mango?",
+    "input": "",
+    "output": "लीची की फसल में क्विनाल्फोस 25% ईसी 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Rhizopus rot disease problem in jackfruit crop?",
+    "input": "",
+    "output": "कटहल की फसल मे राइजोपस सड़न रोग की समस्या के लिए कॉपर ऑक्सीक्लोराइड  50% डबल्यूपी @ 2.5 ग्राम या प्रोपिकोनाज़ोल 25% EC @ 1 ग्राम प्रति  लीटर पानी मे 15 दिनों के अंतराल पर 2-3  छिड़काव करे |"
+  },
+  {
+    "instruction": "Variety information in Muskmelon?",
+    "input": "",
+    "output": "खरबूजे की किस्म- पूसा रसराज, एमएच- 10, डीएमएच- 4, पूसा सुनहेरी आदि है।"
+  },
+  {
+    "instruction": "Plant protection measures for Mango gummosis in Jack fruit & Mango?",
+    "input": "",
+    "output": "पौधे में गोंद निकलने की रोकथाम के लिए 250 कॉपर सल्फ़ेट, 250 ग्राम ज़िंक सल्फ़ेट, 125 ग्राम बोरेक्स, और 100 ग्राम बुझा हुआ चूना का मिश्रण बनाकर पौधे में समान रूप से देना है |"
+  },
+  {
+    "instruction": "Provide information regarding pest control in lemon plant",
+    "input": "",
+    "output": "श्रीमान जी नींबू के पौधों में कीट प्रबंधन के लिए - - Chlorpyriphos - 50% EC - 500 ML प्रति एकड़ 200 लीटर पानी में घोल कर स्प्रे करे"
+  },
+  {
+    "instruction": "Information about Mealybug control in Malta plant?",
+    "input": "",
+    "output": "माल्टा के पौधों में कीट नियंत्रण के लिए डाइमेथोएट 30% ईसी @ 2एमएल/लीटर पानी की दर से घोल बनाकर छिड़काव करे|"
+  },
+  {
+    "instruction": "What to do if you have not received the insurance amount for apple crop?",
+    "input": "",
+    "output": "महोदय अपनी फसल के बीमा राशि प्राप्त होने से संबंधित जानकारी के लिए दिए गए नंबर पर कॉल करें- 14447"
+  },
+  {
+    "instruction": "Plant protection measures for Mango gummosis in Plum?",
+    "input": "",
+    "output": "पौधे में गोंद निकलने की रोकथाम के लिए 250 कॉपर सल्फ़ेट, 250 ग्राम ज़िंक सल्फ़ेट, 125 ग्राम बोरेक्स, और 100 ग्राम बुझा हुआ चूना का मिश्रण बनाकर पौधे में समान रूप से देना है |"
+  },
+  {
+    "instruction": "Hoppers problem in mango?",
+    "input": "",
+    "output": "आम की फसल में कीट नियंत्रण के लिए प्रोफेनोफॉस 40% + साइपरमेथ्रिन 4% ईसी 1 मिली/लीटर पानी की दर से घोलकर पौधों पर स्प्रे करें"
+  },
+  {
+    "instruction": "Red Rust disease in mango?",
+    "input": "",
+    "output": "आम की फसल में सल्फर 80% WDG 1 ग्राम/लीटर पानी की दर से घोलकर पौधों पर स्प्रे करें"
+  },
+  {
+    "instruction": "Information on control of bugs found in mango trees?",
+    "input": "",
+    "output": "आम के पेड़ में मिली बग कीड़े के नियंत्रण के लिए थियामेथोक्सम 25% डब्लूजी की 1 ग्राम मात्रा प्रति 2 लीटर पानी में घोल बनाकर के छिड़काव करें"
+  },
+  {
+    "instruction": "Information about the variety of kinnow ?",
+    "input": "",
+    "output": "किन्नू के उन्नतशील प्रजातियां हैं- PAU Kinnow-1, इस किस्म के फल जनवरी महीने में पक जाते हैं। फल में 0—9 बीज होते हैं। इसकी औसतन उपज 45 किलो प्रति वृक्ष होती है। \nDaisy-इस किस्म के फल नवंबर के तीसरे सप्ताह में पकते हैं। फल में 10—15 बीज होते हैं। इसकी औसतन उपज 57 किलो प्रति वृक्ष होती है।"
+  },
+  {
+    "instruction": "Information regarding purchasing Kivi's plants",
+    "input": "",
+    "output": "कीवी के पौधे खरीदने के के लिए जिला उधान विभाग पर संपर्क करे"
+  },
+  {
+    "instruction": "Where to lodge a complaint for not getting compensation for the loss of apple crop?",
+    "input": "",
+    "output": "सेब की फसल नष्ट होने के बाद पीएम फसल बीमा योजना के तहत मुआवजा न मिलने की स्तिथि में अपने जिले के कृषि जिला अधिकारी या कृषि उप-निदेशक को लिखित में शिकायत दर्ज करे या हेल्पलाइन नंबर पर भी संपर्क कर सकते है- 14447"
+  },
+  {
+    "instruction": "Rhizopus rot problem in jack fruit?",
+    "input": "",
+    "output": "कटहल के पौधे  पर कॉपर ऑक्सीक्लोराइड  50% डबल्यूपी @ 2.5 ग्राम / लीटर पानी मे 15 दिनों के अंतराल पर 2 छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the control of leaf curl in Peach ?",
+    "input": "",
+    "output": "श्रीमान जी, आडू की फसल मेेंं पर्ण संकुचन बीमारी की रोकथाम हेतु  डाइमेथोएट 30 % EC @ 1-2 ml प्रति लीटर पानी में घोल बनाकर छिड़काव करें, तथा कॉपर या सल्फर युक्त उर्वरकों का प्रयोग करें।"
+  },
+  {
+    "instruction": "Which spray should be done to solve the problem of flower fall in mango crop",
+    "input": "",
+    "output": "आम की फसल में फूल झड़ने की समस्या से बचने के लिए नेफ्थाइल एसिटिक एसिड 4. 5% एस. एल.की 1 एम एल  मात्रा प्रति 4  लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "information about which plan available apple and kiwi fruit plant ?",
+    "input": "",
+    "output": "लीची सेब कीवी के पौधे लेने के लिए जिले के उधान विभाग मे संपर्क करें |"
+  },
+  {
+    "instruction": "Plant protection measures for Frost in Plum?",
+    "input": "",
+    "output": "आलूबुखारा के पौधों में आवश्यकता होने पर कार्बेन्डाजिम 12%+ मैनकोज़ेब 63% डब्लूपी @ 1-2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Information on solution of problem of flower fall in pomegranate crop",
+    "input": "",
+    "output": "अनार की फसल में फूल झड़ने की समस्या को रोकने के लिए अल्फा नेफथाइल एसिटिक एसिड (0.4% एसएल की 1  एम एल मात्रा प्रति 4 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information regarding control of fruit rot disease in jackfruit plant  ?",
+    "input": "",
+    "output": "श्रीमान जी आप कटहल के पौधे पर कॉपर ऑक्सीक्लोराइड 50 % WP की 2.5 ग्राम मात्रा प्रति लीटर पानी मे मिलाकर स्प्रे करें |"
+  },
+  {
+    "instruction": "Information about the not getting claim of Crop Insurance under PMFBY ?",
+    "input": "",
+    "output": "श्रीमान जी,अपनी फसल बीमा की पूर्ण धनराशी ना मिलने के संबंध में अधिक जानकारी के लिए आप प्रधानमंत्री फसल बीमा योजना की आधिकारिक वेबसाइट https://pmfby.gov.in/ या टोल फ्री नंबर 1800 180 1447 या चैट बॉट व्हाट्सएप नंबर 7065514447 पर संपर्क करें।"
+  },
+  {
+    "instruction": "Information about preventing monkeys in apple orchard..?",
+    "input": "",
+    "output": "श्रीमान जी,सेब के बाग में बंदरों से रोकथाम के लिए झटका मशीन तारबंदी करवाएं |"
+  },
+  {
+    "instruction": "Information about how many days after irrigation, fertilizer should be use in mango plants ?",
+    "input": "",
+    "output": "महोदय आम के पौधों में थाला बनाकर पहले सिंचाई करें फिर जब उसमें हल्की नमी रह जाए तब उर्वरकों को थाले में अच्छे से मिलाएं धन्यवाद |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला अल्मोड़ा ब्लॉक चौबटिया में 3,6,7,8,9 फरवरी को मौसम साफ रहने और 4,5 फरवरी को बूँदा-बाँदी होने की संभावना है | आज का अपेक्षित अधिकतम तापमान 14, न्यूनतम तापमान 5 डिग्री सेल्सियस तक रहने और हवा की गति 7 किलोमीटर प्रति घंटा की दर से चलने की संभावना है, मौसम के अनुसार आड़ू की फसल मे स्प्रे करें।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला अल्मोड़ा ब्लॉक चौबाटिया में आज से 14 फरवरी के मध्य बारिश की संभावना नहीं है हालाकि हल्के बादल छाए रहने की संभावना है,आज का अधिकतम तापमान 17 डिग्री सेल्सियस,न्यूनतम तापमान 3 डिग्री सेल्सियस रहने की संभावना है तथा हवाएं 4 से 7 किलोमीटर प्रति घंटे की रफ्तार से चलने की संभावना हैं| मौसम के अनुसार सेब के पौधे की रोपाई करे"
+  },
+  {
+    "instruction": "information about Bacterial Canker and Gondiya Disease management in peach ?",
+    "input": "",
+    "output": "आड़ू की पेड़ पर कापर ऑक्सीक्लोराइड 50 % डब्ल्यूपी 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें"
+  },
+  {
+    "instruction": "information about Mealybugs insect control in mango ?",
+    "input": "",
+    "output": "आम की फसल मे मिली बग कीट की रोकथाम के लिए डाईमेथोयट 30 % ईसी 2 एमएल प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Plant protection measures for peach aphids in Peach?",
+    "input": "",
+    "output": "आड़ू के पौधे में कीट की रोकथाम हेतु डाइमेथोएट 30% ईसी @ 2 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव करे।"
+  },
+  {
+    "instruction": "Information about control of flower and fruit dropping in mango ?",
+    "input": "",
+    "output": "श्रीमान जी,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) की 1 ml मात्रा प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Aphid problem in mango plant?",
+    "input": "",
+    "output": "आम की फसल में कीट के नियंत्रण के लिए क्विनालफोस 25% ईसी@ 1.5 एमएल /लीटर पानी की दर से छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measure for flower dropping in Litchi?",
+    "input": "",
+    "output": "लीची में फल फूल गिरने की रोकथाम के लिए अल्फा नेफ़थिल एसिटिक एसिड 4.5 एसएल @ 1 एमएल/ 4.5 लीटर पानी का घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measure for Sucking Pest in Peach?",
+    "input": "",
+    "output": "आड़ू में रस चूसक कीट नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एसएल @ 0.5 एमएल/ लीटर पानी की दर से प्रयोग करे |"
+  },
+  {
+    "instruction": "information about mango hoppers insect control in mango ?",
+    "input": "",
+    "output": "आम के पेड़ मे मेंगो हापर कीट की रोकथाम के लिए थियामेथोक्सम 12.6% + लैम्ब्डा साइहेलोथ्रिन 9.5% ZC 80 एमएल दवा को 180 लीटर  पानी मे घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the  Mango crop ?",
+    "input": "",
+    "output": "श्रीमान जी, आम की फसल मे फूल तथा फल झाड़न की रोकथाम हेतु अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Information on control of Mango Hopper in Mango Crop?",
+    "input": "",
+    "output": "आम की फसल में मैंगो हापर  के नियंत्रण के लिए क्लोरपायरीफोस 50%+साइपरमेथ्रिन 5% ईसी की 2 एमएल मात्रा या इमिडाक्लोप्रिड 17.8% एसएल की आधा एम एल मात्रा प्रति एकड़ के हिसाब से छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about control of hopper in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "provide information about disease and pest management in mango plant.?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधों को कीट एवं बीमारी से बचने के लिए - Carbendazim - 12% + Mancozeb - 63% - WP 2 ग्राम और Imidacloprid 17.8% SL - 0.5 ML प्रति लीटर पानी का घोल बनाकर छिड़काव करें I"
+  },
+  {
+    "instruction": "Information about control of fruit and shoot borer in mango orchard  ..?",
+    "input": "",
+    "output": "श्रीमान जी,आम के ऑर्चर्ड मे  Flubendiamide 20% WG @ 10 ग्राम प्रति  15 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about the control of Leaf Curl in Peach ?",
+    "input": "",
+    "output": "श्रीमान जी, आडू के पौधों में लीफ कर्ल रोग की रोकथाम हेतु थियामेथोक्सम 25% डब्लूजी 0.5- 01 ग्राम प्रति लीटर पानी के हिसाब से घोल बनाकर स्प्रे करें। \nअथवा \nश्रीमान जी, थियामेथोक्सम 12.6% + लैम्ब्डा-साइहैलोथ्रिन 9.5% ZC (Thiamethoxam 12.6% + Lambda-Cyhalothrin 9.5% ZC) @ 01 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें ।"
+  },
+  {
+    "instruction": "Information regarding control of sucking pests on mango plants ?",
+    "input": "",
+    "output": "श्रीमान जी,आम के पौधो पर रस चूसक कीट नियंत्रण के लिए  Imidacloprid 17.8% SL  ,आधा [0.5] मिली मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "ASKED ABOUT TO INSECT CONTROL IN MANGO ?",
+    "input": "",
+    "output": "क्लोरोपायरिफॉस 50% + साईपरमेथ्रिन 5% ई.सी. 2 एम.एल.प्रति लीटर पानी में घोल बना कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about the control of sucking pest and fungal infection in Mango..?",
+    "input": "",
+    "output": "श्रीमान जी, आम में इमिडाक्लोप्रिड 17.8% SL @ 0.5 ml प्रति लीटर पानी तथा मैंकोजेब 75% WP @ 2 gm प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Information on control of sucking insects in mango crop",
+    "input": "",
+    "output": "आम की फसल मे रस चूषक कीडे के नियत्रण के लिए इमिडाक्लोरप्रिड 17.8 % एस एल की आधा एम एल मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL), @ 100 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in crop  ?",
+    "input": "",
+    "output": "श्रीमान जी,आलूबुखारा के पौधे  में फल फूल को गिरने से रोकने के लिए , Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the control of fruit borer in Pomegranate ?",
+    "input": "",
+    "output": "श्रीमान जी, अनार मे फल छेदक की रोकथाम हेतु डाइमेथोएट 3O% ईसी (Dimethoate 3O% EC) @ 2 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO PM KISAN SAMMAN NIDHI YOJANA  ?",
+    "input": "",
+    "output": "प्रधानमंत्री किसान सम्मान निधि योजना की केवाईसी करवाना आवश्यक है तथा अधिक जानकारी के लिए अपने क्षेत्र के नोडल अधिकारी से संपर्क करें, हेल्पलाइन नंबर 011-24300606, 1800155261, 1800115526  पर संपर्क करें"
+  },
+  {
+    "instruction": "How to prepare the Apple Plant?",
+    "input": "",
+    "output": "सेब के वह पौधे जिनकी रोपाई होनी होती है, पहले उन्हें भी तैयार करना होता है। इस पौधों को बीज और कलम के जरिये तैयार किया जाता है। कलम से पौधों को तैयार करने के लिए पुराने पेड़ों की शाखाओं को ग्राफ्टिंग और गूटी विधि से तैयार किया जाता है। इसके अलावा यदि आप चाहे तो किसी भी सरकारी रजिस्टर्ड नर्सरी से इन्हेें खरीद सकते है।"
+  },
+  {
+    "instruction": "Information on control of thrips in Apple plants  ?",
+    "input": "",
+    "output": "श्रीमान जी,सेब के पौधों में रस चूसक कीट के नियंत्रण के लिए  Imidacloprid 17.8% SL @ 100 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "There has been hailstorm on apple crop, crop insurance benefits are required",
+    "input": "",
+    "output": "फसल बीमा का लाभ लेने के लिए टोल फ्री नंबर-१४४४७ पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about control of aphid in peach..?",
+    "input": "",
+    "output": "श्रीमान जी आड़ू  में माहू  नियंत्रण के लिए नीम तेल का प्रयोग करें."
+  },
+  {
+    "instruction": "Fruit fly problem in pomegranate?",
+    "input": "",
+    "output": "अनार की फसल में फल मक्खी के नियंत्रण के लिए क्विनालफोस 25% ईसी@ 2 एमएल /लीटर या जैविक नियंत्रण के लिए नीम ऑयल 3-4 एमएलम मात्रा प्रति लीटर की दर से छिड़काव करें|"
+  },
+  {
+    "instruction": "information about hopper insect control in mango ?",
+    "input": "",
+    "output": "आम मे रस चूसक कीट की रोकथाम के लिए इमिडाक्लोरप्रिड़ 17.8 % एससल 100 एमएल दवा 200 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the crop ?",
+    "input": "",
+    "output": "श्रीमान जी, लीची के पौधों मे फूल झड़ने की समस्या की रोकथाम हेतु अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 से 10 लीटर पानी के साथ घोल बनाकर छिड़काव करे।"
+  },
+  {
+    "instruction": "Information regarding banana cultivation  ?",
+    "input": "",
+    "output": "महोदय केले के पौधे लगाने के लिए जुलाई से अगस्त में लगाने का सही समय होता है तथा अधिक जानकारी के लिए आप अपने जिला उद्यान  विभाग में संपर्क करें धन्यवाद  |"
+  },
+  {
+    "instruction": "Fertilizer management in Mango plants?",
+    "input": "",
+    "output": "आम के पौधे में वर्ष में दो बार (जुलाई से सितंबर और फल तुड़ाई के तुरंत बाद) गोबर की सड़ी खाद @ 40-50 किग्रा, सूक्ष्म पोषक तत्व @ 400 ग्राम और एनपीके @ 2 किग्रा/ पौधा देना होता है।"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका कीट के नियंत्रण के लिए Thiamethoxam 25% WG की 01 ग्राम मात्रा प्रति 02 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information on protecting crops from wild animals?",
+    "input": "",
+    "output": "महोदय, जंगली जानवर से फसलों को बचाने के लिए अपने उद्यान विभाग में तार-बन्दी के लिए संपर्क करे।"
+  },
+  {
+    "instruction": "Information regarding control of fungal disease on litchi flowers ?",
+    "input": "",
+    "output": "श्रीमान जी,लीची के फूल पर फंगस रोग नियंत्रण के लिए  Carbendazim 12% + Mancozeb 63% WP @  2  ग्राम मात्रा  प्रति   लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in Litchi Plant ?",
+    "input": "",
+    "output": "श्रीमान जी,लीची के पौधों पर फल फूल को नियंत्रण के लिए  Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the control of Blight in plum crop..?",
+    "input": "",
+    "output": "श्रीमान जी, Copper Oxychloride 50% WP @ 2 ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Plant protection measure for Mealybugs in Jack Fruit?",
+    "input": "",
+    "output": "महोदय कटहल, आम और फूल में मीलीबग नियंत्रण के लिए थियामेथोक्साम 25% डब्ल्यूजी @ 1 ग्राम/ 3 लीटर पानी की दर से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information on spider mite control in mango plant ?",
+    "input": "",
+    "output": "आम के पौधे मे मकड़ी कीट के नियंत्रण के लिए प्रॉपरजाइट 57% ईसी 2 एमएल/लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about lemon plant not producing flowers and fruits?",
+    "input": "",
+    "output": "महोदय, नींबू के पौधे में गोबर की सड़ी खाद @ 10-15 किग्रा, एनपीके- 12:32:16 @ 400-500 ग्राम और सूक्ष्म पोषक तत्व @ 80-100 ग्राम/ पौधा देना है।"
+  },
+  {
+    "instruction": "Flower dropping problem in Custard apple fruit?",
+    "input": "",
+    "output": "फूल और फल को गिरने से बचाने के लिए एन. ए. ए. (प्लानोफिक्स) 1 एमएल को 4 लीटर पानी मे मिलाकर छिड़काव करे पहला छिड़काव फूल आने से पहले तथा दूसरा छिड़काव  जब फल  का दाना मटर के आकार का हो जाता है छिड़काव किया जाता है |"
+  },
+  {
+    "instruction": "information about kiwi fruit planting time and subsidy ?",
+    "input": "",
+    "output": "कीवी  के पौधे लगाने के लिए सबसे उपयुक्त समय आपका अक्टूबर नवंबर का महीना हैकि यदि कीवी पौधों  पर कोई सब्सिडी या कोई प्रोजेक्टआपको बताया गया है तो आप विवेकानन्द पर्वतीय कृषि अनुसंधान संस्थान, अल्मोड़ा ... Toll Free - 18001802311 पर संपर्क करें"
+  },
+  {
+    "instruction": "What should be the distance between rows and plants for planting litchi orchards",
+    "input": "",
+    "output": "लीची बिजाई के लिए वर्गाकार ढंग के लिए पंक्ति से पंक्ति का फासला 10 मीटर और पौधे से पौधे का फासला 10 मीटर रखा जाता है। खुश्क जलवायु और कम उपजाऊ भूमि में कतार से कतार ओर पौधे से पौधे में 8 मीटर का फासला रखें।"
+  },
+  {
+    "instruction": "information about flower dropping control in Litchi ?",
+    "input": "",
+    "output": "लीची की पौधे पर फल फूल गिरने की रोकथाम के लिए नेपथाइल एसीटिक ऐसिड 1 मल दवा 4 लीटर पानी के हिसाब से घोलकर एक एकड़ मे छिड़काव करें |"
+  },
+  {
+    "instruction": "information about manure and fertilizer dose and use in 15 year old litchi plant ?",
+    "input": "",
+    "output": "लीची के 15 वर्ष के पेड़ मे 60 किलोग्राम सड़ा गोबर + 5 किलोग्राम सिंगल सुपरफास्फेट ,3 किलोग्राम नीम की खली +1 किलोग्राम म्यूरेट ऑफ पोटाश प्रति पेड़ के हिसाब से डालें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी मौसम विभाग के पूर्वानुमान के अनुसार 27 मई से 2 जून के बीच में 27 मई से 30 मई तक लगातार हल्की बूंदाबांदी के साथ-साथ मध्यम वर्ग में बारिश होने की संभावना बनी हुई हैबाकी दिन मौसम साफ रहने की संभावना बनी हुई है आज के दिन अधिकतम तापमान 33 डिग्री सेल्सियस न्यूनतम तापमान 27 डिग्री सेल्सियस होने की संभावना हैहवा की गति 04 से 14 किलोमीटर प्रति घंटे की संभावना बनी हुई है आड़ू  की तुड़ाई  अपने क्षेत्र के मौसम के अनुसार कीजिए"
+  },
+  {
+    "instruction": "Information about the control of fruit cracking in Grapes fruit ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर में फल फटने की समस्या की रोकथाम हेतु - बोरान 20% @ 1 ग्राम प्रति लीटर पानी में घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Information about control of Soil insect in Mango crop ?",
+    "input": "",
+    "output": "श्रीमान जी, आम के पौधों की जड़ों मे लगे कीड़ों की रोकथाम हेतु क्लोरपाइरीफॉस 20% ईसी (Chlorpyrifos 20% EC) @ 2.5-3.0 एमएल प्रति लीटर जल के साथ घोल बनाकर सभी पौधों की जड़ों के पास अच्छे से स्प्रे करे या मिट्टी मे गड्ढा बनाकर डाले ।"
+  },
+  {
+    "instruction": "Information about the foliar spary of NPK in Kiwi fruit ?",
+    "input": "",
+    "output": "श्रीमान जी, कीवी की नर्सरी  मे एनपीके 19:19:19 @ 10 ग्राम तथा सूक्ष्म पोषक तत्व की 05 ग्राम मात्रा प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information regarding varieties of Ber Fruit ?",
+    "input": "",
+    "output": "महोदय बेर की प्रजातियां निम्न है--रेशमी, सेब, गोला, उमरान, कैथली, मेहरुन, इलायची |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग के पूर्वानुमान के अनुसार 5,6,7 और 10 मई बूंदा बांदी होने की संभावना है आज का न्यूनतम तापमान 24°C और अधिकतम तापमान 30°C एवं हवा की गति 4 से 18 किलोमीटर प्रति घंटा रहने की संभावना है मौसम के अनुसार पौधों पर कीटनाशक की स्प्रे करें"
+  },
+  {
+    "instruction": "Information about control of the black spot on fruits of Fig ?",
+    "input": "",
+    "output": "श्रीमान जी, अंजीर मे फल के ऊपर काले धब्बों या गाँठो की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 2.5-3.0 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information regarding pre harvest spray (20-25  days before the harvest of fruit) in apple?",
+    "input": "",
+    "output": "बागवान भाई   सेब मे फल तोड़ने से पूर्व (फल तोड़ने से 20 से 25 दिन पूर्व) पर असामयिक पतझड़, स्कैब रोगों के नियंत्रण हेतु कैप्टान 600 ग्राम या  जीरम 600 ग्राम  या  Cabrio Top ( Metiram 55 % + Pyraclostrobin 5 % ) @ 200 gram या हेक्साकोनाज़ोल 4% + ज़िनेब 68% WP (अवतार) 500 ग्राम  या फ्लुओपाइरम 17.7% w/w + टेबुकोनाज़ोल 17.7% w/w SC (LUNAExperience) 126 मि.ली.  को 200 लीटर पानी में मिलाकर छिड़काव करे|   1 -2 दिन बाद सेंजोस स्केल कीट की रोकथाम के लिए ऑक्सीडेमेटान मिथाइल 25 ईसी (Metasystox) का 200 मिली प्रति 200  लीटर पानी में घोल बना के छिड़काव करें।"
+  },
+  {
+    "instruction": "Information regarding claim under PM Crop Insurance Scheme?",
+    "input": "",
+    "output": "प्रधानमंत्री फसल बीमा योजना के अंतर्गत टोल फ्री नंबर पर संपर्क करने के बाद जो आपको जानकारी दी गयी है उसी के अनुसार कार्य करे।"
+  },
+  {
+    "instruction": "Plum fruits are cracking what to do?",
+    "input": "",
+    "output": "आलू बुखारा के फलों को फटने से बचने के लिए बोरेक्स2 ग्राम मात्रा प्रति लीटर के हिसाब से छिड़काव करें|"
+  },
+  {
+    "instruction": "information about regular bearing in mango plant",
+    "input": "",
+    "output": "आम के पेड़ मे अक्टूबार के महीने में पैक्लोबुट्राज़ोल 23% एससी (कलटार )15 एममल दवा को 5-10 लीटर पानी मे घोलकर पेड़ के चोरों तरफ थाला बनाकर डालें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला हरिद्वार ब्लॉक लक्सर में 16 जुलाई से 22 जुलाई तक बादल छाए रहने के साथ हल्की बारिश होने की सम्भावना है। आज का अपेक्षित अधिकतम तापमान 31 न्यूनतम तापमान 28 डिग्री सेल्सियस एवं हवा की गति 1 किलोमीटर प्रति घंटा रहने की सम्भावना हैं। मौसम के अनुसार आम की तुड़ाई करें।"
+  },
+  {
+    "instruction": "information regarding control Guava fruits are falling due to black spot..?",
+    "input": "",
+    "output": "श्रीमान जी, Copper oxychloride 50% WP @ 2.5 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Dwarf Variety information in Mango?",
+    "input": "",
+    "output": "महोदय, आम की ड्वॉर्फ किस्म आम्रपाली है, इसके अलावा अन्य किस्म- मल्लिका, लंगड़ा, बंगलुरा, रतना, सिन्धु, चौसा आदि है।"
+  },
+  {
+    "instruction": "Plant Growth & Regulators in Guava?",
+    "input": "",
+    "output": "अमरूद की फसल में सागरिका 2 मिली./ लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information about control of White flies in Lemon  plant  ?",
+    "input": "",
+    "output": "श्रीमान जी,नींबू के पौधे में सफेद मक्खी के नियंत्रण के लिए , Imidacloprid 17.8% SL @  आधा  [.5] मिली मात्रा  प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in Mango tree ?",
+    "input": "",
+    "output": "महोदया , आम के 7-15 साल के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 15 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे 5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें| इसी  प्रकार से चीकू के पौधों मे मे भी 10 एमअल दवा 10 लीटर पानी मे घोल बनाकर प्रयोग करना है ।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम विभाग के पूर्वानुमान के अनुसार 13 जुलाई तक प्रत्येक दिन बूंदा बांदी होने की संभावना है।आज का अपेक्षित अधिकतम तापमान 30°C और न्यूनतम तापमान 26°C एवं हवा की गति 4 से 18 किलोमीटर प्रति घंटा रहने की संभावना है मौसम के अनुसार फसल की तोड़ाई करें"
+  },
+  {
+    "instruction": "Information about induce flowering in lemon  crops..?",
+    "input": "",
+    "output": "श्रीमान जी, नींबू मे Nitro benzene 20% @ 2-3 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the douche of  Emamectin benzoate 5 SG insectiside ?",
+    "input": "",
+    "output": "श्रीमान जी, इमामेक्टिन बेंजोएट 5% एसजी (Emamectin benzoate 5 SG) @ 0.5 ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information on control of white flies in kiwi nursery plants  ?",
+    "input": "",
+    "output": "श्रीमान जी,कीवी की नर्सरी  में कीट नियंत्रण के लिए , Imidacloprid 17.8% SL  आधा [0.5] मिली मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about how to get a soil sample for soil testing..?",
+    "input": "",
+    "output": "श्रीमान जी, एक एकड़ क्षेत्र में लगभग 10 स्थानों से ‘V’ आकार के 6 इंच गहरे गहरे गढ्ढे बनायें। सभी स्थानों से प्राप्त मिट्टी को एक साथ मिलाकर 500 ग्राम का एक सन्युक्त नमूना बनायें।सूखे हुए नमूने को थैली में भरकर कृषक का नाम, पता, खसरा संख्या, मोबाइल नम्बर, आधार संख्या, उगाई जाने वाली फसलों आदि का ब्यौरा दें तथा नमूना प्रयोगशाला को प्रेषित करें|"
+  },
+  {
+    "instruction": "Information about control of fruit and shoot borer in mango orchard  ..?",
+    "input": "",
+    "output": "श्रीमान जी,आम के ऑर्चर्ड मे  Flubendiamide 20% WG @ 10 ग्राम प्रति  15 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "information about black spot disease control in jack fruit ?",
+    "input": "",
+    "output": "कटहल के फल काले होकर गिरने की रोकथाम के लिए कापर ऑक्सीक्लोराइड 50 % डब्ल्यूपी 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information regarding control of white fly in mosambi plant ?",
+    "input": "",
+    "output": "श्रीमान जी पौधों मे कीट के नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL) की 01 एमएल मात्रा  प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "information about Plantion distance in banana ?",
+    "input": "",
+    "output": "केले के लम्बे प्रभेद के लिए 2 मीटर की दूरी और छोटे प्रभेद के लिए 1.5 मीटर की दूरी रखे |"
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO DISEASE CONTROL IN  MANGO ?",
+    "input": "",
+    "output": "कॉपर ऑक्सीक्लोराइड 50%डब्लू.पी.(ब्लइटटॉक्स/ ब्लू कॉपर) दवा का 3 ग्राम प्रति लिटर पानी में घोल कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information regarding training pruning in Jackfruit plant ?",
+    "input": "",
+    "output": "महोदय कटहल के पौधों में जब फल की तुड़ाई हो जाती है उसके बाद पौधों में कटाई-छटाई का कार्य किया जाता है जिसमें अवांछित, मृत, रोगग्रस्त या क्षतिग्रस्त टहनियों को हटा दिया जाता है |"
+  },
+  {
+    "instruction": "Information about favorable temperature for plum cultivation?",
+    "input": "",
+    "output": "आलूबुखारा की खेत के लिए औसतन अनुकूल तापमान 20-30 डिग्री से. होना चाहिये।"
+  },
+  {
+    "instruction": "You can spray mango plants when they flower?",
+    "input": "",
+    "output": "आम के पौधे पर यदि कोई रोग या कीट नहीं है तो स्प्रे नहीं करनी चाहिए जब फल मटर के आकार का बन जाए तब स्प्रे करें"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला हल्द्वानी ब्लॉक हल्द्वानी में 15,16 मार्च को बूँदा-बाँदी होने और 17,18,19,20,21 मार्च को आंशिक रूप से बादल छाए रहने की सम्भावना है। आज का अपेक्षित अधिकतम तापमान 25, न्यूनतम तापमान 20 डिग्री सेल्सियस तक रहने और हवा की गति 11 किलोमीटर प्रति घंटा की दर से चलने की संभावना है, मौसम के अनुसार आम में स्प्रे करें।"
+  },
+  {
+    "instruction": "In mango crop, alpha naphthyl acetic acid should be applied on the entire tree",
+    "input": "",
+    "output": "श्रीमान जी,अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर पूरे पेड़ पर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में आज से 24 मार्च के मध्य बारिश की संभावना नहीं  है,आज का अपेक्षित अधिकतम तापमान 24 डिग्री सेल्सियस न्यूनतम तापमान 14 डिग्री मेल्हिये तक रहने और हवा की गति 7 से 11 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैं | मौसम के अनुसार आड़ू के पौधों पर कीटनाशी का छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the control of sucking pest and fungal infection in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी, इमिडाक्लोप्रिड 17.8% SL @ 0.5 ml प्रति लीटर पानी तथा मैंकोजेब 75% WP @ 2 gm प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें ।"
+  },
+  {
+    "instruction": "Information regarding control of Hopper in mango plant ?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधे मे कीट के नियंत्रण के लिए थाईमेथोक्सम 25% डब्लूजी (Thiamethoxam 25% WG) की आधा ग्राम मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिडकाव करें।"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "महोदय आम के पौधों पर कीट नियंत्रण के लिए आपको  कीटनाशी  का अच्छे से स्प्रे करवाना है तभी कंट्रोल होगा धन्यवाद |"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी,आम की फसल चेपा की रोकथाम हेतु   Dimethoate 3O% EC @ 2ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे।  \nअथवा\nश्रीमान जी आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "information about identification of Miyazaki Mango Plant ?",
+    "input": "",
+    "output": "मियाज़ाकी आम का पेड़, अन्य आम की किस्मों की तरह, सदाबहार पत्तियों से भरा होता है जो आकार में लांसोलेट होते हैं, जिनकी लंबाई 15 से 35 सेमी तक होती है। ये पत्ते जब छोटे होते हैं तो लाल या गुलाबी रंग के होते हैं, धीरे-धीरे परिपक्व होने पर चमकदार, गहरे हरे रंग में बदल जाते हैं।"
+  },
+  {
+    "instruction": "Information about the control of stem borer in Mango ..?",
+    "input": "",
+    "output": "श्रीमान जी,आम के पेंड मे कीटनाशक  Quinalphos 25% EC @ 2 ml प्रति लीटर पानी के साथ घोल बनाकर पूरे पेंड मे  छिड़काव करें और और सिरिंज की सहायता से पेड़ में दवा प्रवेश कराएं,सूखी हुई टहनियों को काटकर फफूंदनाशक कॉपर ऑक्सीक्लोराइड 50% wp का लेप लगा दें"
+  },
+  {
+    "instruction": "Information about the control of Leaf Caterpillar in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आम की फसल मे पत्ती छेदक की रोकथाम हेतु नोवालुरोन 5.25% + इंडोक्साकार्ब 4.5% w/w SC (Novaluron 5.25% + Indoxacarb 4.5% w/w SC) @ 2 एमएल प्रति लीटर पानी मे घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "The size of mango is like a pea seed. Can we irrigate at this time?",
+    "input": "",
+    "output": "श्रीमान जी आप इस समय आम की फसल  की सिंचाई कर सकते हैं|"
+  },
+  {
+    "instruction": "Information about control of mealy bug in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG की 01 ग्राम मात्रा प्रति 02 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "What is the helpline number of the crop insurance company?",
+    "input": "",
+    "output": "फसल बीमा से संबंधित समस्या के लिए हेल्पलाइन नंबर 14447 पर संपर्क कर सकते हैं|"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान आपके क्षेत्र में आज से 14-15 मार्च के मध्य हल्की बूँदा बाँदी की संभावना बनी हुई  है,आज का अपेक्षित अधिकतम तापमान 19 डिग्री सेल्सियस न्यूनतम तापमान 8 डिग्री सेल्सियस तक रहने और हवा की गति 4 से 11 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैं | मौसम के अनुसार कृषि कार्य करें |"
+  },
+  {
+    "instruction": "Variety information in Muskmelon?",
+    "input": "",
+    "output": "खरबूजे की हाइब्रिड किस्म- पंजाब हाइब्रिड- 1, पंजाब अनमोल, पुस रसराज, एमएच- 10, डीएमएच- 4, एमएचवाई- 3 आदि है।"
+  },
+  {
+    "instruction": "Information regarding control of mealy bug in Mango plant  ?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधों में कीट नियन्त्रण के लिए थायमेथोक्सम 25% WG की एक ग्राम मात्रा 02 लीटर पानी में मिलाकर छिडकाव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping induce flowering? in gauva ,litchi ,crop..",
+    "input": "",
+    "output": "श्रीमान जी, Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |  \nश्रीमान जी, Nitro benzene 20% @ 2-3 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information regarding pest control on mango plants ?",
+    "input": "",
+    "output": "महोदय आप अपने आम के पौधों के तने पर ग्रीस लगाकर कीट  नियंत्रण कर सकते  हैं धन्यवाद |"
+  },
+  {
+    "instruction": "TELL ME CONTROL OF FLOWER DROPPING IN MANGO ?",
+    "input": "",
+    "output": "प्लानोफिक्स दवा 1 एम एल प्रति 4 लिटर पानी में घोल कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Plant protection measures for Powdery mildew in Malta?",
+    "input": "",
+    "output": "माल्टा के पौधे में क्लोरोथालोनिल 75% डब्लूपी  @ 2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान महोदय आपके क्षेत्र में आज 4 फरवरी को बहुत हल्की बूंदाबांदी होने और 5 से 10 फरवरी तक मौसम साफ रहने की संभावना बनी हुई है, अधिकतम तापमान 21 व न्यूनतम 16 डिग्री सेल्सियस तक रहने और हवा की गति 7 से 18 किलोमीटर प्रति घंटे की दर से चलने की संभावना है, कृषि कार्य मौसम के अनुसार करें|"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 06 फरवरी से 12 फरवरी  तक का मौसम ज्ञात हो रहा है | सभी दिनों में मौसम साफ देखा जा रहा है, बारिश अथवा बूंदाबादी की संभावना नही है| आज का अधिकतम तापमान 20 डिग्री सेल्सियस तथा न्यूनतम तापमान 12 डिग्री सेल्सियस, हवा की गति 11-18 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार सेब  की फसल की तुड़ाई  करें।"
+  },
+  {
+    "instruction": "Suggest insecticides for controlling underground termites and white grub?",
+    "input": "",
+    "output": "ब्यूवेरिया वैसियाना के प्रयोग की विधि-भूमि शोधन हेतु ब्यूवैरिया वैसियाना की 2.5 किग्रा. प्रति हे. लगभग 75 किग्रा. गोबर की खाद में मिलाकर अन्तिम जुताई के समय प्रयोग करना चाहिए।खड़ी फसल में कीट नियंत्रण हेतु 2.5 किग्रा. प्रति हेक्टेयर की दर से 400-500 लीटर पानी में घोलकर सायंकाल छिड़काव करें जिसे आवश्यकतानुसार 15 दिन के अंतराल पर दोहराया जा सकता है।"
+  },
+  {
+    "instruction": "What is the last date for insuring peach crop?",
+    "input": "",
+    "output": "श्रीमान जी आडू की फसल का बीमा करने के लिए आप लेट हो चुके हैं इसकी अंतिम तिथि 7 जनवरी 2025 थी|"
+  },
+  {
+    "instruction": "When should mango trees be pruned?",
+    "input": "",
+    "output": "आम के पौधों की कटाई -छटाई का उपयुक्त समय फल तुड़ाई करने के पश्चात  होता है|"
+  },
+  {
+    "instruction": "Plant protection measure for pest and fungus disease in Mango?",
+    "input": "",
+    "output": "महोदय आम की फसल में फंगस रोग या कीट का प्रकोप दिखाई देता है ऐसे में कार्बेन्डाजिम 50% डब्लूपी @ 1-1.5 ग्राम/ लीटर पानी और क्विनालफॉस 25% ईसी @ 2 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Flower dropping in Jackfruit?",
+    "input": "",
+    "output": "कटहल में फूल झड़ने की समस्या के निवारण हेतु अल्फा नेफ़थिल एसिटिक एसिड 4.5 एसएल @ 1 एमएल/ 4.5 लीटर पानी का घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in sapota crop..?",
+    "input": "",
+    "output": "श्रीमान जी, चीकू में Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Plant protection measures for Root borer (White grub) in Apple?",
+    "input": "",
+    "output": "सेब की फसल में सूँडी की रोकथाम हेतु क्लोरपाईरीफॉस 20% ईसी @ 1-1.250 लीटर प्रति एकड़ (20 नाली) की दर से सिंचाई के साथ प्रयोग करे।"
+  },
+  {
+    "instruction": "Information about distance for planting of kiwi plant",
+    "input": "",
+    "output": "कीवी के पौधों को कतारों में 4 मीटर और पौधे से पौधे में 5-6 मीटर फासले का प्रयोग करें।"
+  },
+  {
+    "instruction": "information about wire fencing subsidy ?",
+    "input": "",
+    "output": "तारबंदी पर अधिकतम 50% तक अनुदान मिलता है अधिक जानकारी के लिए जिला उधान विभाग पर संपर्क करे |"
+  },
+  {
+    "instruction": "Information about the control of leaf hopper in Grape fruit ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर की फसल में साइपरमैथरिन 25 प्रतिशत (Cypermethrin 25 % EC) @ 2.4 मि.ली. प्रति 10 लीटर पानी की स्प्रे करें।"
+  },
+  {
+    "instruction": "Information about the control of Downy Mildew in Grapes ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर मे पत्तियो पर सफेद धब्बों की रोकथाम हेतु साइमोक्सानिल 8% + मैन्कोज़ेब 64% WP (Cymoxanil 8% + Mancozeb 64% WP)@ 200 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें। \nअथवा \nश्रीमान जी, अंगूर मे पत्तियो पर सफेद धब्बों की रोकथाम हेतु  मेटालैक्सिल 8%+ मैन्कोज़ेब 64% डब्ल्यू पी (Metalaxyl 8%+ Mancozeb 64% WP)@ 400 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Plant protection measures for Mites in Kinnu (Orange)?",
+    "input": "",
+    "output": "किन्नू के पौधे में मकड़ी की रोकथाम हेतु प्रोपरगाइट 57% ईसी @ 0.5 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव करे सकते है।"
+  },
+  {
+    "instruction": "Information regarding insect control in Litchi plant ?",
+    "input": "",
+    "output": "महोदय लीची के पौधों पर कीट के नियंत्रण के लिए फिप्रोनिल 40% + इमिडाक्लोप्रिड 40% डब्लूजी की एक ग्राम मात्रा प्रति दो लीटर  पानी मे मिलाकर प्रयोग करे |"
+  },
+  {
+    "instruction": "Information about the control of Fruit Cracking in litchi ?",
+    "input": "",
+    "output": "श्रीमान जी लीची के पौधों पर बोरान 20% की 01 ग्राम मात्रा प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Plant protection measure for Mealybugs in Jack Fruit?",
+    "input": "",
+    "output": "महोदय कटहल, आम और फूल में मीलीबग नियंत्रण के लिए थियामेथोक्साम 25% डब्ल्यूजी @ 1 ग्राम/ 3 लीटर पानी की दर से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information on control of white grub insects in banana crop",
+    "input": "",
+    "output": "केले की फसल में वाइट ग्रब कीड़े के नियंत्रण के लिए  \nFIPRONIL 40% + IMIDACLOPRID 40% WG की 2 ग्राम मात्रा प्रति लीटर पानी के हिसाब से घोल  बना करके जड़ों  को तर   करे"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in Mango Litchi?",
+    "input": "",
+    "output": "श्रीमान जी, लीची के 7-15 साल के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 15 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे  5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें।"
+  },
+  {
+    "instruction": "Plant protection measure for Termites in Mango plant?",
+    "input": "",
+    "output": "आम के पौधे में दीमक की रोकथाम हेतु क्लोरपाईरीफॉस 20% ईसी @ 1-1.250 लीटर/ एकड़ की दर से सिंचाई के साथ प्रयोग कर सकते है। तने में दीमक होने पर क्लोरपाईरीफॉस 20% ईसी @ 2 एमएल/ लीटर पानी पूरे पौधे पर अच्छे से छिड़काव कर सकते है।"
+  },
+  {
+    "instruction": "What to use for the problem of alternate bearing in a Mango plants",
+    "input": "",
+    "output": "आम के पौधे में पैक्लोब्यूट्राजोल 23% एससी @ 30 एमएल/ पौधा प्रयोग कर सकते है।"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango plant ?",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका या चेपा कीट नियंत्रण के लिए थायमेथोक्साम 25% WG कीटनाशक की 01 ग्राम मात्रा प्रति 02 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "information about flower dropping control in sapota ?",
+    "input": "",
+    "output": "चीकू के पेड़ मे फूल गिरने और फल नहीं बन रहे है तो आप उसमे नेपथाइल असीटिक ऐसिड 1 एमएल दवा 4 लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Plant protection measure for Fusarium wilt in Banana?",
+    "input": "",
+    "output": "केले के पौधों में रोग नियंत्रण के लिए कार्बेन्डाजिम 50% डब्लूपी @ 1-1.5 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "information about mango hopper insect control in mango plant ?",
+    "input": "",
+    "output": "आम के पौधे मे हॉपर कीट के नियंत्रण के लिए इमिडाकलोपरिड 17.8% एसएल 0.5 एमएल/लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी मौसम विभाग के पूर्वानुमान के अनुसार 8 अप्रैल से 14 अप्रैल के बीच में 8 अप्रैल से 13 अप्रैल तक लगातार हल्की बूंदाबांदी होने की संभावना बनी हुई है बाकी दिन मौसम साफ रहने की संभावना है आज के दिन अधिकतम तापमान 36 डिग्री सेल्सियस न्यूनतम तापमान 25 डिग्री सेल्सियस होने की संभावना है हवा की गति 11 से 18 किलोमीटर प्रति घंटे की होने की संभावना बनी हुई है आम के बगीचे में सिंचाई अपने क्षेत्र के मौसम के अनुसार कीजिएगा"
+  },
+  {
+    "instruction": "Plant Growth & Regulators in mango?",
+    "input": "",
+    "output": "आम की फसल में अल्फा नेप्थिल एसिटिक एसिड 4.5 SL 1 ml/5 लीटर पानी मे घोलकर स्प्रे करे"
+  },
+  {
+    "instruction": "Mango hopper problem in mango?",
+    "input": "",
+    "output": "आम की फसल में मोनोक्रोटोफॉस 36 एसएल 1 ग्राम/लीटर पानी की दर से घोलकर करें"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 27 अप्रैल से 03 मई तक का मौसम ज्ञात हो रहा है। 02 व 03 मई को बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 38 डिग्री सेल्सियस तथा न्यूनतम तापमान 22 डिग्री सेल्सियस, हवा की गति 07-18 किलोमीटर प्रति घंटे की गति से चलने की संभावना है,  कृषि कार्य अपने क्षेत्र के मौसम के अनुसार करें।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the Sapota crop ?",
+    "input": "",
+    "output": "श्रीमान जी, चीकू की फसल मे फल झड़न की रोकठम हेतु अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल (Alpha naphthyl acetic acid 4.5% SL) NAA (Planofix trade name) @ 45 ml प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Information about claim for crop loss due to Natural disater in Apple ?",
+    "input": "",
+    "output": "श्रीमान जी, फसल की क्षति की स्थिति में बीमित किसानों को घटना के 72 घंटे के अंदर सूचना अपने बैंक अथवा संबंधित बीमा कंपनी के टोल फ्री नंबर180018014447 पर रजिस्टर कराना है। अथवा अपने एंड्राइड मोबाइल में प्रधानमंत्री फसल बीमा योजना की एप्लीकेशन डाउनलोड करके फसल क्षति की सूचना दर्ज कर सकते हैं। \nअथवा अधिक सहायता के लिए टोल फ्री नंबर 1800-180-14447 पर संपर्क करे या पीएमएफबीवाई व्हाट्सएप चैटबॉट -7065514447 पर संपर्क करे।"
+  },
+  {
+    "instruction": "Need information about Guava Pruning",
+    "input": "",
+    "output": "अमरूद के बूटे को फूल, टहनियां और तने की स्थिति के अनुसार पड़ते हैं इसलिए साल में एक बार पौधे की हल्की छंटाई करने के समय टहनियों के ऊपर वाले हिस्से को 10 सैं. मी. तक काट देना चाहिए। इस तरह कटाई के बाद नईं टहनियां अकुंरन में सहायता मिलती है।"
+  },
+  {
+    "instruction": "At what distance should peach seedlings be planted?",
+    "input": "",
+    "output": "आड़ू के पौधे रोपण के लिए लाइन से लाइन की दूरी 4 मीटर और पौधे से पौधे की दूरी 4 मीटर तक रख सकते है |"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in Mango tree ?",
+    "input": "",
+    "output": "श्रीमान जी, आम, कटहल तथा लीची  के 7-15 साल के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 15 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे  5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें|"
+  },
+  {
+    "instruction": "Information about the spray of Mancozeb 75% in mango crop ?",
+    "input": "",
+    "output": "श्रीमान जी, आम मे सड़न रोग के नियंत्रण के लिए Mancozeb 75% WP @ 2 ग्राम प्रति 1 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "information aphid control in peach ?",
+    "input": "",
+    "output": "आड़ू के पेड़ पर चेपा कीट की रोकथाम के लिए इमिडाक्लोरपरिड 17.8 % एससल 10 एमएल प्रति टंकी ( 15 लीटर वाली ) के हिसाब से घोल बनाकर छिड़काव करें यदि पेड़ पर फूल लगा है तो मेलाथिऑन पाउडर का पौधे पर बुरकाव कर दें |"
+  },
+  {
+    "instruction": "information about fertilizers management in litchi ?",
+    "input": "",
+    "output": "लीची के पेड़ मे  5 कि.ग्रा. सड़ी हुई गोबर की खाद 250 ग्रा. व 150 ग्रा. करंज की खली, 150 ग्रा. यूरिया, 200 ग्रा. सि.सु.फा., एवं 0.6 कि.ग्रा. म्यूरेट ऑफ़ पोटाश प्रति पौधा प्रति वर्ष की दर से देना चाहिए।"
+  },
+  {
+    "instruction": "Where can one find apple, litchi, Malta etc saplings to plant on Environment Day?",
+    "input": "",
+    "output": "पर्यावरण दिवस पर लगाने के लिए सेब, लीची, माल्टा आदि के पौधे लेने के लिए अपने नजदीकी उद्यान विभाग में संपर्क करे।"
+  },
+  {
+    "instruction": "information about canopy season for lemon plant ?",
+    "input": "",
+    "output": "छत्र प्रबंधन के लिए नींबू के पेड़ की छंटाई का सर्वोत्तम समय आमतौर पर सर्दियों के अंत या वसंत के आरंभ में होता है , जब पाले का खतरा टल जाता है। यह समय पेड़ को पुनः स्वस्थ होने और नई वृद्धि करने का अवसर देता है, साथ ही प्रकाश प्रवेश और फल की गुणवत्ता में भी सुधार करता है। नींबू के पेड़ वसंत ऋतु की शुरुआत में लगाए जा सकते हैं"
+  },
+  {
+    "instruction": "Information on Control of Gummosis in Lemon Trees",
+    "input": "",
+    "output": "श्रीमान जी, जिंक सल्फेट 250 gm, कॉपर सल्फेट 250 gm, बोरेक्स (borax) 125  gm, बुझा चुना 100 gm प्रति पौधे की दर से मिट्टी में मिलाये"
+  },
+  {
+    "instruction": "Information about the use of npk and sagariika in peach and apple  crop..?",
+    "input": "",
+    "output": "श्रीमान जी,आड़ू और सेब मे  NPK 19:19:19 @ 10 ग्राम तथा सागरिका जैविक पोषक तत्व 2.5 मिलीलीटर प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "श्रीमान जी, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र में 8 मई से 12 मई के बीच आंशिक रूप से बादल छाए रहेंगे जिसके साथ  प्रतिदिन हल्की- बूंदाबांदी होने की संभावना है, आज का अधिकतम तापमान 31°C तथा न्यूनतम तापमान 22 °C एवं हवा की गति 7 से 11 किमी./ घंटा रहने की संभावना है| कृप्या मौसम के अनुसार ही आम की फसल मे कीटनाशक का छिड़काव करें|."
+  },
+  {
+    "instruction": "Information regarding the medicine for making litchi red..?",
+    "input": "",
+    "output": "श्रीमान जीलीची को लाल करने की कोई स्पेशल दवाई नहीं आती समय आने पर अपने आप लाल हो जाएगी"
+  },
+  {
+    "instruction": "Information about use of sagarika and npk 19:19:19 in papaya..?",
+    "input": "",
+    "output": "श्रीमान जी पपीते में npk 19:19:19 की 5 ग्राम मात्रा प्रति लीटर पानी के साथ घोल बनाकर इसके साथ सागरिका 2 से 3 मल मात्रा प्रति लीटर पानी के साथ घोल बनाकर स्प्रे करें."
+  },
+  {
+    "instruction": "Information about the status of insurance for apple",
+    "input": "",
+    "output": "सेब के बीमा के स्टेटस के बारे में जानकारी के लिए पॉलिसी आइडी का होना आवश्यक है कृपया अधिक जानकारी के लिए हेल्पलाइन नंबर 14447 पर संपर्क करे |"
+  },
+  {
+    "instruction": "Insurance for apple crop has been approved, please check?",
+    "input": "",
+    "output": "श्रीमान जी,आपका और आपकी माता जी का सेब की फसल का बीमा सफलतापूर्वक स्वीकृत हो चुका है|"
+  },
+  {
+    "instruction": "Information about control of Root weevil in guava tree ?",
+    "input": "",
+    "output": "श्रीमान जी,अमरूद के पौधे में Carbofuran 3G,100gm मिट्टी में मिलाकर प्रयोग करें"
+  },
+  {
+    "instruction": "Information about the control of die back in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी, आम की पौधे को सूखने से रोकने के लिए कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 2.5 ग्राम प्रति 1 लीटर पानी के साथ घोल बनाकर छिड़काव करें । तथा जड़ों के पास अच्छे से भिगोए ।"
+  },
+  {
+    "instruction": "When should fertilizer be applied to Sapota crop?",
+    "input": "",
+    "output": "दिसंबर से जनवरी महीने में रूड़ी की खाद, फासफोरस और पोटाशियम डालें। नाइट्रोजन को दो बराबर भागों में बांटे। पहली आधी मात्रा को मार्च महीने में और बाकी की नाइट्रोजन को जुलाई से अगस्त महीने में डालें।"
+  },
+  {
+    "instruction": "When to irrigate jackfruit plant?",
+    "input": "",
+    "output": "कटहल के पौधों को अधिक सिंचाई की आवश्यकता नहीं होती है। छोटे पौधों में गर्मी के मौसम में सप्ताह में 1 बार सिंचाई करें। बड़े वृक्षों में गर्मी के मौसम में 15 दिनों के अंतराल पर और ठंड के मौसम में 25-30 दिनों के अंतराल पर सिंचाई करें। नवंबर-दिसंबर महीने में कटहल के वृक्षों में फूल आने लगते हैं। इसलिए इस समय सिंचाई का कार्य बंद कर दें। खेत में जल निकासी की उचित व्यवस्था करें।"
+  },
+  {
+    "instruction": "Information regarding prevention of fruit rot in fig plant ?",
+    "input": "",
+    "output": "महोदय अंजीर के पौधे में फल सड़न की रोकथाम के लिए, कॉपर ऑक्सीक्लोराइड 50% WP की दो [ 02 ] ग्राम मात्रा  प्रति  लीटर पानी के साथ स्प्रे करें धन्यवाद |"
+  },
+  {
+    "instruction": "Information about how to report crop loss to the insurance company  ?",
+    "input": "",
+    "output": "श्रीमान जी, फसल की क्षति की स्थिति में बीमित किसानों को घटना के 72 घंटे के अंदर सूचना अपने बैंक अथवा संबंधित बीमा कंपनी के टोल फ्री नंबर 1800-180-14447 पर रजिस्टर कराना है। अथवा अपने एंड्राइड मोबाइल में प्रधानमंत्री फसल बीमा योजना की एप्लीकेशन डाउनलोड करके फसल क्षति की सूचना दर्ज कर सकते हैं । तथा पीएमएफबीवाई व्हाट्सएप चैटबॉट -7065514447 पर भी संपर्क कर सकते है।"
+  },
+  {
+    "instruction": "Information regarding h ow to claim in pradhan mantri fasal bima yojana Loss assessment procedure (intimation )?",
+    "input": "",
+    "output": "प्रधानमंत्री फसल बीमा योजना में बीमा धारक किसान द्वारा नुकसान की जानकारी 72 घंटों के भीतर सम्बंधित बैंक,बिमा कंपनी , कृषि कार्यालय आदि को सूचना दी जानी चाहिए। या आप क्रॉप इन्शुरन्स ऐप के माध्यम से सूचित कर सकते है :-    https://play.google.com/store/apps/details?id=in.farmguide.farmerapp.central&hl=en_IN&gl=US  AGRICULTURE INSURANCE COMPANY        Tollfree No.        1800116515"
+  },
+  {
+    "instruction": "Information about control of White flies in apricot tree..?",
+    "input": "",
+    "output": "श्रीमान जी खुमानी मे  Imidacloprid 70% WG @ 01 ग्राम प्रति 10 लीटर पानी की दर से घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about buying litchi plants?",
+    "input": "",
+    "output": "लीची के पौधे खरीदने के लिए अपने उद्यान विभाग पर संपर्क करें"
+  },
+  {
+    "instruction": "Information about how far litchi should be planted",
+    "input": "",
+    "output": "लीची की रोपाई   के लिए वर्गाकार ढंग के लिए पंक्ति से पंक्ति का फासला 8-10 मीटर और पौधे से पौधे का फासला 8-10 मीटर रखा जाता है।"
+  },
+  {
+    "instruction": "Information on control of white fly in papaya crop",
+    "input": "",
+    "output": "पपीते की फसल में सफेद मक्खी के नियंत्रण के लिए  बुप्रोफेज़िन 25% एससी की 2 एमएल  मात्रा प्रति लीटर पानी के हिसाब से घोल  बना करके छिड़काव करें"
+  },
+  {
+    "instruction": "information about control of fruit fly in Guava",
+    "input": "",
+    "output": "श्रीमान जी, अमरूद मे फल मक्खी नियंत्रड के लिए Quinalphos 25% EC @ 2-2.5 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about induce flowering in lemon crops..?",
+    "input": "",
+    "output": "श्रीमान जी,नींबू में  पुष्पन प्रेरित Nitro benzene 20% @ 2-3 ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the control of flower drop In pomegranate ?",
+    "input": "",
+    "output": "श्रीमान जी, अनार के पौधों में फूल जड़ने की समस्या के रोकथाम के लिए जो दवा  लेके आए हैं, उसका नाम बताइए उसके बाद ही हम आपकी सहायता कर पाएंगे।"
+  },
+  {
+    "instruction": "information about height above sea level can litchi plants be planted ?",
+    "input": "",
+    "output": "लीची के पौधों को 800 मीटर समुद्र तल से ऊपर की ऊंचाई तक लीची को उगाया जा सकता है।"
+  },
+  {
+    "instruction": "Farmer asked query on Mandi details",
+    "input": "",
+    "output": "श्रीमान जी देहरादून में आम का मंडी रेट है- ₹1800 न्यूनतम तथा अधिकतम ₹3200\nसहारनपुर- ₹900-1050"
+  },
+  {
+    "instruction": "Information about to control of  leaf eating caterpillar in Guava plant ?",
+    "input": "",
+    "output": "श्रीमान जी,अमरूद के पौधों में सुंडी के नियंत्रण के लिए,  Emamectin benzoate 5% SG @  आधा [0.5] ग्राम मात्रा प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about the control of Blight in crop..?",
+    "input": "",
+    "output": "श्रीमान जी, Copper Oxychloride 50% WP @ 2 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information regarding Spray after Fruit Development (20 days after walnut stage) in apple plant ?",
+    "input": "",
+    "output": "--सेब मे फल विकास (अखरोट के आकार के 20 दिन बाद ) पर असामयिक पतझड़, स्कैब रोग के नियंत्रण हेतु 80 ग्राम नेटिवो (टेबुकोनाजोज+ट्राईफलोकिसस्ट्रोबीन) या 600 ग्राम जीनेब या 600 ग्राम प्रोपिनेब या 160 मिली कार्बेन्डाजिम 25% + फ्लुसिलाजोल 12.5% ​​​​एससी (लस्टर37.5% एसई) या 700 मिली मैन्कोजेब 60% +पाइराक्लोस्ट्रोबिन 5% w/w WG (लॉरेल) या 600 ग्राम मेटिराम 70% डब्लूजी (पॉलीराम) को 200 लीटर पानी में मिलाकर छिड़काव करे | 1 -2 दिन बाद माईट के नियंत्रण हेतु  60 मि. ली स्पाईरोमेसीफेन (ओबेरोन ) या 200 मि.ली. हैक्सीथाईजोक्स (मेडेन) या 200 मिली प्रोपार्गाइट 42% + हेक्सीथियाज़ॉक्स 2% ईसी (सीज़माइट) को 200 लीटर पानी मे मिला कर छिड़काव करे ।\nसेब मे फल विकास (अखरोट के आकार के 20 दिन बाद ) माइट के नियंत्रण के लिए  60 मि. ली स्पाईरोमेसीफेन (ओबेरोन ) या 200 मि.ली. हैक्सीथाईजोक्स (मेडेन) या प्रोपार्गाइट 42% + हेक्सीथियाज़ॉक्स 2% ईसी (सीसेमाइट) @200 मिली को 200 लीटर पानी मे मिला कर छिड़काव करे ।"
+  },
+  {
+    "instruction": "--FARMER ASKED ABOUT TO INSECT CONTROL IN CITRUS ?",
+    "input": "",
+    "output": "थायोमेंथोक्जाम 25% डबल्यू.जी.(एक्टारा) 0.5 ग्राम प्रति लीटर पानी में घोल बना कर छिड़काव करें।\nNPK 18:18:18 /19:19:19  ग्रेड का 8-10 ग्राम प्रति लिटर पानी में घोल कर छिड़काव करें।"
+  },
+  {
+    "instruction": "Beetles problem in kiwi fruit?",
+    "input": "",
+    "output": "कीवी की फसल में डाइमेथोएट 30% ईसी 1.5 से 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in litchi tree ?",
+    "input": "",
+    "output": "श्रीमान जी, लीची के 30 साल से अधिक आयु के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 20 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे 5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें।"
+  },
+  {
+    "instruction": "Some insect eats the leaves of kiwi fruit at night, what should I do?",
+    "input": "",
+    "output": "श्रीमान जी के कीवी के पौधों पर आप मैलाथियान 5% डीपी का बुरकाव करा सकते है |"
+  },
+  {
+    "instruction": "Where to get apple saplings?",
+    "input": "",
+    "output": "सेब के पौधे लेने के लिए अपने उद्यान विभाग में संपर्क करे।"
+  },
+  {
+    "instruction": "information about  aphid  insect control in banana plant ?",
+    "input": "",
+    "output": "महोदय केले के पौधे मे एफ़िड कीट को रोकथाम के लिए थाईमेथॉक्साम 25 % डब्ल्यूजी 8 ग्राम दवा को 15 लीटर पानी वाली टंकी मे डालके छिड़काव करें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 13 जून से 19 जून तक का मौसम ज्ञात हो रहा है। 13 जून से 19 जून तक हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 38 डिग्री सेल्सियस तथा न्यूनतम तापमान 31 डिग्री सेल्सियस, हवा की गति 07-22 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम के फल की तोड़ाई करे । धन्यवाद !"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 13 जून से 19 जून तक का मौसम ज्ञात हो रहा है। 13 जून से 19 जून तक हल्की बारिश तथा बूंदाबांदी की संभावना है, बाकी दिनों मे आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 35 डिग्री सेल्सियस तथा न्यूनतम तापमान 29 डिग्री सेल्सियस, हवा की गति 11-25 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम के फलों की तोड़ाई करे । धन्यवाद !"
+  },
+  {
+    "instruction": "Fusarium wilt disease control in banana crop ?",
+    "input": "",
+    "output": "केले की फसल मे उकठा रोग की रोकथाम के लिए कार्बेन्डाजिम 12% + मैनकोजेब 63% डब्ल्यू पी 500 ग्राम दवा 200 लीटर पानी मे घोल एक एकड़ मे छिड़काव करें |"
+  },
+  {
+    "instruction": "Information regarding fertilizer management in Papaya plants ?",
+    "input": "",
+    "output": "महोदय पपीता के पौधों में यूरिया की 50 ग्राम मात्रा व सागरिका की 100 ग्राम मात्रा प्रति पौधे की दर से प्रयोग करें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 28 जून से 04 जुलाई तक का मौसम ज्ञात हो रहा है। आपके क्षेत्र में पूरे सप्ताह आंशिक रूप से बादलों के साथ बूंदाबांदी से लेकर हल्की व मध्यम बारिश की संभावना है। आज का अधिकतम तापमान 28 डिग्री सेल्सियस तथा न्यूनतम तापमान 25 डिग्री सेल्सियस, हवा की गति 04-07 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम की तुड़ाई करे धन्यवाद !"
+  },
+  {
+    "instruction": "FARMER ASKED ABOUT TO CULTIVATION INFORMATION  FIG  ?",
+    "input": "",
+    "output": "फलों की ऊपरी सतह तने के अंत पर जामुनी भूरे रंग की और हल्की होती है। फल का अंदरूनी भाग/गुद्दा शानदार स्वाद के साथ गुलाबी भूरे रंग का होने के साथ साथ बेहद स्वाद होता है। इसके फल मई के आखिरी सप्ताह से लेकर जून के अंत तक पकते हैं।"
+  },
+  {
+    "instruction": "Information regarding use of Cultar dose in mango plant ?",
+    "input": "",
+    "output": "महोदय ,आम के पौधे में कल्टार की डोज 15 से 20 ml प्रति पौधा में प्रयोग करें तथा नवंबर से दिसंबर महीने में प्रयोग करें मिट्टी में मिलाए  |"
+  },
+  {
+    "instruction": "information about nutrient management in 8 year old litchi plant ?",
+    "input": "",
+    "output": "8 वर्ष  लीची के पौधों में 7-10 साल की फसल के लिए प्रति पौधा गोबर 40-50 किलो गोबर खाद, 1000-1500 ग्राम यूरिया, 1000 ग्राम सिंगल सुपर फासफेट और 300-500 ग्राम म्यूरेट ऑफ पोटाश डालें।"
+  },
+  {
+    "instruction": "Information about which foil should be put on guava fruit",
+    "input": "",
+    "output": "अमरूद के फलों को चिकना और आकर्षक बनाने के साथ-साथ उनके आकार को बढ़ाने के लिए, पॉलिथीन की पन्नी का उपयोग किया जाता है, खासकर जब फल छोटे हों। यह फल袋 (Fruit bagging) विधि कहलाती है, जिसमें फलों को छोटे आकार में ही पन्नी से ढक दिया जाता है"
+  },
+  {
+    "instruction": "information about muskmelon variety?",
+    "input": "",
+    "output": "खरबूजा की प्रजातियाँ निम्न प्रकार से हैं :-हरा मधु,पूसा शरबती,पूसा मधुरस,दुर्गापुर मधु,पूसा रसराज इत्यादि"
+  },
+  {
+    "instruction": "Need information about adding fertilizer to a 5 year old guava plant",
+    "input": "",
+    "output": "अमरूद के 5 वर्ष पुराने पौधे पर गोबर की खाद 25 किलोग्राम+यूरिया 800 ग्राम+सिंगल सुपर फॉस्फेट 1200 ग्राम+म्यूरेट ऑफ पोटाश 620 ग्रामआयु के अनुसार एक पेड़ लिए संतुलित खाद की मात्रा को दो भागों में बांट लें एक भाग जुलाई में दूसरा भाग सितंबर में तने से एक मीटर दूर चारों ओर नाली बनाकर नीचे खाद डालना चाहिए"
+  },
+  {
+    "instruction": "information about varieties mosambi",
+    "input": "",
+    "output": "मौसम की  प्रजाति -न्यूसेलर,काटोलगोल्ड,वॉशिंगटन नॅव्हेल,सतगुड़ी,कॅलेन्शीया,जाफा"
+  },
+  {
+    "instruction": "Information about how to get a soil sample for soil testing",
+    "input": "",
+    "output": "श्रीमान जी, एक एकड़ क्षेत्र में लगभग 10 स्थानों से ‘V’ आकार के 6 इंच गहरे गहरे गढ्ढे बनायें। सभी स्थानों से प्राप्त मिट्टी को एक साथ मिलाकर 500 ग्राम का एक सन्युक्त नमूना बनायें।सूखे हुए नमूने को थैली में भरकर कृषक का नाम, पता, खसरा संख्या, मोबाइल नम्बर, आधार संख्या, उगाई जाने वाली फसलों आदि का ब्यौरा दें तथा नमूना प्रयोगशाला को प्रेषित करें    \nमोबाइल नंबर  7895651472 संपर्क करें"
+  },
+  {
+    "instruction": "Information regarding fertilizer management in 7 to 10 year old mango and litchi plants  ?",
+    "input": "",
+    "output": "महोदय आप अपने आम और लीची के पौधों में 15 से 20 किलोग्राम गोबर की साडी हुई खाद, 100 ग्राम यूरिया, 200 ग्राम डीएपी और 100 ग्राम पोटाश को पौधे के पास थाला बनाकर मिट्टी में अच्छे से मिलायें धन्यवाद |"
+  },
+  {
+    "instruction": "Information regarding insurance claim not received for Apple plants under PMFBY Scheme ?",
+    "input": "",
+    "output": "महोदय आपको सेब  की फसल का क्लैंप नहीं मिला है तो  आप प्रधानमंत्री फसल बीमा के टोल फ्री 14447  नंबर पर संपर्क करें |"
+  },
+  {
+    "instruction": "information about manure and fertilizer use in",
+    "input": "",
+    "output": "माल्टा के  4 वर्ष के पेड़ मे 10 किग्रा सड़ा  गोबर 100-150 ग्राम डीएपी प्रति पौधा डालें |"
+  },
+  {
+    "instruction": "Information about the helpline number of CISH ?",
+    "input": "",
+    "output": "श्रीमान जी ,  उद्यान विभाग लखनऊ का नंबर है - 1800 180 5003 , 1800 1030 222"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Litchi ?",
+    "input": "",
+    "output": "श्रीमान जी लीची में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें| \nअथवा \nश्रीमान जी, Dimethoate 3O% EC @ 2ml प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे। \nअथवा \nश्रीमान जी, इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL), @ 0.5 मिली प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें ।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in LITCHI crop..?",
+    "input": "",
+    "output": "श्रीमान जी, Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information on fruit dropping control in mango plants ?",
+    "input": "",
+    "output": "आम के पौधे में फल गिरने के नियंत्रण के लिए नैप्थलीन एसिटिक एसिड 1 एमएल/5 लीटर पानी की दर से छिड़काव करें"
+  },
+  {
+    "instruction": "Information about the control of Malformation disease in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधों पर अल्फा नेफ़थाइल एसिटिक एसिड 4.5% SL (Planofix) की 1 ml मात्रा  प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information on fertilizer management in mango tree",
+    "input": "",
+    "output": "फासफोरस को वर्ष में दो बार डालें। दूसरे शब्दों में मॉनसून के शुरू होने पर जून जुलाई के महीने में डालें और उसके बाद सितंबर अक्तूबर महीने में डालें।\n \nनाइट्रोजन और पोटाश को जून - जुलाई, सितंबर - अक्तूबर, जनवरी - फरवरी और मार्च - अप्रैल में बराबर भागों में बांटकर डालें।\n \nकईं बार मौसम के बदलने पर फल गिरने लगते हैं। यदि फलों को गिरना देखा जाए तो 13:00:45 10 ग्राम को प्रति लीटर पानी में मिलाकर स्प्रे करें। मलचिंग का प्रयोग तापमान के प्रभाव को कम करता है। अच्छे फूल और उपज के लिए 00:52:34 150 ग्राम को 15 लीटर पानी में मिलाकर फूल निकलने के शुरू में 8 दिनों के अंतराल पर दो बार स्प्रे करें। यह फूल के गिरने को रोकेगा।"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें |"
+  },
+  {
+    "instruction": "Information about uses of Deltamethrin 2.8 EC (2.8% w/wv) in peach fruit ..?",
+    "input": "",
+    "output": "श्रीमान जी प्लम और आडू में फल छेदक कीट नियंत्रण के लिए Deltamethrin 2.8 EC (2.8% w/wv) 1 मल मात्रा प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें."
+  },
+  {
+    "instruction": "information about flower and fruit dropping control in litchi ?",
+    "input": "",
+    "output": "लीची के पेड़ मे फल और फूल गिरने की रोकथाम के लिए नेपथाइल असीटिक ऐसिड 1 एमएल दवा 4 लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about the control of Gundhi bugs in mango.?",
+    "input": "",
+    "output": "श्रीमान जी,आम  में गन्धी कीट नियंत्रण के लिए Carbosulfan 25% EC @ 2 ml मात्रा प्रति  लीटर पानी के साथ घोल बनाकर छिडकाव करें"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय मौसम विभाग के पूर्वानुमान के अनुसार आपके जिला ऊधम सिंह नगर ब्लॉक बाजपुर में 18 मार्च से 24 मार्च तक आंशिक रूप से बादल छाए रहने की संभावना है, बारिश होने की सम्भावना नही है | आज का अपेक्षित अधिकतम तापमान 28, न्यूनतम तापमान 19 डिग्री सेल्सियस तक रहने और हवा की गति 14 किलोमीटर प्रति घंटा की दर से चलने की सम्भावना हैं | मौसम के अनुसार प्याज में सिंचाई करें।"
+  },
+  {
+    "instruction": "Information about control of insect in mango,,?",
+    "input": "",
+    "output": "श्रीमान जी, Imidacloprid 17.8% SL @ 0.5 मिली प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the Mango plant ?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधे मे फूल गिरने से रोकने के लिए अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल (Alpha naphthyl acetic acid 4.5% SL) की 1 ml मात्रा प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Information on fly control in jackfruit crop",
+    "input": "",
+    "output": "कटहल की फसल में मक्खी के नियंत्रण के लिए  इमिडाक्लोप्रिड 17.8% एस एल की आधा एम एल  मात्रा प्रति एकड़ के हिसाब से प्रति लीटर पानी के हिसाब से और बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information on control of Mango mealy bug in mango crop",
+    "input": "",
+    "output": "आम की फसल में मैंगो मिली बग के नियंत्रण के लिए Chlorantraniliprole 8.8 % + Thiamethoxam 17.5 % SC कीआधा एम एल  मात्रा प्रति लीटर पानी के हिसाब से घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information about the control of hapar  pest and fungal infection in Mango?",
+    "input": "",
+    "output": "श्रीमान जी, इमिडाक्लोप्रिड 17.8% SL @ 0.5 ml प्रति लीटर पानी तथा  कार्बेन्डाजिम12%+मैंकोजेब 63%डब्लू पी की  @ 2 gm प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "When should NPK be sprayed on mango plants?",
+    "input": "",
+    "output": "आम के पौधे पर एनपीके- 19:19:19 का छिड़काव तब करे जब आम के फल का आकार अखरोट के आकार से कम हो। आम के पौधे में हमेशा अक्टूबर माह में प्रयोग किया करे।"
+  },
+  {
+    "instruction": "When should NPK be sprayed on Kiwi fruits plants?",
+    "input": "",
+    "output": "कीवी फल की तुड़ाई दिसम्बर माह तक होती है, इसलिए हमेशा तुड़ाई के बाद उर्वरक का प्रयोग जरूर करे। बुवाई के 2-3 वर्षों तक आवश्यकतानुसार समय समय पर देते रहते है।"
+  },
+  {
+    "instruction": "ASKED ABOUT TO DISEASE CONTROL IN MANGO ?",
+    "input": "",
+    "output": "in mango plants  Bordeaux mixture (1%), or Copper oxychloride 0.25%"
+  },
+  {
+    "instruction": "Information about the control of sucking pest and fungal infection in Litchi ?",
+    "input": "",
+    "output": "श्रीमान जी, लीची के पौधों मे इमिडाक्लोप्रिड 17.8% SL @ 0.5 ml प्रति लीटर पानी तथा मैंकोजेब 75% WP @ 2 gm प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें ।"
+  },
+  {
+    "instruction": "Hopper problem in mango?",
+    "input": "",
+    "output": "आम की फसल में इमिडाक्लोप्रिड 17.8 एसएल 0.5 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "I have already sprayed NAA(Planofix) once on plum, when should I spray again?",
+    "input": "",
+    "output": "आलू बुखारा की फसल पर नेफ़थलीन एसिटिक एसिड (एन ए ए)  का दूसरा छिड़काव जब फल मटर के दाने के समान हो जाए तब करें|"
+  },
+  {
+    "instruction": "Information about spraying at the start of flowering stage in mango ?",
+    "input": "",
+    "output": "आम में पुष्प अवस्था प्रारंभ होने की स्थिति में नेपथिलीन एसीटिक ऐसिड 1 एमएल/4 लीटर पानी की दर से घोल बनाकर छिड़काव करे"
+  },
+  {
+    "instruction": "Information about the control of Fruit Rotting in Aonla ?",
+    "input": "",
+    "output": "श्रीमान जी, आंवला के फल सडन की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 2.5-3.0  ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Information about the harvesting time in Gooseberry ?",
+    "input": "",
+    "output": "श्रीमान जी, आंवला की तुड़ाई का उचित समय मध्य सितंबर से लगाकर दिसंबर माह तक माना जाता है, इसकी तुड़ाई फरवरी के माह तक की जा सकती है। फल की तुड़ाई हल्के पीले रंग के होने पर करना उचित माना जाता है।"
+  },
+  {
+    "instruction": "Which fertilizer should be used for the growth of fruit in jackfruit plant",
+    "input": "",
+    "output": "श्रीमान जी कटहल के पौधे मे फल की वृद्धि के लिए  एनपीके (19:19:19) 5-6 ग्राम/लीटर पानी और मिक्स ह्यूमिक एसिड (12%) या सागरिका 2 एमएल / लीटर पानी में घोल बनाकर छिड़काव करे"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in Litchi tree ?",
+    "input": "",
+    "output": "श्रीमान जी, लीची के 7-15 साल के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 15 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे  5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें|"
+  },
+  {
+    "instruction": "Information about the suitable time for grafting apricot plants ?",
+    "input": "",
+    "output": "महोदय, खुमानी के पौधे की ग्राफ्टिंग करने के लिए जो उपयुक्त समय जुलाई से अगस्त के बीच में कर सकते हैं आप इसको फरवरी माह में भी ग्राफ्टिंग कर सकते हैं"
+  },
+  {
+    "instruction": "Which is the best method of grafting?",
+    "input": "",
+    "output": "ग्राफ्टिंग विधि में एक पौधे को जड़ समेत लिया जाता है और दूसरा पौधा बिना जड़ के कलम के रूप में लिया जाता है। इसके बाद इन दोनों पौधों को एक साथ जोड़ा जाता है, जिससे एक नया पौधा विकसित होता है। यानि इस विधि से आप आड़ू के पेड़ पर बादाम (almond), खुबानी (apricot) या आलूबुखारा (plum) की शाखाओं को ग्राफ्ट कर सकते हैं।"
+  },
+  {
+    "instruction": "Anthracnose problem in mango?",
+    "input": "",
+    "output": "आम की फसल में मैन्कोज़ेब 75% WP 2 ग्राम/लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "information about mango malformation disease control in mango ?",
+    "input": "",
+    "output": "आम के पौधे मे बोर काला होने पर कापर ऑक्सीक्लोराइड 2 ग्राम प्रति लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of hopper in Mango",
+    "input": "",
+    "output": "श्रीमान जी, आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG @ 04 ग्राम प्रति 15 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information about controlling fruit  drop in mango plants ?",
+    "input": "",
+    "output": "आम के पौधे में फल झड़ने  के नियंत्रण के लिए नेपथिलीन एसीटिक ऐसिड 1 एमएल/5लीटर पानी की दर से घोल बनाकर छिड़काव करे"
+  },
+  {
+    "instruction": "Information about the control of fungal infectaion in Mango plant ?",
+    "input": "",
+    "output": "श्रीमान जी, आम के पौधों मे कॉपर ऑक्सीक्लोराइड 50% WP (Copper oxychloride 50 % WP) @ 500 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें। \nतथा \nश्रीमान जी,  कार्बेन्डाजिम 50% डब्ल्यू पी (Carbendazim 50% WP)@ 2 ग्राम/लीटर पानी की दर से घोल बना कर स्प्रे करें।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in the Mango crop ?",
+    "input": "",
+    "output": "श्रीमान जी, आम के पौधों मे फूल झड़ने की समस्या की रोकथाम हेतु अल्फा नेफ़थाइल एसिटिक एसिड 4.5% एसएल  (Alpha naphthyl acetic acid 4.5% SL) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे ।"
+  },
+  {
+    "instruction": "Information about method of veneer grafting in Mango ?",
+    "input": "",
+    "output": "इसमे मूलवृन्त को पौधशाला में तैयार किया जाता है कलम बांधने के लिये 3-4 माह पुरानी स्वच्छ शाखाओं का चुनाव किया जाता है| करीब एक सप्ताह पूर्व इन चुनी हुई शाखाओं की पत्तियों को तोड़ देते हैं| बीजू पौधे (मूलवृन्त) जिन पर कलम चढानी है एक वर्ष की अवस्था के होने चाहिये| कलम बांधने के लिये मूलवृन्त पर 4-5 सेमी लम्बी छाल व् कुछ लकड़ी छील कर कटे हुए भाग के निचले छोर को ‘V’ आकार देना चाहिए| इसी तरह संकुर डाली को भी छीलकर मूलवृन्त के कटे हुए भाग में जोड़ देना चाहिए| सांकुर डाली की लम्बाई 10-15 से.मी. होनी चाहिए| विनियर कलम बांधने का उत्तम समय फरवरी–मार्च व् जून-जुलाई है|"
+  },
+  {
+    "instruction": "Information about the control of Phoma disease in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी,आम के पौधे पर रोग नियंत्रण के लिए  Copper Oxychloride 50% WP @ 2 ग्राम मात्रा प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information on control of Mango hopper in mango crop",
+    "input": "",
+    "output": "आम की फसल में माँगो  हॉपर के नियंत्रण के लिए Dinotefuran 15% +Pymetrozine 45% WG की 3 ग्राम मात्रा प्रति 5 लीटर पानी के हिसाब से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "information about mango hopper insect control in mango ?",
+    "input": "",
+    "output": "आम के पेड़ पर हापर कीट की रोकथाम के लिए आप इमिडाक्लोरप्रिड़ 17.8 % एससल 10 एमएल दवा 15 लीटर पानी के हिसाब से घोलकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information on control of fruit fly in litchi crop?",
+    "input": "",
+    "output": "श्रीमान जी, इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL),की आधा  मिली प्रति लीटर पानी की दर से  घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about direction for use and dose of Paclobutrazol 25% in Plum tree ?",
+    "input": "",
+    "output": "श्रीमान जी, आलू बुफ़ारा के 7-15 साल के पेड़ में 3 महीने पहले Paclobutrazol 25% कि 15 ml मात्रा पेड़ के तने से 4 फीट की दूरी पर मिट्टी मे  5 सेंटीमीटर गहरी नाली में 10 लीटर पानी में घोलकर प्रयोग करें।"
+  },
+  {
+    "instruction": "Information about control of  Caterpillars in Plum crop ?",
+    "input": "",
+    "output": "श्रीमान जी, इमामेक्टिन बेंजोएट 5% एसजी (Emamectin benzoate 5 SG) @ 100 ग्राम प्रति एकड़ 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information about control of white fly in Malta Fruits ?",
+    "input": "",
+    "output": "श्रीमान जी, माल्टा के फल तथा सब्जियों मे रस चूसक या सफेद मक्खी कीट नियंत्रण के लिए पाइरीप्रॉक्सीफेन 5% + डायफेन्थियूरोन 25% एसई (Pyriproxyfen 5% + Diafenthiuron 25% SE) @ 300-400 एमएल प्रति एकड़ 200 लीटर पानी मे घोल बनाकर छिड़काव करे। \nअथवा \nश्रीमान जी, इमिडाक्लोप्रिड 17.8% एस.एल (Imidacloprid 17.8% SL), @ 100 मिली प्रति एकड़ की दर से 200 लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Net information for saving crops like cauliflower, apple, orange etc?",
+    "input": "",
+    "output": "फूलगोभी, सेब, संतरा आदि फसलों को बचाने के लिए नेट (जाली) अनुदान पर प्राप्त करने के लिए  सम्बन्धित विभाग जैसे उद्यान विभाग या ब्लॉक में संपर्क करे।"
+  },
+  {
+    "instruction": "Plant protection measures for Mango hoppers in Mango?",
+    "input": "",
+    "output": "आम के पौधे में इमिडाक्लोप्रिड 17.8% एसएल @ 0.5 एमएल/ लीटर पानी की दर से घोल बनाकर छिड़काव करे।"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango ?",
+    "input": "",
+    "output": "श्रीमान जी,आम के पौधों में कीट नियंत्रण के लिए  इमिडाक्लोप्रिड 17.8% SL @ 0.5 ml प्रति लीटर पानी  के साथ घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Information on controlling thrips on jackfruit tree ?",
+    "input": "",
+    "output": "श्रीमान जी,कटहल के पौधों पर कीट नियंत्रण के लिए  Imidacloprid 17.8% SL @ आधा [.1] मिली मात्रा  प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Sooty mould problem in mango?",
+    "input": "",
+    "output": "आम की फसल में कार्बेन्डाजिम 50 डब्लू.पी. 1 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information about the use of fertilizers in Apple plants?",
+    "input": "",
+    "output": "महोदय सेब के पौधों में गोबर की सड़ी हुई खाद के साथ एन :पी :के ,12:32:16 ,की 200 से 400 ग्राम मात्रा प्रति पौधा  मिट्टी में मिलकर अच्छे से प्रयोग करें धन्यवाद  |"
+  },
+  {
+    "instruction": "information about flower dropping control in wood apple ?",
+    "input": "",
+    "output": "बेल पत्र के पौधे मे फूल गिरने के नियंत्रण के लिए नेपथिलीन एसीटिक ऐसिड 1 एमएल/5 लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "information about catterpillar insect control in wood apple plant ?",
+    "input": "",
+    "output": "बेलपत्र के पौधे में पत्ती खाने वाली सूँडी के नियंत्रण के लिए क्लोरोपायरीफास 20% ईसी 2 एमएल/लीटर पानी की दर से घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about control of leaf eating caterpillar and fruit borer in apple ..?",
+    "input": "",
+    "output": "श्रीमान जी, सेब मे  Emamectin benzoate 5% SG @ 0.5 ग्राम प्रति  लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Information regarding stem borer pest control in guava plant?",
+    "input": "",
+    "output": "श्रीमान जी,अमरूद के पौधों में तना छेदक कीट नियंत्रण के लिए  Chlorpyrifos 20% EC @ 1 लीटर प्रति एकड़ की दर से सिंचाई जल के साथ प्रयोग करें |"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "मौसम का पूर्वानुमान महोदय आपके क्षेत्र में 29 मई से 4 जून तक प्रत्येक दिन आंशिक रूप से हल्के बादल आते-जाते रहेंगे, इसी के साथ कभी-कभी बहुत हल्की बूंदाबांदी भी होने की संभावना देखी जा रही है, अधिकतम तापमान 36 व न्यूनतम 27 डिग्री सेल्सियस तक रहने और हवा की गति 7 से 14 किलोमीटर प्रति घंटे की दर से चलने की संभावना है, कृषि कार्य मौसम के अनुसार करें|"
+  },
+  {
+    "instruction": "Information about induce flowering in pomegranate ..?",
+    "input": "",
+    "output": "श्रीमान जी,अनार में Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "How much quantity of Sagarika can be sprayed on lemon crop?",
+    "input": "",
+    "output": "नींबू की फसल में सागरिका की 2.5 एम एल मात्रा प्रति लीटर पानी के हिसाब से छिड़काव कर सकते हैं"
+  },
+  {
+    "instruction": "Information about control of hopper (Chepa) in Mango plant ?",
+    "input": "",
+    "output": "श्रीमान जी आम में फुदका कीट नियंत्रण के लिए Thiamethoxam 25% WG की 01 ग्राम मात्रा प्रति 02 लीटर पानी के साथ घोल बनाकर छिडकाव करें|"
+  },
+  {
+    "instruction": "Information regarding Mrig Bahar flowering treatment in guava plants  ?",
+    "input": "",
+    "output": "महोदय अमरूद के पौधों में फूलों को गिराने के लिए यूरिया का 10% का घोल (100 ग्राम यूरिया प्रति लीटर पानी ) बनाकर छिड़काव करें धन्यवाद |"
+  },
+  {
+    "instruction": "Information about the size of papaya fruit?",
+    "input": "",
+    "output": "महोदय, पपीते के फल का आकार लंबाकार (Oblong] होता है, इसके एक फल का औसतन वजन 1.5-2 किग्रा तक होता है। प्रति पौधे से औसतन 50-120 फल प्राप्त होते है।"
+  },
+  {
+    "instruction": "Information about not getting premium of PMFBY in Peach ?",
+    "input": "",
+    "output": "श्रीमान जी, प्रधानमंत्री फसल बीमा योजना के अंतर्गत अधिक सहायता के लिए टोल फ्री नंबर 1800-180-14447 पर संपर्क करे या पीएमएफबीवाई व्हाट्सएप चैटबॉट -7065514447 पर संपर्क करे।"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in Grapes plant  ?",
+    "input": "",
+    "output": "श्रीमान जी, अंगूर के पौधे में फल फूल गिरने के नियंत्रण के लिए ,Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "When is litchi planted",
+    "input": "",
+    "output": "लीची की  बिजाई मॉनसून के तुरंत बाद अगस्त सितंबर के महीने में की जाती है। बिजाई के लिए दो साल पुराने पौधे चुने जाते हैं।"
+  },
+  {
+    "instruction": "Fruit dropping problem in Apple plant?",
+    "input": "",
+    "output": "फल के गिरने को रोकने के लिए फल गिरने की आशंका होने पर एन ए ए  (प्लेनोफिक्स) 1 मि.ली. को 4 लीटर पानी में मिलाकर स्प्रे करें।"
+  },
+  {
+    "instruction": "Information about control of caterpillar in mango..?",
+    "input": "",
+    "output": "श्रीमान जी आम में कीट नियंत्रण के लिए  Dinotefuran 15% + Pymetrozine 45% WG की 1.5 ग्राम मात्रा प्रति लीटर पानी के साथ घोल बनाकर स्प्रे करें."
+  },
+  {
+    "instruction": "Information about how to report crop loss to the insurance company  ?",
+    "input": "",
+    "output": "श्रीमान जी, फसल की क्षति की स्थिति में बीमित किसानों को घटना के 72 घंटे के अंदर सूचना अपने बैंक अथवा संबंधित बीमा कंपनी के टोल फ्री नंबर 14447 पर रजिस्टर कराना है। अथवा अपने एंड्राइड मोबाइल में प्रधानमंत्री फसल बीमा योजना की एप्लीकेशन डाउनलोड करके फसल क्षति की सूचना दर्ज कर सकते हैं |"
+  },
+  {
+    "instruction": "Fertilizer management in Lemon?",
+    "input": "",
+    "output": "महोदय, नींबू के पौधे में एनपीके 12:32:16 @ 100-200 ग्राम और गोबर की सड़ी खाद @ 10-15 किग्रा/ पौधे की दर से प्रयोग कर सकते है।"
+  },
+  {
+    "instruction": "Information related to crop insurance company?",
+    "input": "",
+    "output": "महोदय फसल बीमा कंपनी से संपर्क करने हेतु दिए गए नंबर पर कॉल करें- 14447"
+  },
+  {
+    "instruction": "Information on mite  control in apple crop ?",
+    "input": "",
+    "output": "सेब  की फसल में मकड़ी  के नियंत्रण के लिए Propargite 57% EC की ढाई ग्राम मात्रा प्रति लीटर पानी के हिसाब से घोल  बना करके छिड़काव करें"
+  },
+  {
+    "instruction": "Information on control of blight in apple crop ?",
+    "input": "",
+    "output": "सेब की फसल में धब्बा  रोग के नियंत्रण के लिए CYMOXANIL 8% + MANCOZEB 64% WP की ढाई ग्राम मात्रा प्रति एकड़ के हिसाब से 200 लीटर पानी में घोल बनाकर छिड़काव करें"
+  },
+  {
+    "instruction": "Information on mite  control in apple crop?",
+    "input": "",
+    "output": "सेब  की फसल में मकड़ी  के नियंत्रण के लिए Propargite 57% EC की आधा एम एल  मात्रा प्रति लीटर पानी के हिसाब से घोल  बना करके छिड़काव करें"
+  },
+  {
+    "instruction": "Information about control of the flower dropping in lemon  crop",
+    "input": "",
+    "output": "श्रीमान जी,नींबू में फूल गिरने से नियंत्रण के लिए Alpha naphthyl acetic acid 4.5% SL (Planofix) @ 1 ml प्रति 4.5 लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  },
+  {
+    "instruction": "Information about the market price of Mango ?",
+    "input": "",
+    "output": "श्रीमान जी, आम का मंडी भाव - यह भाव 03 जुलाई 2025 का है। \nरूड़की ब्लॉक मे - कम से कम ₹1500 प्रति कुंतल  तथा अधिकतम ₹2700 प्रति कुंतल\nअन्य जगह की जानकारी उपलब्ध करने मे असमर्थ हु। धन्यवाद !"
+  },
+  {
+    "instruction": "Information about control of leaf eating caterpillars (litchi sting bug) in litchi crop..?",
+    "input": "",
+    "output": "श्रीमान जी,लीची मे  कीट नियंत्रड के लिए Chlorpyrifos 50% + Cypermethrin 5% EC @ 2 मिली प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करें |"
+  },
+  {
+    "instruction": "Plant protection measures for Root rot in Papaya?",
+    "input": "",
+    "output": "महोदय, पपीते की फसल में जड़ गलन की रोकथाम हेतु कॉपर ऑक्सीक्लोराइड 50% डब्लूपी @ 2.5 ग्राम/ लीटर पानी की दर से घोल बनाकर ड्रेनचिंग कर सकते है।"
+  },
+  {
+    "instruction": "information about control of fungal infection in jackfruit..?",
+    "input": "",
+    "output": "श्रीमान जी कटहल में कॉपर ऑक्सिक्लोराइड 50% wp  की 2.5 ग्राम प्रति लीटर पानी के साथ घोल बनाकर स्प्रे करें"
+  },
+  {
+    "instruction": "Information regarding fertilizer management in mango plant ?",
+    "input": "",
+    "output": "श्रीमान जी आम के पौधों में 10 से 15 किलोग्राम गोबर की सड़ी हुई खाद पौधे के आसपास थाला बना कर मिट्टी में मिलाएं धन्यवाद |"
+  },
+  {
+    "instruction": "Fruit Fly and Shot hole borer problem in pomegranate.",
+    "input": "",
+    "output": "आनर की फसल में क्विनालफॉस 25 ईसी 2 मिली./लीटर पानी की दर से घोलकर स्प्रे करें"
+  },
+  {
+    "instruction": "Plant protection measures for Monkey in Orange?",
+    "input": "",
+    "output": "महोदय, बागवानी की सुरक्षा हेतु नेट या घेर-बाढ़ के लिए अपने उद्यान विभाग में संपर्क करे।"
+  },
+  {
+    "instruction": "Information about the control of Leaf Burning in kivifruit ?",
+    "input": "",
+    "output": "श्रीमान जी, किवी फल की पत्तियों की झुलसने से रोकथाम के लिए 50 से 100 ग्राम पोटाश प्रति पौधे के हिसाब से प्रयोग करें।"
+  },
+  {
+    "instruction": "Information about sowing time of litchi plant   ?",
+    "input": "",
+    "output": "महोदय जी ,लीची को लगाने का समय ,अगस्त- सितंबर के महीने में की जाती है। तथा NPK ,12: 32: 16,की गोबर की सड़ी हुई खाद में 50 से 100 ग्राम मात्रा प्रति पौधा मिट्टी में मिला दे धन्यवाद  |"
+  },
+  {
+    "instruction": "Information about fertilizer management in Mango..?",
+    "input": "",
+    "output": "--श्रीमान जी, आम के एक वर्ष के पौधे में 100 ग्राम यूरिया, 150 ग्राम सिंगल सुपर फास्फेट, 80 ग्राम म्युरेट ऑफ पोटाश प्रति पौधे की दर से वर्ष में दो बार प्रयोग करें |"
+  },
+  {
+    "instruction": "Information about the dose of Boron in Kivi Fruit ?",
+    "input": "",
+    "output": "श्रीमान जी, कीवी मे Boron बोरान 20% @ 1 ग्राम प्रति लीटर पानी की दर से घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Plant protection measures for Termites in Mulberry?",
+    "input": "",
+    "output": "महोदय, शहतूत की फसल में दीमक की रोकथाम हेतु क्लोरपाईरीफॉस 20% ईसी @ 2 एमएल/ लीटर पानी का घोल बनाकर छिड़काव और 1-1.250 लीटर/ एकड़ की दर से सिंचाई के साथ प्रयोग करे।"
+  },
+  {
+    "instruction": "Information about the building problem in cuttings of Kiwi fruit ?",
+    "input": "",
+    "output": "श्रीमान जी, कीवी फल की नर्सरी में कटिंग्स के सूखने की समस्या की रोकथाम के लिए आपको अपने नजदीकी कृषि विज्ञान केंद्र पर कटिंग के साथ जाना पड़ेगा। वही आपकी बेहतर सहायता कर पाएंगे।"
+  },
+  {
+    "instruction": "Farmer asked query on Weather",
+    "input": "",
+    "output": "महोदय, मौसम विभाग के पूर्वानुमान के अनुसार आपके क्षेत्र मे 29 जून से 05 जुलाई तक का मौसम ज्ञात हो रहा है। 29 जून से 05 जुलाई तक हल्की से मध्यम बारिश तथा बूंदाबांदी की संभावना है,आंशिक बादल देखे जा सकते हैं, बीच-बीच मे मौसम साफ रहेगा। आज का अधिकतम तापमान 27 डिग्री सेल्सियस तथा न्यूनतम तापमान 25 डिग्री सेल्सियस, हवा की गति 04-07 किलोमीटर प्रति घंटे की गति से चलने की संभावना है, मौसम के अनुसार आम के बगीचे मे सिंचाई करे। धन्यवाद !"
+  },
+  {
+    "instruction": "Information about fertilizer in jack fruit plant?",
+    "input": "",
+    "output": "कटहल के पौधे में 2 किलोग्राम मछली की खाद तथा 10-20 किलोग्राम वर्मी कंपोस्ट गुड़ाई के समय डाले तथा उसके बाद एनपीके 12:32:16 2 किलोग्राम/पौधे की दर से गुड़ाई के समय प्रयोग करे"
+  }
+]

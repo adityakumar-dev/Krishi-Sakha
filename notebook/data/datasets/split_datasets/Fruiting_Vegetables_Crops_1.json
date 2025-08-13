@@ -1,0 +1,27 @@
+[
+  {
+    "instruction": "Information about the leaf curl in the Chilli crop ?",
+    "input": "",
+    "output": "श्रीमान जी, मिर्च की फसल में थायामेथोक्साम 25 डब्ल्यूजी @ 200 ग्राम/एकड़ या इमिडाक्लोप्रिड 17.8 एसएल @ 100 मिली/एकड़ प्रति 150-200 लीटर पानी के साथ घोल बनाकर छिड़काव करें।"
+  },
+  {
+    "instruction": "Plant protection measure for sucking pest in Chilli?",
+    "input": "",
+    "output": "महोदय मिर्च की फसल में कीट नियंत्रण के लिए इमिडाक्लोप्रिड 17.8% एसएल @ 0.5 एमएल दवा/लीटर पानी की दर से घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Information about cypermethrin and monocrotophos application of red bug in open field  ?",
+    "input": "",
+    "output": "महोदय ,आप भिंडी की बीज की बुवाई कर सकते हैं"
+  },
+  {
+    "instruction": "Information related to Thiophanate Methyl 70% WP for Capsicum crop?",
+    "input": "",
+    "output": "महोदय शिमला मिर्च की फसल में रोग नियंत्रण के लिए थायोफैनेट मिथाइल 70% डब्लू.पी@ 2 ग्राम/ लीटर पानी की दर से घोल बनाकर छिड़काव करें|"
+  },
+  {
+    "instruction": "Information about fertilizer management in cucumber crop..?",
+    "input": "",
+    "output": "श्रीमान जी,खीरे में NPK 19:19:19 @ 05 ग्राम प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे\nश्रीमान जी, सागरिका @ 2 मिलीलीटर प्रति लीटर पानी के साथ घोल बनाकर छिड़काव करे |"
+  }
+]
