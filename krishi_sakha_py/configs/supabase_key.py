@@ -1,0 +1,11 @@
+import supabase
+import os
+
+SUPABASE_URL = os.getenv("URL")
+SUPABASE_SERVICE_ROLE_KEY = os.getenv("SERVICE_ROLE_KEY")
+SUPABASE_ANON_KEY = os.getenv("ANON_PUBLIC_KEY")
+SUPABASE_SECRET_KEY = os.getenv("SECRET_KEY")
+SUPABASE_LEGACY_JWT_KEY = os.getenv("LEGACY_JWT_KEY")
+SUPABASE = supabase.create_client(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
+
+
