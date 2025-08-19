@@ -1,4 +1,7 @@
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:krishi_sakha/providers/server_chat_handler_provider.dart';
 import 'package:krishi_sakha/utils/theme/colors.dart';
@@ -50,6 +53,7 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
                       : 'Chat',
                   style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 );
+                
               },
             ),
             Consumer<ServerChatHandlerProvider>(
@@ -73,7 +77,46 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
               },
             ),
           ],
+          
         ),
+        actions: [
+          IconButton(onPressed: ()async{
+              
+            // Use FilePicker for desktop (Linux/Windows/macOS) compatibility.
+            // image_picker is not supported on Linux; FilePicker works across desktop and mobile.
+            final result = await FilePicker.platform.pickFiles(
+              type: FileType.image,
+              allowMultiple: false,
+            );
+
+            if (!mounted) return;
+
+            if (result != null && result.files.single.path != null) {
+              final path = result.files.single.path!;
+              // Convert to XFile for provider compatibility
+              final xFile = XFile(path);
+              context.read<ServerChatHandlerProvider>().setImage(xFile);
+
+              ScaffoldMessenger.of(context).showMaterialBanner(
+                MaterialBanner(
+                  content: const Text("Image Selected"),
+                  actions: [
+                    IconButton(
+                      onPressed: () {
+                        ScaffoldMessenger.of(context)..hideCurrentMaterialBanner();
+                      },
+                      icon: const Icon(Icons.close),
+                    )
+                  ],
+                ),
+              );
+            } else {
+              // Optional: give feedback when user cancels or selection fails
+              Fluttertoast.showToast(msg: 'No image selected');
+            }
+
+          }, icon: Icon(Icons.attach_file_outlined))
+        ],
 
       ),
       body: Column(

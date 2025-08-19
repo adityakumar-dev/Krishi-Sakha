@@ -234,11 +234,13 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: _buildFeatureCard(
-                  title: 'Search',
-                  subtitle: 'Ai  search',
+                  title: 'chat ',
+                  subtitle: 'offline  chat',
                   icon: Icons.search,
                   color: const Color(0xFF4CAF50),
-                  onTap: () {},
+                  onTap: () {
+                    context.go(AppRoutes.selector);
+                  },
                 ),
               ),
               const SizedBox(width: 16),

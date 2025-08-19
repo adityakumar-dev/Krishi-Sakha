@@ -37,64 +37,99 @@ async def chat_endpoint(
     user_id = user.get("sub")
     logger.info(f"User: {user_id}, Conversation: {conversation_id}")
 
+    # Read image bytes ONLY ONCE here:
+    image_bytes = None
+    if image:
+        image_bytes = await image.read()
+        logger.info(f"Read {len(image_bytes)} bytes from image")
+
     async def event_stream():
         try:
-            # 1) Processing query
-            yield f"data: {json.dumps({'type': 'status', 'message': 'Processing query...'})}\n\n"
-
-            # 2) Image handling
-            if image:
+            # ---------------------------------------------------------------------
+            # IMAGE REQUEST
+            # ---------------------------------------------------------------------
+            if image_bytes:
                 yield f"data: {json.dumps({'type': 'status', 'message': 'Processing uploaded image...'})}\n\n"
-                img_bytes = await image.read()
-                final_query = f"[Image uploaded: {image.filename}] {prompt}"
-                context = ""
-            else:
-                final_query = prompt
-                # 3) Route query
-                yield f"data: {json.dumps({'type': 'status', 'message': 'Routing query...'})}\n\n"
-                routing = route_question(prompt)
-                logger.info(f"Routing result: {routing}")
-                domain = routing.get("domain", "general")
-                keywords = routing.get("keywords", [])
 
-                # 4) Search for context
+                import os
+                temp_dir = "./temp"
+                os.makedirs(temp_dir, exist_ok=True)
+                image_path = f"{temp_dir}/{image.filename}"
+
+                with open(image_path, "wb") as f:
+                    f.write(image_bytes)
+                logger.info(f"Saved temp image to {image_path}")
+
+                final_query = prompt if prompt.strip() else "What do you see in this image?"
+
+                async for chunk in model_runner.generate_image(
+                    question=final_query,
+                    conversation_id=conversation_id,
+                    user_id=user_id,
+                    image_path=image_path,
+                    stream=True
+                ):
+                    yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
+
+                # Done
+                yield "data: {\"type\": \"complete\"}\n\n"
+
+                # Clean up temp file
+                try:
+                    os.remove(image_path)
+                    logger.info("Temp image removed")
+                except Exception as cleanup_err:
+                    logger.warning(f"Failed to cleanup temp image: {cleanup_err}")
+
+                return  # Stop here (do not go to text flow)
+
+            # ---------------------------------------------------------------------
+            # TEXT-ONLY REQUEST
+            # ---------------------------------------------------------------------
+            yield f"data: {json.dumps({'type': 'status', 'message': 'Processing query...'})}\n\n"
+            yield f"data: {json.dumps({'type': 'status', 'message': 'Routing query...'})}\n\n"
+
+            routing = route_question(prompt)
+            logger.info(f"Routing result: {routing}")
+
+            domain = routing.get("domain", "general")
+            keywords = routing.get("keywords", [])
+
+            # Retrieve context if needed
+            context = ""
+            if domain != "general":
                 yield f"data: {json.dumps({'type': 'status', 'message': 'Searching for context...'})}\n\n"
-                if domain == "general":
-                    context = ""
-                else:
-                    collection_name = domain  # must match your ChromaDB collection
-                    db_manager = PDFVectorDBManager(
-                        vector_db_type="chroma",
-                        embedding_method="sentence_transformers",
-                        db_path="/home/linmar/Desktop/Krishi-Sakha/krishi_sakha_py/chroma_db",
-                        collection_name=collection_name
-                    )
-                    search_query = " ".join(keywords) if keywords else prompt
-                    results = db_manager.search_documents(query=search_query, n_results=5)
-                    if not results.get("documents") or results["documents"] == [[]]:
-                        results = db_manager.search_documents(query=prompt, n_results=5)
-                    docs_flat = flatten_docs(results.get("documents", []))
-                    context = "\n".join(docs_flat) if docs_flat else ""
-                    yield f"data: {json.dumps({'type': 'status', 'message': f'Context found: {len(docs_flat)} documents'})}\n\n"
+                db_manager = PDFVectorDBManager(
+                    vector_db_type="chroma",
+                    embedding_method="sentence_transformers",
+                    db_path="/home/linmar/Desktop/Krishi-Sakha/krishi_sakha_py/chroma_db",
+                    collection_name=domain
+                )
 
-            # 5) Generating response
+                search_query = " ".join(keywords) if keywords else prompt
+                results = db_manager.search_documents(query=search_query, n_results=5)
+                if not results.get("documents") or results["documents"] == [[]]:
+                    results = db_manager.search_documents(query=prompt, n_results=5)
+                docs_flat = flatten_docs(results.get("documents", []))
+                context = "\n".join(docs_flat) if docs_flat else ""
+
+                yield f"data: {json.dumps({'type': 'status', 'message': f'Context found: {len(docs_flat)} documents'})}\n\n"
+
+            # Stream normal model
             yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
-
-            # 6) Stream LLM output
             async for chunk in model_runner.generate(
-                question=final_query,
+                question=prompt,
                 context=context,
                 conversation_id=conversation_id,
                 user_id=user_id,
-                use_voice_model=False,
                 stream=True
             ):
                 yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
 
-            # 7) Done
-            yield f"data: {json.dumps({'type': 'complete', 'chunk': 'Done'})}\n\n"
+            yield f"data: {json.dumps({'type': 'complete'})}\n\n"
 
         except Exception as e:
+            logger.error(f"General error in chat endpoint: {str(e)}", exc_info=True)
             yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
 
     return StreamingResponse(event_stream(), media_type="text/event-stream")
