@@ -1,28 +1,3 @@
-#!/usr/bin/env python3
-"""
-Script to add PDF documents to vector database for the Krishi Sakha application.
-
-This script provides an easy way to:
-1. Add individual PDF files to the vector database
-2. Add all PDFs from a directory to the vector database
-3. Search the vector database for testing
-
-Usage Examples:
-    # Add a single PDF
-    python scripts/add_pdfs_to_vectordb.py --pdf "path/to/document.pdf"
-    
-    # Add all PDFs from a directory
-    python scripts/add_pdfs_to_vectordb.py --directory "path/to/pdf_directory"
-    
-    # Add PDFs and test search
-    python scripts/add_pdfs_to_vectordb.py --directory "data/pdfs" --search "agriculture techniques"
-    
-    # Use different vector database backend
-    python scripts/add_pdfs_to_vectordb.py --directory "data/pdfs" --db-type faiss
-    
-    # Use Gemini embeddings
-    python scripts/add_pdfs_to_vectordb.py --directory "data/pdfs" --embedding gemini
-"""
 
 import sys
 import os
@@ -57,11 +32,7 @@ def main():
     input_group.add_argument("--directory", type=str, help="Path to directory containing PDFs")
     input_group.add_argument("--search-only", action="store_true", help="Search existing database without adding new documents")
     
-    # Database configuration
-    parser.add_argument("--db-type", type=str, choices=["chroma", "faiss"], default="chroma",
-                       help="Vector database type (default: chroma)")
-    parser.add_argument("--embedding", type=str, choices=["sentence_transformers", "gemini"], 
-                       default="sentence_transformers", help="Embedding method (default: sentence_transformers)")
+    # Database configuration (fixed to ChromaDB + sentence-transformers)
     parser.add_argument("--db-path", type=str, help="Custom path to store database files")
     parser.add_argument("--collection", type=str, default="krishi_sakha_docs",
                        help="Collection/index name (default: krishi_sakha_docs)")
@@ -133,9 +104,7 @@ def main():
                     return 1
         
         # Show configuration
-        logger.info("=== Krishi Sakha PDF to Vector DB ===")
-        logger.info(f"Vector DB Type: {args.db_type}")
-        logger.info(f"Embedding Method: {args.embedding}")
+        logger.info("=== Krishi Sakha PDF to Vector DB (Chroma + sentence-transformers) ===")
         logger.info(f"Collection Name: {args.collection}")
         logger.info(f"Chunk Size: {args.chunk_size}")
         logger.info(f"Chunk Overlap: {args.chunk_overlap}")
@@ -153,8 +122,6 @@ def main():
         # Initialize manager
         logger.info("Initializing PDF Vector DB Manager...")
         manager = PDFVectorDBManager(
-            vector_db_type=args.db_type,
-            embedding_method=args.embedding,
             db_path=args.db_path,
             collection_name=args.collection
         )
@@ -183,12 +150,6 @@ def main():
                 directory_path=args.directory,
                 chunk_size=args.chunk_size,
                 chunk_overlap=args.chunk_overlap,
-                organization=args.organization,
-                document_type=args.document_type,
-                document_category=args.document_category,
-                year=args.year,
-                language=args.language,
-                tags=args.tags
             )
 
 
@@ -279,10 +240,7 @@ def main():
             print("\n💡 Install ChromaDB: pip install chromadb")
         elif "sentence_transformers" in str(e).lower():
             print("\n💡 Install Sentence Transformers: pip install sentence-transformers")
-        elif "faiss" in str(e).lower():
-            print("\n💡 Install FAISS: pip install faiss-cpu")
-        elif "gemini" in str(e).lower():
-            print("\n💡 Check your Gemini API key configuration")
+        
         
         return 1
 

@@ -1,10 +1,8 @@
-import os
 import logging
 import json
 from typing import List, Dict, Optional, Union
 from pathlib import Path
 from datetime import datetime
-import hashlib
 
 # Vector database imports
 try:
@@ -16,28 +14,11 @@ except ImportError:
     CHROMADB_AVAILABLE = False
 
 try:
-    import faiss
-    import numpy as np
-    FAISS_AVAILABLE = True
-except ImportError:
-    faiss = None
-    np = None
-    FAISS_AVAILABLE = False
-
-try:
     from sentence_transformers import SentenceTransformer
     SENTENCE_TRANSFORMERS_AVAILABLE = True
 except ImportError:
     SentenceTransformer = None
     SENTENCE_TRANSFORMERS_AVAILABLE = False
-
-try:
-    import google.generativeai as genai
-    from configs.external_keys import GEMINI_API_KEY
-    GEMINI_AVAILABLE = True
-except ImportError:
-    genai = None
-    GEMINI_AVAILABLE = False
 
 # Local imports
 from data.functions.parse_pdf import parse_pdf, parse_pdfs_from_directory
@@ -53,82 +34,24 @@ class VectorDBError(Exception):
 
 
 class EmbeddingGenerator:
-    """Generate embeddings for text using various methods"""
     
-    def __init__(self, method: str = "sentence_transformers", model_name: str = None):
-        """
-        Initialize embedding generator.
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+        if not SENTENCE_TRANSFORMERS_AVAILABLE:
+            raise VectorDBError("sentence-transformers not available. Install with: pip install sentence-transformers")
         
-        Args:
-            method: Embedding method ('sentence_transformers', 'gemini')
-            model_name: Model name for the embedding method
-        """
-        self.method = method
-        self.model = None
-        
-        if method == "sentence_transformers":
-            if not SENTENCE_TRANSFORMERS_AVAILABLE:
-                raise VectorDBError("sentence-transformers not available. Install with: pip install sentence-transformers")
-            
-            model_name = model_name or "all-MiniLM-L6-v2"
-            self.model = SentenceTransformer(model_name)
-            logger.info(f"Initialized SentenceTransformer with model: {model_name}")
-            
-        elif method == "gemini":
-            if not GEMINI_AVAILABLE:
-                raise VectorDBError("Gemini API not available. Check your API key configuration.")
-            
-            genai.configure(api_key=GEMINI_API_KEY)
-            logger.info("Initialized Gemini embeddings")
-            
-        else:
-            raise VectorDBError(f"Unsupported embedding method: {method}")
+        self.model = SentenceTransformer(model_name)
+        logger.info(f"Initialized SentenceTransformer with model: {model_name}")
     
     def generate_embeddings(self, texts: List[str]) -> List[List[float]]:
-        """
-        Generate embeddings for a list of texts.
-        
-        Args:
-            texts: List of text strings
-            
-        Returns:
-            List of embedding vectors
-        """
-        if self.method == "sentence_transformers":
-            embeddings = self.model.encode(texts, convert_to_tensor=False)
-            return embeddings.tolist()
-            
-        elif self.method == "gemini":
-            embeddings = []
-            for text in texts:
-                try:
-                    result = genai.embed_content(
-                        model="models/embedding-001",
-                        content=text,
-                        task_type="retrieval_document"
-                    )
-                    embeddings.append(result['embedding'])
-                except Exception as e:
-                    logger.error(f"Error generating Gemini embedding: {e}")
-                    # Fallback to zero vector
-                    embeddings.append([0.0] * 768)  # Gemini embedding dimension
-            return embeddings
-        
-        else:
-            raise VectorDBError(f"Unsupported embedding method: {self.method}")
+     
+        embeddings = self.model.encode(texts, convert_to_tensor=False)
+        return embeddings.tolist()
 
 
 class ChromaVectorDB:
-    """ChromaDB implementation for vector storage"""
     
-    def __init__(self, db_path: str = "./chroma_db", collection_name: str = "pdf_documents"):
-        """
-        Initialize ChromaDB client.
-        
-        Args:
-            db_path: Path to store ChromaDB data
-            collection_name: Name of the collection
-        """
+    def __init__(self, db_path: str = "../../chroma_db", collection_name: str = "pdf_documents"):
+     
         if not CHROMADB_AVAILABLE:
             raise VectorDBError("ChromaDB not available. Install with: pip install chromadb")
         
@@ -147,13 +70,7 @@ class ChromaVectorDB:
             logger.info(f"Created new ChromaDB collection: {collection_name}")
     
     def add_documents(self, chunks: List[Dict], embeddings: List[List[float]]):
-        """
-        Add document chunks to ChromaDB.
-        
-        Args:
-            chunks: List of document chunks with metadata
-            embeddings: List of embedding vectors
-        """
+      
         if len(chunks) != len(embeddings):
             raise VectorDBError("Number of chunks must match number of embeddings")
         
@@ -202,17 +119,7 @@ class ChromaVectorDB:
     
     def search(self, query_embedding: List[float], n_results: int = 5, 
                where_filter: Dict = None) -> Dict:
-        """
-        Search for similar documents with optional metadata filtering.
-        
-        Args:
-            query_embedding: Query embedding vector
-            n_results: Number of results to return
-            where_filter: Optional metadata filter (e.g., {"organization": "WHO"})
-            
-        Returns:
-            Search results from ChromaDB
-        """
+       
         query_params = {
             "query_embeddings": [query_embedding],
             "n_results": n_results
@@ -246,161 +153,31 @@ class ChromaVectorDB:
         return self.search(query_embedding, n_results, {"publication_year": year})
 
 
-class FAISSVectorDB:
-    """FAISS implementation for vector storage"""
-    
-    def __init__(self, db_path: str = "./faiss_db", dimension: int = 384):
-        """
-        Initialize FAISS index.
-        
-        Args:
-            db_path: Path to store FAISS index
-            dimension: Embedding dimension
-        """
-        if not FAISS_AVAILABLE:
-            raise VectorDBError("FAISS not available. Install with: pip install faiss-cpu")
-        
-        self.db_path = Path(db_path)
-        self.db_path.mkdir(exist_ok=True)
-        
-        self.dimension = dimension
-        self.index_path = self.db_path / "index.faiss"
-        self.metadata_path = self.db_path / "metadata.json"
-        
-        # Initialize or load index
-        if self.index_path.exists():
-            self.index = faiss.read_index(str(self.index_path))
-            logger.info(f"Loaded existing FAISS index with {self.index.ntotal} vectors")
-        else:
-            self.index = faiss.IndexFlatIP(dimension)  # Inner product similarity
-            logger.info(f"Created new FAISS index with dimension {dimension}")
-        
-        # Load metadata
-        if self.metadata_path.exists():
-            with open(self.metadata_path, 'r') as f:
-                self.metadata = json.load(f)
-        else:
-            self.metadata = []
-    
-    def add_documents(self, chunks: List[Dict], embeddings: List[List[float]]):
-        """
-        Add document chunks to FAISS index.
-        
-        Args:
-            chunks: List of document chunks with metadata
-            embeddings: List of embedding vectors
-        """
-        if len(chunks) != len(embeddings):
-            raise VectorDBError("Number of chunks must match number of embeddings")
-        
-        # Convert embeddings to numpy array
-        embeddings_array = np.array(embeddings, dtype=np.float32)
-        
-        # Normalize embeddings for cosine similarity
-        faiss.normalize_L2(embeddings_array)
-        
-        # Add to index
-        self.index.add(embeddings_array)
-        
-        # Store metadata with enhanced structure
-        for chunk in chunks:
-            chunk_metadata = chunk.get('metadata', {})
-            enhanced_chunk = {
-                'text': chunk.get('text', ''),
-                'source_file': chunk.get('source_file', ''),
-                'chunk_index': chunk.get('chunk_index', 0),
-                'file_hash': chunk.get('file_hash', ''),
-                'created_at': chunk.get('created_at', datetime.now().isoformat()),
-                # Enhanced organizational metadata
-                'organization': chunk_metadata.get('organization', 'Unknown'),
-                'document_type': chunk_metadata.get('document_type', 'Unknown'),
-                'document_category': chunk_metadata.get('document_category', 'General'),
-                'publication_year': chunk_metadata.get('publication_year', 'Unknown'),
-                'language': chunk_metadata.get('language', 'Unknown'),
-                'document_title': chunk_metadata.get('document_title', ''),
-                'file_size_bytes': chunk_metadata.get('file_size_bytes', 0),
-                'tags': chunk_metadata.get('tags', []),
-                'total_pages': chunk_metadata.get('total_pages', 0),
-                'extraction_method': chunk_metadata.get('extraction_method', ''),
-                'chunk_size': chunk_metadata.get('chunk_size', 0),
-                'total_chunks': chunk_metadata.get('total_chunks', 0)
-            }
-            self.metadata.append(enhanced_chunk)
-        
-        # Save index and metadata
-        faiss.write_index(self.index, str(self.index_path))
-        with open(self.metadata_path, 'w') as f:
-            json.dump(self.metadata, f, indent=2)
-        
-        logger.info(f"Added {len(chunks)} documents to FAISS index")
-    
-    def search(self, query_embedding: List[float], n_results: int = 5) -> Dict:
-        """
-        Search for similar documents.
-        
-        Args:
-            query_embedding: Query embedding vector
-            n_results: Number of results to return
-            
-        Returns:
-            Search results
-        """
-        query_array = np.array([query_embedding], dtype=np.float32)
-        faiss.normalize_L2(query_array)
-        
-        scores, indices = self.index.search(query_array, n_results)
-        
-        results = {
-            'documents': [],
-            'metadatas': [],
-            'distances': scores[0].tolist()
-        }
-        
-        for idx in indices[0]:
-            if idx < len(self.metadata):
-                metadata = self.metadata[idx]
-                results['documents'].append(metadata.get('text', ''))
-                results['metadatas'].append(metadata)
-        
-        return results
-
 
 class PDFVectorDBManager:
-    """Main class for managing PDF to vector database operations"""
     
     def __init__(self, 
                  vector_db_type: str = "chroma",
                  embedding_method: str = "sentence_transformers",
                  db_path: str = None,
-                 collection_name: str = "pdf_documents"):
-        """
-        Initialize the PDF to Vector DB manager.
-        
-        Args:
-            vector_db_type: Type of vector database ('chroma' or 'faiss')
-            embedding_method: Method for generating embeddings
-            db_path: Path to store database files
-            collection_name: Name of the collection/index
-        """
+                 collection_name: str = "krishi_sakha_docs"):
+       
+        if vector_db_type != "chroma":
+            raise VectorDBError(f"Only ChromaDB is supported, got: {vector_db_type}")
+        if embedding_method != "sentence_transformers":
+            raise VectorDBError(f"Only sentence_transformers is supported, got: {embedding_method}")
+            
         self.vector_db_type = vector_db_type
         self.embedding_method = embedding_method
         
         # Initialize embedding generator
-        self.embedding_generator = EmbeddingGenerator(method=embedding_method)
+        self.embedding_generator = EmbeddingGenerator()
         
-        # Initialize vector database
-        if vector_db_type == "chroma":
-            db_path = db_path or "./chroma_db"
-            self.vector_db = ChromaVectorDB(db_path=db_path, collection_name=collection_name)
-        elif vector_db_type == "faiss":
-            db_path = db_path or "./faiss_db"
-            # Determine embedding dimension based on method
-            dimension = 384 if embedding_method == "sentence_transformers" else 768
-            self.vector_db = FAISSVectorDB(db_path=db_path, dimension=dimension)
-        else:
-            raise VectorDBError(f"Unsupported vector database type: {vector_db_type}")
+        # Initialize ChromaDB
+        db_path = db_path or "./chroma_db"
+        self.vector_db = ChromaVectorDB(db_path=db_path, collection_name=collection_name)
         
-        logger.info(f"Initialized PDFVectorDBManager with {vector_db_type} and {embedding_method}")
+        logger.info(f"Initialized PDFVectorDBManager with ChromaDB and sentence-transformers")
     
     def add_pdf_to_db(self, pdf_path: Union[str, Path], 
                      chunk_size: int = 1000, chunk_overlap: int = 200,
@@ -411,21 +188,7 @@ class PDFVectorDBManager:
                      language: str = None,
                      tags: List[str] = None,
                      custom_metadata: Dict = None):
-        """
-        Parse a PDF and add it to the vector database with rich metadata.
-        
-        Args:
-            pdf_path: Path to the PDF file
-            chunk_size: Size of text chunks
-            chunk_overlap: Overlap between chunks
-            organization: Name of the organization that published the document
-            document_type: Type of document (e.g., 'annual_report', 'research_paper')
-            document_category: Category of the document (e.g., 'agriculture', 'livestock')
-            year: Publication year of the document
-            language: Language of the document
-            tags: List of tags/keywords for the document
-            custom_metadata: Additional custom metadata
-        """
+      
         logger.info(f"Processing PDF: {pdf_path}")
         
         # Parse PDF into chunks with enhanced metadata
@@ -460,14 +223,7 @@ class PDFVectorDBManager:
     
     def add_pdf_directory_to_db(self, directory_path: Union[str, Path], 
                                chunk_size: int = 1000, chunk_overlap: int = 200):
-        """
-        Parse all PDFs in a directory and add them to the vector database.
-        
-        Args:
-            directory_path: Path to directory containing PDFs
-            chunk_size: Size of text chunks
-            chunk_overlap: Overlap between chunks
-        """
+      
         logger.info(f"Processing PDF directory: {directory_path}")
         
         # Parse all PDFs in directory
@@ -495,21 +251,7 @@ class PDFVectorDBManager:
                         document_category: str = None,
                         year: str = None,
                         language: str = None) -> Dict:
-        """
-        Search for documents similar to the query with optional metadata filtering.
-        
-        Args:
-            query: Search query text
-            n_results: Number of results to return
-            organization: Filter by organization name
-            document_type: Filter by document type
-            document_category: Filter by document category
-            year: Filter by publication year
-            language: Filter by language
-            
-        Returns:
-            Search results with metadata
-        """
+     
         # Generate embedding for query
         query_embedding = self.embedding_generator.generate_embeddings([query])[0]
         
@@ -527,49 +269,12 @@ class PDFVectorDBManager:
             where_filter['language'] = language
         
         # Search in vector database
-        if self.vector_db_type == "chroma" and where_filter:
+        if where_filter:
             results = self.vector_db.search(query_embedding, n_results=n_results, where_filter=where_filter)
         else:
-            # For FAISS or when no filter is needed
             results = self.vector_db.search(query_embedding, n_results=n_results)
             
-            # Apply post-filtering for FAISS if filters are specified
-            if self.vector_db_type == "faiss" and where_filter:
-                results = self._apply_post_filter(results, where_filter)
-        
         return results
-    
-    def _apply_post_filter(self, results: Dict, where_filter: Dict) -> Dict:
-        """
-        Apply metadata filtering to FAISS search results.
-        """
-        filtered_docs = []
-        filtered_metadatas = []
-        filtered_distances = []
-        
-        documents = results.get('documents', [])
-        metadatas = results.get('metadatas', [])
-        distances = results.get('distances', [])
-        
-        for i, metadata in enumerate(metadatas):
-            match = True
-            for key, value in where_filter.items():
-                if str(metadata.get(key, '')).lower() != str(value).lower():
-                    match = False
-                    break
-            
-            if match:
-                if i < len(documents):
-                    filtered_docs.append(documents[i])
-                filtered_metadatas.append(metadata)
-                if i < len(distances):
-                    filtered_distances.append(distances[i])
-        
-        return {
-            'documents': filtered_docs,
-            'metadatas': filtered_metadatas,
-            'distances': filtered_distances
-        }
     
     def search_by_organization(self, query: str, organization: str, n_results: int = 5) -> Dict:
         """
@@ -587,69 +292,30 @@ class PDFVectorDBManager:
         """
         Get list of all organizations in the database.
         """
-        if self.vector_db_type == "chroma":
-            # For ChromaDB, we'd need to query all documents to get unique organizations
-            # This is a simplified approach - in production, you might want to maintain a separate index
-            try:
-                all_results = self.vector_db.collection.get()
-                organizations = set()
-                for metadata in all_results.get('metadatas', []):
-                    org = metadata.get('organization', 'Unknown')
-                    if org != 'Unknown':
-                        organizations.add(org)
-                return sorted(list(organizations))
-            except:
-                return []
-        elif self.vector_db_type == "faiss":
+        try:
+            all_results = self.vector_db.collection.get()
             organizations = set()
-            for metadata in self.vector_db.metadata:
+            for metadata in all_results.get('metadatas', []):
                 org = metadata.get('organization', 'Unknown')
                 if org != 'Unknown':
                     organizations.add(org)
             return sorted(list(organizations))
-        return []
+        except:
+            return []
 
 
 # Convenience functions
 def add_pdf_to_vector_db(pdf_path: Union[str, Path], 
-                        vector_db_type: str = "chroma",
-                        embedding_method: str = "sentence_transformers",
                         db_path: str = None):
-    """
-    Convenience function to add a single PDF to vector database.
-    
-    Args:
-        pdf_path: Path to PDF file
-        vector_db_type: Type of vector database
-        embedding_method: Method for generating embeddings
-        db_path: Path to store database files
-    """
-    manager = PDFVectorDBManager(
-        vector_db_type=vector_db_type,
-        embedding_method=embedding_method,
-        db_path=db_path
-    )
+  
+    manager = PDFVectorDBManager(db_path=db_path)
     manager.add_pdf_to_db(pdf_path)
 
 
 def add_pdf_directory_to_vector_db(directory_path: Union[str, Path],
-                                  vector_db_type: str = "chroma",
-                                  embedding_method: str = "sentence_transformers",
                                   db_path: str = None):
-    """
-    Convenience function to add all PDFs in a directory to vector database.
-    
-    Args:
-        directory_path: Path to directory containing PDFs
-        vector_db_type: Type of vector database
-        embedding_method: Method for generating embeddings
-        db_path: Path to store database files
-    """
-    manager = PDFVectorDBManager(
-        vector_db_type=vector_db_type,
-        embedding_method=embedding_method,
-        db_path=db_path
-    )
+
+    manager = PDFVectorDBManager(db_path=db_path)
     manager.add_pdf_directory_to_db(directory_path)
 
 
@@ -660,10 +326,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Add PDFs to Vector Database")
     parser.add_argument("--pdf", type=str, help="Path to single PDF file")
     parser.add_argument("--directory", type=str, help="Path to directory containing PDFs")
-    parser.add_argument("--db-type", type=str, choices=["chroma", "faiss"], default="chroma",
-                       help="Vector database type")
-    parser.add_argument("--embedding", type=str, choices=["sentence_transformers", "gemini"], 
-                       default="sentence_transformers", help="Embedding method")
     parser.add_argument("--db-path", type=str, help="Path to store database files")
     parser.add_argument("--search", type=str, help="Search query to test")
     
@@ -671,11 +333,7 @@ if __name__ == "__main__":
     
     try:
         # Initialize manager
-        manager = PDFVectorDBManager(
-            vector_db_type=args.db_type,
-            embedding_method=args.embedding,
-            db_path=args.db_path
-        )
+        manager = PDFVectorDBManager(db_path=args.db_path)
         
         # Add PDFs to database
         if args.pdf:
@@ -705,5 +363,3 @@ if __name__ == "__main__":
         print(f"\nError: {e}")
         print("\nTo install required dependencies:")
         print("pip install chromadb sentence-transformers")
-        print("# OR for FAISS:")
-        print("pip install faiss-cpu sentence-transformers")

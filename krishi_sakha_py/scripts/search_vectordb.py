@@ -14,6 +14,8 @@ Usage Examples:
     
     # Search with multiple filters
     python scripts/search_vectordb.py --search "crop yields" --organization "WHO" --year "2023" --results 5
+    
+    # Backend is fixed to ChromaDB with sentence-transformers embeddings.
 """
 
 import sys
@@ -48,11 +50,7 @@ def main():
     parser.add_argument("--results", type=int, default=5,
                        help="Number of search results to show (default: 5)")
     
-    # Database configuration
-    parser.add_argument("--db-type", type=str, choices=["chroma", "faiss"], default="chroma",
-                       help="Vector database type (default: chroma)")
-    parser.add_argument("--embedding", type=str, choices=["sentence_transformers", "gemini"], 
-                       default="sentence_transformers", help="Embedding method (default: sentence_transformers)")
+    # Database configuration (fixed to ChromaDB + sentence-transformers)
     parser.add_argument("--db-path", type=str, help="Custom path to database files")
     parser.add_argument("--collection", type=str, default="krishi_sakha_docs",
                        help="Collection/index name (default: krishi_sakha_docs)")
@@ -81,16 +79,12 @@ def main():
         logging.getLogger().setLevel(logging.DEBUG)
     
     try:
-        logger.info("=== Krishi Sakha Vector DB Search ===")
-        logger.info(f"Vector DB Type: {args.db_type}")
-        logger.info(f"Embedding Method: {args.embedding}")
+        logger.info("=== Krishi Sakha Vector DB Search (Chroma + sentence-transformers) ===")
         logger.info(f"Collection Name: {args.collection}")
         
         # Initialize manager
         logger.info("Initializing PDF Vector DB Manager...")
         manager = PDFVectorDBManager(
-            vector_db_type=args.db_type,
-            embedding_method=args.embedding,
             db_path=args.db_path,
             collection_name=args.collection
         )

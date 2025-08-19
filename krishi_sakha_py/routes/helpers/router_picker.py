@@ -12,9 +12,11 @@ logger = logging.getLogger(__name__)
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-2.0-flash')
 
+
 def route_question(user_question: str) -> dict:
     """
     Use Gemini to determine which domain should handle the user's question.
+    Returns a dictionary with domain, reason, year, and keywords.
     """
     try:
         prompt = f"{ROUTER_CONFIG_DISCRIPTION_SYSTEM_PROMPT}\n\nQuestion: \"{user_question}\""
@@ -34,21 +36,33 @@ def route_question(user_question: str) -> dict:
         except Exception:
             routing_result = {
                 "domain": "general",
-                "reason": "Failed to parse routing response, defaulting to general"
+                "reason": "Failed to parse routing response, defaulting to general",
+                "year": None,
+                "keywords": []
             }
 
-        # Validate
+        # Validate domain
         valid_domains = ["annual_report", "general", "search"]
         if routing_result.get("domain") not in valid_domains:
-            routing_result = {
-                "domain": "general",
-                "reason": "Invalid domain returned, defaulting to general"
-            }
+            routing_result["domain"] = "general"
+            routing_result["reason"] += " (Invalid domain returned, defaulting to general)"
+
+        # Ensure year and keywords keys exist
+        if "year" not in routing_result:
+            routing_result["year"] = None
+        if "keywords" not in routing_result:
+            routing_result["keywords"] = []
 
         logger.info(f"Parsed routing result: {routing_result}")
         return routing_result
+
     except Exception as e:
-        return {"domain":"general","reason":f"Error in routing: {str(e)}"}
+        return {
+            "domain": "general",
+            "reason": f"Error in routing: {str(e)}",
+            "year": None,
+            "keywords": []
+        }
 
 
 def get_route_for_question(question: str) -> str:

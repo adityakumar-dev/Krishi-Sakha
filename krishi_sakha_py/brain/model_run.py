@@ -1,78 +1,71 @@
-from fastapi import APIRouter, File, UploadFile, Form, Depends, HTTPException, Request
-from fastapi.responses import StreamingResponse
-from typing import Optional, List, Dict
-import logging
-import json
-import os
+# brain/model_run.py
 
-from brain.model_run import rag_runner  # Your SimpleRAG instance
-from routes.helpers.router_picker import route_question
+from brain.brain_init import default_model, voice_model
+from configs.model_config import DEFAULT_SYSTEM_MESSAGE, VOICE_SYSTEM_MESSAGE
+from langchain.prompts import ChatPromptTemplate
+from langchain.schema.output_parser import StrOutputParser
+from langchain.schema import HumanMessage
+import logging
+from datetime import datetime
+from typing import Any, AsyncGenerator, Dict, Optional
+
 from routes.helpers.push_supabase import push_to_supabase
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-router = APIRouter()
+class ModelRun:
+    def __init__(self):
+        self.default_model = default_model
+        self.voice_model = voice_model
 
+        self.rag_template = ChatPromptTemplate.from_messages([
+            ("system", DEFAULT_SYSTEM_MESSAGE + "\n\nUse the following context to answer the user's question:\n{context}"),
+            ("human", "{question}")
+        ])
 
-@router.post("/chat")
-async def chat_endpoint(
-    prompt: str = Form(...),
-    conversation_id: int = Form(...),
-    history: Optional[List[Dict[str, str]]] = None,
-    image: Optional[UploadFile] = File(None),
-    request: Request = None
-):
-    """
-    Chat endpoint supporting text prompt + optional image with streaming RAG responses.
-    """
-    try:
-        # Default user_id
-        user_id = "anonymous"
-        if hasattr(request.state, "user") and request.state.user:
-            user_id = request.state.user.get("sub", "anonymous")
+        self.general_template = ChatPromptTemplate.from_messages([
+            ("system", DEFAULT_SYSTEM_MESSAGE),
+            ("human", "{question}")
+        ])
 
-        logger.info(f"Chat request from user: {user_id}, prompt: {prompt[:100]}...")
+    async def generate(
+        self,
+        question: str,
+        context: str = "",
+        conversation_id: str = "",
+        user_id: str = "",
+        use_voice_model: bool = False,
+        stream: bool = True
+    ) -> AsyncGenerator[str, None]:
 
-        # If image is uploaded, prepend info to prompt
-        if image:
-            prompt = f"[Image uploaded: {image.filename}] {prompt}"
+        template = self.rag_template if context else self.general_template
+        model    = self.voice_model if use_voice_model else self.default_model
+        chain    = template | model | StrOutputParser()
 
-        # Streaming generator
-        async def generate_stream():
-            full_response = ""
-            try:
-                async for chunk in rag_runner.generate_response(query=prompt, user_id=user_id, stream=True):
+        chain_input = {"question": question}
+        if context:
+            chain_input["context"] = context
+
+        full_response = ""
+
+        if stream:
+            async for chunk in chain.astream(chain_input):
+                if chunk:
                     full_response += chunk
-                    # Each chunk as JSON for frontend
-                    yield f"data: {json.dumps({'type': 'partial_response', 'content': chunk, 'query_type': route_question(prompt)['domain']})}\n\n"
+                    yield chunk
+        else:
+            full_response = await chain.ainvoke(chain_input)
+            yield full_response
 
-                # Push complete message to Supabase
-                await push_to_supabase("chat_messages", {
-                    "conversation_id": conversation_id,
-                    "user_id": user_id,
-                    "sender": "ai",
-                    "message": full_response
-                })
-
-                # Notify frontend that streaming is complete
-                yield f"data: {json.dumps({'type': 'complete', 'content': full_response})}\n\n"
-
-            except Exception as e:
-                err_msg = f"Error in streaming: {e}"
-                logger.error(err_msg)
-                yield f"data: {json.dumps({'type': 'error', 'content': err_msg})}\n\n"
-
-        return StreamingResponse(
-            generate_stream(),
-            media_type="text/event-stream",
-            headers={
-                "Cache-Control": "no-cache",
-                "Connection": "keep-alive",
-                "Content-Type": "text/event-stream"
+        # log only once at end
+        await push_to_supabase(
+            'chat_messages',
+            {
+                'conversation_id': conversation_id,
+                'user_id': user_id,
+                'message': full_response,
+                'sender' : "assistant",
             }
         )
 
-    except Exception as e:
-        logger.error(f"Error in chat endpoint: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+model_runner = ModelRun()

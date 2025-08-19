@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:krishi_sakha/screens/login/helpers/auth_service.dart';
 import 'package:lottie/lottie.dart';
 import 'package:krishi_sakha/utils/theme/colors.dart';
 import 'package:krishi_sakha/utils/routes/routes.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -18,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _passwordController = TextEditingController();
   bool _isObscure = true;
   bool _isLoading = false;
+  bool _isSignUp = false;
 
   @override
   void initState() {
@@ -40,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
       backgroundColor: AppColors.primaryBlack,
       appBar: AppBar(
       scrolledUnderElevation: 0,
-        backgroundColor: AppColors.primaryBlack,
+        backgroundColor: Colors.transparent,
         elevation: 0,
         // // leading: IconButton(
         // //   onPressed: () => Navigator.pop(context),
@@ -50,17 +53,26 @@ class _LoginScreenState extends State<LoginScreen> {
         // //     size: 24,
         // //   ),
         // ),
-        title: const Text(
-          'Login',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: AppColors.primaryGreen,
-            letterSpacing: 0.5,
-          ),
-        ),
+        // title: const Text(
+        //   'Login',
+        //   style: TextStyle(
+        //     fontSize: 24,
+        //     fontWeight: FontWeight.bold,
+        //     color: AppColors.primaryGreen,
+        //     letterSpacing: 0.5,
+        //   ),
+        // ),
+        actions: [
+          TextButton(onPressed: (){
+            setState(() {
+              _isSignUp = !_isSignUp;
+            });
+          }, child:  Text( _isSignUp ? 'Sign In' : 'Sign Up', style: TextStyle(color: AppColors.primaryGreen, fontWeight: FontWeight.bold, fontSize: 16),)),
+        ],
       ),
+      extendBodyBehindAppBar: true,
       body: SafeArea(
+        
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -103,8 +115,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
                 const SizedBox(height: 8),
 
-                const Text(
-                  'Sign in to continue to Krishi Sakha',
+                Text(
+                  _isSignUp ? 'Sign up to continue to Krishi Sakha' : 'Sign in to continue to Krishi Sakha',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey,
@@ -231,8 +243,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       Align(
                         alignment: Alignment.centerRight,
                         child: TextButton(
-                          onPressed: () {
-                            // TODO: Implement forgot password
+                          onPressed: () async{
+                            // await AuthService.resetPassword(
+                              
+                          
                           },
                           child: const Text(
                             'Forgot Password?',
@@ -261,7 +275,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                         child: ElevatedButton(
-                          onPressed: _isLoading ? null : _handleLogin,
+                          onPressed: _isLoading ? null : ()async{
+await  _handleLogin(context, _emailController.text, _passwordController.text, _isSignUp);
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: AppColors.primaryGreen,
                             foregroundColor: AppColors.primaryBlack,
@@ -281,11 +297,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                     ),
                                   ),
                                 )
-                              : const Row(
+                              : Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
-                                      'Login',
+                                      _isSignUp ? 'Sign Up' : 'Login',
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
@@ -299,31 +315,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
 
-                      const SizedBox(height: 30),
-
-                      // Sign up option
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "Don't have an account? ",
-                            style: TextStyle(color: Colors.grey, fontSize: 16),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              // TODO: Navigate to sign up screen
-                            },
-                            child: const Text(
-                              'Sign Up',
-                              style: TextStyle(
-                                color: AppColors.primaryGreen,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+               
                     ],
                   ),
                 ),
@@ -335,7 +327,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Future<void> _handleLogin() async {
+  Future<void> _handleLogin(BuildContext context, String email, String password , bool isSignUp) async {
     if (_formKey.currentState!.validate()) {
       setState(() {
         _isLoading = true;
@@ -347,11 +339,20 @@ class _LoginScreenState extends State<LoginScreen> {
       setState(() {
         _isLoading = false;
       });
+if(isSignUp){
 
-      // Navigate to home
-      if (mounted) {
-        context.go(AppRoutes.home);
-      }
+ final result =  await AuthService.signUp(context: context, email: email, password: password);
+if(result.isSuccess){
+  context.go(AppRoutes.home);
+}
+}else{
+
+  final result = await  AuthService.signIn(context: context, email: email, password: password);
+  if(result.isSuccess){
+    context.go(AppRoutes.home);
+  }
+}
+
     }
   }
 

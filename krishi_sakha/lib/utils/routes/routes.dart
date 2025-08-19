@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:krishi_sakha/screens/chat/server/select_chat.dart';
 import 'package:krishi_sakha/screens/home/home_screen.dart';
 import 'package:krishi_sakha/screens/login/login_screen.dart';
 import 'package:krishi_sakha/screens/models/model_list_screen.dart';
 import 'package:krishi_sakha/screens/onboarding/onboarding.dart';
 import 'package:krishi_sakha/screens/permission/permission_screen.dart';
+import 'package:krishi_sakha/screens/splash/splash_screen.dart';
 
 // Route paths
 class AppRoutes {
+  static const String splash = '/splash';
   static const String onboarding = '/';
   static const String permission = '/permission';
   static const String home = '/home';
@@ -18,13 +21,19 @@ class AppRoutes {
   static const String search = '/search';
   static const String login = "/login";
   static const String selector = "/selector";
+  static const String chatServer = "/chat-server";
   
 }
 
 // GoRouter configuration
 final GoRouter appRouter = GoRouter(
-  initialLocation: AppRoutes.onboarding,
+
+  initialLocation: AppRoutes.splash,
   routes: [
+  
+  
+    GoRoute(path: AppRoutes.chatServer, name: 'chatServer', builder: (context, state) => const SelectChatScreen()),
+    GoRoute(path: AppRoutes.splash, builder: (context, state) => const SplashScreen()),
     // Onboarding route
     GoRoute(
       path: AppRoutes.onboarding,
@@ -53,7 +62,6 @@ final GoRouter appRouter = GoRouter(
 
   GoRoute(path: AppRoutes.login, name: 'login', builder: (context, state) => const LoginScreen()),
 
-  
 
     // Settings route (placeholder for now)
     GoRoute(

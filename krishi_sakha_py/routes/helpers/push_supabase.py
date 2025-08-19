@@ -14,17 +14,12 @@ def push_to_supabase(table_name: str, data: Dict[str, Any]) -> bool:
         return False
 
     try:
-        if 'created_at' not in data:
-            data['created_at'] = datetime.now().isoformat()
+        
 
         result = supabase.table(table_name).insert([data]).execute()
 
-        if result.data and not result.error:
-            logger.info(f"Successfully inserted data into {table_name}")
-            return True
-        else:
-            logger.error(f"Failed to insert data: {result.error}")
-            return False
+        print(result)
+        logger.info(f"Successfully inserted data into {table_name}")
 
     except Exception as e:
         logger.error(f"Error inserting data into {table_name}: {e}")

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:krishi_sakha/screens/login/helpers/auth_service.dart';
 import 'package:krishi_sakha/utils/theme/colors.dart';
 import 'package:krishi_sakha/utils/routes/routes.dart';
 
@@ -180,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(height: 20),
           GestureDetector(
-                  onTap: () => context.push(AppRoutes.selector),
+                  onTap: () => context.push(AppRoutes.chatServer),
             child: Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 16),
@@ -877,7 +878,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             TextButton(
-              onPressed: () {
+              onPressed: () async{
+
+                AuthService.signOut(context: context);
                 Navigator.of(context).pop();
                 context.go(AppRoutes.onboarding);
               },
