@@ -24,7 +24,10 @@ class ModelRun:
             ("system", DEFAULT_SYSTEM_MESSAGE + "\n\nUse the following context to answer the user's question:\n{context}"),
             ("human", "{question}")
         ])
-
+        self.voice_template = ChatPromptTemplate.from_messages([
+            ("system", VOICE_SYSTEM_MESSAGE),
+            ("human", "{question}") 
+        ])
         self.general_template = ChatPromptTemplate.from_messages([
             ("system", DEFAULT_SYSTEM_MESSAGE),
             ("human", "{question}")
@@ -37,7 +40,8 @@ class ModelRun:
         conversation_id: str = "",
         user_id: str = "",
         use_voice_model: bool = False,
-        stream: bool = True
+        stream: bool = True,
+        push_to_db: bool = True
     ) -> AsyncGenerator[str, None]:
 
         template = self.rag_template if context else self.general_template
@@ -60,12 +64,13 @@ class ModelRun:
             yield full_response
 
         # log only once at end
-        push_to_supabase(
-            'chat_messages',
-            {
-                'conversation_id': conversation_id,
-                'user_id': user_id,
-                'message': full_response,
+        if push_to_db:
+            push_to_supabase(
+                'chat_messages',
+                {
+                    'conversation_id': conversation_id,
+                    'user_id': user_id,
+                    'message': full_response,
                 'sender' : "assistant",
             }
         )
@@ -164,5 +169,21 @@ class ModelRun:
                     'sender': "assistant",
                 }
             )
+    async def generate_voice(
+        self,
+        question: str,
+    ) -> AsyncGenerator[str, None]:
+
+        template = self.voice_template
+        model    = self.voice_model
+        chain    = template | model | StrOutputParser()
+
+        chain_input = {"question": question}
+
+        async for chunk in chain.astream(chain_input):
+                if chunk:
+                    yield chunk
+ 
+
 
 model_runner = ModelRun()

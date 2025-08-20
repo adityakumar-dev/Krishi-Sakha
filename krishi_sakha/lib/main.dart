@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:krishi_sakha/providers/server_chat_handler_provider.dart';
+import 'package:krishi_sakha/providers/void_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:krishi_sakha/models/llm_model.dart';
 import 'package:krishi_sakha/providers/model_provider.dart';
@@ -17,7 +18,7 @@ void main() async {
   await Hive.initFlutter();
 
   Hive.registerAdapter(LlmModelAdapter());
-  await Supabase.initialize(url: dotenv.get('URL'), anonKey: dotenv.get('ANON_KEY'));
+  await Supabase.initialize(url: "SUPABASE_URL", anonKey: "SUPBASE_ANON_KEY");
 
   runApp(const MyApp());
 }
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ModelProvider()),
         ChangeNotifierProvider(create: (_) => LlamaProvider()),
         ChangeNotifierProvider(create: (_) => ServerChatHandlerProvider()),
+        ChangeNotifierProvider(create: (_) => VoiceProvider())
       ],
       child: MaterialApp.router(
         title: 'Simple AI Chat',

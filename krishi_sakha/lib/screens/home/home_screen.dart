@@ -235,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Expanded(
                 child: _buildFeatureCard(
                   title: 'chat ',
-                  subtitle: 'offline  chat',
+                  subtitle: 'offline chat',
                   icon: Icons.search,
                   color: const Color(0xFF4CAF50),
                   onTap: () {
@@ -260,11 +260,13 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: _buildFeatureCard(
-                  title: 'Market Prices',
-                  subtitle: 'Live rates',
+                  title: 'Voice Chat',
+                  subtitle: 'Voice Chat',
                   icon: Icons.trending_up,
                   color: const Color(0xFFFF9800),
-                  onTap: () {},
+                  onTap: () {
+                    context.go(AppRoutes.voiceChat);
+                  },
                 ),
               ),
               const SizedBox(width: 16),

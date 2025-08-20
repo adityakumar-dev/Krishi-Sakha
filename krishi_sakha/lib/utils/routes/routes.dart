@@ -7,6 +7,7 @@ import 'package:krishi_sakha/screens/models/model_list_screen.dart';
 import 'package:krishi_sakha/screens/onboarding/onboarding.dart';
 import 'package:krishi_sakha/screens/permission/permission_screen.dart';
 import 'package:krishi_sakha/screens/splash/splash_screen.dart';
+import 'package:krishi_sakha/screens/voice/voice_screen.dart';
 
 // Route paths
 class AppRoutes {
@@ -22,6 +23,7 @@ class AppRoutes {
   static const String login = "/login";
   static const String selector = "/selector";
   static const String chatServer = "/chat-server";
+  static const String voiceChat = "/voice-chat";
   
 }
 
@@ -31,7 +33,7 @@ final GoRouter appRouter = GoRouter(
   initialLocation: AppRoutes.splash,
   routes: [
   
-  
+  GoRoute(path: AppRoutes.voiceChat, name: 'voiceChat', builder: (context, state) => const VoiceScreen()),
     GoRoute(path: AppRoutes.chatServer, name: 'chatServer', builder: (context, state) => const SelectChatScreen()),
     GoRoute(path: AppRoutes.splash, builder: (context, state) => const SplashScreen()),
     // Onboarding route
