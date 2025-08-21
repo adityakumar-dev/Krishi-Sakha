@@ -498,19 +498,19 @@ class ServerChatHandlerProvider extends ChangeNotifier {
         _messages.add(assistantMessage);
 
         // Save assistant message to database (ignore any errors)
-        try {
-          _supabase.from('chat_messages').insert({
-            'conversation_id': _actualConversationId,
-            'user_id': user.id,
-            'sender': 'assistant',
-            'message': responseText,
-            'created_at': DateTime.now().toIso8601String(),
-          }).catchError((e) {
-            // Ignore database save errors
-          });
-        } catch (e) {
-          // Ignore all database errors
-        }
+        // try {
+        //   _supabase.from('chat_messages').insert({
+        //     'conversation_id': _actualConversationId,
+        //     'user_id': user.id,
+        //     'sender': 'assistant',
+        //     'message': responseText,
+        //     'created_at': DateTime.now().toIso8601String(),
+        //   }).catchError((e) {
+        //     // Ignore database save errors
+        //   });
+        // } catch (e) {
+        //   // Ignore all database errors
+        // }
       }
     } catch (e) {
       // Ignore all completion errors

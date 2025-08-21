@@ -323,6 +323,9 @@ class WeatherProvider extends ChangeNotifier {
   Future<LocationPermission> requestLocationPermission() async {
     return await _weatherService.requestLocationPermission();
   }
+  Future<void> requestLocation() async {
+    await _weatherService.requestOnLocation();
+  }
 
   /// Open app settings
   Future<bool> openAppSettings() async {

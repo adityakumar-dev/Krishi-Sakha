@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:location/location.dart';
 import 'package:provider/provider.dart';
 import 'package:krishi_sakha/providers/weather_provider.dart';
 import 'package:krishi_sakha/models/weather_model.dart';
@@ -43,8 +45,15 @@ class _WeatherScreenState extends State<WeatherScreen> {
     
     // Check permissions first
     final hasPermission = await weatherProvider.checkLocationPermission();
-    final serviceEnabled = await weatherProvider.checkLocationService();
-    
+    bool serviceEnabled = await weatherProvider.checkLocationService();
+    if(!serviceEnabled){
+      Location location = Location();
+     await location.requestService();
+    serviceEnabled = await location.serviceEnabled();
+    }
+    if(!serviceEnabled){
+      await Geolocator.openLocationSettings();
+    }
     if (!hasPermission || !serviceEnabled) {
       if (mounted) {
         _showLocationPermissionDialog();
@@ -80,7 +89,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
               Navigator.of(context).pop();
               final weatherProvider = context.read<WeatherProvider>();
               
-              // Try to request permission
               await weatherProvider.requestLocationPermission();
               
               // Check again

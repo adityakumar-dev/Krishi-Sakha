@@ -8,7 +8,7 @@ from langchain.schema import HumanMessage, SystemMessage
 import logging
 import base64
 from datetime import datetime
-from typing import Any, AsyncGenerator, Dict, Optional
+from typing import Any, AsyncGenerator, Dict, Optional,List
 
 from routes.helpers.push_supabase import push_to_supabase
 
@@ -41,7 +41,8 @@ class ModelRun:
         user_id: str = "",
         use_voice_model: bool = False,
         stream: bool = True,
-        push_to_db: bool = True
+        push_to_db: bool = True,
+        metadata: Optional[List[List[str]]] = None
     ) -> AsyncGenerator[str, None]:
 
         template = self.rag_template if context else self.general_template
@@ -71,7 +72,8 @@ class ModelRun:
                     'conversation_id': conversation_id,
                     'user_id': user_id,
                     'message': full_response,
-                'sender' : "assistant",
+                    'sender' : "assistant",
+                    'metadata' : metadata
             }
         )
 
@@ -81,27 +83,25 @@ class ModelRun:
         conversation_id: str = "",
         user_id: str = "",
         image_path: str = "",
+        history: Optional[List[Dict[str, str]]] = None,
         stream: bool = True
     ) -> AsyncGenerator[str, None]:
 
         if image_path == "":
             raise ValueError("generate_image() requires image_path != None")
 
+        pushed = False
         try:
             # Read and encode image to base64 (following your reference script)
             logger.info(f"Reading image from: {image_path}")
             with open(image_path, "rb") as f:
                 image_bytes = f.read()
-            
             logger.info(f"Image size: {len(image_bytes)} bytes")
-            
             # Encode image to base64 with proper data URL format
             image_b64 = base64.b64encode(image_bytes).decode("utf-8")
             data_url = f"data:image/jpeg;base64,{image_b64}"
-            
             logger.info(f"Question: {question}")
             logger.info(f"Data URL length: {len(data_url)}")
-            
             # Build LangChain HumanMessage with image + text (following your reference script)
             message = HumanMessage(
                 content=[
@@ -109,9 +109,7 @@ class ModelRun:
                     {"type": "image_url", "image_url": {"url": data_url}}
                 ]
             )
-            
             logger.info("HumanMessage created successfully")
-
             # Run / stream the model with image
             logger.info("Starting model streaming...")
             full_response = ""
@@ -120,7 +118,6 @@ class ModelRun:
                 async for chunk in self.vision_model.astream([message]):
                     chunk_count += 1
                     logger.info(f"Received chunk {chunk_count}: {type(chunk)}")
-                    
                     if chunk and hasattr(chunk, 'content') and chunk.content:
                         content = chunk.content
                         logger.info(f"Chunk content: {content[:100]}...")
@@ -132,7 +129,6 @@ class ModelRun:
                         yield chunk
                     else:
                         logger.info(f"Unknown chunk type: {chunk}")
-                        
                 logger.info(f"Streaming completed. Total chunks: {chunk_count}, Response length: {len(full_response)}")
             else:
                 logger.info("Using non-streaming mode...")
@@ -141,8 +137,7 @@ class ModelRun:
                 content = response.content if hasattr(response, 'content') else str(response)
                 full_response = content
                 yield content
-
-            # Save assistant response
+            # Save assistant response (only if no exception)
             if full_response:
                 await push_to_supabase(
                     'chat_messages',
@@ -153,22 +148,22 @@ class ModelRun:
                         'sender': "assistant",
                     }
                 )
-
+                pushed = True
         except Exception as e:
             logger.error(f"Error in generate_image: {str(e)}")
             error_msg = f"Sorry, I encountered an error processing the image: {str(e)}"
             yield error_msg
-            
-            # Save error message
-            push_to_supabase(
-                'chat_messages',
-                {
-                    'conversation_id': conversation_id,
-                    'user_id': user_id,
-                    'message': error_msg,
-                    'sender': "assistant",
-                }
-            )
+            # Save error message only if not already pushed
+            if not pushed:
+                await push_to_supabase(
+                    'chat_messages',
+                    {
+                        'conversation_id': conversation_id,
+                        'user_id': user_id,
+                        'message': error_msg,
+                        'sender': "assistant",
+                    }
+                )
     async def generate_voice(
         self,
         question: str,

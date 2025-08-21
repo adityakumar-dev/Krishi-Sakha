@@ -38,6 +38,7 @@ Your answer MUST be valid JSON with the following keys:
 - "domain": one of ["annual_report", "general", "search"]
 - "reason": a short plain text string
 - "keywords": list of strings (can be empty)
+- "query" : if the domain type of the question is "search", include the updated search query
 
 Example:
 
@@ -46,6 +47,8 @@ Response:
 {
   "domain": "annual_report",
   "reason": "The user is asking about a yearly government report",
-  "keywords": ["fertilizer usage"]
+  "keywords": ["fertilizer usage"],
+  "query": "What is the fertilizer usage mentioned in the 2024 annual report?" only when the domain type of the question is "search"
 }
 """
+

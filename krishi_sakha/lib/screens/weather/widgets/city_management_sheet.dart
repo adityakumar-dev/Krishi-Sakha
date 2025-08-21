@@ -231,20 +231,28 @@ class CityManagementSheet extends StatelessWidget {
             ),
             if (weatherData != null) ...[
               const SizedBox(height: 8),
-              Row(
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _getWeatherIcon(weatherData.current.weatherCode),
-                  const SizedBox(width: 8),
-                  Text(
-                    '${weatherData.current.temperature.round()}°C',
-                    style: TextStyle(
-                      color: isCurrentCity ? AppColors.primaryGreen : AppColors.primaryWhite,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    children: [
+                      _getWeatherIcon(weatherData.current.weatherCode),
+                      const SizedBox(width: 8),
+                      Text(
+                        '${weatherData.current.temperature.round()}°C',
+                        style: TextStyle(
+                          color: isCurrentCity ? AppColors.primaryGreen : AppColors.primaryWhite,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                    
+                    ],
+                    
                   ),
-                  const SizedBox(width: 8),
-                  Text(
+                    Text(
                     weatherData.current.weatherDescription,
                     style: TextStyle(
                       color: AppColors.primaryWhite.withOpacity(0.7),

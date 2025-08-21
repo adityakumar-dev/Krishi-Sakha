@@ -8,7 +8,8 @@ from routes.middlewares.auth_middleware import supabase_jwt_middleware
 from brain.model_run import model_runner
 from routes.helpers.router_picker import route_question
 from data.functions.add_to_vector_db import PDFVectorDBManager
-
+from modules.scrapper.scrapper import json_scrapped
+from typing import Dict
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
@@ -32,6 +33,7 @@ async def chat_endpoint(
     prompt: str = Form(...),
     conversation_id: str = Form(...),
     image: Optional[UploadFile] = File(None),
+    history: Optional[List[Dict[str, str]]] = Form(None),
     user=Depends(supabase_jwt_middleware)
 ):
     user_id = user.get("sub")
@@ -94,39 +96,50 @@ async def chat_endpoint(
 
             domain = routing.get("domain", "general")
             keywords = routing.get("keywords", [])
+            query = routing.get("query", prompt)
 
             # Retrieve context if needed
             context = ""
             if domain != "general":
-                yield f"data: {json.dumps({'type': 'status', 'message': 'Searching for context...'})}\n\n"
-                db_manager = PDFVectorDBManager(
-                    vector_db_type="chroma",
-                    embedding_method="sentence_transformers",
-                    db_path="/home/linmar/Desktop/Krishi-Sakha/krishi_sakha_py/chroma_db",
-                    collection_name=domain
-                )
+                if domain != "search":
+                    yield f"data: {json.dumps({'type': 'status', 'message': 'Searching for context...'})}\n\n"
+                    db_manager = PDFVectorDBManager(
+                        vector_db_type="chroma",
+                        embedding_method="sentence_transformers",
+                        db_path="/home/linmar/Desktop/Krishi-Sakha/krishi_sakha_py/chroma_db",
+                        collection_name=domain
+                    )
 
-                search_query = " ".join(keywords) if keywords else prompt
-                results = db_manager.search_documents(query=search_query, n_results=5)
-                if not results.get("documents") or results["documents"] == [[]]:
-                    results = db_manager.search_documents(query=prompt, n_results=5)
-                docs_flat = flatten_docs(results.get("documents", []))
-                context = "\n".join(docs_flat) if docs_flat else ""
+                    search_query = " ".join(keywords) if keywords else prompt
+                    results = db_manager.search_documents(query=search_query, n_results=5)
+                    if not results.get("documents") or results["documents"] == [[]]:
+                        results = db_manager.search_documents(query=prompt, n_results=5)
+                    docs_flat = flatten_docs(results.get("documents", []))
+                    context = "\n".join(docs_flat) if docs_flat else ""
 
-                yield f"data: {json.dumps({'type': 'status', 'message': f'Context found: {len(docs_flat)} documents'})}\n\n"
-
+                    yield f"data: {json.dumps({'type': 'status', 'message': f'Context found: {len(docs_flat)} documents'})}\n\n"
+                else :
+                    yield f"data: {json.dumps({'type': 'status', 'message': 'Searching on the internet...'})}\n\n"
+                    context = await json_scrapped(query)
             # Stream normal model
             yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
             async for chunk in model_runner.generate(
                 question=prompt,
-                context=context,
+                context="Internet web scrapper result : " + json.dumps(context) if domain == "search" else context,
                 conversation_id=conversation_id,
                 user_id=user_id,
-                stream=True
+                stream=True,
+                metadata= [item["url"] for item in context if "url" in item] if domain == "search" else None
             ):
                 yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
 
+            if domain == "search":
+                urls_only = [item["url"] for item in context if "url" in item]
+                yield f"data: {json.dumps({'type': 'urls', 'urls': urls_only})}\n\n"
+
             yield f"data: {json.dumps({'type': 'complete'})}\n\n"
+
+
 
         except Exception as e:
             logger.error(f"General error in chat endpoint: {str(e)}", exc_info=True)

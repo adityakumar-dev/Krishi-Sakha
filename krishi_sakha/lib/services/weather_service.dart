@@ -7,7 +7,7 @@ import 'package:logger/logger.dart';
 
 class WeatherService {
   static const String _openMeteoBaseUrl = 'https://api.open-meteo.com/v1';
-  static const String _locationIqApiKey = 'API_KEY';
+  static const String _locationIqApiKey = "API_KEY";
   
   final Logger _logger = Logger();
   final http.Client _httpClient = http.Client();
@@ -204,7 +204,29 @@ class WeatherService {
   Future<bool> openAppSettings() async {
     return await Geolocator.openAppSettings();
   }
+Future<void> requestOnLocation()async {
+    final serviceEnabled = await Geolocator.isLocationServiceEnabled();
 
+    if (!serviceEnabled) {
+      await Geolocator.requestTemporaryFullAccuracy(purposeKey: 'location');
+      _logger.w('Location services are disabled. Please enable them in settings.');
+      return;
+    }
+
+    final permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      final newPermission = await Geolocator.requestPermission();
+      if (newPermission == LocationPermission.denied) {
+        _logger.w('Location permissions are denied. Cannot proceed.');
+        return;
+      }
+    }
+
+    if (permission == LocationPermission.deniedForever) {
+      _logger.w('Location permissions are permanently denied. Cannot proceed.');
+      return;
+    }
+  }
   /// Open location settings
   Future<bool> openLocationSettings() async {
     return await Geolocator.openLocationSettings();
