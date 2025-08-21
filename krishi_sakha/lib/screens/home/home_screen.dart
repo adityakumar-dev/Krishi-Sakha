@@ -250,7 +250,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   subtitle: 'Forecasts',
                   icon: Icons.wb_sunny,
                   color: const Color(0xFF2196F3),
-                  onTap: () {},
+                  onTap: () {
+                    context.go(AppRoutes.weather);
+                  },
                 ),
               ),
             ],
