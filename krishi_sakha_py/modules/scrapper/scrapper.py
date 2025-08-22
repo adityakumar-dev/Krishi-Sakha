@@ -123,7 +123,35 @@ async def json_scrapped(query : str):
 
     return ai_docs
 
-   
+
+
+async def search_from_url(url: str):
+
+    scraper = FastPlaywrightScraper(
+        headless=True,
+        timeout=4000,   # max 4 sec
+        max_parallel=10  # parallel scraping
+    )
+
+    results = await scraper.scrape_multiple(
+        [url],
+        main_selector="main, article, .Post"
+    )
+
+    # Convert to AI-friendly JSON format
+    ai_docs = []
+    for r in results:
+        ai_docs.append({
+            "url": r.get("url"),
+            "title": r.get("title"),
+            "success": r.get("success"),
+            "content": (r.get("content") or "").strip(),
+            "error": r.get("error")
+        })
+
+    return ai_docs
+
+
 
 # Example usage
 if __name__ == "__main__":

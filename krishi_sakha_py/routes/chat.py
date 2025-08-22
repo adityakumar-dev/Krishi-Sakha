@@ -7,9 +7,11 @@ import logging
 from routes.middlewares.auth_middleware import supabase_jwt_middleware
 from brain.model_run import model_runner
 from routes.helpers.router_picker import route_question
+from routes.helpers.push_supabase import push_to_supabase
 from data.functions.add_to_vector_db import PDFVectorDBManager
 from modules.scrapper.scrapper import json_scrapped
 from typing import Dict
+from modules.youtube.youtube_search import search_youtube
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
@@ -33,12 +35,13 @@ async def chat_endpoint(
     prompt: str = Form(...),
     conversation_id: str = Form(...),
     image: Optional[UploadFile] = File(None),
-    history: Optional[List[Dict[str, str]]] = Form(None),
+    history:str = Form(None),
     user=Depends(supabase_jwt_middleware)
 ):
     user_id = user.get("sub")
     logger.info(f"User: {user_id}, Conversation: {conversation_id}")
-
+    if history:
+        history = json.loads(history)
     # Read image bytes ONLY ONCE here:
     image_bytes = None
     if image:
@@ -56,32 +59,43 @@ async def chat_endpoint(
                 import os
                 temp_dir = "./temp"
                 os.makedirs(temp_dir, exist_ok=True)
-                image_path = f"{temp_dir}/{image.filename}"
+                
+                # Use a safe filename with proper extension
+                file_extension = image.filename.split('.')[-1] if image.filename and '.' in image.filename else 'jpg'
+                image_path = f"{temp_dir}/image_{conversation_id}.{file_extension}"
 
-                with open(image_path, "wb") as f:
-                    f.write(image_bytes)
-                logger.info(f"Saved temp image to {image_path}")
-
-                final_query = prompt if prompt.strip() else "What do you see in this image?"
-
-                async for chunk in model_runner.generate_image(
-                    question=final_query,
-                    conversation_id=conversation_id,
-                    user_id=user_id,
-                    image_path=image_path,
-                    stream=True
-                ):
-                    yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
-
-                # Done
-                yield "data: {\"type\": \"complete\"}\n\n"
-
-                # Clean up temp file
                 try:
-                    os.remove(image_path)
-                    logger.info("Temp image removed")
-                except Exception as cleanup_err:
-                    logger.warning(f"Failed to cleanup temp image: {cleanup_err}")
+                    with open(image_path, "wb") as f:
+                        f.write(image_bytes)
+                    logger.info(f"Saved temp image to {image_path}")
+
+                    final_query = prompt if prompt.strip() else "What do you see in this image?"
+
+                    async for chunk in model_runner.generate_image(
+                        question=final_query,
+                        conversation_id=conversation_id,
+                        user_id=user_id,
+                        image_path=image_path,
+                        stream=True,
+                        # history=history
+                    ):
+                        yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
+
+                    # Done
+                    yield "data: {\"type\": \"complete\"}\n\n"
+
+                except Exception as image_error:
+                    logger.error(f"Error processing image: {str(image_error)}")
+                    yield f"data: {json.dumps({'type': 'error', 'message': f'Error processing image: {str(image_error)}'})}\n\n"
+
+                finally:
+                    # Clean up temp file
+                    try:
+                        if os.path.exists(image_path):
+                            os.remove(image_path)
+                            logger.info("Temp image removed")
+                    except Exception as cleanup_err:
+                        logger.warning(f"Failed to cleanup temp image: {cleanup_err}")
 
                 return  # Stop here (do not go to text flow)
 
@@ -98,8 +112,11 @@ async def chat_endpoint(
             keywords = routing.get("keywords", [])
             query = routing.get("query", prompt)
 
-            # Retrieve context if needed
+            # Initialize variables
             context = ""
+            youtube_urls = []
+
+            # Retrieve context if needed
             if domain != "general":
                 if domain != "search":
                     yield f"data: {json.dumps({'type': 'status', 'message': 'Searching for context...'})}\n\n"
@@ -118,24 +135,64 @@ async def chat_endpoint(
                     context = "\n".join(docs_flat) if docs_flat else ""
 
                     yield f"data: {json.dumps({'type': 'status', 'message': f'Context found: {len(docs_flat)} documents'})}\n\n"
-                else :
+                else:
+                    yield f"data: {json.dumps({'type': 'status', 'message': 'Searching on YouTube...'})}\n\n"
+                    youtube_urls = search_youtube(query)
+                    
                     yield f"data: {json.dumps({'type': 'status', 'message': 'Searching on the internet...'})}\n\n"
                     context = await json_scrapped(query)
             # Stream normal model
             yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
+            # print(history)
+
+            # --- FLATTEN URLS AND STRUCTURE METADATA ---
+            metadata = None
+            if domain == "search":
+                urls = []
+                for item in context:
+                    if "url" in item:
+                        if isinstance(item["url"], list):
+                            urls.extend(item["url"])
+                        else:
+                            urls.append(item["url"])
+                metadata = {
+                    'url': urls,
+                    'youtberelated': youtube_urls
+                }
+
+            # Collect the full response for saving to DB
+            full_response = ""
             async for chunk in model_runner.generate(
                 question=prompt,
                 context="Internet web scrapper result : " + json.dumps(context) if domain == "search" else context,
                 conversation_id=conversation_id,
                 user_id=user_id,
                 stream=True,
-                metadata= [item["url"] for item in context if "url" in item] if domain == "search" else None
+                history=history,
+                metadata=metadata,
+                push_to_db=False  # Prevent automatic DB save to avoid duplicates
             ):
+                full_response += chunk
                 yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
 
-            if domain == "search":
-                urls_only = [item["url"] for item in context if "url" in item]
-                yield f"data: {json.dumps({'type': 'urls', 'urls': urls_only})}\n\n"
+            # Send metadata once after text generation is complete (only for search domain)
+            if domain == "search" and metadata:
+                yield f"data: {json.dumps({'type': 'metadata', 'metadata': metadata})}\n\n"
+
+            # Save the complete response to database (single save)
+            if full_response:
+                push_to_supabase(
+                    'chat_messages',
+                    {
+                        'conversation_id': conversation_id,
+                        'user_id': user_id,
+                        'message': full_response,
+                        'sender': "assistant",
+                        'metadata': metadata
+                    }
+                )                
+
+                
 
             yield f"data: {json.dumps({'type': 'complete'})}\n\n"
 

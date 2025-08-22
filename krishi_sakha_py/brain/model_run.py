@@ -42,10 +42,31 @@ class ModelRun:
         use_voice_model: bool = False,
         stream: bool = True,
         push_to_db: bool = True,
-        metadata: Optional[List[List[str]]] = None
+        metadata: Optional[Dict[str, List[str]]] = None,
+        history: Optional[List[Dict[str, str]]] = None
     ) -> AsyncGenerator[str, None]:
 
-        template = self.rag_template if context else self.general_template
+        # Dynamically build prompt with history
+        messages = []
+        if context:
+            messages.append(("system", DEFAULT_SYSTEM_MESSAGE + "\n\nUse the following context to answer the user's question:\n{context}"))
+        else:
+            messages.append(("system", DEFAULT_SYSTEM_MESSAGE))
+
+        # Insert previous chat history if provided
+        if history:
+            for turn in history:
+                role = turn.get("role")
+                content = turn.get("content", "")
+                if role == "user":
+                    messages.append(("human", content))
+                elif role == "assistant":
+                    messages.append(("ai", content))
+
+        # Add the current question
+        messages.append(("human", "{question}"))
+
+        template = ChatPromptTemplate.from_messages(messages)
         model    = self.voice_model if use_voice_model else self.default_model
         chain    = template | model | StrOutputParser()
 
@@ -92,25 +113,31 @@ class ModelRun:
 
         pushed = False
         try:
-            # Read and encode image to base64 (following your reference script)
             logger.info(f"Reading image from: {image_path}")
             with open(image_path, "rb") as f:
                 image_bytes = f.read()
             logger.info(f"Image size: {len(image_bytes)} bytes")
-            # Encode image to base64 with proper data URL format
             image_b64 = base64.b64encode(image_bytes).decode("utf-8")
             data_url = f"data:image/jpeg;base64,{image_b64}"
             logger.info(f"Question: {question}")
             logger.info(f"Data URL length: {len(data_url)}")
-            # Build LangChain HumanMessage with image + text (following your reference script)
-            message = HumanMessage(
-                content=[
-                    {"type": "text", "text": question},
-                    {"type": "image_url", "image_url": {"url": data_url}}
-                ]
-            )
+
+            # Build message list with history
+            message_content = []
+            if history:
+                for turn in history:
+                    role = turn.get("role")
+                    content = turn.get("content", "")
+                    if role == "user":
+                        message_content.append({"type": "text", "text": content})
+                    elif role == "assistant":
+                        message_content.append({"type": "text", "text": content})
+            # Add current question and image
+            message_content.append({"type": "text", "text": question})
+            message_content.append({"type": "image_url", "image_url": {"url": data_url}})
+
+            message = HumanMessage(content=message_content)
             logger.info("HumanMessage created successfully")
-            # Run / stream the model with image
             logger.info("Starting model streaming...")
             full_response = ""
             if stream:
@@ -137,9 +164,8 @@ class ModelRun:
                 content = response.content if hasattr(response, 'content') else str(response)
                 full_response = content
                 yield content
-            # Save assistant response (only if no exception)
             if full_response:
-                await push_to_supabase(
+                push_to_supabase(
                     'chat_messages',
                     {
                         'conversation_id': conversation_id,
@@ -153,9 +179,8 @@ class ModelRun:
             logger.error(f"Error in generate_image: {str(e)}")
             error_msg = f"Sorry, I encountered an error processing the image: {str(e)}"
             yield error_msg
-            # Save error message only if not already pushed
             if not pushed:
-                await push_to_supabase(
+                push_to_supabase(
                     'chat_messages',
                     {
                         'conversation_id': conversation_id,
