@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:krishi_sakha/providers/server_chat_handler_provider.dart';
 import 'package:krishi_sakha/utils/theme/colors.dart';
+import 'package:krishi_sakha/widgets/youtube_player_dialog.dart';
 
 class ChatServerScreen extends StatefulWidget {
   const ChatServerScreen({super.key});
@@ -191,7 +193,7 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
           itemCount: itemCount,
           itemBuilder: (context, index) {
             if (index == provider.messages.length && provider.isSending) {
-              return _buildStreamingMessage(provider.lastStreamingResponse);
+              return _buildStreamingMessage(provider.lastStreamingResponse, provider.currentMetadata);
             }
 
             final message = provider.messages[index];
@@ -247,56 +249,82 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
     );
   }
 
-  Widget _buildStreamingMessage(String streamingText) {
+  Widget _buildStreamingMessage(String streamingText, Map<String, dynamic> metadata) {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-      child: Row(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          _buildAvatar(false),
-          const SizedBox(width: 8),
-          Flexible(
-            child: Container(
-              constraints: BoxConstraints(
-                maxWidth: MediaQuery.of(context).size.width * 0.75,
-              ),
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.grey.withValues(alpha: 0.1),
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(12),
-                  topRight: Radius.circular(12),
-                  bottomLeft: Radius.circular(4),
-                  bottomRight: Radius.circular(12),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                width: 32,
+                height: 32,
+                margin: const EdgeInsets.only(bottom: 4),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.grey.withValues(alpha: 0.2),
                 ),
-                border: Border.all(color: Colors.white12),
+                child: const Icon(
+                  Icons.smart_toy,
+                  size: 18,
+                  color: Colors.white,
+                ),
               ),
-              child: streamingText.isEmpty
-                  ? Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        SizedBox(
-                          width: 16,
-                          height: 16,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppColors.primaryGreen,
-                          ),
+            ],
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              const SizedBox(width: 8),
+              Flexible(
+                child: Container(
+                  constraints: BoxConstraints(
+                    maxWidth: MediaQuery.of(context).size.width * 0.85,
+                  ),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withValues(alpha: 0.1),
+                    borderRadius: const BorderRadius.all(Radius.circular(12)),
+                    border: Border.all(color: Colors.white12),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (streamingText.isEmpty)
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            SizedBox(
+                              width: 16,
+                              height: 16,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2,
+                                color: AppColors.primaryGreen,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            const Text(
+                              'Thinking…',
+                              style: TextStyle(color: Colors.white70, fontSize: 16),
+                            ),
+                          ],
+                        )
+                      else
+                        Text(
+                          streamingText,
+                          style: const TextStyle(color: Colors.white, fontSize: 16),
                         ),
-                        const SizedBox(width: 8),
-                        const Text(
-                          'Thinking…',
-                          style: TextStyle(color: Colors.white70, fontSize: 16),
-                        ),
-                      ],
-                    )
-                  : Text(
-                      streamingText,
-                      style: const TextStyle(color: Colors.white, fontSize: 16),
-                    ),
-            ),
+                      if (metadata.isNotEmpty) ..._buildMetadataWidgets(metadata),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -308,63 +336,322 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: isUser ? MainAxisAlignment.end : MainAxisAlignment.start,
+      child: Column(
+        crossAxisAlignment: isUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
         children: [
-          if (!isUser) ...[
-            _buildAvatar(false),
-            const SizedBox(width: 8),
-          ],
-          Flexible(
-            child: Container(
-              constraints: BoxConstraints(
-                maxWidth: MediaQuery.of(context).size.width * 0.75,
-              ),
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: isUser 
-                    ? AppColors.primaryGreen 
-                    : Colors.grey.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.only(
-                  topLeft: const Radius.circular(12),
-                  topRight: const Radius.circular(12),
-                  bottomLeft: Radius.circular(isUser ? 12 : 4),
-                  bottomRight: Radius.circular(isUser ? 4 : 12),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: isUser ? MainAxisAlignment.end : MainAxisAlignment.start,
+            children: [
+              Container(
+                width: 32,
+                height: 32,
+                margin: const EdgeInsets.only(bottom: 4),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: isUser ? AppColors.primaryGreen : Colors.grey.withValues(alpha: 0.2),
                 ),
-                border: isUser ? null : Border.all(color: Colors.white12),
-              ),
-              child: Text(
-                message.message,
-                style: TextStyle(
+                child: Icon(
+                  isUser ? Icons.person : Icons.smart_toy,
+                  size: 18,
                   color: isUser ? AppColors.primaryBlack : Colors.white,
-                  fontSize: 16,
                 ),
               ),
-            ),
+            ],
           ),
-          if (isUser) ...[
-            const SizedBox(width: 8),
-            _buildAvatar(true),
-          ],
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: isUser ? MainAxisAlignment.end : MainAxisAlignment.start,
+            children: [
+              const SizedBox(width: 8),
+              Flexible(
+                child: Container(
+                  constraints: BoxConstraints(
+                    maxWidth: MediaQuery.of(context).size.width * 0.85,
+                  ),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: isUser 
+                        ? AppColors.primaryGreen 
+                        : Colors.grey.withValues(alpha: 0.1),
+                    borderRadius: const BorderRadius.all(Radius.circular(12)),
+                    border: isUser ? null : Border.all(color: Colors.white12),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        message.message,
+                        style: TextStyle(
+                          color: isUser ? AppColors.primaryBlack : Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                      if (!isUser && message.metadata.isNotEmpty) 
+                        ..._buildMetadataWidgets(message.metadata),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
+  List<Widget> _buildMetadataWidgets(Map<String, dynamic> metadata) {
+    List<Widget> widgets = [];
 
-  Widget _buildAvatar(bool isUser) {
+    // Handle URLs
+    if (metadata.containsKey('urls') && metadata['urls'] is List) {
+      final urls = metadata['urls'] as List;
+      if (urls.isNotEmpty) {
+        widgets.add(const SizedBox(height: 8));
+        widgets.add(
+          UrlDropDown(
+            urls: urls.map((url) => url.toString()).toList(),
+          ),
+        );
+      }
+    }
+
+    // Handle YouTube videos
+    if (metadata.containsKey('youtube') && metadata['youtube'] is List) {
+      final videos = metadata['youtube'] as List;
+      if (videos.isNotEmpty) {
+        widgets.add(const SizedBox(height: 8));
+        widgets.add(
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.red.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: Colors.red.withValues(alpha: 0.3)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(Icons.play_circle_fill, size: 16, color: Colors.red.shade300),
+                    const SizedBox(width: 4),
+                    Text(
+                      'YouTube Videos',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.red.shade300,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 4),
+                ...videos.take(3).map((video) => _buildYouTubeVideoWidget(video)),
+              ],
+            ),
+          ),
+        );
+      }
+    }
+
+    return widgets;
+  }
+
+  Widget _buildYouTubeVideoWidget(dynamic video) {
+    if (video is! Map<String, dynamic>) return const SizedBox.shrink();
+    
+    final title = video['title']?.toString() ?? 'Unknown Title';
+    final url = video['url']?.toString() ?? '';
+    final thumbnail = video['thumbnail']?.toString() ?? '';
+    final duration = video['duration']?.toString() ?? '';
+    final channel = video['channel']?.toString() ?? '';
+    final channelUrl = video['channel_url']?.toString() ?? '';
+    final views = video['views']?.toString() ?? '';
+    final published = video['published']?.toString() ?? '';
+
     return Container(
-      width: 32,
-      height: 32,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: isUser ? AppColors.primaryGreen : Colors.grey.withValues(alpha: 0.2),
+      margin: const EdgeInsets.symmetric(vertical: 4),
+      child: InkWell(
+        onTap: () => _showYouTubePlayerDialog(
+          url: url,
+          title: title,
+          channel: channel,
+          duration: duration,
+          thumbnailUrl: thumbnail,
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: 100,
+              height: 56,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(6),
+                color: Colors.grey.withValues(alpha: 0.3),
+              ),
+              child: Stack(
+                children: [
+                  thumbnail.isNotEmpty
+                      ? ClipRRect(
+                          borderRadius: BorderRadius.circular(6),
+                          child: Image.network(
+                            thumbnail,
+                            width: 100,
+                            height: 56,
+                            fit: BoxFit.cover,
+                            errorBuilder: (context, error, stackTrace) => 
+                                const Icon(Icons.play_arrow, color: Colors.white),
+                          ),
+                        )
+                      : const Icon(Icons.play_arrow, color: Colors.white),
+                  if (duration.isNotEmpty)
+                    Positioned(
+                      bottom: 4,
+                      right: 4,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: Colors.black.withValues(alpha: 0.8),
+                          borderRadius: BorderRadius.circular(3),
+                        ),
+                        child: Text(
+                          duration,
+                          style: const TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                  // Play button overlay
+                  Positioned.fill(
+                    child: Icon(
+                      Icons.play_circle_filled,
+                      color: Colors.white.withOpacity(0.9),
+                      size: 32,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      height: 1.3,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(height: 4),
+                  if (channel.isNotEmpty)
+                    GestureDetector(
+                      onTap: () => _launchUrl(channelUrl),
+                      child: Text(
+                        channel,
+                        style: TextStyle(
+                          fontSize: 11,
+                          color: AppColors.primaryGreen,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  const SizedBox(height: 2),
+                  Row(
+                    children: [
+                      if (views.isNotEmpty)
+                        Flexible(
+                          child: Text(
+                            views,
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Colors.grey.shade400,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      if (published.isNotEmpty && views.isNotEmpty) ...[
+                        Text(
+                          ' • ',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.grey.shade400,
+                          ),
+                        ),
+                        Flexible(
+                          child: Text(
+                            published,
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Colors.grey.shade400,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      ] else if (published.isNotEmpty)
+                        Flexible(
+                          child: Text(
+                            published,
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Colors.grey.shade400,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
-      child: Icon(
-        isUser ? Icons.person : Icons.smart_toy,
-        size: 18,
-        color: isUser ? AppColors.primaryBlack : Colors.white,
-      ),
+    );
+  }
+
+  Future<void> _launchUrl(String url) async {
+    try {
+      final uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+      } else {
+        Fluttertoast.showToast(msg: 'Could not open link');
+      }
+    } catch (e) {
+      Fluttertoast.showToast(msg: 'Error opening link');
+    }
+  }
+
+  void _showYouTubePlayerDialog({
+    required String url,
+    required String title,
+    String channel = '',
+    String duration = '',
+    String thumbnailUrl = '',
+  }) {
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return YouTubePlayerDialog(
+          videoUrl: url,
+          title: title,
+          channel: channel,
+          duration: duration,
+          thumbnailUrl: thumbnailUrl,
+        );
+      },
     );
   }
 
@@ -433,5 +720,129 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
 
   bool _canSendMessage(ServerChatHandlerProvider provider) {
     return provider.canSend;
+  }
+}
+
+class UrlDropDown extends StatefulWidget {
+  final List<String> urls;
+  const UrlDropDown({super.key, required this.urls});
+
+  @override
+  State<UrlDropDown> createState() => _UrlDropDownState();
+}
+
+class _UrlDropDownState extends State<UrlDropDown>
+    with SingleTickerProviderStateMixin {
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      color: AppColors.primaryBlack,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      elevation: 2,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: () => _showSourcesModal(context),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Sources",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color:Colors.white,
+                  fontSize: 15,
+                  letterSpacing: 0.2,
+                ),
+              ),
+              Icon(Icons.arrow_forward, color: Colors.white, size: 20),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showSourcesModal(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (context) {
+        return DraggableScrollableSheet(
+          initialChildSize: 0.4,
+          minChildSize: 0.2,
+          maxChildSize: 0.85,
+          expand: false,
+          builder: (context, scrollController) {
+            return Container(
+              decoration: BoxDecoration(
+                color: AppColors.primaryBlack,
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
+                border: Border.all(color: AppColors.primaryGreen.withOpacity(0.15)),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                    child: Row(
+                      children: [
+                        Icon(Icons.link, color: AppColors.primaryGreen),
+                        const SizedBox(width: 8),
+                        Text(
+                          "Web Sources",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                            color: AppColors.primaryGreen,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Divider(height: 1, color: Colors.white.withOpacity(0.08)),
+                  Expanded(
+                    child: ListView.separated(
+                      controller: scrollController,
+                      itemCount: widget.urls.length,
+                      separatorBuilder: (context, i) => Divider(height: 1, color: Colors.white.withOpacity(0.08)),
+                      itemBuilder: (context, i) {
+                        final url = widget.urls[i];
+                        return ListTile(
+                          tileColor: Colors.transparent,
+                          title: Text(
+                            url,
+                            style: const TextStyle(color: Colors.white),
+                          ),
+                          trailing: Icon(Icons.open_in_new, color: AppColors.primaryGreen, size: 20),
+                          onTap: () async {
+                            Navigator.of(context).pop();
+                            try {
+                              final uri = Uri.parse(url);
+                              LaunchMode launchMode = LaunchMode.externalApplication;
+                              await launchUrl(uri,mode: launchMode);
+                              // if (await canLaunchUrl(uri)) {
+                              //   await launchUrl(uri, mode: LaunchMode.externalApplication);
+                              // } else {
+                              //   Fluttertoast.showToast(msg: 'Could not open link');
+                              // }
+                            } catch (e) {
+                              Fluttertoast.showToast(msg: 'Error opening link');
+                            }
+                          },
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    );
   }
 }

@@ -7,7 +7,7 @@ import 'package:logger/logger.dart';
 
 class WeatherService {
   static const String _openMeteoBaseUrl = 'https://api.open-meteo.com/v1';
-  static const String _locationIqApiKey = "API_KEY";
+  static const String _locationIqApiKey = 'API_KEY';
   
   final Logger _logger = Logger();
   final http.Client _httpClient = http.Client();
