@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:krishi_sakha/providers/ai_search_provider.dart';
 import 'package:krishi_sakha/providers/server_chat_handler_provider.dart';
 import 'package:krishi_sakha/providers/void_provider.dart';
 import 'package:krishi_sakha/providers/weather_provider.dart';
@@ -25,7 +26,11 @@ void main() async {
   Hive.registerAdapter(DailyWeatherAdapter());
   Hive.registerAdapter(CityLocationAdapter());
   Hive.registerAdapter(WeatherDataContainerAdapter());
-  await Supabase.initialize(url: "SUPABASE_URL", anonKey: "SUPABASE_ANON_KEY");
+  await Supabase.initialize(
+    url: "URL",
+    anonKey:
+        "SUPABASE_ANON_KEY",
+  );
 
   runApp(const MyApp());
 }
@@ -42,6 +47,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ServerChatHandlerProvider()),
         ChangeNotifierProvider(create: (_) => VoiceProvider()),
         ChangeNotifierProvider(create: (_) => WeatherProvider()),
+        ChangeNotifierProvider(create: (_) => AISearchProvider()),
       ],
       child: MaterialApp.router(
         title: 'Simple AI Chat',

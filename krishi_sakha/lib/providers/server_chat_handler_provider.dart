@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:krishi_sakha/apis/api_manager.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -132,6 +131,9 @@ class ServerChatHandlerProvider extends ChangeNotifier {
   final SupabaseClient _supabase = Supabase.instance.client;
   StreamSubscription<String>? _streamSubscription;
 
+  // JSON buffer for handling streaming data
+  String _incompleteJsonBuffer = '';
+
   ServerChatHandlerProvider() {
     _messageController = TextEditingController();
     _scrollController = ScrollController();
@@ -197,6 +199,7 @@ class ServerChatHandlerProvider extends ChangeNotifier {
     _error = null;
     _messageController.clear();
     _currentImage = null;
+    _incompleteJsonBuffer = ''; // Reset buffer
   }
 
   void _setError(String errorMessage) {
@@ -458,153 +461,113 @@ class ServerChatHandlerProvider extends ChangeNotifier {
   void _handleStreamChunk(String chunk) {
     if (chunk.isEmpty) return;
 
-    // DEBUG: Log all chunks
-    debugPrint('🔴 RAW CHUNK: $chunk');
+    // Add chunk to buffer
+    _incompleteJsonBuffer += chunk;
+
+    // Try to process complete lines from buffer
+    while (true) {
+      final newlineIndex = _incompleteJsonBuffer.indexOf('\n');
+      if (newlineIndex == -1) {
+        // No complete line available, wait for more data
+        break;
+      }
+
+      // Extract the complete line
+      final completeLine = _incompleteJsonBuffer.substring(0, newlineIndex);
+      _incompleteJsonBuffer = _incompleteJsonBuffer.substring(newlineIndex + 1);
+
+      // Process the complete line
+      _processCompleteLine(completeLine);
+    }
+  }
+
+  void _processCompleteLine(String line) {
+    final trimmedLine = line.trim();
+    if (trimmedLine.isEmpty) return;
+
+    // Remove 'data: ' prefix if present
+    String jsonStr = trimmedLine;
+    if (jsonStr.startsWith('data: ')) {
+      jsonStr = jsonStr.substring(6).trim();
+    }
+
+    if (jsonStr.isEmpty || jsonStr == '[DONE]') return;
+
+    // DEBUG: Log JSON string
+    debugPrint('🔵 CHAT JSON STRING: $jsonStr');
 
     try {
-      final lines = chunk.split('\n');
-      for (final line in lines) {
-        try {
-          final trimmedLine = line.trim();
-          if (trimmedLine.isEmpty) continue;
+      final data = jsonDecode(jsonStr);
+      if (data == null || data is! Map<String, dynamic>) return;
 
-          String jsonStr = trimmedLine;
-          if (jsonStr.startsWith('data: ')) {
-            jsonStr = jsonStr.substring(6).trim();
+      final type = data['type'];
+      if (type == null || type is! String) return;
+
+      debugPrint('🟡 CHAT CHUNK TYPE: $type');
+
+      switch (type) {
+        case 'status':
+          final message = data['message'];
+          if (message != null && message is String && message.isNotEmpty) {
+            _status = message;
+            notifyListeners();
           }
+          break;
 
-          if (jsonStr.isEmpty || jsonStr == '[DONE]') continue;
-
-          // DEBUG: Log parsed JSON string
-          debugPrint('🔵 JSON STRING: $jsonStr');
-
-          // Try to parse JSON, ignore any errors
-          dynamic data;
-          try {
-            data = jsonDecode(jsonStr);
-            debugPrint('🟢 PARSED DATA: $data');
-          } catch (e) {
-            debugPrint('🔴 JSON PARSE ERROR: $e');
-            // Ignore JSON parse errors and continue
-            continue;
+        case 'urls':
+          final urls = data['urls'];
+          debugPrint('📨 RECEIVED URLS: $urls');
+          if (urls != null && urls is List) {
+            _currentMetadata['urls'] = urls.cast<String>();
+            debugPrint('   Updated URLs in metadata: ${_currentMetadata['urls']}');
+            notifyListeners();
           }
+          break;
 
-          // Ignore null or invalid data
-          if (data == null || data is! Map<String, dynamic>) continue;
-
-          final type = data['type'];
-          if (type == null || type is! String) continue;
-
-          debugPrint('🟡 CHUNK TYPE: $type');
-
-          switch (type) {
-            case 'status':
-              try {
-                final message = data['message'];
-                if (message != null && message is String && message.isNotEmpty) {
-                  _status = message;
-                  notifyListeners();
-                }
-              } catch (e) {
-                // Ignore status update errors
-              }
-              break;
-
-            case 'metadata':
-              try {
-                final metadata = data['metadata'];
-                debugPrint('📨 RECEIVED METADATA CHUNK: $metadata');
-                Fluttertoast.showToast(msg: 'Received metadata chunk');
-                Fluttertoast.showToast(msg: 'Metadata: $metadata', toastLength: Toast.LENGTH_LONG);
-                if (metadata != null && metadata is Map<String, dynamic>) {
-                  // Clear existing metadata and process the new data
-                  _currentMetadata.clear();
-                  
-                  // Handle URLs - ensure they're in the 'urls' key as a List
-                  if (metadata.containsKey('url') && metadata['url'] is List) {
-                    _currentMetadata['urls'] = metadata['url'];
-                    debugPrint('   Added URLs from url key: ${metadata['url']}');
-                  }
-                  if (metadata.containsKey('urls') && metadata['urls'] is List) {
-                    _currentMetadata['urls'] = metadata['urls'];
-                    debugPrint('   Added URLs from urls key: ${metadata['urls']}');
-                  }
-                  
-                  // Handle YouTube videos - ensure they're in the 'youtube' key as a List
-                  if (metadata.containsKey('youtberelated') && metadata['youtberelated'] is List) {
-                    _currentMetadata['youtube'] = metadata['youtberelated'];
-                    debugPrint('   Added YouTube from youtberelated (List): ${metadata['youtberelated']}');
-                  }
-                  if (metadata.containsKey('youtube') && metadata['youtube'] is List) {
-                    _currentMetadata['youtube'] = metadata['youtube'];
-                    debugPrint('   Added YouTube from youtube key: ${metadata['youtube']}');
-                  }
-                  
-                  // Also handle if youtberelated contains nested youtube_urls
-                  if (metadata.containsKey('youtberelated') && metadata['youtberelated'] is Map<String, dynamic>) {
-                    final youtberelated = metadata['youtberelated'] as Map<String, dynamic>;
-                    if (youtberelated.containsKey('youtube_urls') && youtberelated['youtube_urls'] is List) {
-                      _currentMetadata['youtube'] = youtberelated['youtube_urls'];
-                      debugPrint('   Added YouTube from youtberelated.youtube_urls: ${youtberelated['youtube_urls']}');
-                    }
-                  }
-                  
-                  debugPrint('   Final _currentMetadata: $_currentMetadata');
-                  notifyListeners();
-                }
-              } catch (e) {
-                debugPrint('❌ Error processing metadata chunk: $e');
-              }
-              break;
-
-            case 'text':
-              try {
-                final textChunk = data['chunk'];
-                if (textChunk != null && textChunk is String) {
-                  _lastStreamingResponse += textChunk;
-                  _status = 'Generating response...';
-                  notifyListeners();
-                }
-              } catch (e) {
-                // Ignore text chunk errors
-              }
-              break;
-
-            case 'complete':
-              try {
-                _completeStreaming();
-              } catch (e) {
-                // Even if completion fails, reset state
-                _isSending = false;
-                _status = '';
-                notifyListeners();
-              }
-              break;
-
-            case 'error':
-              // Ignore backend errors and continue as if nothing happened
-              break;
+        case 'youtube':
+          final results = data['results'];
+          debugPrint('📺 RECEIVED YOUTUBE: $results');
+          if (results != null && results is List) {
+            _currentMetadata['youtube'] = results;
+            debugPrint('   Updated YouTube in metadata: ${_currentMetadata['youtube']}');
+            notifyListeners();
           }
-        } catch (e) {
-          // Ignore any line processing errors and continue
-          continue;
-        }
+          break;
+
+        case 'text':
+          final textChunk = data['chunk'];
+          if (textChunk != null && textChunk is String) {
+            _lastStreamingResponse += textChunk;
+            _status = 'Generating response...';
+            notifyListeners();
+          }
+          break;
+
+        case 'complete':
+          _completeStreaming();
+          break;
+
+        case 'error':
+          final errorMessage = data['message'] ?? 'Unknown error occurred';
+          debugPrint('❌ BACKEND ERROR: $errorMessage');
+          // Log error but continue processing
+          break;
       }
     } catch (e) {
-      // Ignore all chunk processing errors
+      debugPrint('❌ JSON PARSE ERROR: $e for line: $jsonStr');
+      // Continue processing other chunks
     }
   }
 
   void _completeStreaming() {
     try {
-      // Always create assistant message, even if response is empty
       final user = _supabase.auth.currentUser;
       if (user != null) {
         final responseText = _lastStreamingResponse.isNotEmpty
             ? _lastStreamingResponse
             : 'Sorry, I encountered an issue generating a response.';
 
-        // Create assistant message with empty metadata initially
+        // Create assistant message with the current metadata from streaming
         final assistantMessage = ChatMessage(
           id: DateTime.now().millisecondsSinceEpoch.toString(),
           conversationId: _actualConversationId,
@@ -612,14 +575,14 @@ class ServerChatHandlerProvider extends ChangeNotifier {
           sender: 'assistant',
           message: responseText,
           createdAt: DateTime.now(),
-          metadata: {},
+          metadata: Map<String, dynamic>.from(_currentMetadata), // Use current metadata
         );
 
         _messages.add(assistantMessage);
         notifyListeners();
 
-        // Save to database and then fetch back with metadata
-        _saveAssistantMessageAndFetchMetadata(assistantMessage, responseText);
+        // Save to database with the current metadata
+        _saveAssistantMessage(assistantMessage, responseText);
       }
     } catch (e) {
       debugPrint('❌ Error in _completeStreaming: $e');
@@ -628,83 +591,31 @@ class ServerChatHandlerProvider extends ChangeNotifier {
       _status = '';
       _lastStreamingResponse = '';
       _currentMetadata = {};
+      _incompleteJsonBuffer = ''; // Reset buffer
       notifyListeners();
       scrollToBottom();
     }
   }
 
-  Future<void> _saveAssistantMessageAndFetchMetadata(ChatMessage assistantMessage, String responseText) async {
+  Future<void> _saveAssistantMessage(ChatMessage assistantMessage, String responseText) async {
     try {
       final user = _supabase.auth.currentUser;
       if (user == null) return;
 
-      Map<String, dynamic>? fetchedMetadata;
-      int attempts = 0;
-      const maxAttempts = 5;
-      
-      while (attempts < maxAttempts && fetchedMetadata == null) {
-        attempts++;
-        final delayMs = attempts * 1000; // 1s, 2s, 3s, 4s, 5s
-        
-        debugPrint('🔄 Attempt $attempts: Waiting ${delayMs}ms before fetching...');
-        await Future.delayed(Duration(milliseconds: delayMs));
+      // Save to database with the current metadata
+      await _supabase.from('chat_messages').insert({
+        'conversation_id': _actualConversationId,
+        'user_id': user.id,
+        'sender': 'assistant',
+        'message': responseText,
+        'created_at': DateTime.now().toIso8601String(),
+        'metadata': assistantMessage.metadata.isNotEmpty ? assistantMessage.metadata : null,
+      });
 
-        // Fetch the last assistant message from database to get its metadata
-        final response = await _supabase
-            .from('chat_messages')
-            .select('*')
-            .eq('conversation_id', _actualConversationId)
-            .eq('sender', 'assistant')
-            .order('created_at', ascending: false)
-            .limit(1);
-
-        if (response.isNotEmpty) {
-          final lastMessage = response.first;
-          final metadata = lastMessage['metadata'];
-          
-          debugPrint('🔍 Attempt $attempts - Fetched metadata: $metadata');
-          
-          if (metadata != null && metadata is Map<String, dynamic> && metadata.isNotEmpty) {
-            fetchedMetadata = metadata;
-            debugPrint('✅ Found metadata on attempt $attempts!');
-            break;
-          } else {
-            debugPrint('⚠️ Attempt $attempts - No metadata yet, retrying...');
-          }
-        } else {
-          debugPrint('⚠️ Attempt $attempts - Could not fetch message, retrying...');
-        }
-      }
-
-      if (fetchedMetadata != null) {
-        // Normalize the metadata from database
-        final normalizedMetadata = ChatMessage._normalizeMetadata(fetchedMetadata);
-        debugPrint('✅ Final normalized database metadata: $normalizedMetadata');
-        
-        // Find the assistant message in our local list and update its metadata
-        final messageIndex = _messages.indexWhere((msg) => msg.id == assistantMessage.id);
-        if (messageIndex != -1) {
-          // Create a new message with updated metadata
-          final updatedMessage = ChatMessage(
-            id: assistantMessage.id,
-            conversationId: assistantMessage.conversationId,
-            userId: assistantMessage.userId,
-            sender: assistantMessage.sender,
-            message: assistantMessage.message,
-            createdAt: assistantMessage.createdAt,
-            metadata: normalizedMetadata,
-          );
-          
-          _messages[messageIndex] = updatedMessage;
-          debugPrint('🎯 Updated local message with metadata from database');
-          notifyListeners();
-        }
-      } else {
-        debugPrint('❌ Failed to fetch metadata after $maxAttempts attempts');
-      }
+      debugPrint('✅ Saved assistant message to database with metadata: ${assistantMessage.metadata}');
     } catch (e) {
-      debugPrint('❌ Error in _saveAssistantMessageAndFetchMetadata: $e');
-      // Don't throw error - this is a fallback mechanism
+      debugPrint('❌ Error saving assistant message: $e');
+      // Don't throw error - this is a background save operation
     }
   }
 

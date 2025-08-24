@@ -203,7 +203,17 @@ class ModelRun:
         async for chunk in chain.astream(chain_input):
                 if chunk:
                     yield chunk
- 
 
+    async def run_rag(self, question: str, context: str) -> AsyncGenerator[str, None]:
+
+        template = self.rag_template
+        model    = self.default_model
+        chain    = template | model | StrOutputParser()
+
+        chain_input = {"question": question, "context": context}
+
+        async for chunk in chain.astream(chain_input):
+            if chunk:
+                yield chunk
 
 model_runner = ModelRun()

@@ -52,3 +52,18 @@ Response:
 }
 """
 
+
+
+
+AI_SEARCH_SYSTEM_MESSAGE = """
+YOU ARE QUERY PREPROCESSOR 
+YOUR TASK IS TO PREPROCESS THE USER QUERY FOR SEARCH ON THE INTERET 
+
+- QUERY : The user's search query
+- SEARCH : The search query to be used for internet search
+
+EXAMPLE OF JSON RESPONSE : {
+  "query": "What is the fertilizer usage mentioned in the 2024 annual report?",
+  "search": "fertilizer usage 2024 annual report"
+}
+"""

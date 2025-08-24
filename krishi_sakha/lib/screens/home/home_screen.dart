@@ -234,12 +234,12 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: _buildFeatureCard(
-                  title: 'chat ',
-                  subtitle: 'offline chat',
+                  title: 'AI Search ',
+                  subtitle: 'Smart search',
                   icon: Icons.search,
                   color: const Color(0xFF4CAF50),
                   onTap: () {
-                    context.go(AppRoutes.selector);
+                    context.go(AppRoutes.search);
                   },
                 ),
               ),
@@ -262,12 +262,12 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: _buildFeatureCard(
-                  title: 'Voice Chat',
-                  subtitle: 'Voice Chat',
-                  icon: Icons.trending_up,
+                  title: 'Local Chat',
+                  subtitle: 'Offline chat',
+                  icon: Icons.chat,
                   color: const Color(0xFFFF9800),
                   onTap: () {
-                    context.go(AppRoutes.voiceChat);
+                    context.go(AppRoutes.selector);
                   },
                 ),
               ),

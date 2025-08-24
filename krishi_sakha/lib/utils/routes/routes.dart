@@ -6,6 +6,7 @@ import 'package:krishi_sakha/screens/login/login_screen.dart';
 import 'package:krishi_sakha/screens/models/model_list_screen.dart';
 import 'package:krishi_sakha/screens/onboarding/onboarding.dart';
 import 'package:krishi_sakha/screens/permission/permission_screen.dart';
+import 'package:krishi_sakha/screens/search/ai_search_screen.dart';
 import 'package:krishi_sakha/screens/splash/splash_screen.dart';
 import 'package:krishi_sakha/screens/voice/voice_screen.dart';
 import 'package:krishi_sakha/screens/weather/weather_screen.dart';
@@ -86,7 +87,7 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: AppRoutes.search,
       name: 'search',
-      builder: (context, state) => const SearchScreen(),
+      builder: (context, state) => const AISearchScreen(),
     ),
  
     
@@ -171,27 +172,6 @@ class DownloadScreen extends StatelessWidget {
       body: const Center(
         child: Text(
           'Download Screen - Coming Soon',
-          style: TextStyle(fontSize: 18),
-        ),
-      ),
-    );
-  }
-}
-
-class SearchScreen extends StatelessWidget {
-  const SearchScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Search'),
-        backgroundColor: const Color(0xFF101820),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Text(
-          'Search Screen - Coming Soon',
           style: TextStyle(fontSize: 18),
         ),
       ),

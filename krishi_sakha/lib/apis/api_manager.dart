@@ -4,5 +4,6 @@ class ApiManager {
   static const String chatTestUrl = "/test";
   static const String chatUrl = "/chat";
   static const String voiceUrl = "/voice";
+  static const String searchUrl = "/search";
   
 }

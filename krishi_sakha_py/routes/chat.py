@@ -137,28 +137,44 @@ async def chat_endpoint(
                     yield f"data: {json.dumps({'type': 'status', 'message': f'Context found: {len(docs_flat)} documents'})}\n\n"
                 else:
                     yield f"data: {json.dumps({'type': 'status', 'message': 'Searching on YouTube...'})}\n\n"
-                    youtube_urls = search_youtube(query)
+                    youtube_urls = search_youtube(query, limit=5)  # Limit to 5 results
                     
                     yield f"data: {json.dumps({'type': 'status', 'message': 'Searching on the internet...'})}\n\n"
                     context = await json_scrapped(query)
+                    
+                    # Extract and send URLs immediately
+                    urls = []
+                    for item in context:
+                        if "url" in item:
+                            if isinstance(item["url"], list):
+                                urls.extend(item["url"])
+                            else:
+                                urls.append(item["url"])
+                    
+                    # Send URLs as separate event
+                    yield f"data: {json.dumps({'type': 'urls', 'urls': urls})}\n\n"
+                    
+                    # Send YouTube results as separate event with proper encoding
+                    try:
+                        # Clean the YouTube results to ensure JSON compatibility
+                        cleaned_results = []
+                        for result in youtube_urls:
+                            cleaned_result = {}
+                            for key, value in result.items():
+                                if isinstance(value, str):
+                                    # Ensure proper encoding and remove any problematic characters
+                                    cleaned_result[key] = value.encode('utf-8', 'ignore').decode('utf-8')
+                                else:
+                                    cleaned_result[key] = value
+                            cleaned_results.append(cleaned_result)
+                        
+                        youtube_json = json.dumps({'type': 'youtube', 'results': cleaned_results}, ensure_ascii=False)
+                        yield f"data: {youtube_json}\n\n"
+                    except Exception as json_error:
+                        logger.error(f"Error serializing YouTube results: {json_error}")
+                        yield f"data: {json.dumps({'type': 'youtube', 'results': []})}\n\n"
             # Stream normal model
             yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
-            # print(history)
-
-            # --- FLATTEN URLS AND STRUCTURE METADATA ---
-            metadata = None
-            if domain == "search":
-                urls = []
-                for item in context:
-                    if "url" in item:
-                        if isinstance(item["url"], list):
-                            urls.extend(item["url"])
-                        else:
-                            urls.append(item["url"])
-                metadata = {
-                    'url': urls,
-                    'youtberelated': youtube_urls
-                }
 
             # Collect the full response for saving to DB
             full_response = ""
@@ -169,18 +185,29 @@ async def chat_endpoint(
                 user_id=user_id,
                 stream=True,
                 history=history,
-                metadata=metadata,
+                metadata=None,  # No metadata needed since we send events directly
                 push_to_db=False  # Prevent automatic DB save to avoid duplicates
             ):
                 full_response += chunk
                 yield f"data: {json.dumps({'type': 'text', 'chunk': chunk})}\n\n"
 
-            # Send metadata once after text generation is complete (only for search domain)
-            if domain == "search" and metadata:
-                yield f"data: {json.dumps({'type': 'metadata', 'metadata': metadata})}\n\n"
-
             # Save the complete response to database (single save)
             if full_response:
+                # Only include metadata for database storage when domain is search
+                metadata_for_db = None
+                if domain == "search":
+                    urls = []
+                    for item in context:
+                        if "url" in item:
+                            if isinstance(item["url"], list):
+                                urls.extend(item["url"])
+                            else:
+                                urls.append(item["url"])
+                    metadata_for_db = {
+                        'url': urls,
+                        'youtberelated': youtube_urls if 'youtube_urls' in locals() else []
+                    }
+                
                 push_to_supabase(
                     'chat_messages',
                     {
@@ -188,7 +215,7 @@ async def chat_endpoint(
                         'user_id': user_id,
                         'message': full_response,
                         'sender': "assistant",
-                        'metadata': metadata
+                        'metadata': metadata_for_db
                     }
                 )                
 
