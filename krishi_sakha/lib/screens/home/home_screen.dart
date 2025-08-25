@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:krishi_sakha/screens/login/helpers/auth_service.dart';
 import 'package:krishi_sakha/utils/theme/colors.dart';
 import 'package:krishi_sakha/utils/routes/routes.dart';
+import 'package:krishi_sakha/utils/ui/set_system_ui_overlay.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,12 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: AppColors.primaryBlack,
-      statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: AppColors.primaryBlack,
-      systemNavigationBarIconBrightness: Brightness.light,
-    ));
+   setSystemUIOverlayStyle();
   }
 
   @override
@@ -50,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     _buildMainFeatures(),
                     
                     // Quick Stats
-                    _buildQuickStats(),
+                    // _buildQuickStats(),
                     
                     // Bottom spacing
                     const SizedBox(height: 20),
@@ -239,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: Icons.search,
                   color: const Color(0xFF4CAF50),
                   onTap: () {
-                    context.go(AppRoutes.search);
+                    context.push(AppRoutes.search);
                   },
                 ),
               ),
@@ -251,7 +247,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: Icons.wb_sunny,
                   color: const Color(0xFF2196F3),
                   onTap: () {
-                    context.go(AppRoutes.weather);
+                    context.push(AppRoutes.weather);
                   },
                 ),
               ),
@@ -267,18 +263,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: Icons.chat,
                   color: const Color(0xFFFF9800),
                   onTap: () {
-                    context.go(AppRoutes.selector);
+                    context.push(AppRoutes.selector);
                   },
                 ),
               ),
               const SizedBox(width: 16),
               Expanded(
                 child: _buildFeatureCard(
-                  title: 'Plant Health',
-                  subtitle: 'Disease scan',
-                  icon: Icons.local_hospital,
+                  title: 'Voice chat',
+                  subtitle: 'Chat with Voice',
+                  icon: Icons.mic,
                   color: const Color(0xFFF44336),
-                  onTap: () {},
+                  onTap: () {
+                    context.push(AppRoutes.voiceChat);
+                  },
                 ),
               ),
             ],

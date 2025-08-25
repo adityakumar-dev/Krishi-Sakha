@@ -102,9 +102,60 @@ class AISearchProvider extends ChangeNotifier {
   String? _error;
   bool showMetadata = false;
 
+  // Smart scrolling state
+  bool _userManuallyScrolled = false;
+  bool _isAtBottom = true;
+  Timer? _scrollTimer;
+
   // Text controllers
   final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
+
+  AISearchProvider() {
+    _initializeScrollListener();
+  }
+
+  void _initializeScrollListener() {
+    _scrollController.addListener(() {
+      _updateScrollState();
+    });
+  }
+
+  void _updateScrollState() {
+    if (!_scrollController.hasClients) return;
+
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.position.pixels;
+    final threshold = 50.0; // Pixels from bottom to consider "at bottom"
+
+    final wasAtBottom = _isAtBottom;
+    _isAtBottom = (maxScroll - currentScroll) <= threshold;
+
+    // Detect if user manually scrolled up
+    if (wasAtBottom && !_isAtBottom && _isSearching) {
+      _userManuallyScrolled = true;
+    }
+
+    // Reset manual scroll flag when user returns to bottom
+    if (_isAtBottom && _userManuallyScrolled) {
+      _userManuallyScrolled = false;
+    }
+  }
+
+  void _autoScroll() {
+    if (!_scrollController.hasClients || _userManuallyScrolled) return;
+
+    _scrollTimer?.cancel();
+    _scrollTimer = Timer(const Duration(milliseconds: 100), () {
+      if (_scrollController.hasClients && !_userManuallyScrolled) {
+        _scrollController.animateTo(
+          _scrollController.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeOut,
+        );
+      }
+    });
+  }
 
   // Getters
   bool get isSearching => _isSearching;
@@ -117,10 +168,30 @@ class AISearchProvider extends ChangeNotifier {
   String? get error => _error;
   TextEditingController get searchController => _searchController;
   ScrollController get scrollController => _scrollController;
+  
+  // Smart scroll getters
+  bool get showScrollToBottom => _userManuallyScrolled && _isSearching;
+  bool get isAtBottom => _isAtBottom;
+
+  // Method to manually scroll to bottom and resume auto-scroll
+  void scrollToBottomManually() {
+    _userManuallyScrolled = false;
+    _isAtBottom = true;
+    _scrollTimer?.cancel();
+    
+    if (_scrollController.hasClients) {
+      _scrollController.animateTo(
+        _scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+    }
+  }
 
   @override
   void dispose() {
     _streamSubscription?.cancel();
+    _scrollTimer?.cancel();
     _searchController.dispose();
     _scrollController.dispose();
     super.dispose();
@@ -136,6 +207,12 @@ class AISearchProvider extends ChangeNotifier {
     _hasSearched = false;
     _error = null;
     _incompleteJsonBuffer = ''; // Clear buffer
+    
+    // Reset scroll state
+    _userManuallyScrolled = false;
+    _isAtBottom = true;
+    _scrollTimer?.cancel();
+    
     notifyListeners();
   }
 
@@ -170,6 +247,11 @@ class AISearchProvider extends ChangeNotifier {
   }
 
   void _scrollToTop() {
+    // Reset scroll state for new search
+    _userManuallyScrolled = false;
+    _isAtBottom = true;
+    _scrollTimer?.cancel();
+    
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients) {
         _scrollController.animateTo(
@@ -375,16 +457,8 @@ class AISearchProvider extends ChangeNotifier {
             _aiResponse += textChunk;
             notifyListeners();
             
-            // Auto-scroll to bottom
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              if (_scrollController.hasClients) {
-                _scrollController.animateTo(
-                  _scrollController.position.maxScrollExtent,
-                  duration: const Duration(milliseconds: 100),
-                  curve: Curves.easeOut,
-                );
-              }
-            });
+            // Smart auto-scroll
+            _autoScroll();
           }
           break;
 

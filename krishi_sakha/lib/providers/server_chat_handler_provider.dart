@@ -123,6 +123,11 @@ class ServerChatHandlerProvider extends ChangeNotifier {
   Map<String, dynamic> _currentMetadata = {};
   String? _error;
 
+  // Smart scrolling state
+  bool _userManuallyScrolled = false;
+  bool _isAtBottom = true;
+  Timer? _scrollTimer;
+
   // Controllers
   late final TextEditingController _messageController;
   late final ScrollController _scrollController;
@@ -137,6 +142,49 @@ class ServerChatHandlerProvider extends ChangeNotifier {
   ServerChatHandlerProvider() {
     _messageController = TextEditingController();
     _scrollController = ScrollController();
+    _initializeScrollListener();
+  }
+
+  void _initializeScrollListener() {
+    _scrollController.addListener(() {
+      _updateScrollState();
+    });
+  }
+
+  void _updateScrollState() {
+    if (!_scrollController.hasClients) return;
+
+    final maxScroll = _scrollController.position.maxScrollExtent;
+    final currentScroll = _scrollController.position.pixels;
+    final threshold = 50.0; // Pixels from bottom to consider "at bottom"
+
+    final wasAtBottom = _isAtBottom;
+    _isAtBottom = (maxScroll - currentScroll) <= threshold;
+
+    // Detect if user manually scrolled up
+    if (wasAtBottom && !_isAtBottom && _isSending) {
+      _userManuallyScrolled = true;
+    }
+
+    // Reset manual scroll flag when user returns to bottom
+    if (_isAtBottom && _userManuallyScrolled) {
+      _userManuallyScrolled = false;
+    }
+  }
+
+  void _autoScroll() {
+    if (!_scrollController.hasClients || _userManuallyScrolled) return;
+
+    _scrollTimer?.cancel();
+    _scrollTimer = Timer(const Duration(milliseconds: 100), () {
+      if (_scrollController.hasClients && !_userManuallyScrolled) {
+        _scrollController.animateTo(
+          _scrollController.position.maxScrollExtent,
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeOut,
+        );
+      }
+    });
   }
 
   // Getters
@@ -156,10 +204,30 @@ class ServerChatHandlerProvider extends ChangeNotifier {
   ScrollController get scrollController => _scrollController;
   // Optional getter for current image if UI wants to show a preview
   XFile? get currentImage => _currentImage;
+  
+  // Smart scroll getters
+  bool get showScrollToBottom => _userManuallyScrolled && _isSending;
+  bool get isAtBottom => _isAtBottom;
+
+  // Method to manually scroll to bottom and resume auto-scroll
+  void scrollToBottomManually() {
+    _userManuallyScrolled = false;
+    _isAtBottom = true;
+    _scrollTimer?.cancel();
+    
+    if (_scrollController.hasClients) {
+      _scrollController.animateTo(
+        _scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+    }
+  }
 
   @override
   void dispose() {
     _streamSubscription?.cancel();
+    _scrollTimer?.cancel();
     _messageController.dispose();
     _scrollController.dispose();
     _currentImage = null;
@@ -278,6 +346,11 @@ class ServerChatHandlerProvider extends ChangeNotifier {
   }
 
   void scrollToBottom() {
+    // Reset scroll state when explicitly scrolling to bottom
+    _userManuallyScrolled = false;
+    _isAtBottom = true;
+    _scrollTimer?.cancel();
+    
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients) {
         _scrollController.animateTo(
@@ -540,6 +613,9 @@ class ServerChatHandlerProvider extends ChangeNotifier {
             _lastStreamingResponse += textChunk;
             _status = 'Generating response...';
             notifyListeners();
+            
+            // Smart auto-scroll
+            _autoScroll();
           }
           break;
 
@@ -582,7 +658,7 @@ class ServerChatHandlerProvider extends ChangeNotifier {
         notifyListeners();
 
         // Save to database with the current metadata
-        _saveAssistantMessage(assistantMessage, responseText);
+        // _saveAssistantMessage(assistantMessage, responseText);
       }
     } catch (e) {
       debugPrint('❌ Error in _completeStreaming: $e');
@@ -597,27 +673,27 @@ class ServerChatHandlerProvider extends ChangeNotifier {
     }
   }
 
-  Future<void> _saveAssistantMessage(ChatMessage assistantMessage, String responseText) async {
-    try {
-      final user = _supabase.auth.currentUser;
-      if (user == null) return;
+  // Future<void> _saveAssistantMessage(ChatMessage assistantMessage, String responseText) async {
+  //   try {
+  //     final user = _supabase.auth.currentUser;
+  //     if (user == null) return;
 
-      // Save to database with the current metadata
-      await _supabase.from('chat_messages').insert({
-        'conversation_id': _actualConversationId,
-        'user_id': user.id,
-        'sender': 'assistant',
-        'message': responseText,
-        'created_at': DateTime.now().toIso8601String(),
-        'metadata': assistantMessage.metadata.isNotEmpty ? assistantMessage.metadata : null,
-      });
+  //     // Save to database with the current metadata
+  //     await _supabase.from('chat_messages').insert({
+  //       'conversation_id': _actualConversationId,
+  //       'user_id': user.id,
+  //       'sender': 'assistant',
+  //       'message': responseText,
+  //       'created_at': DateTime.now().toIso8601String(),
+  //       'metadata': assistantMessage.metadata.isNotEmpty ? assistantMessage.metadata : null,
+  //     });
 
-      debugPrint('✅ Saved assistant message to database with metadata: ${assistantMessage.metadata}');
-    } catch (e) {
-      debugPrint('❌ Error saving assistant message: $e');
-      // Don't throw error - this is a background save operation
-    }
-  }
+  //     debugPrint('✅ Saved assistant message to database with metadata: ${assistantMessage.metadata}');
+  //   } catch (e) {
+  //     debugPrint('❌ Error saving assistant message: $e');
+  //     // Don't throw error - this is a background save operation
+  //   }
+  // }
 
   void _handleStreamError(dynamic error) {
     debugPrint('Stream error: $error');

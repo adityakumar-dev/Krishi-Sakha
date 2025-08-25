@@ -5,18 +5,19 @@ import 'package:krishi_sakha/providers/ai_search_provider.dart';
 import 'package:krishi_sakha/providers/server_chat_handler_provider.dart';
 import 'package:krishi_sakha/providers/void_provider.dart';
 import 'package:krishi_sakha/providers/weather_provider.dart';
+import 'package:krishi_sakha/utils/ui/set_system_ui_overlay.dart';
 import 'package:provider/provider.dart';
 import 'package:krishi_sakha/models/llm_model.dart';
 import 'package:krishi_sakha/models/weather_model.dart';
 import 'package:krishi_sakha/providers/model_provider.dart';
 import 'package:krishi_sakha/providers/llama_provider.dart';
-import 'package:krishi_sakha/screens/models/model_list_screen.dart';
 import 'package:krishi_sakha/utils/routes/routes.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
   await dotenv.load(fileName: ".env");
   WidgetsFlutterBinding.ensureInitialized();
+  setSystemUIOverlayStyle();
 
   await Hive.initFlutter();
 
@@ -27,9 +28,8 @@ void main() async {
   Hive.registerAdapter(CityLocationAdapter());
   Hive.registerAdapter(WeatherDataContainerAdapter());
   await Supabase.initialize(
-    url: "URL",
-    anonKey:
-        "SUPABASE_ANON_KEY",
+    url: dotenv.env['SUPABASE_URL']!,
+    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
   );
 
   runApp(const MyApp());

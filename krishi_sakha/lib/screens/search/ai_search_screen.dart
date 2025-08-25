@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:krishi_sakha/utils/ui/markdown_helper.dart';
 import 'package:krishi_sakha/widgets/url_modal.dart';
 import 'package:krishi_sakha/widgets/youtube_player_dialog.dart';
 import 'package:krishi_sakha/widgets/youtube_widget.dart';
@@ -62,6 +64,19 @@ class _AISearchScreenState extends State<AISearchScreen> {
               ),
             ],
           ),
+        ),
+        floatingActionButton: Consumer<AISearchProvider>(
+          builder: (context, provider, child) {
+            if (provider.showScrollToBottom) {
+              return FloatingActionButton.small(
+                onPressed: provider.scrollToBottomManually,
+                backgroundColor: AppColors.primaryGreen,
+                foregroundColor: AppColors.primaryBlack,
+                child: const Icon(Icons.keyboard_arrow_down),
+              );
+            }
+            return const SizedBox.shrink();
+          },
         ),
       ),
     );
@@ -513,14 +528,9 @@ class _AISearchScreenState extends State<AISearchScreen> {
             ],
           ),
           const SizedBox(height: 16),
-          Text(
-            response,
-            style: const TextStyle(
-              color: AppColors.primaryWhite,
-              fontSize: 16,
-              height: 1.6,
-            ),
-          ),
+
+        buildMarkdownText(response)
+
         ],
       ),
     );

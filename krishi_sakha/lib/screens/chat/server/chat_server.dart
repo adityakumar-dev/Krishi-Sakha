@@ -2,6 +2,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:krishi_sakha/utils/ui/markdown_helper.dart';
 import 'package:krishi_sakha/widgets/url_modal.dart';
 import 'package:krishi_sakha/widgets/youtube_widget.dart';
 import 'package:provider/provider.dart';
@@ -136,6 +137,19 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
           Expanded(child: _buildMessageList()),
           _buildInputArea(),
         ],
+      ),
+      floatingActionButton: Consumer<ServerChatHandlerProvider>(
+        builder: (context, provider, child) {
+          if (provider.showScrollToBottom) {
+            return FloatingActionButton.small(
+              onPressed: provider.scrollToBottomManually,
+              backgroundColor: AppColors.primaryGreen,
+              foregroundColor: AppColors.primaryBlack,
+              child: const Icon(Icons.keyboard_arrow_down),
+            );
+          }
+          return const SizedBox.shrink();
+        },
       ),
     );
   }
@@ -382,13 +396,7 @@ class _ChatServerScreenState extends State<ChatServerScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        message.message,
-                        style: TextStyle(
-                          color: isUser ? AppColors.primaryBlack : Colors.white,
-                          fontSize: 16,
-                        ),
-                      ),
+                      buildMarkdownText(message.message),
                       if (!isUser && message.metadata.isNotEmpty) 
                         ..._buildMetadataWidgets(message.metadata),
                     ],
